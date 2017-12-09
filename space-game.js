@@ -78,7 +78,8 @@ function create() {
 
 function update() {
 	//collision
-	game.physics.arcade.overlap(playerLasers, turrets, turretVSlaser, null, this);
+	game.physics.arcade.overlap(turrets, playerLasers, turretVSlaser, null, this);
+	game.physics.arcade.overlap(player, badLasers, playerVSbadlaser, null, this);
 	
 	//angle
 	player.rotation = game.physics.arcade.angleToPointer(player);
@@ -122,9 +123,11 @@ function update() {
 
 function drawPlayerAim() {
 	graphics.clear(); //clears this graphic object's stuff
-	graphics.lineStyle(2, 0xFFFFFF, 0.5);
-	graphics.moveTo(player.x, player.y);
-	graphics.lineTo(game.input.mousePointer.x, game.input.mousePointer.y);
+	if (player.alive) {
+		graphics.lineStyle(2, 0xFFFFFF, 0.5);
+		graphics.moveTo(player.x, player.y);
+		graphics.lineTo(game.input.mousePointer.x, game.input.mousePointer.y);
+	}
 }
 
 function playerFire() {
@@ -158,6 +161,10 @@ function spawnTurret() {
 	}
 }
 
-function turretVSlaser(laser, turret) {
+function turretVSlaser(turret, laser) {
 	turret.kill();
+}
+
+function playerVSbadlaser() {
+	player.kill();
 }
