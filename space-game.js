@@ -10,6 +10,7 @@ var DEACCEL = 10;
 var fireRate = 100;
 var nextFire = 0;
 var playerLaserSpeed = 600;
+var badLaserSpeed = 600;
 
 var shootsfx;
 
@@ -54,6 +55,7 @@ function create() {
 	turrets.enableBody = true;
 	turrets.physicsBodyType = Phaser.Physics.ARCADE;
 	turrets.createMultiple(50, "TURRET");
+	turrets.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	
 	//add player
 	player = game.add.sprite(400, 300 , "TRIANGLE");
@@ -132,8 +134,17 @@ function playerFire() {
 		laser.reset(player.x, player.y);
 		laser.angle = player.angle;
 		game.physics.arcade.moveToPointer(laser, playerLaserSpeed);
-		shootsfx.play();
+		//too annoying
+		//shootsfx.play();
     }
+}
+
+function turretFire(turret) {
+	var laser = badLasers.getFirstDead();
+	laser.reset(turret.x, turret.y);
+	laser.rotation = turret.rotation;
+	game.physics.arcade.moveToXY(laser, player.x, player.y, badLaserSpeed);
+	shootsfx.play();
 }
 
 function spawnTurret() {
@@ -142,6 +153,8 @@ function spawnTurret() {
 	if (turrets.countDead() > 0) {
 		var turret = turrets.getFirstDead();
 		turret.reset(x, y);
+		turret.rotation = game.physics.arcade.angleToXY(turret, player.x, player.y);
+		turretFire(turret);
 	}
 }
 
