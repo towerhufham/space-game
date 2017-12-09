@@ -1,7 +1,8 @@
-var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update });
+var game = new Phaser.Game(1200, 800, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update });
 
 var player;
 var graphics;
+var random;
 var debugText;
 var ACCEL = 20;
 var SPEED = 400;
@@ -14,10 +15,15 @@ var playerLaserSpeed = 600;
 
 function preload() {
 	game.load.image("TRIANGLE", "img/triangle.png");
-	game.load.image("BEAM", "img/beam.png");
+	game.load.image("TURRET", "img/turret.png");
+	game.load.image("BLUE BEAM", "img/beam.png");
+	game.load.image("RED BEAM", "img/beam_red.png");
 }
 
 function create() {
+	//init random
+	random = game.rnd;
+	
 	//init graphics engine
 	graphics = game.add.graphics();
 	
@@ -26,7 +32,7 @@ function create() {
     playerLasers.enableBody = true;
     playerLasers.physicsBodyType = Phaser.Physics.ARCADE;
 
-    playerLasers.createMultiple(50, "BEAM");
+    playerLasers.createMultiple(50, "BLUE BEAM");
     playerLasers.setAll("checkWorldBounds", true);
     playerLasers.setAll("outOfBoundsKill", true);
 	
@@ -35,9 +41,15 @@ function create() {
     badLasers.enableBody = true;
     badLasers.physicsBodyType = Phaser.Physics.ARCADE;
 
-    badLasers.createMultiple(50, "BEAM");
+    badLasers.createMultiple(50, "RED BEAM");
     badLasers.setAll("checkWorldBounds", true);
     badLasers.setAll("outOfBoundsKill", true);
+	
+	//turret enemies
+	turrets = game.add.group();
+	turrets.enableBody = true;
+	turrets.physicsBodyType = Phaser.Physics.ARCADE;
+	turrets.createMultiple(50, "TURRET");
 	
 	//add player
 	player = game.add.sprite(400, 300 , "TRIANGLE");
@@ -45,12 +57,21 @@ function create() {
 	game.physics.enable(player);
 	player.body.maxVelocity = {x: SPEED, y: SPEED};
 	
+	//turret timer
+	timer = game.time.create(false);
+	timer.loop(1000, spawnTurret, this);
+	timer.start();
+	
+	
 	//add debug text
 	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
 	debugText = game.add.text(0, 0, "( - )", style);
 }
 
 function update() {
+	//collision
+	game.physics.arcade.overlap(playerLasers, turrets, turretVSlaser, null, this);
+	
 	//angle
 	player.rotation = game.physics.arcade.angleToPointer(player);
 	
@@ -106,4 +127,17 @@ function playerFire() {
 		laser.angle = player.angle;
 		game.physics.arcade.moveToPointer(laser, playerLaserSpeed);
     }
+}
+
+function spawnTurret() {
+	var x = random.between(0, game.world.width);
+	var y = random.between(0, game.world.height);
+	if (turrets.countDead() > 0) {
+		var turret = turrets.getFirstDead();
+		turret.reset(x, y);
+	}
+}
+
+function turretVSlaser(laser, turret) {
+	turret.kill();
 }
