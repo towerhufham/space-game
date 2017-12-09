@@ -7,17 +7,21 @@ var debugText;
 var ACCEL = 20;
 var SPEED = 400;
 var DEACCEL = 10;
-
 var fireRate = 100;
 var nextFire = 0;
-
 var playerLaserSpeed = 600;
 
+var shootsfx;
+
 function preload() {
+	//images
 	game.load.image("TRIANGLE", "img/triangle.png");
 	game.load.image("TURRET", "img/turret.png");
 	game.load.image("BLUE BEAM", "img/beam.png");
 	game.load.image("RED BEAM", "img/beam_red.png");
+	
+	//audio
+	game.load.audio("SHOOT", "audio/shooty_low.wav");
 }
 
 function create() {
@@ -62,6 +66,8 @@ function create() {
 	timer.loop(1000, spawnTurret, this);
 	timer.start();
 	
+	//init audio
+	shootsfx = game.add.audio("SHOOT", 0.25);
 	
 	//add debug text
 	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
@@ -126,6 +132,7 @@ function playerFire() {
 		laser.reset(player.x, player.y);
 		laser.angle = player.angle;
 		game.physics.arcade.moveToPointer(laser, playerLaserSpeed);
+		shootsfx.play();
     }
 }
 
