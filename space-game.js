@@ -1,6 +1,7 @@
 var game = new Phaser.Game(1200, 800, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update });
 
 var player;
+var health = 3;
 var graphics;
 var random;
 var debugText;
@@ -11,8 +12,12 @@ var fireRate = 100;
 var nextFire = 0;
 var playerLaserSpeed = 600;
 var badLaserSpeed = 600;
+var turretSpeed = 200;
 
 var shootsfx;
+var shotdownsfx;
+var damagesfx;
+var gameoversfx;
 
 function preload() {
 	//images
@@ -23,6 +28,9 @@ function preload() {
 	
 	//audio
 	game.load.audio("SHOOT", "audio/shooty_low.wav");
+	game.load.audio("SHOT DOWN", "audio/shotdown.wav");
+	game.load.audio("DAMAGED", "audio/splody.wav");
+	game.load.audio("GAME OVER", "audio/glitchy.wav");
 }
 
 function create() {
@@ -66,10 +74,14 @@ function create() {
 	//turret timer
 	timer = game.time.create(false);
 	timer.loop(1000, spawnTurret, this);
+	timer.loop(1000, function() {turrets.forEachAlive(turretFire, this);});
 	timer.start();
 	
 	//init audio
 	shootsfx = game.add.audio("SHOOT", 0.25);
+	shotdownsfx = game.add.audio("SHOT DOWN", 0.25);
+	damagesfx = game.add.audio("DAMAGED", 0.25);
+	gameoversfx = game.add.audio("GAME OVER", 0.25);
 	
 	//add debug text
 	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
@@ -118,6 +130,9 @@ function update() {
 	//draw aim
 	drawPlayerAim();
 	
+	//enemies aim
+	turrets.forEachAlive(angleTowardsPlayer, this);
+	
 	debugText.text = player.body.velocity.x + "," + player.body.velocity.y;
 }
 
@@ -150,21 +165,74 @@ function turretFire(turret) {
 	shootsfx.play();
 }
 
+// function spawnTurret() {
+	// var x = random.between(0, game.world.width);
+	// var y = random.between(0, game.world.height);
+	// if (turrets.countDead() > 0) {
+		// var turret = turrets.getFirstDead();
+		// turret.reset(x, y);
+		// turret.rotation = game.physics.arcade.angleToXY(turret, player.x, player.y);
+		// turretFire(turret);
+	// }
+// }
+
+function angleTowardsPlayer(sprite) {
+	sprite.rotation = game.physics.arcade.angleToXY(sprite, player.x, player.y);
+}
+
 function spawnTurret() {
-	var x = random.between(0, game.world.width);
-	var y = random.between(0, game.world.height);
 	if (turrets.countDead() > 0) {
+		var side = random.between(0,3);
+		var x;
+		var y;
+		if (side === 0) {
+			//left
+			x = -50;
+			y = random.between(0, game.world.height);
+		} else if (side === 1) {
+			//top
+			x = random.between(0, game.world.width);
+			y = -50
+		} else if (side === 2) {
+			//right
+			x = game.world.width + 50;
+			y = random.between(0, game.world.height);
+		} else if (side === 3) {
+			//bottom
+			x = random.between(0, game.world.width);
+			y = game.world.height + 50;
+		}
 		var turret = turrets.getFirstDead();
 		turret.reset(x, y);
-		turret.rotation = game.physics.arcade.angleToXY(turret, player.x, player.y);
+		angleTowardsPlayer(turret);
+		game.physics.arcade.moveToXY(turret, player.x, player.y, turretSpeed);
 		turretFire(turret);
 	}
 }
 
+function screenShake() {
+	//shakes the screen based on how damaged the player is
+	if (health >= 2) {
+		game.camera.shake(0.0075, 250);
+	} else if (health === 1) {
+		game.camera.shake(0.05, 300);
+	} else {
+		game.camera.shake(0.07, 350);
+	}
+}
+
 function turretVSlaser(turret, laser) {
+	shotdownsfx.play();
 	turret.kill();
 }
 
-function playerVSbadlaser() {
-	player.kill();
+function playerVSbadlaser(player, laser) {
+	laser.kill();
+	screenShake();
+	damagesfx.play();
+	health--;
+	if (health === 0) {
+		player.kill();
+		gameoversfx.play();
+	}
 }
