@@ -146,7 +146,7 @@ function drawPlayerAim() {
 }
 
 function playerFire() {
-	if (game.time.now > nextFire && playerLasers.countDead() > 0) {
+	if (game.time.now > nextFire && playerLasers.countDead() > 0 && player.alive === true) {
 		nextFire = game.time.now + fireRate;
 		var laser = playerLasers.getFirstDead();
 		laser.reset(player.x, player.y);
