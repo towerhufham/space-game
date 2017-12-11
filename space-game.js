@@ -17,6 +17,10 @@ var playerLaserSpeed = 600;
 var badLaserSpeed = 600;
 var turretSpeed = 200;
 
+var playerLasers;
+var badLasers;
+var turrets;
+
 function preload() {
 	//images
 	game.load.image("TRIANGLE", "img/triangle.png");
@@ -61,7 +65,7 @@ function create() {
 	turrets.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	
 	//add player
-	player = game.add.sprite(400, 300 , "TRIANGLE");
+	player = game.add.sprite(game.world.width/2, game.world.height/2, "TRIANGLE");
 	player.anchor.setTo(0.5, 0.5);
 	game.physics.enable(player);
 	player.body.maxVelocity = {x: SPEED, y: SPEED};
@@ -150,11 +154,14 @@ function playerFire() {
 }
 
 function turretFire(turret) {
-	var laser = badLasers.getFirstDead();
-	laser.reset(turret.x, turret.y);
-	laser.rotation = turret.rotation;
-	game.physics.arcade.moveToXY(laser, player.x, player.y, badLaserSpeed);
-	shootsfx.play();
+	//checking to make sure the turret exists prevents a strange bug
+	if (turret) {
+		var laser = badLasers.getFirstDead();
+		laser.reset(turret.x, turret.y);
+		laser.rotation = turret.rotation;
+		game.physics.arcade.moveToXY(laser, player.x, player.y, badLaserSpeed);
+		shootsfx.play();
+	}
 }
 
 // function spawnTurret() {
@@ -227,7 +234,20 @@ function playerVSbadlaser(player, laser) {
 	if (health === 0) {
 		player.kill();
 		gameoversfx.play();
+		game.time.events.add(1500, resetGame, this);
 	}
+}
+
+function resetGame() {
+	health = 3;
+	killcount = 0;
+	//console.log(playerLasers);
+	playerLasers.callAll("kill");
+	turrets.callAll("kill");
+	badLasers.callAll("kill");
+	player.x = game.world.width / 2;
+	player.y = game.world.height / 2;
+	player.revive();
 }
 
 });
