@@ -4,6 +4,7 @@ var game = new Phaser.Game(1200, 800, Phaser.CANVAS, 'phaser-example', { preload
 
 var player;
 var health = 3;
+var killcount = 0;
 var graphics;
 var random;
 var debugText;
@@ -124,7 +125,7 @@ function update() {
 	//enemies aim
 	turrets.forEachAlive(angleTowardsPlayer, this);
 	
-	debugText.text = player.body.velocity.x + "," + player.body.velocity.y;
+	debugText.text = "Score: " + killcount;
 }
 
 function drawPlayerAim() {
@@ -214,6 +215,7 @@ function screenShake() {
 
 function turretVSlaser(turret, laser) {
 	shotdownsfx.play();
+	killcount++;
 	turret.kill();
 }
 
