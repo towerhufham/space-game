@@ -56,8 +56,8 @@ function create() {
 	player.anchor.setTo(0.5, 0.5);
 	game.physics.enable(player);
 	player.body.maxVelocity = {x: SPEED, y: SPEED};
-	game.camera.follow(player);
-	// game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
+	// game.camera.follow(player);
+	game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 	
 	//load turrets
 	loadTurrets(game, player);
