@@ -34,10 +34,10 @@ function create() {
 	random = game.rnd;
 	
 	//size the world
-	game.world.setBounds(0, 0, 1920, 1920);
+	game.world.setBounds(0, 0, 3840, 3840);
 	
 	//add background
-	game.add.tileSprite(0, 0, 1920, 1920, "BACKGROUND");
+	game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
 	
 	//init graphics object
 	graphics = game.add.graphics();
@@ -140,17 +140,6 @@ function playerFire() {
 		//shootsfx.play();
     }
 }
-
-// function spawnTurret() {
-	// var x = random.between(0, game.world.width);
-	// var y = random.between(0, game.world.height);
-	// if (turrets.countDead() > 0) {
-		// var turret = turrets.getFirstDead();
-		// turret.reset(x, y);
-		// turret.rotation = game.physics.arcade.angleToXY(turret, player.x, player.y);
-		// turretFire(turret);
-	// }
-// }
 
 function angleTowardsPlayer(sprite) {
 	sprite.rotation = game.physics.arcade.angleToXY(sprite, player.x, player.y);

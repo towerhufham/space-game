@@ -29,13 +29,15 @@ function loadTurrets(game, player) {
 }
 
 function turretFire(turret, game, player) {
-	//checking to make sure the turret exists prevents a strange bug
+	//checking to make sure the turret & laser exists prevents a strange bug
 	if (turret) {
 		var laser = turretLasers.getFirstDead();
-		laser.reset(turret.x, turret.y);
-		laser.rotation = turret.rotation;
-		game.physics.arcade.moveToXY(laser, player.x, player.y, turretLaserSpeed);
-		shootsfx.play();
+		if (laser) {
+			laser.reset(turret.x, turret.y);
+			laser.rotation = turret.rotation;
+			game.physics.arcade.moveToXY(laser, player.x, player.y, turretLaserSpeed);
+			shootsfx.play();
+		}
 	}
 }
 
