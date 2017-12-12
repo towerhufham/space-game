@@ -16,6 +16,10 @@ var nextFire = 0;
 var playerLaserSpeed = 600;
 var playerLasers;
 
+var MAPX = 1090;
+var MAPY = 10;
+var MAPSIZE = 100;
+
 
 function preload() {
 	//images
@@ -39,8 +43,10 @@ function create() {
 	//add background
 	game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
 	
-	//init graphics object
-	graphics = game.add.graphics();
+	//init graphics objects
+	aim = game.add.graphics();
+	map = game.add.graphics();
+	map.fixedToCamera = true;
 	
 	//add player lasers
 	playerLasers = game.add.group();
@@ -113,6 +119,9 @@ function update() {
 	//draw aim
 	drawPlayerAim();
 	
+	//draw map
+	drawMap();
+	
 	//enemies aim
 	turrets.forEachAlive(angleTowardsPlayer, this);
 	
@@ -120,13 +129,29 @@ function update() {
 }
 
 function drawPlayerAim() {
-	graphics.clear(); //clears this graphic object's stuff
+	aim.clear(); //clears this graphic object's stuff
 	if (player.alive) {
-		graphics.lineStyle(2, 0xFFFFFF, 0.5);
-		graphics.moveTo(player.x, player.y);
-		// graphics.lineTo(game.input.mousePointer.x, game.input.mousePointer.y);
-		graphics.lineTo(game.input.mousePointer.worldX, game.input.mousePointer.worldY);
+		aim.lineStyle(2, 0xFFFFFF, 0.5);
+		aim.moveTo(player.x, player.y);
+		aim.lineTo(game.input.mousePointer.worldX, game.input.mousePointer.worldY);
 	}
+}
+
+function drawMap() {
+	//draw bounds
+	map.clear();
+	map.lineStyle(1, 0xFFFFFF, 0.5);
+	map.drawRect(MAPX, MAPY, MAPSIZE, MAPSIZE);
+	
+	// var rx = game.world.width / player.x;
+	// var ry = game.world.height / player.y;
+	var rx = player.x / game.world.width;
+	var ry = player.y / game.world.height;
+	var drawx = Math.round(rx * MAPSIZE) + MAPX - 1;
+	var drawy = Math.round(ry * MAPSIZE) + MAPY - 1;
+	map.lineStyle(1, 0xFFFFFF, 1);
+	map.drawRect(drawx, drawy, 3, 3);
+	
 }
 
 function playerFire() {
