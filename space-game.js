@@ -35,6 +35,9 @@ function create() {
 	//init graphics engine
 	graphics = game.add.graphics();
 	
+	//size the world
+	game.world.setBounds(0, 0, 1920, 1920);
+	
 	//add player lasers
 	playerLasers = game.add.group();
     playerLasers.enableBody = true;
@@ -49,6 +52,8 @@ function create() {
 	player.anchor.setTo(0.5, 0.5);
 	game.physics.enable(player);
 	player.body.maxVelocity = {x: SPEED, y: SPEED};
+	game.camera.follow(player);
+	// game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 	
 	//load turrets
 	loadTurrets(game, player);
@@ -59,6 +64,7 @@ function create() {
 	//add debug text
 	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
 	debugText = game.add.text(0, 0, "( - )", style);
+	debugText.fixedToCamera = true;
 }
 
 function update() {
@@ -114,7 +120,8 @@ function drawPlayerAim() {
 	if (player.alive) {
 		graphics.lineStyle(2, 0xFFFFFF, 0.5);
 		graphics.moveTo(player.x, player.y);
-		graphics.lineTo(game.input.mousePointer.x, game.input.mousePointer.y);
+		// graphics.lineTo(game.input.mousePointer.x, game.input.mousePointer.y);
+		graphics.lineTo(game.input.mousePointer.worldX, game.input.mousePointer.worldY);
 	}
 }
 
