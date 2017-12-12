@@ -64,6 +64,7 @@ function create() {
 	player.body.maxVelocity = {x: SPEED, y: SPEED};
 	// game.camera.follow(player);
 	game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
+	player.body.collideWorldBounds = true;
 	
 	//load turrets
 	loadTurrets(game, player);
