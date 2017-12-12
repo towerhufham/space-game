@@ -19,6 +19,7 @@ var playerLasers;
 
 function preload() {
 	//images
+	game.load.image("BACKGROUND", "img/tempbg.jpg");
 	game.load.image("TRIANGLE", "img/triangle.png");
 	game.load.image("TURRET", "img/turret.png");
 	game.load.image("BLUE BEAM", "img/beam.png");
@@ -32,11 +33,14 @@ function create() {
 	//init random
 	random = game.rnd;
 	
-	//init graphics engine
-	graphics = game.add.graphics();
-	
 	//size the world
 	game.world.setBounds(0, 0, 1920, 1920);
+	
+	//add background
+	game.add.tileSprite(0, 0, 1920, 1920, "BACKGROUND");
+	
+	//init graphics object
+	graphics = game.add.graphics();
 	
 	//add player lasers
 	playerLasers = game.add.group();
