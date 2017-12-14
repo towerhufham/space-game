@@ -96,6 +96,10 @@ function create() {
 	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
 	debugText = game.add.text(0, 0, "( - )", style);
 	debugText.fixedToCamera = true;
+	
+	//set to fullscreen
+	game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
+	game.scale.startFullScreen(false);
 }
 
 function update() {

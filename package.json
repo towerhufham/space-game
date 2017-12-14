@@ -1,9 +1,5 @@
 {
 	"name": "The Space Ocean",
 	"main": "index.html",
-	"nodejs": false,
-	"window": {
-		"fullscreen": true,
-		"frame": true
-	}
+	"nodejs": false
 }
