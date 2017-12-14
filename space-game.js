@@ -1,5 +1,4 @@
-require(["audio-manager", "turret"], function(){
-
+// require("requirejs");
 var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "phaser-example", { preload: preload, create: create, update: update });
 
 var player;
@@ -23,6 +22,11 @@ var MAPSIZE = 100;
 
 
 function preload() {
+	
+	//scripts
+	// game.load.script("TURRET SCRIPT", "turret");
+	// game.load.script("AUDIO-MANAGER SCRIPT", "audio-manager");
+	
 	//images
 	game.load.image("BACKGROUND", "img/tempbg.jpg");
 	game.load.image("TRIANGLE", "img/triangle.png");
@@ -34,7 +38,6 @@ function preload() {
 	
 	//audio
 	preloadAudio(game);
-
 }
 
 function create() {
@@ -235,5 +238,3 @@ function resetGame() {
 	player.y = game.world.height / 2;
 	player.revive();
 }
-
-});
