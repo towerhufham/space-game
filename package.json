@@ -1,5 +1,12 @@
 {
 	"name": "The Space Ocean",
 	"main": "index.html",
-	"nodejs": false
+	"nodejs": false,
+	"window": {
+		"frame": true,
+		"toolbar": false,
+		"resizeable": false,
+		"width": 1218,
+		"height": 818
+	}
 }

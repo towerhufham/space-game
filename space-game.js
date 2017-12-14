@@ -97,9 +97,12 @@ function create() {
 	debugText = game.add.text(0, 0, "( - )", style);
 	debugText.fixedToCamera = true;
 	
-	//set to fullscreen
+	//fullscreen stuff
+	//default to fullscreen
 	game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
 	game.scale.startFullScreen(false);
+	var f11 = game.input.keyboard.addKey(Phaser.Keyboard.F11);
+	f11.onDown.add(toggleFullscreen, this);
 }
 
 function update() {
@@ -241,4 +244,12 @@ function resetGame() {
 	player.x = game.world.width / 2;
 	player.y = game.world.height / 2;
 	player.revive();
+}
+
+function toggleFullscreen() {
+	if (game.scale.isFullScreen) {
+		game.scale.stopFullScreen();
+	} else {
+		game.scale.startFullScreen(false);
+	}
 }
