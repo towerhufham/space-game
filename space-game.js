@@ -1,6 +1,6 @@
 require(["audio-manager", "turret"], function(){
 
-var game = new Phaser.Game(1200, 800, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, update: update });
+var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "phaser-example", { preload: preload, create: create, update: update });
 
 var player;
 var health = 3;
@@ -26,6 +26,7 @@ function preload() {
 	//images
 	game.load.image("BACKGROUND", "img/tempbg.jpg");
 	game.load.image("TRIANGLE", "img/triangle.png");
+	game.load.spritesheet("POLYP", "img/polyp_thing.png", 32, 32, 4);
 	game.load.image("TURRET", "img/turret.png");
 	game.load.image("BLUE BEAM", "img/beam.png");
 	game.load.image("RED BEAM", "img/beam_red.png");
@@ -33,6 +34,7 @@ function preload() {
 	
 	//audio
 	preloadAudio(game);
+
 }
 
 function create() {
@@ -70,6 +72,12 @@ function create() {
 	
 	//load turrets
 	loadTurrets(game, player);
+	
+	//add polyp
+	polyp = game.add.sprite(300, 200, "POLYP");
+	anim = polyp.animations.add("idle");
+	anim.enableUpdate = true;
+	polyp.animations.play("idle", 8, true);
 	
 	//enemy particles
 	enemyParticles = game.add.emitter(0, 0, 50);
