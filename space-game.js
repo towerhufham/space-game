@@ -15,6 +15,7 @@ var fireRate = 100;
 var nextFire = 0;
 var playerLaserSpeed = 600;
 var playerLasers;
+var enemyParticles;
 
 var MAPX = 1090;
 var MAPY = 10;
@@ -28,6 +29,7 @@ function preload() {
 	game.load.image("TURRET", "img/turret.png");
 	game.load.image("BLUE BEAM", "img/beam.png");
 	game.load.image("RED BEAM", "img/beam_red.png");
+	game.load.image("PARTICLE", "img/particle.png");
 	
 	//audio
 	preloadAudio(game);
@@ -68,6 +70,13 @@ function create() {
 	
 	//load turrets
 	loadTurrets(game, player);
+	
+	//enemy particles
+	enemyParticles = game.add.emitter(0, 0, 50);
+	enemyParticles.makeParticles("PARTICLE");
+	// enemyParticles.setAlpha(0, 0.5, 500, Phaser.Easing.Linear.None, 1);
+	enemyParticles.setAlpha(0.75, 0, 1500);
+	enemyParticles.gravity = 0;
 	
 	//init audio
 	loadAudio(game);
@@ -188,6 +197,10 @@ function playerVSbadlaser(player, laser) {
 	damagesfx.play();
 	health--;
 	if (health === 0) {
+		//change this to playerParticles when the player sprite is changed
+		enemyParticles.x = player.x;
+		enemyParticles.y = player.y;
+		enemyParticles.start(true, 1000, null, 25);
 		player.kill();
 		gameoversfx.play();
 		game.time.events.add(1500, resetGame, this);
@@ -197,6 +210,9 @@ function playerVSbadlaser(player, laser) {
 function enemyVSlaser(enemy, laser) {
 	shotdownsfx.play();
 	killcount++;
+	enemyParticles.x = enemy.x;
+	enemyParticles.y = enemy.y;
+	enemyParticles.start(true, 1000, null, 10);
 	enemy.kill();
 }
 
