@@ -106,6 +106,7 @@ function create() {
 function update() {
 	//collision
 	game.physics.arcade.overlap(turrets, playerLasers, enemyVSlaser, null, this);
+	game.physics.arcade.overlap(polyps, playerLasers, polypVSlaser, null, this);
 	game.physics.arcade.overlap(player, turretLasers, playerVSbadlaser, null, this);
 	
 	//angle
@@ -230,6 +231,12 @@ function enemyVSlaser(enemy, laser) {
 	enemyParticles.y = enemy.y;
 	enemyParticles.start(true, 1000, null, 10);
 	enemy.kill();
+}
+
+
+function polypVSlaser(polyp, laser) {
+	polypsfx.play();
+	polyp.kill();
 }
 
 function resetGame() {

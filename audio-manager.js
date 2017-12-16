@@ -2,12 +2,14 @@ var shootsfx;
 var shotdownsfx;
 var damagesfx;
 var gameoversfx;
+var polypsfx;
 
 function preloadAudio(game) {
 	game.load.audio("SHOOT", "audio/shooty_low.wav");
 	game.load.audio("SHOT DOWN", "audio/shotdown.wav");
 	game.load.audio("DAMAGED", "audio/splody.wav");
 	game.load.audio("GAME OVER", "audio/glitchy.wav");
+	game.load.audio("HOLLOW", "audio/hollow.wav");
 }
 
 function loadAudio(game) {
@@ -15,4 +17,5 @@ function loadAudio(game) {
 	shotdownsfx = game.add.audio("SHOT DOWN", 0.25);
 	damagesfx = game.add.audio("DAMAGED", 0.25);
 	gameoversfx = game.add.audio("GAME OVER", 0.25);
+	polypsfx = game.add.audio("HOLLOW", 0.25);
 }
