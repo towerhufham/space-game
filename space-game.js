@@ -234,15 +234,18 @@ function enemyVSlaser(enemy, laser) {
 	enemy.kill();
 }
 
-
 function polypVSlaser(polyp, laser) {
 	//spawn energies
 	for (var i = 0; i < 5; i++) {
 		var e = energies.getFirstDead();
 		if (e) {
 			e.revive();
-			e.x = random.between(polyp.x - 75, polyp.x + 75);
-			e.y = random.between(polyp.y - 75, polyp.y + 75);
+			e.x = polyp.x;
+			e.y = polyp.y;
+			e.body.velocity.x = random.between(100, 400) * random.sign();
+			e.body.velocity.y = random.between(100, 400) * random.sign();
+			e.body.drag.x = 200;
+			e.body.drag.y = 200;
 			e.angle = random.angle();
 			console.log(e.x + "," + e.y);
 		} else {
