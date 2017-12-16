@@ -96,7 +96,7 @@ function create() {
 	debugText.fixedToCamera = true;
 	
 	//fullscreen stuff
-	game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
+	game.scale.fullScreenScaleMode = Phaser.ScaleManager.RESIZE;
 	var f11 = game.input.keyboard.addKey(Phaser.Keyboard.F11);
 	f11.onDown.add(toggleFullscreen, this);
 	
@@ -247,7 +247,6 @@ function polypVSlaser(polyp, laser) {
 			e.body.drag.x = 200;
 			e.body.drag.y = 200;
 			e.angle = random.angle();
-			console.log(e.x + "," + e.y);
 		} else {
 			console.log("PROBLEM: no e!");
 		}
