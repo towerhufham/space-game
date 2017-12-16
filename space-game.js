@@ -100,10 +100,10 @@ function create() {
 	//fullscreen stuff
 	game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
 	var f11 = game.input.keyboard.addKey(Phaser.Keyboard.F11);
-	f11.onDown.add(toggleFullscreen, this);]
+	f11.onDown.add(toggleFullscreen, this);
 	
 	//default to fullscreen
-	game.scale.startFullScreen(false);
+	//game.scale.startFullScreen(false);
 }
 
 function update() {
