@@ -218,14 +218,14 @@ function drawMap() {
 	}, this);
 	
 	//draw enemies
-	// map.lineStyle(1, 0xFF0000, 1);
-	// turrets.forEachAlive(function(t){
-		// rx = t.x / game.world.width;
-		// ry = t.y / game.world.height;
-		// drawx = Math.round(rx * MAPSIZE) + MAPX;
-		// drawy = Math.round(ry * MAPSIZE) + MAPY;
-		// map.drawRect(drawx, drawy, 1, 1);
-	// }, this);
+	map.lineStyle(1, 0xFF0000, 1);
+	turrets.forEachAlive(function(t){
+		rx = t.x / game.world.width;
+		ry = t.y / game.world.height;
+		drawx = Math.round(rx * MAPSIZE) + MAPX;
+		drawy = Math.round(ry * MAPSIZE) + MAPY;
+		map.drawRect(drawx, drawy, 1, 1);
+	}, this);
 }
 
 function playerFire() {
