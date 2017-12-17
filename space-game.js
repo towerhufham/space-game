@@ -145,6 +145,11 @@ function update() {
 		playerFire();
 	}
 	
+	//close game
+	if (game.input.keyboard.isDown(Phaser.Keyboard.ESC)) {
+		window.close();
+	}
+	
 	//draw aim
 	drawPlayerAim();
 	
