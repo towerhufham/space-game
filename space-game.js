@@ -36,6 +36,7 @@ function preload() {
 	game.load.image("RED BEAM", "img/beam_red.png");
 	game.load.image("PARTICLE", "img/particle.png");
 	game.load.image("ENERGY", "img/energy.png");
+	game.load.image("ENERGY PARTICLE", "img/energy_ring.png");
 	
 	//audio
 	preloadAudio(game);
@@ -242,21 +243,7 @@ function enemyVSlaser(enemy, laser) {
 
 function polypVSlaser(polyp, laser) {
 	//spawn energies
-	for (var i = 0; i < 5; i++) {
-		var e = energies.getFirstDead();
-		if (e) {
-			e.revive();
-			e.x = polyp.x;
-			e.y = polyp.y;
-			e.body.velocity.x = random.between(100, 400) * random.sign();
-			e.body.velocity.y = random.between(100, 400) * random.sign();
-			e.body.drag.x = 200;
-			e.body.drag.y = 200;
-			e.angle = random.angle();
-		} else {
-			console.log("PROBLEM: no e!");
-		}
-	}
+	spawnEnergies(polyp);
 	//do regular collision stuff
 	polypsfx.play();
 	polyp.kill();
