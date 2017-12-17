@@ -1,5 +1,5 @@
 // require("requirejs");
-var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "phaser-example", { preload: preload, create: create, update: update });
+var game = new Phaser.Game(1200, 800, Phaser.WEB_GL, "phaser-example", { preload: preload, create: create, update: update });
 
 var player;
 var health = 3;
@@ -147,6 +147,7 @@ function update() {
 	
 	//close game
 	if (game.input.keyboard.isDown(Phaser.Keyboard.ESC)) {
+		//todo: make it open up menu
 		window.close();
 	}
 	
