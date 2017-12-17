@@ -38,6 +38,7 @@ function preload() {
 	game.load.image("PARTICLE", "img/particle.png");
 	game.load.image("ENERGY", "img/energy.png");
 	game.load.image("ENERGY PARTICLE", "img/energy_ring.png");
+	game.load.image("PLACEHOLDER", "img/placeholder.png");
 	
 	//audio
 	preloadAudio(game);
@@ -76,8 +77,9 @@ function create() {
 	game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 	player.body.collideWorldBounds = true;
 	
-	//load turrets
+	//load enemies
 	loadTurrets(game, player);
+	loadOctopuses(game, player);
 	
 	//add polyps
 	loadPolyps(game);
@@ -109,8 +111,10 @@ function create() {
 function update() {
 	//collision
 	game.physics.arcade.overlap(turrets, playerLasers, enemyVSlaser, null, this);
+	game.physics.arcade.overlap(octopuses, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(polyps, playerLasers, polypVSlaser, null, this);
 	game.physics.arcade.overlap(player, turretLasers, playerVSbadlaser, null, this);
+	game.physics.arcade.overlap(player, octopusLasers, playerVSbadlaser, null, this);
 	game.physics.arcade.overlap(player, energies, playerVSenergy, null, this);
 	
 	//angle
@@ -165,6 +169,7 @@ function update() {
 	
 	//enemies aim
 	turrets.forEachAlive(angleTowardsPlayer, this);
+	octopuses.forEachAlive(angleTowardsPlayer, this);
 	
 	//score
 	debugText.text = "Score: " + killcount + "\nEnergy: " + currentEnergy;
