@@ -189,8 +189,7 @@ function drawMap() {
 	map.lineStyle(1, 0xFFFFFF, 0.5);
 	map.drawRect(MAPX, MAPY, MAPSIZE, MAPSIZE);
 	
-	// var rx = game.world.width / player.x;
-	// var ry = game.world.height / player.y;
+	//draw player box
 	var rx = player.x / game.world.width;
 	var ry = player.y / game.world.height;
 	var drawx = Math.round(rx * MAPSIZE) + MAPX - 1;
@@ -198,6 +197,25 @@ function drawMap() {
 	map.lineStyle(1, 0xFFFFFF, 1);
 	map.drawRect(drawx, drawy, 3, 3);
 	
+	//draw polyps
+	map.lineStyle(1, 0xFF00FF, 1);
+	polyps.forEachAlive(function(polyp){
+		rx = polyp.x / game.world.width;
+		ry = polyp.y / game.world.height;
+		drawx = Math.round(rx * MAPSIZE) + MAPX - 1;
+		drawy = Math.round(ry * MAPSIZE) + MAPY - 1;
+		map.drawRect(drawx, drawy, 3, 3);
+	}, this);
+	
+	//draw energies
+	map.lineStyle(1, 0xFFFF00, 1);
+	energies.forEachAlive(function(e){
+		rx = e.x / game.world.width;
+		ry = e.y / game.world.height;
+		drawx = Math.round(rx * MAPSIZE) + MAPX;
+		drawy = Math.round(ry * MAPSIZE) + MAPY;
+		map.drawRect(drawx, drawy, 1, 1);
+	}, this);
 }
 
 function playerFire() {
