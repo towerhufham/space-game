@@ -99,9 +99,9 @@ function create() {
 	game.scale.fullScreenScaleMode = Phaser.ScaleManager.RESIZE;
 	var f11 = game.input.keyboard.addKey(Phaser.Keyboard.F11);
 	f11.onDown.add(toggleFullscreen, this);
-	
 	//default to fullscreen
-	//game.scale.startFullScreen(false);
+	game.scale.startFullScreen(false);
+	setMapPosition();
 }
 
 function update() {
@@ -148,12 +148,18 @@ function update() {
 	drawPlayerAim();
 	
 	//draw map
+	setMapPosition(); //i don't like doing this every frame, but since the fullscreen calls are asynchronus it's the easiest way to do it
 	drawMap();
 	
 	//enemies aim
 	turrets.forEachAlive(angleTowardsPlayer, this);
 	
+	//score
 	debugText.text = "Score: " + killcount;
+}
+
+function setMapPosition() {
+	MAPX = game.scale.width - 110;
 }
 
 function drawPlayerAim() {
