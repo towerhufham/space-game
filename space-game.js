@@ -4,6 +4,7 @@ var game = new Phaser.Game(1200, 800, Phaser.WEB_GL, "phaser-example", { preload
 var player;
 var health = 3;
 var killcount = 0;
+var currentEnergy = 0;
 var graphics;
 var random;
 var debugText;
@@ -110,6 +111,7 @@ function update() {
 	game.physics.arcade.overlap(turrets, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(polyps, playerLasers, polypVSlaser, null, this);
 	game.physics.arcade.overlap(player, turretLasers, playerVSbadlaser, null, this);
+	game.physics.arcade.overlap(player, energies, playerVSenergy, null, this);
 	
 	//angle
 	player.rotation = game.physics.arcade.angleToPointer(player);
@@ -254,6 +256,12 @@ function polypVSlaser(polyp, laser) {
 	polypsfx.play();
 	polyp.kill();
 	laser.kill();
+}
+
+function playerVSenergy(player, energy) {
+	energy.kill();
+	currentEnergy++;
+	energysfx.play();
 }
 
 function resetGame() {
