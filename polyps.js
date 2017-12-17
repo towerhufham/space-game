@@ -62,3 +62,15 @@ function pingEnergies() {
 		energyParticles.start(true, 1500, null, 1);
 	}, this);
 }
+
+function magnetEnergies(game, player) {
+	energies.forEachAlive(function(e){
+		var dist = Phaser.Math.distance(e.x, e.y, player.x, player.y);
+		if (dist < 125) {
+			var angle = game.physics.arcade.angleBetween(e, player);
+			angle *= Phaser.Math.RAD_TO_DEG;  //why tf does phaser use two different angle notations without converting automatically
+			var vel = game.physics.arcade.velocityFromAngle(angle, 450);
+			e.body.velocity = vel;
+		}
+	}, this);
+}

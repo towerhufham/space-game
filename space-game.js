@@ -153,6 +153,9 @@ function update() {
 		window.close();
 	}
 	
+	//magnet energies
+	magnetEnergies(game, player);
+	
 	//draw aim
 	drawPlayerAim();
 	
@@ -164,7 +167,7 @@ function update() {
 	turrets.forEachAlive(angleTowardsPlayer, this);
 	
 	//score
-	debugText.text = "Score: " + killcount;
+	debugText.text = "Score: " + killcount + "\nEnergy: " + currentEnergy;
 }
 
 function setMapPosition() {
