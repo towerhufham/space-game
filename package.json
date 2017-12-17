@@ -7,6 +7,7 @@
 		"toolbar": false,
 		"resizeable": false,
 		"width": 1218,
-		"height": 818
+		"height": 818,
+		"icon": "img/polyp.png"
 	}
 }
