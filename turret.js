@@ -1,7 +1,5 @@
-// var turretLasers;
 var turrets;
 var turretSpeed = 200;
-// var turretLaserSpeed = 600;
 
 //we take in a player as an argument because some functions use the player's pos
 function loadTurrets(game, player, enemyGroups) {	
@@ -13,26 +11,22 @@ function loadTurrets(game, player, enemyGroups) {
 	turrets.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	
 	//turret timer
-	timer = game.time.create(false);
+	var timer = game.time.create(false);
 	timer.loop(1000, function(){spawnTurret(game, player);}, this);
 	timer.loop(1000, function(){turrets.forEachAlive(turretFire, this, game, player);});
 	timer.start();
 	
 	//add to enemygroups
 	enemyGroups.push(turrets);
+	
+	//provide a way to clear out this group when the game resets
+	turrets.clearFunc = function() {
+		turrets.callAll("kill");
+		timer.destroy();
+	}
 }
 
 function turretFire(turret, game, player) {
-	//checking to make sure the turret & laser exists prevents a strange bug
-	// if (turret) {
-		// var laser = turretLasers.getFirstDead();
-		// if (laser) {
-			// laser.reset(turret.x, turret.y);
-			// laser.rotation = turret.rotation;
-			// game.physics.arcade.moveToXY(laser, player.x, player.y, turretLaserSpeed);
-			// shootsfx.play();
-		// }
-	// }
 	fireAtSprite(game, turret, player);
 	shootsfx.play();
 }

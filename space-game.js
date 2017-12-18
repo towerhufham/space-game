@@ -233,7 +233,6 @@ function drawMap() {
 	//draw enemies
 	map.lineStyle(1, 0xFF0000, 1);
 	for (var i = 0; i < enemyGroups.length; i++) {
-		console.log(enemyGroups[i]);
 		enemyGroups[i].forEachAlive(function(e){
 			rx = e.x / game.world.width;
 			ry = e.y / game.world.height;
@@ -320,7 +319,7 @@ function resetGame() {
 	enemyLasers.callAll("kill");
 	//kill all enemies
 	for (var i = 0; i < enemyGroups.length; i++) {
-		enemyGroups[i].callAll("kill");
+		enemyGroups[i].clearFunc();
 	}
 	//clear enemy groups
 	enemyGroups = [];
