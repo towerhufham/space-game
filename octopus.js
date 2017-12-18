@@ -1,19 +1,8 @@
 var octopuses;
-var octopusLasers;
 var octopusSpeed = 200;
-var octopusLaserSpeed = 500;
 
 //we take in a player as an argument because some functions use the player's pos
-function loadOctopuses(game, player) {
-	//add octopus lasers
-	octopusLasers = game.add.group();
-    octopusLasers.enableBody = true;
-    octopusLasers.physicsBodyType = Phaser.Physics.ARCADE;
-
-    octopusLasers.createMultiple(50, "RED BEAM");
-    octopusLasers.setAll("checkWorldBounds", true);
-    octopusLasers.setAll("outOfBoundsKill", true);
-	
+function loadOctopuses(game, player, enemyGroups) {
 	//create octopus group
 	octopuses = game.add.group();
 	octopuses.enableBody = true;
@@ -26,6 +15,9 @@ function loadOctopuses(game, player) {
 	timer.loop(1000, function(){spawnOctopus(game, player);}, this);
 	timer.loop(1000, function(){octopuses.forEachAlive(octopusFire, this, game, player);});
 	timer.start();
+	
+	//add to enemygroups
+	enemyGroups.push(octopuses);
 }
 
 function octopusFire(octopus, game, player) {

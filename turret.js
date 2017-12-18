@@ -4,16 +4,7 @@ var turretSpeed = 200;
 // var turretLaserSpeed = 600;
 
 //we take in a player as an argument because some functions use the player's pos
-function loadTurrets(game, player) {
-	//add turret lasers
-	// turretLasers = game.add.group();
-    // turretLasers.enableBody = true;
-    // turretLasers.physicsBodyType = Phaser.Physics.ARCADE;
-
-    // turretLasers.createMultiple(50, "RED BEAM");
-    // turretLasers.setAll("checkWorldBounds", true);
-    // turretLasers.setAll("outOfBoundsKill", true);
-	
+function loadTurrets(game, player, enemyGroups) {	
 	//create turret group
 	turrets = game.add.group();
 	turrets.enableBody = true;
@@ -22,10 +13,13 @@ function loadTurrets(game, player) {
 	turrets.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	
 	//turret timer
-	// timer = game.time.create(false);
-	// timer.loop(1000, function(){spawnTurret(game, player);}, this);
-	// timer.loop(1000, function(){turrets.forEachAlive(turretFire, this, game, player);});
-	// timer.start();
+	timer = game.time.create(false);
+	timer.loop(1000, function(){spawnTurret(game, player);}, this);
+	timer.loop(1000, function(){turrets.forEachAlive(turretFire, this, game, player);});
+	timer.start();
+	
+	//add to enemygroups
+	enemyGroups.push(turrets);
 }
 
 function turretFire(turret, game, player) {

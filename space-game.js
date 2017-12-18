@@ -1,4 +1,4 @@
-var game = new Phaser.Game(1200, 800, Phaser.WEB_GL, "phaser-example", { preload: preload, create: create, update: update });
+var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "phaser-example", { preload: preload, create: create, update: update });
 
 var player;
 var health = 3;
@@ -15,6 +15,7 @@ var nextFire = 0;
 var playerLaserSpeed = 600;
 var playerLasers;
 var enemyParticles;
+var enemyGroups = [];
 
 var MAPX = 1090;
 var MAPY = 10;
@@ -70,10 +71,13 @@ function create() {
 	game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 	player.body.collideWorldBounds = true;
 	
-	//load enemies
+	//load enemie lasers
 	loadEnemyLasers(game);
-	loadTurrets(game, player);
-	loadOctopuses(game, player);
+	
+	//load level enemies
+	loadLevel(["octopuses"]);
+	// loadTurrets(game, player);
+	// loadOctopuses(game, player);
 	
 	//add polyps
 	loadPolyps(game);
@@ -161,11 +165,22 @@ function update() {
 	drawMap();
 	
 	//enemies aim
-	turrets.forEachAlive(angleTowardsPlayer, this);
-	octopuses.forEachAlive(angleTowardsPlayer, this);
+	//todo: make this less hacky
+	for (var i = 0; i < enemyGroups.length; i++) {
+		enemyGroups[i].forEachAlive(angleTowardsPlayer, this);
+		enemyGroups[i].forEachAlive(angleTowardsPlayer, this);
+	}
 	
 	//score
 	debugText.text = "Score: " + killcount + "\nEnergy: " + currentEnergy;
+}
+
+function loadLevel(levelAttributes) {
+	if (levelAttributes.includes("turrets")) {
+		loadTurrets(game, player, enemyGroups);
+	} if (levelAttributes.includes("octopuses")) {
+		loadOctopuses(game, player, enemyGroups);
+	}
 }
 
 function setMapPosition() {
@@ -217,13 +232,16 @@ function drawMap() {
 	
 	//draw enemies
 	map.lineStyle(1, 0xFF0000, 1);
-	turrets.forEachAlive(function(t){
-		rx = t.x / game.world.width;
-		ry = t.y / game.world.height;
-		drawx = Math.round(rx * MAPSIZE) + MAPX;
-		drawy = Math.round(ry * MAPSIZE) + MAPY;
-		map.drawRect(drawx, drawy, 1, 1);
-	}, this);
+	for (var i = 0; i < enemyGroups.length; i++) {
+		console.log(enemyGroups[i]);
+		enemyGroups[i].forEachAlive(function(e){
+			rx = e.x / game.world.width;
+			ry = e.y / game.world.height;
+			drawx = Math.round(rx * MAPSIZE) + MAPX;
+			drawy = Math.round(ry * MAPSIZE) + MAPY;
+			map.drawRect(drawx, drawy, 1, 1);
+		}, this);
+	}
 }
 
 function playerFire() {
