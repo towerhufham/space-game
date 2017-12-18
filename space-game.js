@@ -21,6 +21,7 @@ var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
 
+var TESTLEVEL = ["octopuses"]
 
 function preload() {
 	//images
@@ -75,7 +76,7 @@ function create() {
 	loadEnemyLasers(game);
 	
 	//load level enemies
-	loadLevel(["octopuses"]);
+	loadLevel(TESTLEVEL);
 	// loadTurrets(game, player);
 	// loadOctopuses(game, player);
 	
