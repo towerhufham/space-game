@@ -312,14 +312,24 @@ function playerVSenergy(player, energy) {
 }
 
 function resetGame() {
+	//reset global vars
 	health = 3;
 	killcount = 0;
-	//console.log(playerLasers);
+	//kill all lasers
 	playerLasers.callAll("kill");
-	turrets.callAll("kill");
+	enemyLasers.callAll("kill");
+	//kill all enemies
+	for (var i = 0; i < enemyGroups.length; i++) {
+		enemyGroups[i].callAll("kill");
+	}
+	//clear enemy groups
+	enemyGroups = [];
+	//reset player
+	player.body.stop();
 	player.x = game.world.width / 2;
 	player.y = game.world.height / 2;
 	player.revive();
+	//todo: reload level
 }
 
 function toggleFullscreen() {
