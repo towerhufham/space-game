@@ -30,7 +30,8 @@ function loadOctopuses(game, player) {
 
 function octopusFire(octopus, game, player) {
 	//checking to make sure the octopus & laser exists prevents a strange bug
-	if (octopus) {
+	//only fire if the player is close
+	if (octopus && Phaser.Math.distance(octopus.x, octopus.y, player.x, player.y) < 500) {
 		for (var i = -2; i < 3; i++) {
 			var angle = game.physics.arcade.angleBetween(octopus, player);
 			angle += (i * 0.1);
