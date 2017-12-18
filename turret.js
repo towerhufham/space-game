@@ -1,18 +1,18 @@
-var turretLasers;
+// var turretLasers;
 var turrets;
 var turretSpeed = 200;
-var turretLaserSpeed = 600;
+// var turretLaserSpeed = 600;
 
 //we take in a player as an argument because some functions use the player's pos
 function loadTurrets(game, player) {
 	//add turret lasers
-	turretLasers = game.add.group();
-    turretLasers.enableBody = true;
-    turretLasers.physicsBodyType = Phaser.Physics.ARCADE;
+	// turretLasers = game.add.group();
+    // turretLasers.enableBody = true;
+    // turretLasers.physicsBodyType = Phaser.Physics.ARCADE;
 
-    turretLasers.createMultiple(50, "RED BEAM");
-    turretLasers.setAll("checkWorldBounds", true);
-    turretLasers.setAll("outOfBoundsKill", true);
+    // turretLasers.createMultiple(50, "RED BEAM");
+    // turretLasers.setAll("checkWorldBounds", true);
+    // turretLasers.setAll("outOfBoundsKill", true);
 	
 	//create turret group
 	turrets = game.add.group();
@@ -22,23 +22,25 @@ function loadTurrets(game, player) {
 	turrets.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	
 	//turret timer
-	// timer = game.time.create(false);
-	// timer.loop(1000, function(){spawnTurret(game, player);}, this);
-	// timer.loop(1000, function(){turrets.forEachAlive(turretFire, this, game, player);});
-	// timer.start();
+	timer = game.time.create(false);
+	timer.loop(1000, function(){spawnTurret(game, player);}, this);
+	timer.loop(1000, function(){turrets.forEachAlive(turretFire, this, game, player);});
+	timer.start();
 }
 
 function turretFire(turret, game, player) {
 	//checking to make sure the turret & laser exists prevents a strange bug
-	if (turret) {
-		var laser = turretLasers.getFirstDead();
-		if (laser) {
-			laser.reset(turret.x, turret.y);
-			laser.rotation = turret.rotation;
-			game.physics.arcade.moveToXY(laser, player.x, player.y, turretLaserSpeed);
-			shootsfx.play();
-		}
-	}
+	// if (turret) {
+		// var laser = turretLasers.getFirstDead();
+		// if (laser) {
+			// laser.reset(turret.x, turret.y);
+			// laser.rotation = turret.rotation;
+			// game.physics.arcade.moveToXY(laser, player.x, player.y, turretLaserSpeed);
+			// shootsfx.play();
+		// }
+	// }
+	fireAtSprite(game, turret, player);
+	shootsfx.play();
 }
 
 function spawnTurret(game, player) {

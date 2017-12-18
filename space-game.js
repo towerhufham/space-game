@@ -1,4 +1,3 @@
-// require("requirejs");
 var game = new Phaser.Game(1200, 800, Phaser.WEB_GL, "phaser-example", { preload: preload, create: create, update: update });
 
 var player;
@@ -23,11 +22,6 @@ var MAPSIZE = 100;
 
 
 function preload() {
-	
-	//scripts
-	// game.load.script("TURRET SCRIPT", "turret");
-	// game.load.script("AUDIO-MANAGER SCRIPT", "audio-manager");
-	
 	//images
 	game.load.image("BACKGROUND", "img/tempbg.jpg");
 	game.load.image("TRIANGLE", "img/triangle.png");
@@ -73,13 +67,13 @@ function create() {
 	player.anchor.setTo(0.5, 0.5);
 	game.physics.enable(player);
 	player.body.maxVelocity = {x: SPEED, y: SPEED};
-	// game.camera.follow(player);
 	game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 	player.body.collideWorldBounds = true;
 	
 	//load enemies
+	loadEnemyLasers(game);
 	loadTurrets(game, player);
-	loadOctopuses(game, player);
+	// loadOctopuses(game, player);
 	
 	//add polyps
 	loadPolyps(game);
@@ -111,10 +105,9 @@ function create() {
 function update() {
 	//collision
 	game.physics.arcade.overlap(turrets, playerLasers, enemyVSlaser, null, this);
-	game.physics.arcade.overlap(octopuses, playerLasers, enemyVSlaser, null, this);
+	// game.physics.arcade.overlap(octopuses, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(polyps, playerLasers, polypVSlaser, null, this);
-	game.physics.arcade.overlap(player, turretLasers, playerVSbadlaser, null, this);
-	game.physics.arcade.overlap(player, octopusLasers, playerVSbadlaser, null, this);
+	game.physics.arcade.overlap(player, enemyLasers, playerVSbadlaser, null, this);
 	game.physics.arcade.overlap(player, energies, playerVSenergy, null, this);
 	
 	//angle
@@ -169,7 +162,7 @@ function update() {
 	
 	//enemies aim
 	turrets.forEachAlive(angleTowardsPlayer, this);
-	octopuses.forEachAlive(angleTowardsPlayer, this);
+	// octopuses.forEachAlive(angleTowardsPlayer, this);
 	
 	//score
 	debugText.text = "Score: " + killcount + "\nEnergy: " + currentEnergy;
@@ -306,7 +299,6 @@ function resetGame() {
 	//console.log(playerLasers);
 	playerLasers.callAll("kill");
 	turrets.callAll("kill");
-	turretLasers.callAll("kill");
 	player.x = game.world.width / 2;
 	player.y = game.world.height / 2;
 	player.revive();
