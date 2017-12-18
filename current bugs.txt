@@ -1,0 +1,5 @@
+Current known issues:
+
+* energies can fly out of bounds, making them impossible to get
+* enemies don't get removed when they leave the boundaries
+* polyps can rarely spawn out of bounds (possibly only after resetting?)
