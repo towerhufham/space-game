@@ -75,13 +75,13 @@ function create() {
 	//load enemie lasers
 	loadEnemyLasers(game);
 	
+	//add polyps
+	loadPolyps(game);
+	
 	//load level enemies
 	loadLevel(TESTLEVEL);
 	// loadTurrets(game, player);
 	// loadOctopuses(game, player);
-	
-	//add polyps
-	loadPolyps(game);
 	
 	//enemy particles
 	enemyParticles = game.add.emitter(0, 0, 50);
@@ -172,8 +172,8 @@ function update() {
 		enemyGroups[i].forEachAlive(angleTowardsPlayer, this);
 	}
 	
-	//score
-	debugText.text = "Score: " + killcount + "\nEnergy: " + currentEnergy;
+	//debug text
+	debugText.text = "Kills: " + killcount + "\nEnergy: " + currentEnergy;
 }
 
 function loadLevel(levelAttributes) {
@@ -182,6 +182,7 @@ function loadLevel(levelAttributes) {
 	} if (levelAttributes.includes("octopuses")) {
 		loadOctopuses(game, player, enemyGroups);
 	}
+	spawnPolyps();
 }
 
 function setMapPosition() {
@@ -315,6 +316,7 @@ function resetGame() {
 	//reset global vars
 	health = 3;
 	killcount = 0;
+	currentEnergy = 0;
 	//kill all lasers
 	playerLasers.callAll("kill");
 	enemyLasers.callAll("kill");
@@ -324,12 +326,16 @@ function resetGame() {
 	}
 	//clear enemy groups
 	enemyGroups = [];
+	//destroy polyps & energies
+	polyps.callAll("kill");
+	energies.callAll("kill");
 	//reset player
 	player.body.stop();
 	player.x = game.world.width / 2;
 	player.y = game.world.height / 2;
 	player.revive();
-	//todo: reload level
+	//reload level
+	loadLevel(TESTLEVEL);
 }
 
 function toggleFullscreen() {
