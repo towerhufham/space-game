@@ -22,10 +22,10 @@ function loadTurrets(game, player) {
 	turrets.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	
 	//turret timer
-	timer = game.time.create(false);
-	timer.loop(1000, function(){spawnTurret(game, player);}, this);
-	timer.loop(1000, function(){turrets.forEachAlive(turretFire, this, game, player);});
-	timer.start();
+	// timer = game.time.create(false);
+	// timer.loop(1000, function(){spawnTurret(game, player);}, this);
+	// timer.loop(1000, function(){turrets.forEachAlive(turretFire, this, game, player);});
+	// timer.start();
 }
 
 function turretFire(turret, game, player) {

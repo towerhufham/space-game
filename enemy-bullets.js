@@ -18,3 +18,13 @@ function fireAtSprite(game, source, sprite, speed = 600) {
 		game.physics.arcade.moveToXY(laser, sprite.x, sprite.y, speed);
 	}
 }
+
+function fireAtAngle(game, source, angle, speed = 600) {
+	//in radians
+	var laser = enemyLasers.getFirstDead();
+	if (laser) {
+		laser.reset(source.x, source.y);
+		laser.rotation = angle
+		laser.body.velocity.setToPolar(angle, speed);
+	}
+}

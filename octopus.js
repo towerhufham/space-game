@@ -31,15 +31,10 @@ function loadOctopuses(game, player) {
 function octopusFire(octopus, game, player) {
 	//checking to make sure the octopus & laser exists prevents a strange bug
 	if (octopus) {
-		for (var i = 0; i < 5; i++) {
-			var laser = octopusLasers.getFirstDead();
-			if (laser) {
-				var angle = game.physics.arcade.angleBetween(e, player);
-				laser.reset(octopus.x, octopus.y);
-				laser.rotation = octopus.rotation;
-				
-				shootsfx.play();
-			}
+		for (var i = -2; i < 3; i++) {
+			var angle = game.physics.arcade.angleBetween(octopus, player);
+			angle += (i * 0.1);
+			fireAtAngle(game, octopus, angle, 400);
 		}
 	}
 }

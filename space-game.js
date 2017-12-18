@@ -73,7 +73,7 @@ function create() {
 	//load enemies
 	loadEnemyLasers(game);
 	loadTurrets(game, player);
-	// loadOctopuses(game, player);
+	loadOctopuses(game, player);
 	
 	//add polyps
 	loadPolyps(game);
@@ -105,7 +105,7 @@ function create() {
 function update() {
 	//collision
 	game.physics.arcade.overlap(turrets, playerLasers, enemyVSlaser, null, this);
-	// game.physics.arcade.overlap(octopuses, playerLasers, enemyVSlaser, null, this);
+	game.physics.arcade.overlap(octopuses, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(polyps, playerLasers, polypVSlaser, null, this);
 	game.physics.arcade.overlap(player, enemyLasers, playerVSbadlaser, null, this);
 	game.physics.arcade.overlap(player, energies, playerVSenergy, null, this);
@@ -162,7 +162,7 @@ function update() {
 	
 	//enemies aim
 	turrets.forEachAlive(angleTowardsPlayer, this);
-	// octopuses.forEachAlive(angleTowardsPlayer, this);
+	octopuses.forEachAlive(angleTowardsPlayer, this);
 	
 	//score
 	debugText.text = "Score: " + killcount + "\nEnergy: " + currentEnergy;
