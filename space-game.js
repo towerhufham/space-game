@@ -21,7 +21,7 @@ var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
 
-var TESTLEVEL = ["octopuses"]
+var TESTLEVEL = ["lobsters"]
 
 function preload() {
 	//images
@@ -183,6 +183,8 @@ function loadLevel(levelAttributes) {
 		loadTurrets(game, player, enemyGroups);
 	} if (levelAttributes.includes("octopuses")) {
 		loadOctopuses(game, player, enemyGroups);
+	} if (levelAttributes.includes("lobsters")) {
+		loadLobsters(game, player, enemyGroups);
 	}
 	spawnPolyps();
 }
