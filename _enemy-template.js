@@ -12,7 +12,7 @@ function loadnewEnemies(game, player, enemyGroups) {
 	
 	//timer
 	var timer = game.time.create(false);
-	timer.loop(1000, function(){spawnnewEnemies(game, player);}, this);
+	timer.loop(1000, function(){spawnNewEnemies(game, player);}, this);
 	timer.loop(1000, function(){newEnemies.forEachAlive(newEnemiesFire, this, game, player);});
 	timer.start();
 	
@@ -33,7 +33,7 @@ function newEnemiesFire(enemy, game, player) {
 	// STUFF
 }
 
-function spawnnewEnemies(game, player) {
+function spawnNewEnemies(game, player) {
 	//this is the basic spawn code
 	if (newEnemies.countDead() > 0) {
 		var side = game.rnd.between(0,3);

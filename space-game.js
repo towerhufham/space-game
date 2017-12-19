@@ -167,13 +167,6 @@ function update() {
 	setMapPosition(); //i don't like doing this every frame, but since the fullscreen calls are asynchronus it's the easiest way to do it
 	drawMap();
 	
-	//enemies aim
-	//todo: make this less hacky [WORKIN ON IT]
-	// for (var i = 0; i < enemyGroups.length; i++) {
-		// enemyGroups[i].forEachAlive(angleTowardsPlayer, this);
-		// enemyGroups[i].forEachAlive(angleTowardsPlayer, this);
-	// }
-	
 	//update enemies
 	for (var i = 0; i < enemyGroups.length; i++) {
 		if (typeof enemyGroups[i].extraUpdate === "function") {
@@ -271,10 +264,6 @@ function playerFire() {
 		//shootsfx.play();
     }
 }
-
-// function angleTowardsPlayer(sprite) {
-	// sprite.rotation = game.physics.arcade.angleToXY(sprite, player.x, player.y);
-// }
 
 function screenShake() {
 	//shakes the screen based on how damaged the player is
