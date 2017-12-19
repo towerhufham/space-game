@@ -168,10 +168,19 @@ function update() {
 	drawMap();
 	
 	//enemies aim
-	//todo: make this less hacky
+	//todo: make this less hacky [WORKIN ON IT]
+	// for (var i = 0; i < enemyGroups.length; i++) {
+		// enemyGroups[i].forEachAlive(angleTowardsPlayer, this);
+		// enemyGroups[i].forEachAlive(angleTowardsPlayer, this);
+	// }
+	
+	//update enemies
 	for (var i = 0; i < enemyGroups.length; i++) {
-		enemyGroups[i].forEachAlive(angleTowardsPlayer, this);
-		enemyGroups[i].forEachAlive(angleTowardsPlayer, this);
+		if (typeof enemyGroups[i].extraUpdate === "function") {
+			enemyGroups[i].extraUpdate();
+		} else {
+			console.log("WARNING: an extraUpdate was found to not be callable");
+		}
 	}
 	
 	//debug text
@@ -263,9 +272,9 @@ function playerFire() {
     }
 }
 
-function angleTowardsPlayer(sprite) {
-	sprite.rotation = game.physics.arcade.angleToXY(sprite, player.x, player.y);
-}
+// function angleTowardsPlayer(sprite) {
+	// sprite.rotation = game.physics.arcade.angleToXY(sprite, player.x, player.y);
+// }
 
 function screenShake() {
 	//shakes the screen based on how damaged the player is

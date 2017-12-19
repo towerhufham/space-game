@@ -16,6 +16,9 @@ function loadTurrets(game, player, enemyGroups) {
 	timer.loop(1000, function(){turrets.forEachAlive(turretFire, this, game, player);});
 	timer.start();
 	
+	//give update for each turret
+	turrets.extraUpdate = function(){turrets.forEachAlive(turretUpdate, this, game, player);};
+	
 	//provide a way to clear out this group when the game resets
 	turrets.clearFunc = function() {
 		turrets.callAll("kill");
@@ -58,4 +61,8 @@ function spawnTurret(game, player) {
 		game.physics.arcade.moveToXY(turret, player.x, player.y, turretSpeed);
 		turretFire(turret, game, player);
 	}
+}
+
+function turretUpdate(turret, game, player) {
+	turret.rotation = game.physics.arcade.angleToXY(turret, player.x, player.y);
 }

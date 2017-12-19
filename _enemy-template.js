@@ -16,6 +16,9 @@ function loadnewEnemies(game, player, enemyGroups) {
 	timer.loop(1000, function(){newEnemies.forEachAlive(newEnemiesFire, this, game, player);});
 	timer.start();
 	
+	//give update for each enemy
+	newEnemies.extraUpdate = function(){newEnemies.forEachAlive(newEnemyUpdate, this, game, player);};
+	
 	//provide a way to clear out this group when the game resets
 	newEnemies.clearFunc = function() {
 		newEnemies.callAll("kill");
@@ -59,4 +62,9 @@ function spawnnewEnemies(game, player) {
 		game.physics.arcade.moveToXY(en, player.x, player.y, newEnemiesSpeed);
 		newEnemiesFire(en, game, player);
 	}
+}
+
+function newEnemyUpdate(en, game, player) {
+	//default aim-at-player behavior
+	en.rotation = game.physics.arcade.angleToXY(en, player.x, player.y);
 }

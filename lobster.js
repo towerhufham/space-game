@@ -21,7 +21,7 @@ function loadLobsters(game, player, enemyGroups) {
 	lobsterGraphics = game.add.graphics();
 	
 	//give update for each lobster
-	lobsters.extraUpdate = function(){lobsters.ForEachAlive(lobsterUpdate, this);};
+	lobsters.extraUpdate = function(){lobsters.forEachAlive(lobsterUpdate, this, game, player);};
 	
 	//provide a way to clear out this group when the game resets
 	lobsters.clearFunc = function() {
@@ -86,6 +86,6 @@ function spawnLobsters(game, player) {
 	}
 }
 
-function lobsterUpdate(lobster) {
-	
+function lobsterUpdate(lobster, game, player) {
+	lobster.rotation = game.physics.arcade.angleToXY(lobster, player.x, player.y);
 }

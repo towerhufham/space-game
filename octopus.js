@@ -16,6 +16,9 @@ function loadOctopuses(game, player, enemyGroups) {
 	timer.loop(1000, function(){octopuses.forEachAlive(octopusFire, this, game, player);});
 	timer.start();
 	
+	//give update for each lobster
+	octopuses.extraUpdate = function(){octopuses.forEachAlive(turretUpdate, this, game, player);};
+	
 	//provide a way to clear out this group when the game resets
 	octopuses.clearFunc = function() {
 		octopuses.callAll("kill");
@@ -67,4 +70,8 @@ function spawnOctopus(game, player) {
 		game.physics.arcade.moveToXY(octo, player.x, player.y, octopusSpeed);
 		octopusFire(octo, game, player);
 	}
+}
+
+function octopusUpdate(octo, game, player) {
+	octo.rotation = game.physics.arcade.angleToXY(octo, player.x, player.y);
 }
