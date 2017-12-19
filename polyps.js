@@ -28,6 +28,8 @@ function loadPolyps(game) {
 	energies.physicsBodyType = Phaser.Physics.ARCADE;
 	energies.createMultiple(4*5, "ENERGY");
 	energies.callAll("body.enableBody", true);
+	energies.setAll("body.collideWorldBounds", true);
+	energies.setAll("body.worldBounce", new Phaser.Point(1, 1));
 	
 	//energy ping timer
 	timer = game.time.create(false);
