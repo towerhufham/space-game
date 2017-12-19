@@ -35,6 +35,8 @@ function preload() {
 	game.load.image("ENERGY", "img/energy.png");
 	game.load.image("ENERGY PARTICLE", "img/energy_ring.png");
 	game.load.image("PLACEHOLDER", "img/placeholder.png");
+	game.load.image("OCTO-CLOSED", "img/octo_closed.png");
+	game.load.image("OCTO-OPEN", "img/octo_open.png");
 	
 	//audio
 	preloadAudio(game);

@@ -7,7 +7,7 @@ function loadOctopuses(game, player, enemyGroups) {
 	octopuses = game.add.group();
 	octopuses.enableBody = true;
 	octopuses.physicsBodyType = Phaser.Physics.ARCADE;
-	octopuses.createMultiple(50, "PLACEHOLDER");
+	octopuses.createMultiple(50, "OCTO-CLOSED");
 	octopuses.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	
 	//timer
@@ -30,6 +30,8 @@ function octopusFire(octopus, game, player) {
 	//checking to make sure the octopus & laser exists prevents a strange bug
 	//only fire if the player is close
 	if (octopus && Phaser.Math.distance(octopus.x, octopus.y, player.x, player.y) < 500) {
+		octopus.loadTexture("OCTO-OPEN");
+		game.time.events.add(500, function(){octopus.loadTexture("OCTO-CLOSED");}, this);
 		for (var i = -2; i < 3; i++) {
 			var angle = game.physics.arcade.angleBetween(octopus, player);
 			angle += (i * 0.1);
