@@ -45,6 +45,10 @@ function lobstersFire(lobster, game, player) {
 	lobsterGraphics.lineTo(p.x, p.y);
 }
 
+function finishLobsterFire(lobster) {
+	lobster.isFiring = false;
+}
+
 function _extendLine(x1, y1, x2, y2, extendLength = 3000) {
 	var p = {x:null, y:null};
 	var len = Math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
@@ -80,7 +84,6 @@ function spawnLobsters(game, player) {
 		en.reset(x, y);
 		en.rotation = game.physics.arcade.angleToXY(en, player.x, player.y);
 		game.physics.arcade.moveToXY(en, player.x, player.y, lobstersSpeed);
-		lobstersFire(en, game, player);
 	}
 }
 
