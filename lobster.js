@@ -23,9 +23,6 @@ function loadLobsters(game, player, enemyGroups) {
 	//give update for each lobster
 	lobsters.extraUpdate = function(){lobsters.ForEachAlive(lobsterUpdate, this);};
 	
-	//add to enemygroups
-	enemyGroups.push(lobsters);
-	
 	//provide a way to clear out this group when the game resets
 	lobsters.clearFunc = function() {
 		lobsters.callAll("kill");
@@ -33,6 +30,8 @@ function loadLobsters(game, player, enemyGroups) {
 		lobsterGraphics = null;
 		timer.destroy();
 	}
+	
+	return lobsters;
 }
 
 function lobstersFire(lobster, game, player) {

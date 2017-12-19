@@ -16,14 +16,13 @@ function loadOctopuses(game, player, enemyGroups) {
 	timer.loop(1000, function(){octopuses.forEachAlive(octopusFire, this, game, player);});
 	timer.start();
 	
-	//add to enemygroups
-	enemyGroups.push(octopuses);
-	
 	//provide a way to clear out this group when the game resets
 	octopuses.clearFunc = function() {
 		octopuses.callAll("kill");
 		timer.destroy();
 	}
+	
+	return octopuses;
 }
 
 function octopusFire(octopus, game, player) {

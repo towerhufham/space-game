@@ -16,14 +16,13 @@ function loadTurrets(game, player, enemyGroups) {
 	timer.loop(1000, function(){turrets.forEachAlive(turretFire, this, game, player);});
 	timer.start();
 	
-	//add to enemygroups
-	enemyGroups.push(turrets);
-	
 	//provide a way to clear out this group when the game resets
 	turrets.clearFunc = function() {
 		turrets.callAll("kill");
 		timer.destroy();
 	}
+	
+	return turrets;
 }
 
 function turretFire(turret, game, player) {

@@ -21,7 +21,7 @@ var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
 
-var TESTLEVEL = ["lobsters"]
+var TESTLEVEL = ["turrets", "octopuses", "lobsters"];
 
 function preload() {
 	//images
@@ -180,12 +180,14 @@ function update() {
 
 function loadLevel(levelAttributes) {
 	if (levelAttributes.includes("turrets")) {
-		loadTurrets(game, player, enemyGroups);
+		enemyGroups.push(loadTurrets(game, player));
 	} if (levelAttributes.includes("octopuses")) {
-		loadOctopuses(game, player, enemyGroups);
+		enemyGroups.push(loadOctopuses(game, player));
 	} if (levelAttributes.includes("lobsters")) {
-		loadLobsters(game, player, enemyGroups);
+		enemyGroups.push(loadLobsters(game, player));
 	}
+	console.log("current enemy groups:");
+	console.log(enemyGroups);
 	spawnPolyps();
 }
 

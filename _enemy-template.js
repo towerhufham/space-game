@@ -16,14 +16,13 @@ function loadnewEnemies(game, player, enemyGroups) {
 	timer.loop(1000, function(){newEnemies.forEachAlive(newEnemiesFire, this, game, player);});
 	timer.start();
 	
-	//add to enemygroups
-	enemyGroups.push(newEnemies);
-	
 	//provide a way to clear out this group when the game resets
 	newEnemies.clearFunc = function() {
 		newEnemies.callAll("kill");
 		timer.destroy();
 	}
+	
+	return newEnemies;
 }
 
 function newEnemiesFire(enemy, game, player) {
