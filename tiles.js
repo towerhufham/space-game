@@ -38,8 +38,12 @@ function makeTiles(game, key, width=3840, height=3840) {
 	//collision
 	map.setCollision(0);
 	
-	//  0 is important
+	//  0 is the layer index
     layer = map.createLayer(0);
+	
+	//this makes the whole layer render (needed because the game.width/height is different depending on fullscreen
+	//i doubt this is how this method is suppose to be used, but it works so
+	layer.resize(3840,3840);
 
     //  Scroll it
     // layer.resizeWorld();
