@@ -16,12 +16,14 @@ var playerLaserSpeed = 600;
 var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
+var tileLayer;
 
 var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
 
-var TESTLEVEL = ["turrets", "octopuses", "lobsters"];
+// var TESTLEVEL = ["turrets", "octopuses", "lobsters"];
+var TESTLEVEL = ["turrets", "octopuses"];
 
 function preload() {
 	//images
@@ -37,6 +39,7 @@ function preload() {
 	game.load.image("PLACEHOLDER", "img/placeholder.png");
 	game.load.image("OCTO-CLOSED", "img/octo_closed.png");
 	game.load.image("OCTO-OPEN", "img/octo_open.png");
+	game.load.image("GREY", "img/tiles/grey.png");
 	
 	//audio
 	preloadAudio(game);
@@ -52,6 +55,8 @@ function create() {
 	//add background
 	game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
 	
+	//add tiles
+	tileLayer = makeTiles(game, "GREY");
 	//init graphics objects
 	aim = game.add.graphics();
 	map = game.add.graphics();
@@ -110,7 +115,12 @@ function create() {
 }
 
 function update() {
-	//collision
+	// tile collisions
+	game.physics.arcade.collide(player, tileLayer);
+	game.physics.arcade.collide(energies, tileLayer);
+	game.physics.arcade.collide(playerLasers, tileLayer, killLaser);
+	game.physics.arcade.collide(enemyLasers, tileLayer, killLaser);
+	// sprite collisions
 	game.physics.arcade.overlap(turrets, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(octopuses, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(polyps, playerLasers, polypVSlaser, null, this);
@@ -290,6 +300,10 @@ function playerVSbadlaser(player, laser) {
 		gameoversfx.play();
 		game.time.events.add(1500, resetGame, this);
 	}
+}
+
+function killLaser(laser) {
+	laser.kill();
 }
 
 function enemyVSlaser(enemy, laser) {
