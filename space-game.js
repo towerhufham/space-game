@@ -43,6 +43,9 @@ function preload() {
 	
 	//audio
 	preloadAudio(game);
+	
+	//this allows us to use an fps counter
+	game.time.advancedTiming = true;
 }
 
 function create() {
@@ -187,7 +190,7 @@ function update() {
 	}
 	
 	//debug text
-	debugText.text = "Kills: " + killcount + "\nEnergy: " + currentEnergy;
+	debugText.text = "Kills: " + killcount + "\nEnergy: " + currentEnergy + "\nFPS: " + game.time.fps;
 }
 
 function loadLevel(levelAttributes) {
