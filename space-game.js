@@ -12,7 +12,7 @@ var SPEED = 400;
 var DEACCEL = 10;
 var fireRate = 100;
 var nextFire = 0;
-var playerLaserSpeed = 600;
+var playerLaserSpeed = 650;
 var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
@@ -81,6 +81,7 @@ function create() {
 	player.body.maxVelocity = {x: SPEED, y: SPEED};
 	game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 	player.body.collideWorldBounds = true;
+	// makePhantom(player, "PLACEHOLDER");
 	
 	//load enemie lasers
 	loadEnemyLasers(game);
@@ -132,6 +133,10 @@ function update() {
 	
 	//angle
 	player.rotation = game.physics.arcade.angleToPointer(player);
+	
+	//player phantom
+	// player.phantom.x = player.x;
+	// player.phantom.y = player.y;
 	
 	//horizontal velocity
 	if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT) || game.input.keyboard.isDown(Phaser.Keyboard.A)) {
