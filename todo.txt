@@ -1,0 +1,11 @@
+Stuff to do soon:
+
+* make polyps tile-sized and match the new aethetic
+* make proper ui
+* make the levels generate better (including polyp spawns)
+
+
+Current known issues:
+
+* enemies don't get removed when they leave the boundaries
+* polyps sometimes don't spawn on their designated tiles (only after respawning?)
