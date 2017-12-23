@@ -37,7 +37,7 @@ function octopusFire(octopus, game, player) {
 		for (var i = -2; i < 3; i++) {
 			var angle = game.physics.arcade.angleBetween(octopus, player);
 			angle += (i * 0.1);
-			fireAtAngle(game, octopus, angle, 400);
+			fireAtAngle(game, octopus, angle);
 		}
 	}
 }

@@ -1,4 +1,5 @@
 var enemyLasers;
+var _defaultSpeed = 450;
 
 function loadEnemyLasers(game) {
 	//add group
@@ -10,7 +11,7 @@ function loadEnemyLasers(game) {
     enemyLasers.setAll("outOfBoundsKill", true);
 }
 
-function fireAtSprite(game, source, sprite, speed = 500) {
+function fireAtSprite(game, source, sprite, speed = _defaultSpeed) {
 	var laser = enemyLasers.getFirstDead();
 	if (laser) {
 		laser.reset(source.x, source.y);
@@ -19,7 +20,7 @@ function fireAtSprite(game, source, sprite, speed = 500) {
 	}
 }
 
-function fireAtAngle(game, source, angle, speed = 500) {
+function fireAtAngle(game, source, angle, speed = _defaultSpeed) {
 	//in radians
 	var laser = enemyLasers.getFirstDead();
 	if (laser) {
