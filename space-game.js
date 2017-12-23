@@ -56,7 +56,7 @@ function create() {
 	game.world.setBounds(0, 0, 3840, 3840);
 	
 	//add background
-	game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
+	// game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
 	
 	//add tiles
 	tileLayer = makeTiles(game, "GREY");
