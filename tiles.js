@@ -21,7 +21,7 @@ function designStage(game) {
 	for (var y = 0; y < size; y++) {
 		for (var x = 0; x < size; x++) {
 			//per-tile logic
-			if (game.rnd.between(0, 50) === 0) {
+			if (game.rnd.between(0, 10) === 0) {
 				arr[x][y] = "w";
 			}
 		}
