@@ -39,7 +39,7 @@ function preload() {
 	game.load.image("PLACEHOLDER", "img/placeholder.png");
 	game.load.image("OCTO-CLOSED", "img/octo_closed.png");
 	game.load.image("OCTO-OPEN", "img/octo_open.png");
-	game.load.image("GREY", "img/tiles/grey.png");
+	game.load.image("TILES", "img/tiles/tiles.png");
 	
 	//audio
 	preloadAudio(game);
@@ -59,7 +59,7 @@ function create() {
 	// game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
 	
 	//add tiles
-	tileLayer = makeTiles(game, "GREY");
+	tileLayer = makeTiles(game, "TILES");
 	//init graphics objects
 	aim = game.add.graphics();
 	map = game.add.graphics();
