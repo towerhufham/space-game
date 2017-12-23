@@ -18,6 +18,7 @@ function designStage(game) {
 	var size = 60; // #hardcoding ;lool
 	// " " is empty space (default)
 	// "w" is a wall
+	// "P" is polyp
 	for (var y = 0; y < size; y++) {
 		for (var x = 0; x < size; x++) {
 			//per-tile logic
@@ -25,6 +26,11 @@ function designStage(game) {
 				arr[x][y] = "w";
 			}
 		}
+	}
+	for (var i = 0; i < 4; i++) {
+		var x = game.rnd.between(0, size-1);
+		var y = game.rnd.between(0, size-1);
+		arr[x][y] = "P";
 	}
 	return arr;
 }
@@ -43,6 +49,11 @@ function makeLayer(game, arr, key) {
 			// "w" is a wall
 			else if (arr[x][y] === "w") {
 				data += "0";
+			}
+			
+			// "P" is polyp
+			else if (arr[x][y] === "P") {
+				data += "12";
 			}
 			
 			//end of line
