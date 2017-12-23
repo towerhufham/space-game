@@ -1,4 +1,4 @@
-var tiles;
+var tilemap;
 
 function _makeLevelArray(width=3840, height=3840, tileSize=64) {
 	var tilesWide = width / tileSize;
@@ -70,16 +70,16 @@ function makeLayer(game, arr, key) {
 	// Add data to the cache
     game.cache.addTilemap("dynamicMap", null, data, Phaser.Tilemap.CSV);
     // Create our map (64 is tilesize)
-    var map = game.add.tilemap("dynamicMap", 64, 64);
+    tilemap = game.add.tilemap("dynamicMap", 64, 64);
     // "tiles" = cache image key,
-    map.addTilesetImage("tiles", key, 64, 64);
+    tilemap.addTilesetImage("tiles", key, 64, 64);
 	//collision
-	map.setCollision(0);
+	tilemap.setCollision(0);
 	// 0 is the layer index
-    layer = map.createLayer(0);
-	//this makes the whole layer render (needed because the game.width/height is different depending on fullscreen
+    layer = tilemap.createLayer(0);
+	//this makes the layer render on every portion of the window (needed because the game.width/height is different depending on fullscreen)
 	//i doubt this is how this method is suppose to be used, but it works so
-	layer.resize(3840,3840);
+	layer.resize(3840, 3840);
 	//give the layer a map of the polyps
 	layer.polypMap = polypMap;
 	//return the layer for collision

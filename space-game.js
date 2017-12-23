@@ -206,6 +206,11 @@ function loadLevel(levelAttributes) {
 	}
 	// console.log("current enemy groups:");
 	// console.log(enemyGroups);
+	
+	//if tiles currently exist, destroy them
+	if (tileLayer != null) {
+		tileLayer.destroy();
+	}
 	//add tiles
 	tileLayer = makeTiles(game, "TILES");
 	spawnPolyps(tileLayer.polypMap);
