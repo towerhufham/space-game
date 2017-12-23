@@ -70,7 +70,7 @@ function makeLayer(game, arr, key) {
 	// Add data to the cache
     game.cache.addTilemap("dynamicMap", null, data, Phaser.Tilemap.CSV);
     // Create our map (64 is tilesize)
-    map = game.add.tilemap("dynamicMap", 64, 64);
+    var map = game.add.tilemap("dynamicMap", 64, 64);
     // "tiles" = cache image key,
     map.addTilesetImage("tiles", key, 64, 64);
 	//collision

@@ -18,7 +18,7 @@ var enemyParticles;
 var enemyGroups = [];
 var tileLayer;
 
-var polypMap = []; //this should be removed when tiles reset per life
+// var polypMap = []; //this should be removed when tiles reset per life
 
 var MAPX = 1090;
 var MAPY = 10;
@@ -60,10 +60,6 @@ function create() {
 	//add background
 	// game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
 	
-	//add tiles
-	tileLayer = makeTiles(game, "TILES");
-	polypMap = tileLayer.polypMap;
-	
 	//init graphics objects
 	aim = game.add.graphics();
 	map = game.add.graphics();
@@ -95,8 +91,6 @@ function create() {
 	
 	//load level enemies
 	loadLevel(TESTLEVEL);
-	// loadTurrets(game, player);
-	// loadOctopuses(game, player);
 	
 	//enemy particles
 	enemyParticles = game.add.emitter(0, 0, 50);
@@ -210,9 +204,11 @@ function loadLevel(levelAttributes) {
 	} if (levelAttributes.includes("lobsters")) {
 		enemyGroups.push(loadLobsters(game, player));
 	}
-	console.log("current enemy groups:");
-	console.log(enemyGroups);
-	spawnPolyps(polypMap);
+	// console.log("current enemy groups:");
+	// console.log(enemyGroups);
+	//add tiles
+	tileLayer = makeTiles(game, "TILES");
+	spawnPolyps(tileLayer.polypMap);
 }
 
 function setMapPosition() {
