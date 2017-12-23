@@ -27,11 +27,24 @@ function designStage(game) {
 			}
 		}
 	}
-	for (var i = 0; i < 4; i++) {
-		var x = game.rnd.between(0, size-1);
-		var y = game.rnd.between(0, size-1);
-		arr[x][y] = "P";
-	}
+	//spawn polyps
+	//top-left
+	var x = game.rnd.between(0, (size/2)-1);
+	var y = game.rnd.between(0, (size/2)-1);
+	arr[x][y] = "P";
+	//top-right
+	var x = game.rnd.between(30, size-1);
+	var y = game.rnd.between(0, (size/2)-1);
+	arr[x][y] = "P";
+	//bottom-left
+	var x = game.rnd.between(0, (size/2)-1);
+	var y = game.rnd.between(30, size-1);
+	arr[x][y] = "P";
+	//bottom-right
+	var x = game.rnd.between(30, size-1);
+	var y = game.rnd.between(30, size-1);
+	arr[x][y] = "P";
+	
 	return arr;
 }
 

@@ -18,8 +18,6 @@ var enemyParticles;
 var enemyGroups = [];
 var tileLayer;
 
-// var polypMap = []; //this should be removed when tiles reset per life
-
 var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
