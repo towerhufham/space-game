@@ -37,6 +37,7 @@ function designStage(game) {
 
 function makeLayer(game, arr, key) {
 	var data = "";
+	var polypMap = [];
 	var size = 60; // yaaay hardcoding
 	for (var y = 0; y < size; y++) {
 		for (var x = 0; x < size; x++) {
@@ -54,6 +55,7 @@ function makeLayer(game, arr, key) {
 			// "P" is polyp
 			else if (arr[x][y] === "P") {
 				data += "12";
+				polypMap.push({x:(x * 64 + 32), y:(y * 64 + 32)}); //moar h4x
 			}
 			
 			//end of line
@@ -78,6 +80,8 @@ function makeLayer(game, arr, key) {
 	//this makes the whole layer render (needed because the game.width/height is different depending on fullscreen
 	//i doubt this is how this method is suppose to be used, but it works so
 	layer.resize(3840,3840);
+	//give the layer a map of the polyps
+	layer.polypMap = polypMap;
 	//return the layer for collision
 	return layer
 }

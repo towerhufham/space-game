@@ -18,6 +18,8 @@ var enemyParticles;
 var enemyGroups = [];
 var tileLayer;
 
+var polypMap = []; //this should be removed when tiles reset per life
+
 var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
@@ -60,6 +62,8 @@ function create() {
 	
 	//add tiles
 	tileLayer = makeTiles(game, "TILES");
+	polypMap = tileLayer.polypMap;
+	
 	//init graphics objects
 	aim = game.add.graphics();
 	map = game.add.graphics();
@@ -208,7 +212,7 @@ function loadLevel(levelAttributes) {
 	}
 	console.log("current enemy groups:");
 	console.log(enemyGroups);
-	spawnPolyps();
+	spawnPolyps(polypMap);
 }
 
 function setMapPosition() {

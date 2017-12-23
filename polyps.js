@@ -37,9 +37,18 @@ function loadPolyps(game) {
 	timer.start();
 }
 
-function spawnPolyps() {
-	polyps.reviveAll();
-	polyps.scatter(new Phaser.Rectangle(32, 32, 3840-32, 3840-32), true); //these numbers are the world bounds with margin of 32
+// function spawnPolyps() {
+	// polyps.reviveAll();
+	// polyps.scatter(new Phaser.Rectangle(32, 32, 3840-32, 3840-32), true); //these numbers are the world bounds with margin of 32
+// }
+
+function spawnPolyps(polypMap) {
+	for (var i = 0; i < polypMap.length; i++) {
+		var p = polyps.getFirstDead();
+		p.revive();
+		p.x = polypMap[i].x;
+		p.y = polypMap[i].y;
+	}
 }
 
 function spawnEnergies(polyp) {
