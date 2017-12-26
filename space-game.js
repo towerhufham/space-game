@@ -117,6 +117,10 @@ function create() {
 	game.scale.startFullScreen(false);
 	setMapPosition();
 	
+	//debug
+	var f10 = game.input.keyboard.addKey(Phaser.Keyboard.F10);
+	f10.onDown.add(debugFunc, this);
+	
 	//godmode
 	var f9 = game.input.keyboard.addKey(Phaser.Keyboard.F9);
 	f9.onDown.add(function(){godmode = !godmode; energysfx.play(); console.log("godmode = " + godmode);}, this);
@@ -219,6 +223,7 @@ function loadLevel(levelAttributes) {
 	}
 	//add tiles
 	tileLayer = makeTiles(game, "TILES");
+	console.log(tileLayer.polypMap);
 	spawnPolyps(tileLayer.polypMap);
 }
 
@@ -383,4 +388,10 @@ function toggleFullscreen() {
 	} else {
 		game.scale.startFullScreen(false);
 	}
+}
+
+function debugFunc() {
+	polyps.forEachAlive(function(polyp){
+		console.log("polyp at (" + polyp.x + "," + polyp.y + ")");
+	}, this);
 }

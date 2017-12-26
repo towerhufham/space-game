@@ -48,6 +48,7 @@ function spawnPolyps(polypMap) {
 		p.revive();
 		p.x = polypMap[i].x;
 		p.y = polypMap[i].y;
+		console.log("placed polyp at (" + p.x + "," + p.y + ")");
 	}
 }
 
