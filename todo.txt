@@ -8,3 +8,4 @@ Stuff to do soon:
 Current known issues:
 
 * polyps spawn incorrectly after dying
+* enemies stop spawning :/

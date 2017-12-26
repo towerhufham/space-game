@@ -1,6 +1,7 @@
 var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "phaser-example", { preload: preload, create: create, update: update });
 
 var player;
+var godmode = false;
 var health = 3;
 var killcount = 0;
 var currentEnergy = 0;
@@ -115,6 +116,10 @@ function create() {
 	//default to fullscreen
 	game.scale.startFullScreen(false);
 	setMapPosition();
+	
+	//godmode
+	var f9 = game.input.keyboard.addKey(Phaser.Keyboard.F9);
+	f9.onDown.add(function(){godmode = !godmode; energysfx.play(); console.log("godmode = " + godmode);}, this);
 }
 
 function update() {
@@ -301,18 +306,20 @@ function screenShake() {
 }
 
 function playerVSbadlaser(player, laser) {
-	laser.kill();
-	screenShake();
-	damagesfx.play();
-	health--;
-	if (health === 0) {
-		//change this to playerParticles when the player sprite is changed
-		enemyParticles.x = player.x;
-		enemyParticles.y = player.y;
-		enemyParticles.start(true, 1000, null, 25);
-		player.kill();
-		gameoversfx.play();
-		game.time.events.add(1500, resetGame, this);
+	if (!godmode) {
+		laser.kill();
+		screenShake();
+		damagesfx.play();
+		health--;
+		if (health === 0) {
+			//change this to playerParticles when the player sprite is changed
+			enemyParticles.x = player.x;
+			enemyParticles.y = player.y;
+			enemyParticles.start(true, 1000, null, 25);
+			player.kill();
+			gameoversfx.play();
+			game.time.events.add(1500, resetGame, this);
+		}
 	}
 }
 
