@@ -35,6 +35,15 @@ function _placePolyps(game, arr, size=60) {
 	return arr;
 }
 
+function _tileArrayQualityInsurance(arr) {
+	//ensure the spawn area is empty
+	arr[29][29] = " ";
+	arr[29][30] = " ";
+	arr[30][29] = " ";
+	arr[30][30] = " ";
+	return arr;
+}
+
 function designStage(game) {
 	var arr = _makeLevelArray();
 	var size = 60; // #hardcoding ;lool
@@ -157,6 +166,9 @@ function makeLayer(game, arr, key) {
 function makeTiles(game, key) {
 	// var design = designStage(game);
 	var design = designStageCA(game);
+	//quality insurance
+	design = _tileArrayQualityInsurance(design);
+	//make the layer
 	var layer = makeLayer(game, design, key);
 	return layer;
 }
