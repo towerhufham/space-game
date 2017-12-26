@@ -8,7 +8,7 @@ function loadPolyps(game) {
 	polyps.enableBody = true;
 	polyps.physicsBodyType = Phaser.Physics.ARCADE;
 	polyps.createMultiple(4, "POLYP");
-	polyps.callAll("animations.add", "animations", "idle", null, 8, true);
+	// polyps.callAll("animations.add", "animations", "idle", null, 8, true);
 	polyps.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	
 	//load energy particles

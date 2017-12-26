@@ -29,7 +29,7 @@ function preload() {
 	//images
 	game.load.image("BACKGROUND", "img/tempbg.jpg");
 	game.load.image("TRIANGLE", "img/triangle.png");
-	game.load.spritesheet("POLYP", "img/polyp_thing.png", 32, 32, 4);
+	game.load.image("POLYP", "img/polyp_thing.png");
 	game.load.image("TURRET", "img/turret.png");
 	game.load.image("BLUE BEAM", "img/beam.png");
 	game.load.image("RED BEAM", "img/beam_red.png");
