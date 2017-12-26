@@ -39,6 +39,9 @@ function preload() {
 	game.load.image("PLACEHOLDER", "img/placeholder.png");
 	game.load.image("OCTO-CLOSED", "img/octo_closed.png");
 	game.load.image("OCTO-OPEN", "img/octo_open.png");
+	
+	//tilesets
+	// game.load.image("TILES", "img/tiles/tiles_debug.png");
 	game.load.image("TILES", "img/tiles/tiles.png");
 	
 	//audio
