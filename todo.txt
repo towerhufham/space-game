@@ -1,8 +1,8 @@
 Stuff to do soon:
 
-* make polyps tile-sized and match the new aethetic
 * make proper ui
 * make the levels generate better
+* create exit to new levels
 
 
 Current known issues:
