@@ -28,6 +28,13 @@ function designStage(game) {
 		}
 	}
 	//spawn polyps
+	arr = _placePolyps(game, arr);
+	
+	return arr;
+}
+
+function _placePolyps(game, arr, size=60) {
+	//spawn polyps
 	//top-left
 	var x = game.rnd.between(0, (size/2)-1);
 	var y = game.rnd.between(0, (size/2)-1);
@@ -47,6 +54,60 @@ function designStage(game) {
 	
 	return arr;
 }
+
+function designStageCA(game) {
+
+	//init
+	var arr = _makeLevelArray();
+	
+	//create the CA sim (ripped directly from https://sanojian.github.io/cellauto/)
+	var world = new CAWorld({
+		width: 60,
+		height: 60,
+		cellSize: 1
+	});
+
+	world.palette = [
+		'68, 36, 52, 1',
+		'255, 255, 255, 1'
+	];
+
+	world.registerCellType('living', {
+		getBlock: function () {
+			return this.alive ? "w" : " ";
+		},
+		process: function (neighbors) {
+			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
+			this.alive = surrounding === 3 || surrounding === 2 && this.alive;
+		},
+		reset: function () {
+			this.wasAlive = this.alive;
+		}
+	}, function () {
+		//init
+		this.alive = Math.random() > 0.8;
+	});
+
+	world.initialize([
+		{ name: 'living', distribution: 100 }
+	]);
+	
+	//update world
+	for (var i = 0; i < 10; i++) {
+		world.step();
+	}
+	//convert world to tile array
+	for (var y=0; y<world.height; y++) {
+		for (var x=0; x<world.width; x++) {
+			var cell = world.grid[x][y];
+			arr[x][y] = cell.getBlock()
+		}
+	}
+	//place polyps
+	arr = _placePolyps(game, arr);
+	return arr;
+}
+
 
 function makeLayer(game, arr, key) {
 	var data = "";
@@ -100,7 +161,8 @@ function makeLayer(game, arr, key) {
 }
 	
 function makeTiles(game, key) {
-	var design = designStage(game);
+	// var design = designStage(game);
+	var design = designStageCA(game);
 	var layer = makeLayer(game, design, key);
 	return layer;
 }

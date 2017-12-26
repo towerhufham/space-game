@@ -3,6 +3,7 @@ Stuff to do soon:
 * make proper ui
 * make the levels generate better
 * create exit to new levels
+* destroy blocks with lasers?
 
 
 Current known issues:
