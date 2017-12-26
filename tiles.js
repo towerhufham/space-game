@@ -13,26 +13,6 @@ function _makeLevelArray(width=3840, height=3840, tileSize=64) {
 	return arr;
 }
 
-function designStage(game) {
-	var arr = _makeLevelArray();
-	var size = 60; // #hardcoding ;lool
-	// " " is empty space (default)
-	// "w" is a wall
-	// "P" is polyp
-	for (var y = 0; y < size; y++) {
-		for (var x = 0; x < size; x++) {
-			//per-tile logic
-			if (game.rnd.between(0, 10) === 0) {
-				arr[x][y] = "w";
-			}
-		}
-	}
-	//spawn polyps
-	arr = _placePolyps(game, arr);
-	
-	return arr;
-}
-
 function _placePolyps(game, arr, size=60) {
 	//spawn polyps
 	//top-left
@@ -55,6 +35,26 @@ function _placePolyps(game, arr, size=60) {
 	return arr;
 }
 
+function designStage(game) {
+	var arr = _makeLevelArray();
+	var size = 60; // #hardcoding ;lool
+	// " " is empty space (default)
+	// "w" is a wall
+	// "P" is polyp
+	for (var y = 0; y < size; y++) {
+		for (var x = 0; x < size; x++) {
+			//per-tile logic
+			if (game.rnd.between(0, 10) === 0) {
+				arr[x][y] = "w";
+			}
+		}
+	}
+	//spawn polyps
+	arr = _placePolyps(game, arr);
+	
+	return arr;
+}
+
 function designStageCA(game) {
 
 	//init
@@ -64,13 +64,7 @@ function designStageCA(game) {
 	var world = new CAWorld({
 		width: 60,
 		height: 60,
-		cellSize: 1
 	});
-
-	world.palette = [
-		'68, 36, 52, 1',
-		'255, 255, 255, 1'
-	];
 
 	world.registerCellType('living', {
 		getBlock: function () {
