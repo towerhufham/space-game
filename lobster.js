@@ -83,6 +83,11 @@ function spawnLobsters(game, player) {
 		en.reset(x, y);
 		en.rotation = game.physics.arcade.angleToXY(en, player.x, player.y);
 		game.physics.arcade.moveToXY(en, player.x, player.y, lobstersSpeed);
+		//kill enemy when it is out of bounds after 2 seconds
+		game.time.events.add(2000, function(){
+			en.checkWorldBounds = true;
+			en.outOfBoundsKill = true;
+		}, this);
 	}
 }
 

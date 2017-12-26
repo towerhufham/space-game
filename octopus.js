@@ -69,6 +69,11 @@ function spawnOctopus(game, player) {
 		octo.rotation = game.physics.arcade.angleToXY(octo, player.x, player.y);
 		game.physics.arcade.moveToXY(octo, player.x, player.y, octopusSpeed);
 		octopusFire(octo, game, player);
+		//kill enemy when it is out of bounds after 2 seconds
+		game.time.events.add(2000, function(){
+			octo.checkWorldBounds = true;
+			octo.outOfBoundsKill = true;
+		}, this);
 	}
 }
 

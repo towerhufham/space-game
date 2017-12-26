@@ -60,6 +60,11 @@ function spawnTurret(game, player) {
 		turret.rotation = game.physics.arcade.angleToXY(turret, player.x, player.y);
 		game.physics.arcade.moveToXY(turret, player.x, player.y, turretSpeed);
 		turretFire(turret, game, player);
+		//kill enemy when it is out of bounds after 2 seconds
+		game.time.events.add(2000, function(){
+			turret.checkWorldBounds = true;
+			turret.outOfBoundsKill = true;
+		}, this);
 	}
 }
 

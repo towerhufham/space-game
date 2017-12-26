@@ -61,6 +61,11 @@ function spawnNewEnemies(game, player) {
 		en.rotation = game.physics.arcade.angleToXY(en, player.x, player.y);
 		game.physics.arcade.moveToXY(en, player.x, player.y, newEnemiesSpeed);
 		newEnemiesFire(en, game, player);
+		//kill enemy when it is out of bounds after 2 seconds
+		game.time.events.add(2000, function(){
+			en.checkWorldBounds = true;
+			en.outOfBoundsKill = true;
+		}, this);
 	}
 }
 
