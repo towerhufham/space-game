@@ -35,6 +35,17 @@ function _placePolyps(game, arr, size=60) {
 	return arr;
 }
 
+function _placeGate(game, arr) {
+	var x = game.rnd.between(0, 60-1);
+	var y = game.rnd.between(0, 60-1);
+	while (arr[x][y] != " ") {
+		var x = game.rnd.between(0, 60-1);
+		var y = game.rnd.between(0, 60-1);
+	}
+	arr[x][y] = "G";
+	return arr;
+}
+
 function _tileArrayQualityInsurance(arr) {
 	//ensure the spawn area is empty
 	arr[29][29] = " ";
@@ -108,6 +119,7 @@ function designStageCA(game) {
 	}
 	//place polyps
 	arr = _placePolyps(game, arr);
+	arr = _placeGate(game, arr);
 	return arr;
 }
 
@@ -133,6 +145,11 @@ function makeLayer(game, arr, key) {
 			else if (arr[x][y] === "P") {
 				data += "12";
 				polypMap.push({x:(x * 64 + 32), y:(y * 64 + 32)}); //moar h4x
+			}
+			
+			// "G" is the gate
+			else if (arr[x][y] === "G") {
+				data += "13";
 			}
 			
 			//end of line
