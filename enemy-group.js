@@ -1,20 +1,12 @@
-var newEnemies;
-var newEnemiesSpeed = 200;
-
 //we take in a player as an argument because some functions use the player's pos
-function loadnewEnemies(game, player, enemyGroups) {
+function makeEnemyGroup(game, player, key, speed, fireFunction) {
 	//create enemy group
-	newEnemies = game.add.group();
+	var newEnemies = game.add.group();
 	newEnemies.enableBody = true;
 	newEnemies.physicsBodyType = Phaser.Physics.ARCADE;
-	newEnemies.createMultiple(50, "PLACEHOLDER");
+	newEnemies.createMultiple(50, key);
 	newEnemies.callAll("anchor.setTo", "anchor", 0.5, 0.5);
-	
-	//timer
-	var timer = game.time.create(false);
-	timer.loop(1000, function(){spawnNewEnemies(game, player);}, this);
-	timer.loop(1000, function(){newEnemies.forEachAlive(newEnemiesFire, this, game, player);});
-	timer.start();
+	newEnemies.fire = fireFunction;
 	
 	//give update for each enemy
 	newEnemies.extraUpdate = function(){newEnemies.forEachAlive(newEnemyUpdate, this, game, player);};
@@ -25,17 +17,18 @@ function loadnewEnemies(game, player, enemyGroups) {
 		timer.destroy();
 	}
 	
+	//timer
+	var timer = game.time.create(false);
+	timer.loop(1000, function(){basicSpawn(newEnemies, speed, game, player);}, this);
+	timer.loop(1000, function(){newEnemies.forEachAlive(newEnemies.fire, this, game, player);});
+	timer.start();
+	
 	return newEnemies;
 }
 
-function newEnemiesFire(enemy, game, player) {
-	//checking to make sure the enemy & laser exists prevents a strange bug
-	// STUFF
-}
-
-function spawnNewEnemies(game, player) {
+function basicSpawn(enemyGroup, speed, game, player) {
 	//this is the basic spawn code
-	if (newEnemies.countDead() > 0) {
+	if (enemyGroup.countDead() > 0) {
 		var side = game.rnd.between(0,3);
 		var x;
 		var y;
@@ -56,11 +49,12 @@ function spawnNewEnemies(game, player) {
 			x = game.rnd.between(0, game.world.width);
 			y = game.world.height + 50;
 		}
-		var en = newEnemies.getFirstDead();
+		var en = enemyGroup.getFirstDead();
 		en.reset(x, y);
 		en.rotation = game.physics.arcade.angleToXY(en, player.x, player.y);
-		game.physics.arcade.moveToXY(en, player.x, player.y, newEnemiesSpeed);
-		newEnemiesFire(en, game, player);
+		game.physics.arcade.moveToXY(en, player.x, player.y, speed);
+		console.log(enemyGroup);
+		enemyGroup.fire(en, game, player);
 		//kill enemy when it is out of bounds after 2 seconds
 		game.time.events.add(2000, function(){
 			en.checkWorldBounds = true;
