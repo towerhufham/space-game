@@ -3,7 +3,7 @@ var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "phaser-example", { preload
 var gate;
 var player;
 var godmode = false;
-var health = 3;
+var health = 4;
 var killcount = 0;
 var currentEnergy = 0;
 var graphics;
@@ -19,13 +19,14 @@ var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
 var tileLayer;
+var hpBar;
 
 var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
 
-var TESTLEVEL = ["turrets", "octopuses", "lobsters"];
-// var TESTLEVEL = ["turrets", "octopuses"];
+// var TESTLEVEL = ["turrets", "octopuses", "lobsters"];
+var TESTLEVEL = ["turrets", "octopuses"];
 
 function preload() {
 	//images
@@ -43,6 +44,13 @@ function preload() {
 	game.load.image("OCTO-OPEN", "img/octo_open.png");
 	game.load.image("GATE-CLOSED", "img/gate_closed.png");
 	game.load.image("GATE-OPEN", "img/gate_open.png");
+	
+	//ui
+	game.load.image("HP-4", "img/ui/hp_full.png");
+	game.load.image("HP-3", "img/ui/hp_3.png");
+	game.load.image("HP-2", "img/ui/hp_2.png");
+	game.load.image("HP-1", "img/ui/hp_1.png");
+	game.load.image("HP-0", "img/ui/hp_empty.png");
 	
 	//tilesets
 	// game.load.image("TILES", "img/tiles/tiles_debug.png");
@@ -112,9 +120,13 @@ function create() {
 	//init audio
 	loadAudio(game);
 	
+	//ui
+	hpBar = game.add.sprite(0, 0, "HP-4");
+	hpBar.fixedToCamera = true;
+	
 	//add debug text
 	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
-	debugText = game.add.text(0, 0, "( - )", style);
+	debugText = game.add.text(0, 130, "( - )", style);
 	debugText.fixedToCamera = true;
 	
 	//fullscreen stuff
@@ -135,6 +147,10 @@ function create() {
 }
 
 function update() {
+	// gate collision
+	if (checkOverlap(player, gate)) {
+		resetGame();
+	}
 	// tile collisions
 	game.physics.arcade.collide(player, tileLayer);
 	game.physics.arcade.collide(energies, tileLayer);
@@ -299,6 +315,20 @@ function drawMap() {
 	}
 }
 
+function damagePlayer() {
+	health--;
+	hpBar.loadTexture("HP-" + health);
+	if (health === 0) {
+		//change this to playerParticles when the player sprite is changed
+		enemyParticles.x = player.x;
+		enemyParticles.y = player.y;
+		enemyParticles.start(true, 1000, null, 25);
+		player.kill();
+		gameoversfx.play();
+		game.time.events.add(1500, resetGame, this);
+	}
+}
+
 function playerFire() {
 	if (game.time.now > nextFire && playerLasers.countDead() > 0 && player.alive === true) {
 		nextFire = game.time.now + fireRate;
@@ -332,21 +362,18 @@ function closeGate() {
 	gate.loadTexture("GATE-CLOSED");
 }
 
+function playerVSgate() {
+	if (gate.open) {
+		loadLevel(TESTLEVEL);
+	}
+}
+
 function playerVSbadlaser(player, laser) {
 	if (!godmode) {
 		laser.kill();
 		screenShake();
 		damagesfx.play();
-		health--;
-		if (health === 0) {
-			//change this to playerParticles when the player sprite is changed
-			enemyParticles.x = player.x;
-			enemyParticles.y = player.y;
-			enemyParticles.start(true, 1000, null, 25);
-			player.kill();
-			gameoversfx.play();
-			game.time.events.add(1500, resetGame, this);
-		}
+		damagePlayer();
 	}
 }
 
@@ -383,7 +410,8 @@ function playerVSenergy(player, energy) {
 
 function resetGame() {
 	//reset global vars
-	health = 3;
+	health = 4;
+	hpBar.loadTexture("HP-4");
 	killcount = 0;
 	currentEnergy = 0;
 	//kill all lasers
@@ -413,6 +441,14 @@ function toggleFullscreen() {
 	} else {
 		game.scale.startFullScreen(false);
 	}
+}
+
+//a utility function to check if two non-physics enabled sprites are overlapping
+function checkOverlap(spriteA, spriteB) {
+    var boundsA = spriteA.getBounds();
+    var boundsB = spriteB.getBounds();
+    return Phaser.Rectangle.intersects(boundsA, boundsB);
+
 }
 
 function debugFunc() {

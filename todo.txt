@@ -1,12 +1,14 @@
 Stuff to do soon:
 
 * make proper ui
+* finish lobster enemies
 * make the levels generate better
-* create exit to new levels
 * destroy blocks with lasers?
+* figure out the final(?) name (___ superheavy industries)
 
 
 Current known issues:
 
 * polyps spawn incorrectly after dying
 * enemies stop spawning :/
+* weird stuff after going through a couple gates
