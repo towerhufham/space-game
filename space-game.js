@@ -24,8 +24,8 @@ var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
 
-// var TESTLEVEL = ["turrets", "octopuses", "lobsters"];
-var TESTLEVEL = ["turrets", "octopuses"];
+var TESTLEVEL = ["turrets", "octopuses", "lobsters"];
+// var TESTLEVEL = ["turrets", "octopuses"];
 
 function preload() {
 	//images

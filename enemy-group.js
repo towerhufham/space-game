@@ -1,5 +1,5 @@
 //we take in a player as an argument because some functions use the player's pos
-function makeEnemyGroup(game, player, key, speed, fireFunction) {
+function makeEnemyGroup(game, player, key, speed, fireFunction, newUpdate = "default") {
 	//create enemy group
 	var newEnemies = game.add.group();
 	newEnemies.enableBody = true;
@@ -9,7 +9,11 @@ function makeEnemyGroup(game, player, key, speed, fireFunction) {
 	newEnemies.fire = fireFunction;
 	
 	//give update for each enemy
-	newEnemies.extraUpdate = function(){newEnemies.forEachAlive(newEnemyUpdate, this, game, player);};
+	if (newUpdate === "default") {
+		newEnemies.extraUpdate = function(){newEnemies.forEachAlive(defaultUpdate, this, game, player);};
+	} else {
+		newEnemies.extraUpdate = function(){newEnemies.forEachAlive(newUpdate, this, game, player);};
+	}
 	
 	//provide a way to clear out this group when the game resets
 	newEnemies.clearFunc = function() {
@@ -63,7 +67,7 @@ function basicSpawn(enemyGroup, speed, game, player) {
 	}
 }
 
-function newEnemyUpdate(en, game, player) {
+function defaultUpdate(en, game, player) {
 	//default aim-at-player behavior
 	en.rotation = game.physics.arcade.angleToXY(en, player.x, player.y);
 }
