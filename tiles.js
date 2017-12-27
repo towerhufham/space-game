@@ -127,6 +127,7 @@ function designStageCA(game) {
 function makeLayer(game, arr, key) {
 	var data = "";
 	var polypMap = [];
+	var gatePosition = null;
 	var size = 60; // yaaay hardcoding
 	for (var y = 0; y < size; y++) {
 		for (var x = 0; x < size; x++) {
@@ -150,6 +151,7 @@ function makeLayer(game, arr, key) {
 			// "G" is the gate
 			else if (arr[x][y] === "G") {
 				data += "13";
+				gatePosition = {x:(x * 64 + 32), y:(y * 64 + 32)};
 			}
 			
 			//end of line
@@ -174,8 +176,9 @@ function makeLayer(game, arr, key) {
 	//this makes the layer render on every portion of the window (needed because the game.width/height is different depending on fullscreen)
 	//i doubt this is how this method is suppose to be used, but it works so
 	layer.resize(3840, 3840);
-	//give the layer a map of the polyps
+	//give the layer a map of the polyps and position of gate
 	layer.polypMap = polypMap;
+	layer.gatePosition = gatePosition;
 	//return the layer for collision
 	return layer
 }

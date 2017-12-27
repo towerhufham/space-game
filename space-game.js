@@ -1,5 +1,6 @@
 var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "phaser-example", { preload: preload, create: create, update: update });
 
+var gate;
 var player;
 var godmode = false;
 var health = 3;
@@ -40,10 +41,12 @@ function preload() {
 	game.load.image("PLACEHOLDER", "img/placeholder.png");
 	game.load.image("OCTO-CLOSED", "img/octo_closed.png");
 	game.load.image("OCTO-OPEN", "img/octo_open.png");
+	game.load.image("GATE-CLOSED", "img/gate_closed.png");
+	game.load.image("GATE-OPEN", "img/gate_open.png");
 	
 	//tilesets
-	game.load.image("TILES", "img/tiles/tiles_debug.png");
-	// game.load.image("TILES", "img/tiles/tiles.png");
+	// game.load.image("TILES", "img/tiles/tiles_debug.png");
+	game.load.image("TILES", "img/tiles/tiles.png");
 	
 	//audio
 	preloadAudio(game);
@@ -61,6 +64,11 @@ function create() {
 	
 	//add background
 	// game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
+	
+	//add gate
+	gate = game.add.sprite(0, 0, "GATE-CLOSED");
+	gate.anchor.setTo(0.5, 0.5);
+	gate.open = false;
 	
 	//init graphics objects
 	aim = game.add.graphics();
@@ -221,10 +229,14 @@ function loadLevel(levelAttributes) {
 	if (tileLayer != null) {
 		tileLayer.destroy();
 	}
+	//close gate
+	closeGate();
 	//add tiles
 	tileLayer = makeTiles(game, "TILES");
 	console.log(tileLayer.polypMap);
 	spawnPolyps(tileLayer.polypMap);
+	gate.x = tileLayer.gatePosition.x;
+	gate.y = tileLayer.gatePosition.y;
 }
 
 function setMapPosition() {
@@ -310,6 +322,16 @@ function screenShake() {
 	}
 }
 
+function openGate() {
+	gate.open = true;
+	gate.loadTexture("GATE-OPEN");
+}
+
+function closeGate() {
+	gate.open = false;
+	gate.loadTexture("GATE-CLOSED");
+}
+
 function playerVSbadlaser(player, laser) {
 	if (!godmode) {
 		laser.kill();
@@ -354,6 +376,9 @@ function playerVSenergy(player, energy) {
 	energy.kill();
 	currentEnergy++;
 	energysfx.play();
+	if (currentEnergy >= 20) {
+		openGate();
+	}
 }
 
 function resetGame() {
