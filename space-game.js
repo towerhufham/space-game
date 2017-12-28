@@ -40,15 +40,16 @@ function preload() {
 	game.load.image("ENERGY", "img/energy.png");
 	game.load.image("ENERGY PARTICLE", "img/energy_ring.png");
 	game.load.image("PLACEHOLDER", "img/placeholder.png");
-	game.load.image("OCTO-CLOSED", "img/octo_closed.png");
-	game.load.image("OCTO-OPEN", "img/octo_open.png");
+	// game.load.image("OCTO-CLOSED", "img/octo_closed.png");
+	// game.load.image("OCTO-OPEN", "img/octo_open.png");
+	game.load.spritesheet("OCTO", "img/octo.png", 60, 64);
 	game.load.image("GATE-CLOSED", "img/gate_closed.png");
 	game.load.image("GATE-OPEN", "img/gate_open.png");
 	
 	//ui
 	// game.load.image("HEART", "img/ui/heart.png");
 	// game.load.image("HEART-EMPTY", "img/ui/heart_empty.png");
-	game.load.spritesheet("HEARTS", "img/ui/hearts.png", 120, 110);
+	game.load.spritesheet("HEARTS", "img/ui/hearts.png", 80, 74);
 	
 	//tilesets
 	// game.load.image("TILES", "img/tiles/tiles_debug.png");
@@ -121,11 +122,11 @@ function create() {
 	//ui
 	hpBar[1] = game.add.sprite(0, 0, "HEARTS", 0);
 	hpBar[1].fixedToCamera = true;
-	hpBar[2] = game.add.sprite(130, 0, "HEARTS", 0);
+	hpBar[2] = game.add.sprite(90, 0, "HEARTS", 0);
 	hpBar[2].fixedToCamera = true;
-	hpBar[3] = game.add.sprite(260, 0, "HEARTS", 0);
+	hpBar[3] = game.add.sprite(90*2, 0, "HEARTS", 0);
 	hpBar[3].fixedToCamera = true;
-	hpBar[4] = game.add.sprite(390, 0, "HEARTS", 0);
+	hpBar[4] = game.add.sprite(90*3, 0, "HEARTS", 0);
 	hpBar[4].fixedToCamera = true;
 	
 	//add debug text

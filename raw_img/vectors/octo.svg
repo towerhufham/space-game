@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="576.93686"
-     inkscape:cy="501.29416"
+     inkscape:zoom="0.175"
+     inkscape:cx="-117.94055"
+     inkscape:cy="965.76746"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -67,88 +67,96 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-28.362161)">
-    <path
-       inkscape:connector-curvature="0"
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#cc0000;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       d="m -1504,188.36216 a 288,288 0 0 0 288,288 288,288 0 0 0 214.6328,-96.4082 248.29826,192 0 0 0 142.07423,-43.14258 A 320,320 0 0 0 -576,508.36216 a 320,320 0 0 0 320,-320 320,320 0 0 0 -320,-320 A 320,320 0 0 0 -859.27734,40.02036 248.29826,192 0 0 0 -1001.2891,-3.05776 288,288 0 0 0 -1216,-99.63784 a 288,288 0 0 0 -288,288 z"
-       id="path4152"
-       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
-       inkscape:export-xdpi="4.1602464"
-       inkscape:export-ydpi="4.1602464" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#cc0000;stroke-width:54.77225494;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -320.00004,-3.63784 -384,0"
-       id="path4173"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
-       inkscape:export-xdpi="4.1602464"
-       inkscape:export-ydpi="4.1602464" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#cc0000;stroke-width:54.77225494;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -256,124.36216 -384.00004,0"
-       id="path4173-4"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
-       inkscape:export-xdpi="4.1602464"
-       inkscape:export-ydpi="4.1602464" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#cc0000;stroke-width:54.77225494;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -256,252.36216 -384.00004,0"
-       id="path4173-6"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
-       inkscape:export-xdpi="4.1602464"
-       inkscape:export-ydpi="4.1602464" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#cc0000;stroke-width:54.77225494;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -320.00004,380.36216 -384,0"
-       id="path4173-64"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
-       inkscape:export-xdpi="4.1602464"
-       inkscape:export-ydpi="4.1602464" />
-    <circle
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#cc0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:50;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="path4202"
-       cx="-284.36215"
-       cy="-1024"
-       r="32"
-       transform="matrix(0,-1,1,0,0,0)"
-       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
-       inkscape:export-xdpi="4.1602464"
-       inkscape:export-ydpi="4.1602464" />
-    <circle
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#cc0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:50;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="path4202-7"
-       cx="-92.36216"
-       cy="-1024"
-       r="32"
-       transform="matrix(0,-1,1,0,0,0)"
-       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
-       inkscape:export-xdpi="4.1602464"
-       inkscape:export-ydpi="4.1602464" />
-    <path
-       inkscape:connector-curvature="0"
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#cc0000;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       d="m 1051.2823,381.03083 c 0,159.05801 128.942,288 288,288 82.0072,-0.11229 160.0775,-35.1797 214.6328,-96.4082 52.0414,-2.48915 101.7489,-17.58343 142.0742,-43.14258 72.1008,125.25912 59.293,619.55075 123.293,491.55075 64,-127.99997 5.9729,-254.5204 91.6582,-340.72261 33.3897,-33.59117 420.3418,20.72264 484.3418,84.72264 37.2337,37.23366 -456.0527,-316.70951 -448,-384 13.0201,-108.79979 384,-320 448,-320 64,0 -462.4722,49.5278 -512,0 -64,-64 0,-192 -64,-320 -57.2434,-114.4867 -64.6543,385.10645 -123.2774,491.6582 -40.3187,-25.52652 -90.0015,-40.59738 -142.0117,-43.07812 -54.5422,-61.31254 -132.6496,-96.44634 -214.7109,-96.58008 -159.058,0 -288,128.94199 -288,288 z"
-       id="path4152-0"
-       sodipodi:nodetypes="scccsssscsscccs"
-       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_open.png"
-       inkscape:export-xdpi="4.1602464"
-       inkscape:export-ydpi="4.1602464" />
-    <circle
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#cc0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:50;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="path4202-0"
-       cx="-477.03085"
-       cy="1531.2822"
-       r="32"
-       transform="matrix(0,-1,1,0,0,0)" />
-    <circle
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#cc0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:50;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="path4202-7-6"
-       cx="-285.03082"
-       cy="1531.2822"
-       r="32"
-       transform="matrix(0,-1,1,0,0,0)" />
+    <g
+       id="g4149"
+       transform="translate(-120.99995,-93.665849)">
+      <path
+         inkscape:export-ydpi="4.1602464"
+         inkscape:export-xdpi="4.1602464"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
+         id="path4152"
+         d="m -1504,188.36216 a 288,288 0 0 0 288,288 288,288 0 0 0 214.6328,-96.4082 248.29826,192 0 0 0 142.07423,-43.14258 A 320,320 0 0 0 -576,508.36216 a 320,320 0 0 0 320,-320 320,320 0 0 0 -320,-320 A 320,320 0 0 0 -859.27734,40.02036 248.29826,192 0 0 0 -1001.2891,-3.05776 288,288 0 0 0 -1216,-99.63784 a 288,288 0 0 0 -288,288 z"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#cc0000;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="4.1602464"
+         inkscape:export-xdpi="4.1602464"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
+         inkscape:connector-curvature="0"
+         id="path4173"
+         d="m -320.00004,-3.63784 -384,0"
+         style="fill:none;fill-rule:evenodd;stroke:#cc0000;stroke-width:54.77225494;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="4.1602464"
+         inkscape:export-xdpi="4.1602464"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
+         inkscape:connector-curvature="0"
+         id="path4173-4"
+         d="m -256,124.36216 -384.00004,0"
+         style="fill:none;fill-rule:evenodd;stroke:#cc0000;stroke-width:54.77225494;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="4.1602464"
+         inkscape:export-xdpi="4.1602464"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
+         inkscape:connector-curvature="0"
+         id="path4173-6"
+         d="m -256,252.36216 -384.00004,0"
+         style="fill:none;fill-rule:evenodd;stroke:#cc0000;stroke-width:54.77225494;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="4.1602464"
+         inkscape:export-xdpi="4.1602464"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
+         inkscape:connector-curvature="0"
+         id="path4173-64"
+         d="m -320.00004,380.36216 -384,0"
+         style="fill:none;fill-rule:evenodd;stroke:#cc0000;stroke-width:54.77225494;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         inkscape:export-ydpi="4.1602464"
+         inkscape:export-xdpi="4.1602464"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
+         transform="matrix(0,-1,1,0,0,0)"
+         r="32"
+         cy="-1024"
+         cx="-284.36215"
+         id="path4202"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#cc0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:50;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="4.1602464"
+         inkscape:export-xdpi="4.1602464"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_closed.png"
+         transform="matrix(0,-1,1,0,0,0)"
+         r="32"
+         cy="-1024"
+         cx="-92.36216"
+         id="path4202-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#cc0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:50;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    </g>
+    <g
+       id="g4144"
+       transform="translate(-1378.2823,-288.66867)">
+      <path
+         inkscape:export-ydpi="4.1602464"
+         inkscape:export-xdpi="4.1602464"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo_open.png"
+         sodipodi:nodetypes="scccsssscsscccs"
+         id="path4152-0"
+         d="m 1051.2823,381.03083 c 0,159.05801 128.942,288 288,288 82.0072,-0.11229 160.0775,-35.1797 214.6328,-96.4082 52.0414,-2.48915 101.7489,-17.58343 142.0742,-43.14258 72.1008,125.25912 59.293,619.55075 123.293,491.55075 64,-127.99997 5.9729,-254.5204 91.6582,-340.72261 33.3897,-33.59117 420.3418,20.72264 484.3418,84.72264 37.2337,37.23366 -456.0527,-316.70951 -448,-384 13.0201,-108.79979 384,-320 448,-320 64,0 -462.4722,49.5278 -512,0 -64,-64 0,-192 -64,-320 -57.2434,-114.4867 -64.6543,385.10645 -123.2774,491.6582 -40.3187,-25.52652 -90.0015,-40.59738 -142.0117,-43.07812 -54.5422,-61.31254 -132.6496,-96.44634 -214.7109,-96.58008 -159.058,0 -288,128.94199 -288,288 z"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#cc0000;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         inkscape:connector-curvature="0" />
+      <circle
+         transform="matrix(0,-1,1,0,0,0)"
+         r="32"
+         cy="1531.2822"
+         cx="-477.03085"
+         id="path4202-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#cc0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:50;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         transform="matrix(0,-1,1,0,0,0)"
+         r="32"
+         cy="1531.2822"
+         cx="-285.03082"
+         id="path4202-7-6"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#cc0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:50;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    </g>
   </g>
 </svg>
