@@ -227,7 +227,7 @@ function update() {
 	}
 	
 	//debug text
-	debugText.text = "Kills: " + killcount + "\nEnergy: " + currentEnergy + "\nFPS: " + game.time.fps;
+	debugText.text = "Energy: " + currentEnergy + "\nFPS: " + game.time.fps;
 }
 
 function loadLevel(levelAttributes) {
