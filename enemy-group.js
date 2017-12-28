@@ -4,7 +4,7 @@ function makeEnemyGroup(game, player, key, speed, fireFunction, newUpdate = "def
 	var newEnemies = game.add.group();
 	newEnemies.enableBody = true;
 	newEnemies.physicsBodyType = Phaser.Physics.ARCADE;
-	newEnemies.createMultiple(50, key);
+	newEnemies.createMultiple(15, key);
 	newEnemies.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	newEnemies.fire = fireFunction;
 	
@@ -32,7 +32,8 @@ function makeEnemyGroup(game, player, key, speed, fireFunction, newUpdate = "def
 
 function basicSpawn(enemyGroup, speed, game, player) {
 	//this is the basic spawn code
-	if (enemyGroup.countDead() > 0) {
+	var en = enemyGroup.getFirstDead();
+	if (en) {
 		var side = game.rnd.between(0,3);
 		var x;
 		var y;
@@ -53,20 +54,22 @@ function basicSpawn(enemyGroup, speed, game, player) {
 			x = game.rnd.between(0, game.world.width);
 			y = game.world.height + 50;
 		}
-		var en = enemyGroup.getFirstDead();
 		en.reset(x, y);
 		en.rotation = game.physics.arcade.angleToXY(en, player.x, player.y);
 		game.physics.arcade.moveToXY(en, player.x, player.y, speed);
 		enemyGroup.fire(en, game, player);
-		//kill enemy when it is out of bounds after 2 seconds
-		game.time.events.add(2000, function(){
-			en.checkWorldBounds = true;
-			en.outOfBoundsKill = true;
-		}, this);
+		//used by the map
+		en.outOfBounds = true;
+		//kill enemy after an amount of time (this might (should probably) change)
+		en.lifespan = 25000;
 	}
 }
 
 function defaultUpdate(en, game, player) {
 	//default aim-at-player behavior
+	en.outOfBounds = false;
+	if (en.x < 0 || en.y < 0 || en.x > 3840 || en.y > 3840) {
+		en.outOfBounds = true;
+	}
 	en.rotation = game.physics.arcade.angleToXY(en, player.x, player.y);
 }

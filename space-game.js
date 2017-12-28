@@ -306,11 +306,13 @@ function drawMap() {
 	map.lineStyle(1, 0xFF0000, 1);
 	for (var i = 0; i < enemyGroups.length; i++) {
 		enemyGroups[i].forEachAlive(function(e){
-			rx = e.x / game.world.width;
-			ry = e.y / game.world.height;
-			drawx = Math.round(rx * MAPSIZE) + MAPX;
-			drawy = Math.round(ry * MAPSIZE) + MAPY;
-			map.drawRect(drawx, drawy, 1, 1);
+			if (!e.outOfBounds) {
+				rx = e.x / game.world.width;
+				ry = e.y / game.world.height;
+				drawx = Math.round(rx * MAPSIZE) + MAPX;
+				drawy = Math.round(ry * MAPSIZE) + MAPY;
+				map.drawRect(drawx, drawy, 1, 1);
+			}
 		}, this);
 	}
 	
