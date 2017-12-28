@@ -40,15 +40,12 @@ function preload() {
 	game.load.image("ENERGY", "img/energy.png");
 	game.load.image("ENERGY PARTICLE", "img/energy_ring.png");
 	game.load.image("PLACEHOLDER", "img/placeholder.png");
-	// game.load.image("OCTO-CLOSED", "img/octo_closed.png");
-	// game.load.image("OCTO-OPEN", "img/octo_open.png");
 	game.load.spritesheet("OCTO", "img/octo.png", 60, 64);
-	game.load.image("GATE-CLOSED", "img/gate_closed.png");
-	game.load.image("GATE-OPEN", "img/gate_open.png");
+	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
+	// game.load.image("GATE-CLOSED", "img/gate_closed.png");
+	// game.load.image("GATE-OPEN", "img/gate_open.png");
 	
 	//ui
-	// game.load.image("HEART", "img/ui/heart.png");
-	// game.load.image("HEART-EMPTY", "img/ui/heart_empty.png");
 	game.load.spritesheet("HEARTS", "img/ui/hearts.png", 80, 74);
 	
 	//tilesets
@@ -73,7 +70,7 @@ function create() {
 	// game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
 	
 	//add gate
-	gate = game.add.sprite(0, 0, "GATE-CLOSED");
+	gate = game.add.sprite(0, 0, "GATE", 0);
 	gate.anchor.setTo(0.5, 0.5);
 	gate.open = false;
 	
@@ -371,12 +368,12 @@ function screenShake() {
 
 function openGate() {
 	gate.open = true;
-	gate.loadTexture("GATE-OPEN");
+	gate.animations.frame = 1;
 }
 
 function closeGate() {
 	gate.open = false;
-	gate.loadTexture("GATE-CLOSED");
+	gate.animations.frame = 0;
 }
 
 function playerVSgate() {
