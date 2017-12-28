@@ -383,7 +383,7 @@ function closeGate() {
 
 function playerVSgate() {
 	if (gate.open) {
-		loadLevel(TESTLEVEL);
+		resetGame();
 	}
 }
 
