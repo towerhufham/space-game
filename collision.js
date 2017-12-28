@@ -81,7 +81,9 @@ function enemylaserVSreflector(laser, reflector) {
 		fireAtAngle(game, reflector, angle);
 		laser.beenReflected = true;
 		game.time.events.add(1500, function(){laser.beenReflected = false;}, this);
-		reflectorsfx.play();
+		if (reflector.inCamera) {
+			reflectorsfx.play();
+		}
 	}
 }
 
@@ -93,6 +95,8 @@ function playerlaserVSreflector(laser, reflector) {
 		playerFireAtAngle(game, reflector, angle);
 		laser.beenReflected = true;
 		game.time.events.add(1500, function(){laser.beenReflected = false;}, this);
-		reflectorsfx.play();
+		if (reflector.inCamera) {
+			reflectorsfx.play();
+		}
 	}
 }
