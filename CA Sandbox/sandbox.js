@@ -69,20 +69,33 @@ function dirtyCaves(steps) {
 	return world;
 }
 
-function junkyard(steps) {
+function scrapyard(steps) {
 	var world = new CAWorld({
 		width: 60,
 		height: 60,
 	});
 
-	world.registerCellType('living', {
+	world.registerCellType("tile", {
 		getBlock: function () {
-			//wall is black, open is white
-			return this.alive ? "#000000" : "#FFFFFF";
+			if (!this.alive) {
+				return "#FFFFFF";
+			} else if (this.isBlades) {
+				return "#0000FF";
+			} else if (this.isExploder) {
+				return "#FF9900";
+			} else if (this.isReflector) {
+				return "#42F4E2";
+			} else {
+				return "#000000";
+			}
 		},
 		process: function (neighbors) {
-			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
-			this.alive = surrounding === 3 || surrounding < 5 && this.alive;
+			var surrounding = this.countSurroundingCellsWithValue(neighbors, "wasAlive");
+			this.alive = (surrounding === 3 || surrounding < 2 && this.alive);
+			this.isBlades = (surrounding === 1 && this.alive && Math.random() > 0.65);
+			this.isExploder = (!this.isBlades && surrounding > 2 && Math.random() > 0.95);
+			this.isReflector = (surrounding === 1 && Math.random() > 0.99);
+			if (this.isExploder || this.isReflector) {this.alive = true;}
 		},
 		reset: function () {
 			this.wasAlive = this.alive;
@@ -91,9 +104,9 @@ function junkyard(steps) {
 		//init
 		this.alive = Math.random() > 0.8;
 	});
-
+	
 	world.initialize([
-		{ name: 'living', distribution: 100 }
+		{name: "tile", distribution: 100},
 	]);
 	
 	//update world
@@ -125,4 +138,4 @@ function render(world) {
 
 ////////////////////////////////////////
 
-render(junkyard(10));
+render(scrapyard(1));
