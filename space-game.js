@@ -19,7 +19,7 @@ var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
 var tileLayer;
-var hpBar;
+var hpBar = {};
 
 var MAPX = 1090;
 var MAPY = 10;
@@ -46,11 +46,9 @@ function preload() {
 	game.load.image("GATE-OPEN", "img/gate_open.png");
 	
 	//ui
-	game.load.image("HP-4", "img/ui/hp_full.png");
-	game.load.image("HP-3", "img/ui/hp_3.png");
-	game.load.image("HP-2", "img/ui/hp_2.png");
-	game.load.image("HP-1", "img/ui/hp_1.png");
-	game.load.image("HP-0", "img/ui/hp_empty.png");
+	// game.load.image("HEART", "img/ui/heart.png");
+	// game.load.image("HEART-EMPTY", "img/ui/heart_empty.png");
+	game.load.spritesheet("HEARTS", "img/ui/hearts.png", 120, 110);
 	
 	//tilesets
 	// game.load.image("TILES", "img/tiles/tiles_debug.png");
@@ -121,8 +119,14 @@ function create() {
 	loadAudio(game);
 	
 	//ui
-	hpBar = game.add.sprite(0, 0, "HP-4");
-	hpBar.fixedToCamera = true;
+	hpBar[1] = game.add.sprite(0, 0, "HEARTS", 0);
+	hpBar[1].fixedToCamera = true;
+	hpBar[2] = game.add.sprite(130, 0, "HEARTS", 0);
+	hpBar[2].fixedToCamera = true;
+	hpBar[3] = game.add.sprite(260, 0, "HEARTS", 0);
+	hpBar[3].fixedToCamera = true;
+	hpBar[4] = game.add.sprite(390, 0, "HEARTS", 0);
+	hpBar[4].fixedToCamera = true;
 	
 	//add debug text
 	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
@@ -315,9 +319,21 @@ function drawMap() {
 	}
 }
 
+function updateHpBar() {
+	for (var i = 1; i < 5; i++) {
+		if (i <= health) {
+			console.log("Heart #" + i + " has been turned on");
+			hpBar[i].animations.frame = 0;
+		} else {
+			console.log("Heart #" + i + " has been turned off");
+			hpBar[i].animations.frame = 1;
+		}
+	}
+}
+
 function damagePlayer() {
 	health--;
-	hpBar.loadTexture("HP-" + health);
+	updateHpBar();
 	if (health === 0) {
 		//change this to playerParticles when the player sprite is changed
 		enemyParticles.x = player.x;
@@ -411,7 +427,7 @@ function playerVSenergy(player, energy) {
 function resetGame() {
 	//reset global vars
 	health = 4;
-	hpBar.loadTexture("HP-4");
+	updateHpBar();
 	killcount = 0;
 	currentEnergy = 0;
 	//kill all lasers
