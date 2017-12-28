@@ -42,8 +42,6 @@ function preload() {
 	game.load.image("PLACEHOLDER", "img/placeholder.png");
 	game.load.spritesheet("OCTO", "img/octo.png", 60, 64);
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
-	// game.load.image("GATE-CLOSED", "img/gate_closed.png");
-	// game.load.image("GATE-OPEN", "img/gate_open.png");
 	
 	//ui
 	game.load.spritesheet("HEARTS", "img/ui/hearts.png", 80, 74);
@@ -151,7 +149,7 @@ function create() {
 function update() {
 	// gate collision
 	if (checkOverlap(player, gate)) {
-		resetGame();
+		playerVSgate();
 	}
 	// tile collisions
 	game.physics.arcade.collide(player, tileLayer);
@@ -320,10 +318,8 @@ function drawMap() {
 function updateHpBar() {
 	for (var i = 1; i < 5; i++) {
 		if (i <= health) {
-			console.log("Heart #" + i + " has been turned on");
 			hpBar[i].animations.frame = 0;
 		} else {
-			console.log("Heart #" + i + " has been turned off");
 			hpBar[i].animations.frame = 1;
 		}
 	}
