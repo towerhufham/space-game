@@ -313,6 +313,15 @@ function drawMap() {
 			map.drawRect(drawx, drawy, 1, 1);
 		}, this);
 	}
+	
+	//draw gate
+	var rx = gate.x / game.world.width;
+	var ry = gate.y / game.world.height;
+	var drawx = Math.round(rx * MAPSIZE) + MAPX - 1;
+	var drawy = Math.round(ry * MAPSIZE) + MAPY - 1;
+	map.lineStyle(1, 0x0094FF, 1);
+	map.drawRect(drawx, drawy, 3, 3);
+	
 }
 
 function updateHpBar() {
