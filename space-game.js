@@ -47,8 +47,8 @@ function preload() {
 	game.load.spritesheet("HEARTS", "img/ui/hearts.png", 80, 74);
 	
 	//tilesets
-	// game.load.image("TILES", "img/tiles/tiles_debug.png");
-	game.load.image("TILES", "img/tiles/tiles.png");
+	game.load.image("TILES", "img/tiles/tiles_debug.png");
+	// game.load.image("TILES", "img/tiles/tiles.png");
 	
 	//audio
 	preloadAudio(game);
@@ -434,7 +434,7 @@ function resetGame() {
 	health = 4;
 	updateHpBar();
 	killcount = 0;
-	currentEnergy = 0;
+	// currentEnergy = 0;
 	//kill all lasers
 	playerLasers.callAll("kill");
 	enemyLasers.callAll("kill");

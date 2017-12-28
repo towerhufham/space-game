@@ -55,7 +55,7 @@ function _tileArrayQualityInsurance(arr) {
 	return arr;
 }
 
-function designStage(game) {
+/* function designStage(game) {
 	var arr = _makeLevelArray();
 	var size = 60; // #hardcoding ;lool
 	// " " is empty space (default)
@@ -73,7 +73,7 @@ function designStage(game) {
 	arr = _placePolyps(game, arr);
 	
 	return arr;
-}
+} */
 
 function designStageCA(game) {
 
