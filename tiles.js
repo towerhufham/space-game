@@ -55,27 +55,7 @@ function _tileArrayQualityInsurance(arr) {
 	return arr;
 }
 
-/* function designStage(game) {
-	var arr = _makeLevelArray();
-	var size = 60; // #hardcoding ;lool
-	// " " is empty space (default)
-	// "w" is a wall
-	// "P" is polyp
-	for (var y = 0; y < size; y++) {
-		for (var x = 0; x < size; x++) {
-			//per-tile logic
-			if (game.rnd.between(0, 10) === 0) {
-				arr[x][y] = "w";
-			}
-		}
-	}
-	//spawn polyps
-	arr = _placePolyps(game, arr);
-	
-	return arr;
-} */
-
-function designStageCA(game) {
+/* function designStageCA(game) {
 
 	//init
 	var arr = _makeLevelArray();
@@ -121,13 +101,77 @@ function designStageCA(game) {
 	arr = _placePolyps(game, arr);
 	arr = _placeGate(game, arr);
 	return arr;
-}
+} */
 
+function designScrapyard(game) {
+
+	//init
+	var arr = _makeLevelArray();
+	
+	var world = new CAWorld({
+		width: 60,
+		height: 60,
+	});
+
+	world.registerCellType("tile", {
+		getBlock: function () {
+			if (!this.alive) {
+				return " ";
+			} else if (this.isBlades) {
+				return "b";
+			} else if (this.isExploder) {
+				return "e";
+			} else if (this.isReflector) {
+				return "r";
+			} else {
+				return "w";
+			}
+		},
+		process: function (neighbors) {
+			var surrounding = this.countSurroundingCellsWithValue(neighbors, "wasAlive");
+			this.alive = (surrounding === 3 || surrounding < 2 && this.alive);
+			this.isBlades = (surrounding === 1 && this.alive && Math.random() > 0.65);
+			this.isExploder = (!this.isBlades && surrounding > 2 && Math.random() > 0.95);
+			this.isReflector = (surrounding === 1 && Math.random() > 0.99);
+			if (this.isExploder || this.isReflector) {this.alive = true;}
+		},
+		reset: function () {
+			this.wasAlive = this.alive;
+		}
+	}, function () {
+		//init
+		this.alive = Math.random() > 0.8775;
+	});
+	
+	world.initialize([
+		{name: "tile", distribution: 100},
+	]);
+	
+	//update world
+	for (var i = 0; i < 1; i++) {
+		world.step();
+	}
+	//convert world to tile array
+	for (var y=0; y<world.height; y++) {
+		for (var x=0; x<world.width; x++) {
+			var cell = world.grid[x][y];
+			arr[x][y] = cell.getBlock()
+		}
+	}
+	//place polyps
+	arr = _placePolyps(game, arr);
+	arr = _placeGate(game, arr);
+	return arr;
+}
 
 function makeLayer(game, arr, key) {
 	var data = "";
+	//required objects
 	var polypMap = [];
 	var gatePosition = null;
+	//optional objects
+	var reflectorMap = [];
+	//go!
 	var size = 60; // yaaay hardcoding
 	for (var y = 0; y < size; y++) {
 		for (var x = 0; x < size; x++) {
@@ -152,6 +196,24 @@ function makeLayer(game, arr, key) {
 			else if (arr[x][y] === "G") {
 				data += "13";
 				gatePosition = {x:(x * 64 + 32), y:(y * 64 + 32)};
+			}
+			
+			// "b" is blade
+			else if (arr[x][y] === "b") {
+				//act as wall for now
+				data += "0";
+			}
+			
+			// "e" is exploder
+			else if (arr[x][y] === "e") {
+				//act as wall for now
+				data += "0";
+			}
+			
+			// "r" is reflector
+			else if (arr[x][y] === "r") {
+				data += "-1";
+				reflectorMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
 			}
 			
 			//end of line
@@ -179,13 +241,14 @@ function makeLayer(game, arr, key) {
 	//give the layer a map of the polyps and position of gate
 	layer.polypMap = polypMap;
 	layer.gatePosition = gatePosition;
+	layer.reflectorMap = reflectorMap;
 	//return the layer for collision
 	return layer
 }
 	
 function makeTiles(game, key) {
 	// var design = designStage(game);
-	var design = designStageCA(game);
+	var design = designScrapyard(game);
 	//quality insurance
 	design = _tileArrayQualityInsurance(design);
 	//make the layer

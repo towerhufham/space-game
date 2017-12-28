@@ -21,6 +21,9 @@ function doCollisions() {
 	game.physics.arcade.overlap(polyps, playerLasers, polypVSlaser, null, this);
 	game.physics.arcade.overlap(player, enemyLasers, playerVSbadlaser, null, this);
 	game.physics.arcade.overlap(player, energies, playerVSenergy, null, this);
+	//extra collisions
+	game.physics.arcade.overlap(enemyLasers, reflectors, enemylaserVSreflector, null, this);
+	game.physics.arcade.overlap(playerLasers, reflectors, playerlaserVSreflector, null, this);
 }
 
 function playerVSgate() {
@@ -62,5 +65,27 @@ function playerVSenergy(player, energy) {
 	energysfx.play();
 	if (currentEnergy >= 20) {
 		openGate();
+	}
+}
+
+function enemylaserVSreflector(laser, reflector) {
+	if (!laser.beenReflected) {
+		laser.kill();
+		var angle = game.rnd.angle() * (Math.PI / 180);
+		fireAtAngle(game, reflector, angle);
+		laser.beenReflected = true;
+		game.time.events.add(1500, function(){laser.beenReflected = false;}, this);
+		reflectorsfx.play();
+	}
+}
+
+function playerlaserVSreflector(laser, reflector) {
+	if (!laser.beenReflected) {
+		laser.kill();
+		var angle = game.rnd.angle() * (Math.PI / 180);
+		playerFireAtAngle(game, reflector, angle);
+		laser.beenReflected = true;
+		game.time.events.add(1500, function(){laser.beenReflected = false;}, this);
+		reflectorsfx.play();
 	}
 }

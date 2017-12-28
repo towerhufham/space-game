@@ -102,7 +102,7 @@ function scrapyard(steps) {
 		}
 	}, function () {
 		//init
-		this.alive = Math.random() > 0.8;
+		this.alive = Math.random() > 0.8775;
 	});
 	
 	world.initialize([

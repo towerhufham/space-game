@@ -4,6 +4,7 @@ var damagesfx;
 var gameoversfx;
 var polypsfx;
 var energysfx;
+var reflectorsfx;
 
 function preloadAudio(game) {
 	game.load.audio("SHOOT", "audio/shooty_low.wav");
@@ -12,6 +13,7 @@ function preloadAudio(game) {
 	game.load.audio("GAME OVER", "audio/glitchy.wav");
 	game.load.audio("POLYP", "audio/polyp.wav");
 	game.load.audio("HOLLOW", "audio/hollow.wav");
+	game.load.audio("REFLECTOR", "audio/reflector.wav");
 }
 
 function loadAudio(game) {
@@ -21,4 +23,5 @@ function loadAudio(game) {
 	gameoversfx = game.add.audio("GAME OVER", 0.25);
 	polypsfx = game.add.audio("POLYP", 0.25);
 	energysfx = game.add.audio("HOLLOW", 0.25);
+	reflectorsfx = game.add.audio("REFLECTOR", 0.25);
 }

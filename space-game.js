@@ -39,6 +39,7 @@ function preload() {
 	game.load.image("PARTICLE", "img/particle.png");
 	game.load.image("ENERGY", "img/energy.png");
 	game.load.image("ENERGY PARTICLE", "img/energy_ring.png");
+	game.load.image("REFLECTOR", "img/reflector.png");
 	game.load.image("PLACEHOLDER", "img/placeholder.png");
 	game.load.spritesheet("OCTO", "img/octo.png", 60, 64);
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
@@ -240,6 +241,11 @@ function loadLevel(levelAttributes) {
 	spawnPolyps(tileLayer.polypMap);
 	gate.x = tileLayer.gatePosition.x;
 	gate.y = tileLayer.gatePosition.y;
+	//optional features
+	if (tileLayer.reflectorMap) {
+		loadReflectors(game);
+		spawnReflectors(tileLayer.reflectorMap);
+	}
 }
 
 function setMapPosition() {
@@ -347,6 +353,17 @@ function playerFire() {
 		//too annoying
 		//shootsfx.play();
     }
+}
+
+//this as of right now is only used by reflectors to "reflect" a player's laser
+function playerFireAtAngle(game, source, angle, speed = _defaultSpeed) {
+	//in radians
+	var laser = playerLasers.getFirstDead();
+	if (laser) {
+		laser.reset(source.x, source.y);
+		laser.rotation = angle
+		laser.body.velocity.setToPolar(angle, speed);
+	}
 }
 
 function screenShake() {
