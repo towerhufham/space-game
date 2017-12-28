@@ -26,6 +26,11 @@ function doCollisions() {
 	game.physics.arcade.overlap(playerLasers, reflectors, playerlaserVSreflector, null, this);
 }
 
+function killLaser(laser) {
+	laser.beenReflected = null;
+	laser.kill();
+}
+
 function playerVSgate() {
 	if (gate.open) {
 		resetGame();
@@ -34,7 +39,7 @@ function playerVSgate() {
 
 function playerVSbadlaser(player, laser) {
 	if (!godmode) {
-		laser.kill();
+		killLaser(laser);
 		screenShake();
 		damagesfx.play();
 		damagePlayer();
@@ -56,7 +61,7 @@ function polypVSlaser(polyp, laser) {
 	//do regular collision stuff
 	polypsfx.play();
 	polyp.kill();
-	laser.kill();
+	killLaser(laser);
 }
 
 function playerVSenergy(player, energy) {
@@ -70,8 +75,9 @@ function playerVSenergy(player, energy) {
 
 function enemylaserVSreflector(laser, reflector) {
 	if (!laser.beenReflected) {
-		laser.kill();
+		killLaser(laser);
 		var angle = game.rnd.angle() * (Math.PI / 180);
+		reflector.rotation = angle;
 		fireAtAngle(game, reflector, angle);
 		laser.beenReflected = true;
 		game.time.events.add(1500, function(){laser.beenReflected = false;}, this);
@@ -81,8 +87,9 @@ function enemylaserVSreflector(laser, reflector) {
 
 function playerlaserVSreflector(laser, reflector) {
 	if (!laser.beenReflected) {
-		laser.kill();
+		killLaser(laser);
 		var angle = game.rnd.angle() * (Math.PI / 180);
+		reflector.rotation = angle;
 		playerFireAtAngle(game, reflector, angle);
 		laser.beenReflected = true;
 		game.time.events.add(1500, function(){laser.beenReflected = false;}, this);

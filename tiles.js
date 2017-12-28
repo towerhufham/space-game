@@ -55,54 +55,6 @@ function _tileArrayQualityInsurance(arr) {
 	return arr;
 }
 
-/* function designStageCA(game) {
-
-	//init
-	var arr = _makeLevelArray();
-	
-	//create the CA sim (ripped directly from https://sanojian.github.io/cellauto/)
-	var world = new CAWorld({
-		width: 60,
-		height: 60,
-	});
-
-	world.registerCellType('living', {
-		getBlock: function () {
-			return this.alive ? "w" : " ";
-		},
-		process: function (neighbors) {
-			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
-			this.alive = surrounding === 3 || surrounding === 2 && this.alive;
-		},
-		reset: function () {
-			this.wasAlive = this.alive;
-		}
-	}, function () {
-		//init
-		this.alive = Math.random() > 0.8;
-	});
-
-	world.initialize([
-		{ name: 'living', distribution: 100 }
-	]);
-	
-	//update world
-	for (var i = 0; i < 10; i++) {
-		world.step();
-	}
-	//convert world to tile array
-	for (var y=0; y<world.height; y++) {
-		for (var x=0; x<world.width; x++) {
-			var cell = world.grid[x][y];
-			arr[x][y] = cell.getBlock()
-		}
-	}
-	//place polyps
-	arr = _placePolyps(game, arr);
-	arr = _placeGate(game, arr);
-	return arr;
-} */
-
 function designScrapyard(game) {
 
 	//init
@@ -132,7 +84,7 @@ function designScrapyard(game) {
 			this.alive = (surrounding === 3 || surrounding < 2 && this.alive);
 			this.isBlades = (surrounding === 1 && this.alive && Math.random() > 0.65);
 			this.isExploder = (!this.isBlades && surrounding > 2 && Math.random() > 0.95);
-			this.isReflector = (surrounding === 1 && Math.random() > 0.99);
+			this.isReflector = (surrounding === 0 && Math.random() > 0.99);
 			if (this.isExploder || this.isReflector) {this.alive = true;}
 		},
 		reset: function () {

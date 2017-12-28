@@ -387,11 +387,6 @@ function closeGate() {
 	gate.animations.frame = 0;
 }
 
-
-function killLaser(laser) {
-	laser.kill();
-}
-
 function resetGame() {
 	//reset global vars
 	health = 4;
