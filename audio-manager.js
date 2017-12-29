@@ -13,7 +13,7 @@ function preloadAudio(game) {
 	game.load.audio("GAME OVER", "audio/glitchy.wav");
 	game.load.audio("POLYP", "audio/polyp.wav");
 	game.load.audio("HOLLOW", "audio/hollow.wav");
-	game.load.audio("REFLECTOR", "audio/reflector.wav");
+	game.load.audio("REFLECTOR", "audio/reflector2.wav");
 }
 
 function loadAudio(game) {
