@@ -82,7 +82,7 @@ function designScrapyard(game) {
 		process: function (neighbors) {
 			var surrounding = this.countSurroundingCellsWithValue(neighbors, "wasAlive");
 			this.alive = (surrounding === 3 || surrounding < 2 && this.alive);
-			this.isBlades = (surrounding === 1 && this.alive && Math.random() > 0.65);
+			this.isBlades = (surrounding === 1 && this.alive && Math.random() > 0.9);
 			this.isExploder = (!this.isBlades && surrounding > 2 && Math.random() > 0.95);
 			this.isReflector = (surrounding === 0 && Math.random() > 0.99);
 			if (this.isExploder || this.isReflector) {this.alive = true;}
@@ -124,6 +124,7 @@ function makeLayer(game, arr, key) {
 	//optional objects
 	var reflectorMap = [];
 	var bladeMap = [];
+	var exploderMap = [];
 	//go!
 	var size = 60; // yaaay hardcoding
 	for (var y = 0; y < size; y++) {
@@ -159,8 +160,8 @@ function makeLayer(game, arr, key) {
 			
 			// "e" is exploder
 			else if (arr[x][y] === "e") {
-				//act as wall for now
-				data += "0";
+				data += "-1";
+				exploderMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
 			}
 			
 			// "r" is reflector
@@ -196,6 +197,7 @@ function makeLayer(game, arr, key) {
 	layer.gatePosition = gatePosition;
 	layer.reflectorMap = reflectorMap;
 	layer.bladeMap = bladeMap;
+	layer.exploderMap = exploderMap;
 	//return the layer for collision
 	return layer
 }

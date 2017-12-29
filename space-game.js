@@ -42,6 +42,7 @@ function preload() {
 	game.load.image("REFLECTOR", "img/reflector.png");
 	game.load.image("PLACEHOLDER", "img/placeholder.png");
 	game.load.image("BLADE", "img/blades.png");
+	game.load.image("EXPLODER", "img/exploder.png");
 	game.load.spritesheet("OCTO", "img/octo.png", 60, 64);
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
 	
@@ -251,6 +252,11 @@ function loadLevel(levelAttributes) {
 		loadBlades(game);
 		spawnBlades(tileLayer.bladeMap);
 	}
+	if (tileLayer.exploderMap) {
+		console.log("loading exploderMap");
+		loadExploders(game);
+		spawnExploders(tileLayer.exploderMap);
+	}
 }
 
 function setMapPosition() {
@@ -397,7 +403,7 @@ function resetGame() {
 	health = 4;
 	updateHpBar();
 	killcount = 0;
-	// currentEnergy = 0;
+	currentEnergy = 0;
 	//kill all lasers
 	playerLasers.callAll("kill");
 	enemyLasers.callAll("kill");

@@ -25,6 +25,8 @@ function doCollisions() {
 	game.physics.arcade.overlap(enemyLasers, reflectors, enemylaserVSreflector, null, this);
 	game.physics.arcade.overlap(playerLasers, reflectors, playerlaserVSreflector, null, this);
 	game.physics.arcade.overlap(player, blades, playerVSblade, null, this);
+	game.physics.arcade.overlap(enemyLasers, exploders, laserVSexploder, null, this);
+	game.physics.arcade.overlap(playerLasers, exploders, laserVSexploder, null, this);
 }
 
 function killLaser(laser) {
@@ -104,4 +106,11 @@ function playerlaserVSreflector(laser, reflector) {
 
 function playerVSblade(player, blade) {
 	damagePlayer();
+}
+
+function laserVSexploder(laser, exploder) {
+	killLaser(laser);
+	exploder.kill();
+	explodersfx.play();
+	screenShake();
 }
