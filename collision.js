@@ -48,7 +48,7 @@ function playerVSbadlaser(player, laser) {
 }
 
 function enemyVSlaser(enemy, laser) {
-	shotdownsfx.play();
+	// shotdownsfx.play();
 	killcount++;
 	enemyParticles.x = enemy.x;
 	enemyParticles.y = enemy.y;
