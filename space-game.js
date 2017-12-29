@@ -37,8 +37,8 @@ function preload() {
 	game.load.image("BLUE BEAM", "img/beam.png");
 	game.load.image("RED BEAM", "img/beam_red.png");
 	game.load.image("PARTICLE", "img/particle.png");
-	game.load.image("ENERGY", "img/energy.png");
-	game.load.image("ENERGY PARTICLE", "img/energy_ring.png");
+	game.load.image("ENERGY", "img/energy2.png");
+	game.load.image("ENERGY PARTICLE", "img/energy_ring2.png");
 	game.load.image("REFLECTOR", "img/reflector.png");
 	game.load.image("PLACEHOLDER", "img/placeholder.png");
 	game.load.image("BLADE", "img/blades.png");
