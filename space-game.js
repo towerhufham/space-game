@@ -18,7 +18,6 @@ var playerLaserSpeed = 650;
 var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
-var hpBar = {};
 
 var MAPX = 1090;
 var MAPY = 10;
@@ -49,6 +48,8 @@ function preload() {
 	
 	//ui
 	game.load.spritesheet("HEARTS", "img/ui/hearts.png", 80, 74);
+	game.load.spritesheet("ENERGY-CELL", "img/ui/energy_cells.png", 25, 25);
+	game.load.spritesheet("ROUND-CELL", "img/ui/round_cells.png", 25, 25);
 	
 	//tilesets
 	// game.load.image("TILES", "img/tiles/tiles_debug.png");
@@ -118,14 +119,7 @@ function create() {
 	loadAudio(game);
 	
 	//ui
-	hpBar[1] = game.add.sprite(0, 0, "HEARTS", 0);
-	hpBar[1].fixedToCamera = true;
-	hpBar[2] = game.add.sprite(90, 0, "HEARTS", 0);
-	hpBar[2].fixedToCamera = true;
-	hpBar[3] = game.add.sprite(90*2, 0, "HEARTS", 0);
-	hpBar[3].fixedToCamera = true;
-	hpBar[4] = game.add.sprite(90*3, 0, "HEARTS", 0);
-	hpBar[4].fixedToCamera = true;
+	loadUi();
 	
 	//add debug text
 	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
@@ -330,16 +324,6 @@ function drawMap() {
 	
 }
 
-function updateHpBar() {
-	for (var i = 1; i < 5; i++) {
-		if (i <= health) {
-			hpBar[i].animations.frame = 0;
-		} else {
-			hpBar[i].animations.frame = 1;
-		}
-	}
-}
-
 function damagePlayer() {
 	if (!invincible) {
 		health--;
@@ -444,6 +428,8 @@ function resetGame() {
 	player.revive();
 	//reload level
 	loadLevel(TESTLEVEL);
+	//reload ui
+	reloadUi();
 }
 
 function toggleFullscreen() {

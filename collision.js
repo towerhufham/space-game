@@ -88,6 +88,7 @@ function playerVSenergy(player, energy) {
 	if (currentEnergy >= 20) {
 		openGate();
 	}
+	updateEnergyBar()
 }
 
 function enemylaserVSreflector(laser, reflector) {

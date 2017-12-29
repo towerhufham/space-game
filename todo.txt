@@ -1,6 +1,5 @@
 Stuff to do soon:
 
-* make proper ui
 * finish lobster enemies
 * destroy blocks with lasers OR ensure that levels generate with path from start to all important things
 * figure out the final(?) name (___ superheavy industries)
@@ -11,7 +10,7 @@ Stuff to do soon:
 
 Current known issues:
 
-* stuff (maybe just polyps_ spawns incorrectly after reset
+* stuff (maybe just polyps) spawns incorrectly after reset
 * ui goes underneath other stuff after reset
 
 
