@@ -56,7 +56,7 @@ function _tileArrayQualityInsurance(arr) {
 	return arr;
 }
 
-function designScrapyard(game) {
+function designScrapyard(game, tileLevel=0.1225, bladeLevel=0.1, exploderLevel=0.3, reflectorLevel=0.01) {
 	//init
 	var arr = _makeLevelArray();
 	
@@ -82,9 +82,9 @@ function designScrapyard(game) {
 		process: function (neighbors) {
 			var surrounding = this.countSurroundingCellsWithValue(neighbors, "wasAlive");
 			this.alive = (surrounding === 3 || surrounding < 2 && this.alive);
-			this.isBlades = (surrounding === 1 && this.alive && Math.random() > 0.9);
-			this.isExploder = (!this.isBlades && surrounding > 2 && Math.random() > 0.95);
-			this.isReflector = (surrounding === 0 && Math.random() > 0.99);
+			this.isBlades = (surrounding === 1 && this.alive && Math.random() > 1-bladeLevel);
+			this.isExploder = (!this.isBlades && surrounding > 2 && Math.random() > 1-exploderLevel);
+			this.isReflector = (surrounding === 0 && Math.random() > 1-reflectorLevel);
 			if (this.isExploder || this.isReflector) {this.alive = true;}
 		},
 		reset: function () {
@@ -92,7 +92,7 @@ function designScrapyard(game) {
 		}
 	}, function () {
 		//init
-		this.alive = Math.random() > 0.8775;
+		this.alive = Math.random() > 1-tileLevel;
 	});
 	
 	world.initialize([
