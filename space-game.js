@@ -18,7 +18,6 @@ var playerLaserSpeed = 650;
 var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
-var tileLayer;
 var hpBar = {};
 
 var MAPX = 1090;
@@ -43,6 +42,7 @@ function preload() {
 	game.load.image("PLACEHOLDER", "img/placeholder.png");
 	game.load.image("BLADE", "img/blades.png");
 	game.load.image("EXPLODER", "img/exploder.png");
+	game.load.image("EXPLOSION", "img/explosion.png");
 	game.load.spritesheet("OCTO", "img/octo.png", 60, 64);
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
 	

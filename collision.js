@@ -108,7 +108,5 @@ function playerVSblade(player, blade) {
 
 function laserVSexploder(laser, exploder) {
 	killLaser(laser);
-	exploder.kill();
-	explodersfx.play();
-	screenShake();
+	explodeExploder(exploder);
 }

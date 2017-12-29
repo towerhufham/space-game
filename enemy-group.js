@@ -7,6 +7,8 @@ function makeEnemyGroup(game, player, key, speed, fireFunction, newUpdate = "def
 	newEnemies.createMultiple(15, key);
 	newEnemies.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	newEnemies.fire = fireFunction;
+	//for easily identifying enemies from other objects
+	newEnemies.forEach(function(en){en.isEnemy=true;},this);
 	
 	//give update for each enemy
 	if (newUpdate === "default") {

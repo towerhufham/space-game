@@ -1,4 +1,5 @@
 var tilemap;
+var tileLayer;
 
 function _makeLevelArray(width=3840, height=3840, tileSize=64) {
 	var tilesWide = width / tileSize;
@@ -56,7 +57,6 @@ function _tileArrayQualityInsurance(arr) {
 }
 
 function designScrapyard(game) {
-
 	//init
 	var arr = _makeLevelArray();
 	
@@ -83,7 +83,8 @@ function designScrapyard(game) {
 			var surrounding = this.countSurroundingCellsWithValue(neighbors, "wasAlive");
 			this.alive = (surrounding === 3 || surrounding < 2 && this.alive);
 			this.isBlades = (surrounding === 1 && this.alive && Math.random() > 0.9);
-			this.isExploder = (!this.isBlades && surrounding > 2 && Math.random() > 0.95);
+			// this.isExploder = (!this.isBlades && surrounding > 2 && Math.random() > 0.95);
+			this.isExploder = (!this.isBlades && surrounding > 2 && Math.random() > 0.65);
 			this.isReflector = (surrounding === 0 && Math.random() > 0.99);
 			if (this.isExploder || this.isReflector) {this.alive = true;}
 		},
