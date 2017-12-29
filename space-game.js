@@ -43,6 +43,7 @@ function preload() {
 	game.load.image("BLADE", "img/blades.png");
 	game.load.image("EXPLODER", "img/exploder.png");
 	game.load.image("EXPLOSION", "img/explosion.png");
+	game.load.image("DEBRIS", "img/debris.png");
 	game.load.spritesheet("OCTO", "img/octo.png", 60, 64);
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
 	
@@ -110,7 +111,6 @@ function create() {
 	//enemy particles
 	enemyParticles = game.add.emitter(0, 0, 50);
 	enemyParticles.makeParticles("PARTICLE");
-	// enemyParticles.setAlpha(0, 0.5, 500, Phaser.Easing.Linear.None, 1);
 	enemyParticles.setAlpha(0.75, 0, 1500);
 	enemyParticles.gravity = 0;
 	

@@ -34,5 +34,4 @@ function _extendLine(x1, y1, x2, y2, extendLength = 3000) {
 
 function lobsterUpdate(lobster, game, player) {
 	lobster.rotation = game.physics.arcade.angleToXY(lobster, player.x, player.y);
-	lobster.rotation = game.physics.arcade.angleToXY(lobster, player.x, player.y);
 }

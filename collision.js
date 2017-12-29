@@ -13,8 +13,8 @@ function doCollisions() {
 	// tile collisions
 	game.physics.arcade.collide(player, tileLayer);
 	game.physics.arcade.collide(energies, tileLayer);
-	game.physics.arcade.collide(playerLasers, tileLayer, killLaser);
-	game.physics.arcade.collide(enemyLasers, tileLayer, killLaser);
+	game.physics.arcade.collide(playerLasers, tileLayer, laserVStile);
+	game.physics.arcade.collide(enemyLasers, tileLayer, laserVStile);
 	// sprite collisions
 	game.physics.arcade.overlap(turrets, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(octopuses, playerLasers, enemyVSlaser, null, this);
@@ -34,6 +34,22 @@ function doCollisions() {
 function killLaser(laser) {
 	laser.beenReflected = null;
 	laser.kill();
+}
+
+function laserVStile(laser, tile) {
+	//not sure what type tile is
+	for (var i = 0; i < 4; i++) {
+		var debris = game.add.sprite(laser.x + game.rnd.between(-5, 5), laser.y + game.rnd.between(-5, 5), "DEBRIS");
+		debris.anchor.setTo(0, 0.5);
+		debris.angle = laser.angle + game.rnd.between(-45, 45);
+		debris.lifespan = 150 + game.rnd.between(-25, 25);
+		game.physics.enable(debris);
+		debris.body.angularVelocity = {x: game.rnd.between(0, 200), y: game.rnd.between(0, 200)};
+		debris.body.velocity.setToPolar(debris.rotation - Math.PI, 150 + game.rnd.between(50, 150));
+		// debris.alpha = 1;
+		game.add.tween(debris).to({alpha: 0}, debris.lifespan, Phaser.Easing.Linear.None, true);
+	}
+	killLaser(laser);
 }
 
 function playerVSgate() {
