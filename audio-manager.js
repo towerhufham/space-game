@@ -5,7 +5,8 @@ var gameoversfx;
 var polypsfx;
 var energysfx;
 var reflectorsfx;
-var explodersfx;
+var gatesfx;
+var explodersfx
 
 function preloadAudio(game) {
 	game.load.audio("SHOOT", "audio/shooty_low.wav");
@@ -15,7 +16,8 @@ function preloadAudio(game) {
 	game.load.audio("POLYP", "audio/polyp.wav");
 	game.load.audio("HOLLOW", "audio/hollow.wav");
 	game.load.audio("REFLECTOR", "audio/reflector2.wav");
-	game.load.audio("EXPLODER", "audio/smallsplode.wav");
+	game.load.audio("GATE", "audio/smallsplode.wav");
+	game.load.audio("EXPLODER", "audio/bigsplode.wav");
 }
 
 function loadAudio(game) {
@@ -26,5 +28,6 @@ function loadAudio(game) {
 	polypsfx = game.add.audio("POLYP", 0.25);
 	energysfx = game.add.audio("HOLLOW", 0.25);
 	reflectorsfx = game.add.audio("REFLECTOR", 0.25);
+	gatesfx = game.add.audio("GATE", 0.25);
 	explodersfx = game.add.audio("EXPLODER", 0.25);
 }

@@ -391,6 +391,8 @@ function screenShake() {
 function openGate() {
 	gate.open = true;
 	gate.animations.frame = 1;
+	gatesfx.play();
+	screenShake();
 }
 
 function closeGate() {

@@ -2,11 +2,12 @@ Stuff to do soon:
 
 * make proper ui
 * finish lobster enemies
-* make the levels generate better
-* destroy blocks with lasers?
+* destroy blocks with lasers OR ensure that levels generate with path from start to all important things
 * figure out the final(?) name (___ superheavy industries)
+* make system for new levels
+* unify pelette (all bad stuff is red, all good stuff is blue, etc.)
 
 
 Current known issues:
 
-* polyps spawn incorrectly after dying occasionally
+* stuff spawns incorrectly after reset
