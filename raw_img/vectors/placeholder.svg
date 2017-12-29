@@ -16,9 +16,9 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="placeholder.svg"
-   inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\turret.png"
-   inkscape:export-xdpi="4.0223465"
-   inkscape:export-ydpi="4.0223465">
+   inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\placeholder.png"
+   inkscape:export-xdpi="2.630832"
+   inkscape:export-ydpi="2.630832">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -29,8 +29,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="331.27674"
-     inkscape:cy="621.61018"
+     inkscape:cx="418.25335"
+     inkscape:cy="600.30427"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -67,9 +67,14 @@
      id="layer1"
      transform="translate(0,-28.362161)">
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 512,28.362161 0,540.36216 512,1052.3622 1024,540.36216 Z"
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 512,28.362161 1024,540.36216 512,1052.3622 0,540.36216 Z"
        id="path4143"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:50;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1024,540.36216 -384,0"
+       id="path4144"
        inkscape:connector-curvature="0" />
   </g>
 </svg>
