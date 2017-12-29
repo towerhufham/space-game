@@ -5,8 +5,8 @@ Stuff to do soon:
 * figure out the final(?) name (___ superheavy industries)
 * make system for new levels
 * adjust palette?
-* finish exploders (particles, destruction of nearby tiles & sprites)
-
+* tame explosions
+* rework enemy spawning/timers
 
 Current known issues:
 

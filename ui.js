@@ -28,6 +28,7 @@ function loadUi() {
 function reloadUi() {
 	hpBar = {};
 	energyBar = {};
+	loadUi();
 }
 
 function updateHpBar() {

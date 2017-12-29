@@ -247,7 +247,6 @@ function loadLevel(levelAttributes) {
 		spawnBlades(tileLayer.bladeMap);
 	}
 	if (tileLayer.exploderMap) {
-		console.log("loading exploderMap");
 		loadExploders(game);
 		spawnExploders(tileLayer.exploderMap);
 	}
