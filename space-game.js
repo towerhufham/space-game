@@ -418,6 +418,16 @@ function resetGame() {
 	//destroy polyps & energies
 	polyps.callAll("kill");
 	energies.callAll("kill");
+	//destroy all auxillary objects
+	if (reflectors) {
+		reflectors.callAll("kill");
+	}
+	if (blades) {
+		blades.callAll("kill");
+	}
+	if (exploders) {
+		exploders.callAll("kill");
+	}
 	//reset player
 	player.body.stop();
 	player.x = game.world.width / 2;
