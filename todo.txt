@@ -6,6 +6,8 @@ Stuff to do soon:
 * figure out the final(?) name (___ superheavy industries)
 * make system for new levels
 * unify pelette (all bad stuff is red, all good stuff is blue, etc.)
+* i frames
+* finish exploders (particles, destruction of nearby tiles & sprites)
 
 
 Current known issues:

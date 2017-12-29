@@ -7,6 +7,7 @@ function loadExploders(game) {
 	exploders.physicsBodyType = Phaser.Physics.ARCADE;
 	exploders.createMultiple(25, "EXPLODER");
 	exploders.callAll("anchor.setTo", "anchor", 0.5, 0.5);
+	exploders.setAll("body.immovable", true);
 }
 
 function spawnExploders(exploderMap) {

@@ -21,6 +21,8 @@ function doCollisions() {
 	game.physics.arcade.overlap(polyps, playerLasers, polypVSlaser, null, this);
 	game.physics.arcade.overlap(player, enemyLasers, playerVSbadlaser, null, this);
 	game.physics.arcade.overlap(player, energies, playerVSenergy, null, this);
+	game.physics.arcade.collide(player, exploders);
+	game.physics.arcade.collide(player, polyps);
 	//extra collisions
 	game.physics.arcade.overlap(enemyLasers, reflectors, enemylaserVSreflector, null, this);
 	game.physics.arcade.overlap(playerLasers, reflectors, playerlaserVSreflector, null, this);
