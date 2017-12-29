@@ -203,6 +203,50 @@ function scrapyard2(steps, tileLevel=0.12, bladeLevel=0.1, exploderLevel=0.15, r
 	return world;
 }
 
+function foundry(steps, tileLevel=0.1) {
+	//create the CA sim (ripped directly from https://sanojian.github.io/cellauto/)
+	var world = new CAWorld({
+		width: 60,
+		height: 60,
+	});
+
+	world.registerCellType('living', {
+		getBlock: function () {
+			//wall is black, open is white
+			if (!this.alive) {
+				return "#FFFFFF";
+			} else if (this.isFire) {
+				return "#FF0000";
+			} else {
+				return "#000000";
+			}
+		},
+		process: function (neighbors) {
+			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
+			this.alive = (surrounding === 3 || surrounding === 4) || surrounding === 2 && this.alive;
+			// if (this.alive && surrounding === 2 && Math.random > 0.1) {this.alive = false;}
+			if (!this.alive && surrounding === 7) {this.alive = true; this.isFire = true;}
+		},
+		reset: function () {
+			this.wasAlive = this.alive;
+		}
+	}, function () {
+		//init
+		this.alive = Math.random() > 1-tileLevel;
+	});
+
+	world.initialize([
+		{ name: 'living', distribution: 100 }
+	]);
+	
+	//update world
+	for (var i = 0; i < steps; i++) {
+		world.step();
+	}
+	
+	return world;
+}
+
 /////////////////////////////////////////
 
 var canvas = document.getElementById("main");
@@ -224,4 +268,4 @@ function render(world) {
 
 ////////////////////////////////////////
 
-render(scrapyard2(1));
+render(foundry(10));

@@ -1,10 +1,10 @@
 Major features to be implemented before release:
 
-[✓] Super-awesome hand-made codebase
+[✓✓✓] Super-awesome hand-made codebase
 [✓] Native app package
-[] Ocean aesthetic
+[] Aesthetic
 [] Levels
-	[] First world
+	[✓] First world
 	[] Second world
 	[] Third world
 	[] Fourth world
