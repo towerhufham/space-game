@@ -11,10 +11,12 @@ function loadReflectors(game) {
 
 function spawnReflectors(reflectorMap) {
 	for (var i = 0; i < reflectorMap.length; i++) {
-		var p = reflectors.getFirstDead();
-		p.revive();
-		p.x = reflectorMap[i].x;
-		p.y = reflectorMap[i].y;
+		var e = reflectors.getFirstDead();
+		if (e) {
+			e.revive();
+			e.x = reflectorMap[i].x;
+			e.y = reflectorMap[i].y;
+		}
 	}
 }
 

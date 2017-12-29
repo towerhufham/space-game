@@ -24,6 +24,7 @@ function doCollisions() {
 	//extra collisions
 	game.physics.arcade.overlap(enemyLasers, reflectors, enemylaserVSreflector, null, this);
 	game.physics.arcade.overlap(playerLasers, reflectors, playerlaserVSreflector, null, this);
+	game.physics.arcade.overlap(player, blades, playerVSblade, null, this);
 }
 
 function killLaser(laser) {
@@ -99,4 +100,8 @@ function playerlaserVSreflector(laser, reflector) {
 			reflectorsfx.play();
 		}
 	}
+}
+
+function playerVSblade(player, blade) {
+	damagePlayer();
 }

@@ -123,6 +123,7 @@ function makeLayer(game, arr, key) {
 	var gatePosition = null;
 	//optional objects
 	var reflectorMap = [];
+	var bladeMap = [];
 	//go!
 	var size = 60; // yaaay hardcoding
 	for (var y = 0; y < size; y++) {
@@ -152,8 +153,8 @@ function makeLayer(game, arr, key) {
 			
 			// "b" is blade
 			else if (arr[x][y] === "b") {
-				//act as wall for now
-				data += "0";
+				data += "-1";
+				bladeMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
 			}
 			
 			// "e" is exploder
@@ -194,6 +195,7 @@ function makeLayer(game, arr, key) {
 	layer.polypMap = polypMap;
 	layer.gatePosition = gatePosition;
 	layer.reflectorMap = reflectorMap;
+	layer.bladeMap = bladeMap;
 	//return the layer for collision
 	return layer
 }
