@@ -5,11 +5,16 @@ Stuff to do soon:
 * destroy blocks with lasers OR ensure that levels generate with path from start to all important things
 * figure out the final(?) name (___ superheavy industries)
 * make system for new levels
-* unify pelette (all bad stuff is red, all good stuff is blue, etc.)
-* i frames
+* adjust palette?
 * finish exploders (particles, destruction of nearby tiles & sprites)
 
 
 Current known issues:
 
 * stuff (maybe just polyps_ spawns incorrectly after reset
+* ui goes underneath other stuff after reset
+
+
+DOPE IDEAS:
+
+* enemy that bursts out of tiles
