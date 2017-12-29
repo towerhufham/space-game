@@ -356,6 +356,7 @@ function damagePlayer() {
 			game.time.events.add(1500, resetGame, this);
 		} else {
 			//i-frames
+			flashSprite(player, 1000);
 			invincible = true;
 			game.time.events.add(1000, function(){invincible = false;}, this);
 		}
@@ -451,6 +452,22 @@ function toggleFullscreen() {
 	} else {
 		game.scale.startFullScreen(false);
 	}
+}
+
+function flashSprite(sprite, time) {
+	var timer = game.time.create(false);
+	var tinted = false;
+	timer.loop(75, function(){
+		if (tinted) {
+			sprite.tint = 0xFFFFFF;
+			tinted = false;
+		} else {
+			sprite.tint = 0xFF0000;
+			tinted = true;
+		}
+	}, this);
+	game.time.events.add(1000, function(){timer.stop(); sprite.tint = 0xFFFFFF;}, this);
+	timer.start();
 }
 
 function debugFunc() {
