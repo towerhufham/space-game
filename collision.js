@@ -43,12 +43,8 @@ function playerVSgate() {
 }
 
 function playerVSbadlaser(player, laser) {
-	if (!godmode) {
-		killLaser(laser);
-		screenShake();
-		damagesfx.play();
-		damagePlayer();
-	}
+	killLaser(laser);
+	damagePlayer();
 }
 
 function enemyVSlaser(enemy, laser) {
@@ -85,7 +81,7 @@ function enemylaserVSreflector(laser, reflector) {
 		reflector.rotation = angle;
 		fireAtAngle(game, reflector, angle);
 		laser.beenReflected = true;
-		game.time.events.add(1500, function(){laser.beenReflected = false;}, this);
+		game.time.events.add(800, function(){laser.beenReflected = false;}, this);
 		if (reflector.inCamera) {
 			reflectorsfx.play();
 		}

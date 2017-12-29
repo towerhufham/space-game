@@ -2,7 +2,7 @@ var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "phaser-example", { preload
 
 var gate;
 var player;
-var godmode = false;
+var invincible = false;
 var health = 4;
 var killcount = 0;
 var currentEnergy = 0;
@@ -146,7 +146,7 @@ function create() {
 	
 	//godmode
 	var f9 = game.input.keyboard.addKey(Phaser.Keyboard.F9);
-	f9.onDown.add(function(){godmode = !godmode; energysfx.play(); console.log("godmode = " + godmode);}, this);
+	f9.onDown.add(function(){invincible = !invincible; energysfx.play(); console.log("godmode = " + invincible);}, this);
 }
 
 function update() {
@@ -341,16 +341,24 @@ function updateHpBar() {
 }
 
 function damagePlayer() {
-	health--;
-	updateHpBar();
-	if (health === 0) {
-		//change this to playerParticles when the player sprite is changed
-		enemyParticles.x = player.x;
-		enemyParticles.y = player.y;
-		enemyParticles.start(true, 1000, null, 25);
-		player.kill();
-		gameoversfx.play();
-		game.time.events.add(1500, resetGame, this);
+	if (!invincible) {
+		health--;
+		screenShake();
+		damagesfx.play();
+		updateHpBar();
+		if (health === 0) {
+			//change this to playerParticles when the player sprite is changed
+			enemyParticles.x = player.x;
+			enemyParticles.y = player.y;
+			enemyParticles.start(true, 1000, null, 25);
+			player.kill();
+			gameoversfx.play();
+			game.time.events.add(1500, resetGame, this);
+		} else {
+			//i-frames
+			invincible = true;
+			game.time.events.add(1000, function(){invincible = false;}, this);
+		}
 	}
 }
 

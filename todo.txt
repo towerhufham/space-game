@@ -12,4 +12,4 @@ Stuff to do soon:
 
 Current known issues:
 
-* stuff spawns incorrectly after reset
+* stuff (maybe just polyps_ spawns incorrectly after reset
