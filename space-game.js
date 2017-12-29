@@ -48,8 +48,8 @@ function preload() {
 	game.load.spritesheet("HEARTS", "img/ui/hearts.png", 80, 74);
 	
 	//tilesets
-	game.load.image("TILES", "img/tiles/tiles_debug.png");
-	// game.load.image("TILES", "img/tiles/tiles.png");
+	// game.load.image("TILES", "img/tiles/tiles_debug.png");
+	game.load.image("TILES", "img/tiles/tiles.png");
 	
 	//audio
 	preloadAudio(game);
