@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="1024"
+   viewBox="0 0 1024 1024"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="energies.svg"
+   inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\placeholder.png"
+   inkscape:export-xdpi="2.630832"
+   inkscape:export-ydpi="2.630832">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#101918"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.12374369"
+     inkscape:cx="-649.98368"
+     inkscape:cy="167.68493"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:object-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4136"
+       spacingx="64"
+       spacingy="64"
+       empspacing="4" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-28.362161)">
+    <path
+       sodipodi:type="star"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path6108"
+       sodipodi:sides="7"
+       sodipodi:cx="2048"
+       sodipodi:cy="5.3221601"
+       sodipodi:r1="40.959999"
+       sodipodi:r2="512"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.1219973"
+       inkscape:flatsided="false"
+       inkscape:rounded="1"
+       inkscape:randomized="0"
+       d="m 2048,-35.637839 c 475.4286,3.6e-5 -206.1978,-626.616791 222.1485,-420.336041 428.3464,206.28074 -486.5495,64.05283 -190.1247,435.757899 296.4249,371.705071 361.3465,-551.901149 467.1393,-88.392539 C 2652.9559,354.90009 2193.7259,-449.07198 2087.933,14.436619 1982.1402,477.94522 2744.7226,-47.156067 2448.2977,324.54897 2151.8728,696.254 2494.1183,-164.05486 2065.7719,42.225845 1637.4255,248.50655 2523.4286,517.32217 2048,517.32216 1572.5714,517.32215 2458.5745,248.50661 2030.2281,42.225844 1601.8818,-164.05493 1944.1271,696.25396 1647.7023,324.54891 1351.2774,-47.156142 2113.8597,477.94523 2008.067,14.436616 1902.2742,-449.072 1443.0441,354.90001 1548.8369,-108.6086 1654.6297,-572.1172 1719.5513,351.48904 2015.9762,-20.215982 2312.4011,-391.921 1397.5052,-249.69319 1825.8516,-455.97392 2254.1979,-662.25464 1572.5714,-35.637875 2048,-35.637839 Z"
+       inkscape:transform-center-y="-48.891649" />
+    <path
+       sodipodi:type="star"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path6108-5"
+       sodipodi:sides="7"
+       sodipodi:cx="3328"
+       sodipodi:cy="5.3221602"
+       sodipodi:r1="102.4"
+       sodipodi:r2="512"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.1219973"
+       inkscape:flatsided="false"
+       inkscape:rounded="1.95"
+       inkscape:randomized="0"
+       d="m 3328,-97.077841 c 823.0671,6.3e-5 -519.4093,-716.011489 222.1485,-358.896039 741.5578,357.115439 -655.2628,-246.04911 -142.089,397.450686 513.1739,643.499804 235.954,-852.516416 419.1036,-50.085326 183.1496,802.43108 -216.1808,-665.71423 -399.3305,136.716827 -183.1497,802.431063 813.639,-347.059087 300.4651,296.440663 -513.174,643.49974 385.6898,-584.08296 -355.868,-226.967595 C 2630.8718,454.69675 4151.0671,517.32218 3328,517.32216 2504.9329,517.32214 4025.1281,454.69685 3283.5703,97.581373 2542.0125,-259.53411 3440.8762,968.04869 2927.7023,324.54891 2414.5283,-318.95086 3411.317,830.53939 3228.1674,28.108302 3045.0178,-774.32279 2645.6872,693.82248 2828.8369,-108.6086 3011.9866,-911.03966 2734.7665,584.97652 3247.9405,-58.523199 3761.1144,-702.02292 2364.2937,-98.85851 3105.8516,-455.97392 3847.4094,-813.08932 2504.9329,-97.077904 3328,-97.077841 Z"
+       inkscape:transform-center-y="-48.891649" />
+    <path
+       sodipodi:type="star"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path6108-5-5-4"
+       sodipodi:sides="7"
+       sodipodi:cx="2048"
+       sodipodi:cy="1125.2385"
+       sodipodi:r1="8.8763723"
+       sodipodi:r2="437.28232"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.1162268"
+       inkscape:flatsided="false"
+       inkscape:rounded="1.28"
+       inkscape:randomized="0"
+       d="m 2048,1116.3622 c 549.5269,3.1714 -303.1209,-622.42224 192,-384.00003 495.0687,238.39708 -525.1692,-44.22721 -185.0602,387.34203 340.1449,431.6148 297.6365,-625.06336 419.9333,-89.3084 122.284,535.6984 -292.8594,-438.16907 -418.2193,96.8179 -125.3731,535.0434 674.2675,-157.01906 331.6483,272.6342 -342.5831,429.6079 159.9795,-502.16064 -336.4508,-266.612 -496.4826,235.5734 543.1614,429.2638 -6.3747,429.2777 -549.478,0.014 492.3506,-188.0151 -1.3279,-429.2777 -493.7306,-241.28816 3.0436,692.3022 -339.5974,262.6663 -342.6048,-429.59058 453.9717,267.7097 334.7949,-268.6885 -119.1894,-536.4548 -539.366,434.023 -417.0963,-101.7381 122.2568,-535.70464 73.7428,521.8436 418.8103,94.2286 C 2386.1641,692.04411 1365.4381,968.61977 1860.5469,730.17249 2355.6036,491.75035 1498.5311,1113.1911 2048,1116.3622 Z"
+       inkscape:transform-center-y="-48.891649" />
+    <path
+       sodipodi:type="star"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path6108-5-5-4-0"
+       sodipodi:sides="11"
+       sodipodi:cx="-1152"
+       sodipodi:cy="437.41097"
+       sodipodi:r1="153.04881"
+       sodipodi:r2="437.28232"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.285197"
+       inkscape:flatsided="false"
+       inkscape:rounded="1.66"
+       inkscape:randomized="0"
+       d="m -1152,284.36217 c 487.40324,-10e-6 -344.4633,-403.83787 123.1967,-266.520502 467.65994,137.317372 -450.482,27.306376 -40.4523,290.816462 410.02973,263.51008 -71.4497,-525.96097 247.73152,-157.60617 319.18124,368.3548 -393.73242,-220.577331 -191.25782,222.78025 202.47462,443.35757 224.24862,-481.09517 293.61331,1.34701 69.3647,482.44217 -211.9757,-398.429297 -281.34041,84.01288 -69.3647,482.44217 448.74962,-283.48505 246.27499,159.87252 -202.47464,443.35758 37.08182,-449.78277 -282.09939,-81.42798 -319.1813,368.35479 530.77577,4.12956 120.74607,267.63963 C -1325.617,1068.7863 -641.22119,446.94288 -1108.8812,584.26024 -1576.5411,721.5776 -664.59676,874.69331 -1152,874.6933 c -487.4032,-10e-6 424.54115,-153.1157 -43.1188,-290.43306 -467.66,-137.31736 216.73582,484.52616 -193.2939,221.01604 -410.0297,-263.5101 439.92737,100.71514 120.7461,-267.63964 -319.1812,-368.35479 -79.6248,524.78556 -282.0994,81.42798 -202.4746,-443.35758 315.6397,322.56965 246.275,-159.87253 -69.3647,-482.442167 -350.7051,398.4293 -281.3404,-84.01287 69.3647,-482.44218 91.1387,442.01056 293.6133,-1.34702 202.4746,-443.357574 -510.4391,145.57454 -191.2578,-222.78024 319.1812,-368.35478 -162.2982,421.11625 247.7315,157.60616 C -824.71474,45.148039 -1742.8566,155.15902 -1275.1967,17.841669 -807.53668,-119.47568 -1639.4032,284.36217 -1152,284.36217 Z"
+       inkscape:transform-center-y="-48.891649"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\energy2.png"
+       inkscape:export-xdpi="2.3465593"
+       inkscape:export-ydpi="2.3465593" />
+    <path
+       sodipodi:type="star"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path6108-5-5-4-0-7"
+       sodipodi:sides="11"
+       sodipodi:cx="3392"
+       sodipodi:cy="1205.411"
+       sodipodi:r1="153.04881"
+       sodipodi:r2="437.28232"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.285197"
+       inkscape:flatsided="false"
+       inkscape:rounded="3.22"
+       inkscape:randomized="0"
+       d="m 3392,1052.3622 c 945.4448,0 -783.951,-532.88311 123.1967,-266.5205 907.1476,266.3626 -835.8111,-220.32961 -40.4523,290.8165 795.3588,511.146 -371.4031,-872.12575 247.7315,-157.60621 619.1347,714.51951 -584.0098,-637.22662 -191.2578,222.78021 392.752,860.0069 159.0625,-934.47452 293.6133,1.347 134.5508,935.8216 -146.7896,-851.80864 -281.3404,84.0129 -134.5508,935.8216 639.027,-700.1343 246.275,159.8725 -392.752,860.0069 337.0353,-795.94747 -282.0994,-81.4279 -619.1347,714.5195 916.1049,-243.5064 120.7461,267.6396 -795.3589,511.1461 713.8538,-487.3786 -193.2939,-221.016 -907.1476,266.3626 902.326,290.4331 -43.1188,290.433 -945.4448,0 864.0288,-24.0704 -43.1188,-290.433 -907.1477,-266.3626 602.0649,732.1621 -193.2939,221.016 -795.3588,-511.1461 739.8808,446.8799 120.7461,-267.6396 -619.1347,-714.51956 110.6526,941.4348 -282.0994,81.428 -392.7519,-860.00693 380.8258,775.949 246.275,-159.8726 -134.5508,-935.82154 -415.8913,851.8087 -281.3404,-84.0128 134.5508,-935.82162 -99.1387,858.6598 293.6133,-1.3471 392.752,-860.00683 -810.3925,491.7393 -191.2578,-222.78021 619.1347,-714.51951 -547.6273,668.75221 247.7315,157.60621 795.3588,-511.14611 -947.5999,-24.4539 -40.4523,-290.8165 C 4175.951,519.47913 2446.5552,1052.3622 3392,1052.3622 Z"
+       inkscape:transform-center-y="-48.891649" />
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="rect4722"
+       width="1024"
+       height="1024"
+       x="0"
+       y="28.362162"
+       ry="320"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\polyp_thing.png"
+       inkscape:export-xdpi="5.4390936"
+       inkscape:export-ydpi="5.4390936" />
+    <path
+       sodipodi:type="star"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path6108-5-5-4-0-1"
+       sodipodi:sides="11"
+       sodipodi:cx="512"
+       sodipodi:cy="545.82821"
+       sodipodi:r1="153.04881"
+       sodipodi:r2="437.28232"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-1.285197"
+       inkscape:flatsided="false"
+       inkscape:rounded="1.66"
+       inkscape:randomized="0"
+       d="m 512,392.77937 c 487.40324,0 -344.46331,-403.837868 123.19666,-266.5205 C 1102.8566,263.57625 184.71474,153.56525 594.74444,417.07533 1004.7741,680.58541 523.2947,-108.88563 842.47592,259.46916 1161.6572,627.82396 448.74347,38.891835 651.2181,482.24942 853.69272,925.60699 875.46672,1.1542487 944.83141,483.59642 1014.1961,966.0386 732.85571,85.167129 663.491,567.60931 594.12629,1050.0515 1112.2406,284.12425 909.76599,727.48182 707.29135,1170.8394 946.84781,277.69905 627.66657,646.05385 308.48534,1014.4086 1158.4424,650.18341 748.41267,913.69348 338.38297,1177.2036 1022.7788,555.36008 555.11883,692.67745 87.458853,829.99481 999.40324,983.11052 512,983.1105 24.596763,983.11049 936.54115,829.9948 468.88116,692.67745 1.2211847,555.36009 685.61702,1177.2036 275.58733,913.69348 -134.44236,650.18339 715.51467,1014.4086 396.33342,646.05384 77.152181,277.69906 316.70862,1170.8394 114.23401,727.48183 -88.240598,284.12424 429.87372,1050.0515 360.509,567.6093 291.14429,85.167129 9.8038598,966.03859 79.168585,483.59643 148.53331,1.1542503 170.30728,925.60699 372.7819,482.24941 575.25652,38.891831 -137.65718,627.82395 181.52407,259.46917 500.70533,-108.88561 19.225872,680.58542 429.25557,417.07533 839.28526,153.56524 -78.856649,263.57622 388.80333,126.25887 856.46332,-11.058473 24.596764,392.77938 512,392.77937 Z"
+       inkscape:transform-center-y="-48.891649"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\polyp_thing.png"
+       inkscape:export-xdpi="5.4390936"
+       inkscape:export-ydpi="5.4390936" />
+  </g>
+</svg>

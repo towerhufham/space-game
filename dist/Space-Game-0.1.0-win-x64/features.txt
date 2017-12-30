@@ -1,0 +1,37 @@
+Major features to be implemented before release:
+
+[✓✓✓] Super-awesome hand-made codebase
+[✓] Native app package
+[] Aesthetic
+[] Levels
+	[✓] First world
+	[] Second world
+	[] Third world
+	[] Fourth world
+	[] Boss / final level
+[] Music
+	[] First world track
+	[] Second world track
+	[] Third world track
+	[] Fourth world track
+	[] Boss / final level track
+	[] Menu track
+[] Menus
+	[] Start menu
+	[] Pause menu
+	[] Options menu
+	[] Lose menu
+	[] Win menu
+[] Powerups (?)
+	[] Aries
+	[] Taurus
+	[] Gemini
+	[] Cancer
+	[] Leo
+	[] Virgo
+	[] Libra
+	[] Scorpio
+	[] Sagittarius
+	[] Capricorn
+	[] Aquarius
+	[] Pisces

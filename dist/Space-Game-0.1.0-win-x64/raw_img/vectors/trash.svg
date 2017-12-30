@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="1024"
+   viewBox="0 0 1024 1024"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="trash.svg"
+   inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\placeholder.png"
+   inkscape:export-xdpi="2.630832"
+   inkscape:export-ydpi="2.630832">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#101918"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748738"
+     inkscape:cx="1927.0958"
+     inkscape:cy="1171.7637"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:object-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-nodes="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4136"
+       spacingx="64"
+       spacingy="64"
+       empspacing="4" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-28.362161)">
+    <g
+       id="g4557"
+       transform="translate(-1674.019,-641.87672)">
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="391.4476"
+         cx="104.13503"
+         id="path4291"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.62511334,-0.78053399,0.78053399,0.62511334,0,0)"
+         y="441.40463"
+         x="58.621189"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.99480163,0.10183176,-0.10183176,0.99480163,0,0)"
+         y="835.71393"
+         x="169.41151"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.85385094,-0.52051759,0.52051759,0.85385094,0,0)"
+         y="983.86353"
+         x="327.6026"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-4"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.98139759,0.19198639,-0.19198639,0.98139759,0,0)"
+         y="-73.062607"
+         x="828.63922"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-9"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.9682549,0.2499649,-0.2499649,0.9682549,0,0)"
+         y="193.23859"
+         x="173.92986"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-79"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.971358,0.23762079,-0.23762079,0.971358,0,0)"
+         y="629.44232"
+         x="791.32422"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-6"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.95635578,-0.29220476,0.29220476,0.95635578,0,0)"
+         y="824.82794"
+         x="69.405647"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.92620211,0.37702739,-0.37702739,0.92620211,0,0)"
+         y="51.376694"
+         x="257.58716"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-49"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.97155345,0.23682039,-0.23682039,0.97155345,0,0)"
+         y="393.6384"
+         x="457.35825"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="387.42831"
+         cx="685.54376"
+         id="path4291-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.49342249,-0.86978977,0.86978977,0.49342249,0,0)"
+         y="850.3139"
+         x="-364.25238"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-00"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="151.77988"
+         cx="286.58682"
+         id="path4291-9"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.64002852,0.76835115,-0.76835115,0.64002852,0,0)"
+         y="60.986439"
+         x="1016.4818"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-2"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="470.97092"
+         cx="422.62741"
+         id="path4291-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         y="336.47107"
+         x="786.44006"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-26"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="788.34644"
+         cx="581.34564"
+         id="path4291-4"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(-0.25219075,0.96767754,-0.96767754,-0.25219075,0,0)"
+         y="-739.0498"
+         x="-80.166641"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-71"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="732.72192"
+         cx="72.415024"
+         id="path4291-40"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.57075278,0.82112196,-0.82112196,0.57075278,0,0)"
+         y="-340.64554"
+         x="948.67749"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-01"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="926.70117"
+         cx="584.50842"
+         id="path4291-78"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.97430049,0.2252522,-0.2252522,0.97430049,0,0)"
+         y="317.72321"
+         x="276.83759"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-3"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="535.17456"
+         cx="142.87663"
+         id="path4291-6"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.68024547,-0.73298438,0.73298438,0.68024547,0,0)"
+         y="485.70975"
+         x="-18.299288"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-02"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="883.31415"
+         cx="522.32629"
+         id="path4291-2"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.85385094,0.5205176,-0.5205176,0.85385094,0,0)"
+         y="-1.4415495"
+         x="523.70129"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-97"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.99370716,-0.11200931,0.11200931,0.99370716,0,0)"
+         y="825.46613"
+         x="312.40808"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-96"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="187.8494"
+         cx="98.284187"
+         id="path4291-61"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.86522274,0.50138768,-0.50138768,0.86522274,0,0)"
+         y="-139.1418"
+         x="524.56024"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-710"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="648.85211"
+         cx="230.05498"
+         id="path4291-73"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.90402395,-0.4274818,0.4274818,0.90402395,0,0)"
+         y="590.71393"
+         x="471.75821"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-85"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="280.71249"
+         cx="511.83566"
+         id="path4291-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.55534429,0.83162054,-0.83162054,0.55534429,0,0)"
+         y="-135.22774"
+         x="450.27493"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="146.73396"
+         cx="417.24066"
+         id="path4291-17"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         y="573.27051"
+         x="815.3056"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-11"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.99480163,0.10183176,-0.10183176,0.99480163,0,0)"
+         y="803.28485"
+         x="515.15564"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-7-4"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="260.27832"
+         cx="344.38977"
+         id="path4291-67"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.85385094,-0.52051759,0.52051759,0.85385094,0,0)"
+         y="489.59503"
+         x="-296.48288"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-4-6"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.94329786,0.33194751,-0.33194751,0.94329786,0,0)"
+         y="-43.93177"
+         x="644.55762"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-45"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.971358,0.23762079,-0.23762079,0.971358,0,0)"
+         y="198.51784"
+         x="253.3567"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-6-9"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="130.59322"
+         cx="906.77606"
+         id="path4291-65"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.95635578,-0.29220476,0.29220476,0.95635578,0,0)"
+         y="680.14691"
+         x="-59.423569"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-0-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.91969341,0.39263728,-0.39263728,0.91969341,0,0)"
+         y="11.551646"
+         x="939.36188"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-06"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.97155345,0.23682039,-0.23682039,0.97155345,0,0)"
+         y="272.87137"
+         x="610.30371"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-8-3"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="479.01404"
+         cx="194.36208"
+         id="path4291-3"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.49342249,-0.86978977,0.86978977,0.49342249,0,0)"
+         y="550.76031"
+         x="-730.30377"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-00-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.85026056,-0.52636202,0.52636202,0.85026056,0,0)"
+         y="998.18787"
+         x="46.063168"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-72"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.64002852,0.76835115,-0.76835115,0.64002852,0,0)"
+         y="-542.22162"
+         x="547.65295"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-2-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="394.61594"
+         cx="739.90283"
+         id="path4291-76"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="665.04517"
+         cx="304.9202"
+         id="path4291-7-4"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="134.22816"
+         cx="169.89267"
+         id="path4291-23"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="347.21799"
+         cx="586.30341"
+         id="path4291-4-4"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="485.47098"
+         cx="728.48517"
+         id="path4291-30"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="795.27002"
+         cx="142.12985"
+         id="path4291-40-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="346.28802"
+         cx="722.22516"
+         id="path4291-36"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.57075278,0.82112196,-0.82112196,0.57075278,0,0)"
+         y="87.512634"
+         x="836.41852"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-01-6"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="962.59534"
+         cx="329.81796"
+         id="path4291-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="930.60748"
+         cx="921.76685"
+         id="path4291-78-9"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.97430049,0.2252522,-0.2252522,0.97430049,0,0)"
+         y="648.48462"
+         x="865.01953"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-3-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="446.74423"
+         cx="636.91254"
+         id="path4291-6-2"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="846.83832"
+         cx="730.00146"
+         id="path4291-2-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.99370716,-0.11200931,0.11200931,0.99370716,0,0)"
+         y="850.88593"
+         x="125.28419"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-96-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="971.5069"
+         cx="109.56248"
+         id="path4291-73-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="725.65594"
+         cx="494.63034"
+         id="path4291-17-3"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="750.25098"
+         cx="368.01682"
+         id="path4291-87"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         y="334.95471"
+         x="497.38791"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-11-5"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.91969341,0.39263728,-0.39263728,0.91969341,0,0)"
+         y="123.51425"
+         x="846.67358"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-06-6"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="573.69012"
+         cx="534.64862"
+         id="path4291-3-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.85026056,-0.52636202,0.52636202,0.85026056,0,0)"
+         y="454.26105"
+         x="487.19846"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-72-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="263.27142"
+         cx="919.02246"
+         id="path4291-30-5"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="848.15375"
+         cx="907.66974"
+         id="path4291-0-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="115.27142"
+         cx="663.02246"
+         id="path4291-30-5-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.92658665,0.37608134,-0.37608134,0.92658665,0,0)"
+         y="-170.47847"
+         x="488.88797"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-11-5-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.91969341,0.39263728,-0.39263728,0.91969341,0,0)"
+         y="139.3606"
+         x="157.55466"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-06-6-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    </g>
+    <g
+       id="g5294"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\exploder.png"
+       inkscape:export-xdpi="5.3007951"
+       inkscape:export-ydpi="5.3007951">
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-58.429077"
+         cx="1950.1161"
+         id="path4291-75"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.62511334,-0.78053399,0.78053399,0.62511334,0,0)"
+         y="1601.0316"
+         x="1563.7125"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-73"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.99480163,0.10183176,-0.10183176,0.99480163,0,0)"
+         y="200.19637"
+         x="1959.9847"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-7-47"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.85385094,-0.52051759,0.52051759,0.85385094,0,0)"
+         y="1560.6014"
+         x="2137.9639"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-4-3"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.98139759,0.19198639,-0.19198639,0.98139759,0,0)"
+         y="-868.97369"
+         x="2553.9104"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-9-6"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.9682549,0.2499649,-0.2499649,0.9682549,0,0)"
+         y="-703.78717"
+         x="1848.8566"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-79-4"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.971358,0.23762079,-0.23762079,0.971358,0,0)"
+         y="-246.19244"
+         x="2477.5325"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-6-3"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.95635578,-0.29220476,0.29220476,0.95635578,0,0)"
+         y="933.99023"
+         x="1966.2764"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-0-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.92620211,0.37702739,-0.37702739,0.92620211,0,0)"
+         y="-1061.2854"
+         x="1797.7228"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-49-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.97155345,0.23682039,-0.23682039,0.97155345,0,0)"
+         y="-480.60678"
+         x="2144.2876"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-8-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-62.448364"
+         cx="2531.5247"
+         id="path4291-8-2"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.49342249,-0.86978977,0.86978977,0.49342249,0,0)"
+         y="2233.95"
+         x="937.89429"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-00-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-298.0968"
+         cx="2132.5679"
+         id="path4291-9-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.64002852,0.76835115,-0.76835115,0.64002852,0,0)"
+         y="-1645.3091"
+         x="1852.2991"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-2-4"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="21.094236"
+         cx="2268.6084"
+         id="path4291-7-6"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         y="-113.40561"
+         x="2632.4211"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-26-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="338.46976"
+         cx="2427.3267"
+         id="path4291-4-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(-0.25219075,0.96767754,-0.96767754,-0.25219075,0,0)"
+         y="-2411.9094"
+         x="-981.04156"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-71-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="282.84525"
+         cx="1918.396"
+         id="path4291-40-5"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.57075278,0.82112196,-0.82112196,0.57075278,0,0)"
+         y="-2109.7195"
+         x="1609.5471"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-01-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="476.82449"
+         cx="2430.4895"
+         id="path4291-78-90"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.97430049,0.2252522,-0.2252522,0.97430049,0,0)"
+         y="-536.40314"
+         x="1974.0421"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-3-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="85.297882"
+         cx="1988.8577"
+         id="path4291-6-3"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.68024547,-0.73298438,0.73298438,0.68024547,0,0)"
+         y="1532.7584"
+         x="1567.1735"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-02-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="433.43747"
+         cx="2368.3074"
+         id="path4291-2-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.85385094,0.5205176,-0.5205176,0.85385094,0,0)"
+         y="-1346.4348"
+         x="1865.7252"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-97-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.99370716,-0.11200931,0.11200931,0.99370716,0,0)"
+         y="585.1875"
+         x="2197.1631"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-96-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-262.02728"
+         cx="1944.2651"
+         id="path4291-61-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.86522274,0.50138768,-0.50138768,0.86522274,0,0)"
+         y="-1453.9375"
+         x="1896.1824"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-710-6"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="198.97543"
+         cx="2076.0359"
+         id="path4291-73-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="123.81345"
+         cx="2380.6296"
+         id="path4291-3-8-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.55534429,0.83162054,-0.83162054,0.55534429,0,0)"
+         y="-1920.2198"
+         x="1101.3032"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-1-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <path
+         d="m 2631.2401,-104.15876 -153.8665,194.943852 106.7637,231.480198 -232.95,-86.09484 -187.159,173.06963 9.8956,-248.15339 -222.4343,-124.517285 239.0658,-67.272392 49.687,-250.025533 137.8552,206.576756 z"
+         inkscape:randomized="0"
+         inkscape:rounded="7.28584e-017"
+         inkscape:flatsided="false"
+         sodipodi:arg2="0.086500973"
+         sodipodi:arg1="-0.51830437"
+         sodipodi:r2="163.75832"
+         sodipodi:r1="364.94421"
+         sodipodi:cy="76.637497"
+         sodipodi:cx="2314.2275"
+         sodipodi:sides="5"
+         id="path4472"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         sodipodi:type="star" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.90402395,-0.4274818,0.4274818,0.90402395,0,0)"
+         y="973.13794"
+         x="2332.8833"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-85-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-169.16418"
+         cx="2357.8167"
+         id="path4291-1-3"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-303.14273"
+         cx="2263.2217"
+         id="path4291-17-2"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         y="123.39383"
+         x="2661.2866"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-11-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.99480163,0.10183176,-0.10183176,0.99480163,0,0)"
+         y="167.76729"
+         x="2305.7288"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-7-4-5"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-189.59836"
+         cx="2190.3708"
+         id="path4291-67-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="215.16849"
+         cx="2150.9011"
+         id="path4291-7-4-6"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.85385094,-0.52051759,0.52051759,0.85385094,0,0)"
+         y="1066.333"
+         x="1513.8784"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-4-6-3"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.97155345,0.23682039,-0.23682039,0.97155345,0,0)"
+         y="-605.50037"
+         x="2402.9316"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-8-3-3"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         y="-176.35054"
+         x="2323.3689"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-11-5-9"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="275.77927"
+         cx="2340.6113"
+         id="path4291-17-3-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-3.1324477"
+         cx="2482.8936"
+         id="path4291-6-2-4"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.94329786,0.33194751,-0.33194751,0.94329786,0,0)"
+         y="-1081.0682"
+         x="2236.532"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-45-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.971358,0.23762079,-0.23762079,0.971358,0,0)"
+         y="-677.11694"
+         x="1939.5651"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-6-9-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-319.28348"
+         cx="2752.7571"
+         id="path4291-65-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="300.3743"
+         cx="2213.9978"
+         id="path4291-87-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.95635578,-0.29220476,0.29220476,0.95635578,0,0)"
+         y="789.3092"
+         x="1837.4471"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-0-1-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="29.137358"
+         cx="2040.343"
+         id="path4291-3-4"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.91969341,0.39263728,-0.39263728,0.91969341,0,0)"
+         y="-1126.9979"
+         x="2460.46"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-06-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.49342249,-0.86978977,0.86978977,0.49342249,0,0)"
+         y="1934.3965"
+         x="571.8429"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-00-1-4"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.85026056,-0.52636202,0.52636202,0.85026056,0,0)"
+         y="1587.3297"
+         x="1852.426"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-72-9"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.64002852,0.76835115,-0.76835115,0.64002852,0,0)"
+         y="-2248.5171"
+         x="1383.4702"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-2-8-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-55.260742"
+         cx="2585.8838"
+         id="path4291-76-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-315.64853"
+         cx="2015.8737"
+         id="path4291-23-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-102.65869"
+         cx="2432.2844"
+         id="path4291-4-4-6"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="35.594299"
+         cx="2574.4661"
+         id="path4291-30-3"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="345.39334"
+         cx="1988.1108"
+         id="path4291-40-7-2"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-103.58865"
+         cx="2568.2061"
+         id="path4291-36-5"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.57075278,0.82112196,-0.82112196,0.57075278,0,0)"
+         y="-1685.0312"
+         x="1520.6136"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-01-6-1"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="512.71863"
+         cx="2175.7991"
+         id="path4291-0-2"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="480.7308"
+         cx="2767.7478"
+         id="path4291-78-9-3"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.97430049,0.2252522,-0.2252522,0.97430049,0,0)"
+         y="-205.64174"
+         x="2562.2241"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-3-8-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="396.96164"
+         cx="2575.9824"
+         id="path4291-2-8-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.99370716,-0.11200931,0.11200931,0.99370716,0,0)"
+         y="610.6073"
+         x="2010.0391"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-96-8-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="521.63019"
+         cx="1955.5435"
+         id="path4291-73-8-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.91969341,0.39263728,-0.39263728,0.91969341,0,0)"
+         y="-1015.0353"
+         x="2367.7717"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-06-6-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.85026056,-0.52636202,0.52636202,0.85026056,0,0)"
+         y="1043.403"
+         x="2293.5613"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-72-7-4"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-186.60526"
+         cx="2765.0034"
+         id="path4291-30-5-09"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="398.27707"
+         cx="2753.6506"
+         id="path4291-0-0-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <circle
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         r="93.944183"
+         cy="-334.60526"
+         cx="2509.0034"
+         id="path4291-30-5-0-0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.92658665,0.37608134,-0.37608134,0.92658665,0,0)"
+         y="-1281.5673"
+         x="2030.1591"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-11-5-1-6"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         inkscape:export-ydpi="5.3007951"
+         inkscape:export-xdpi="5.3007951"
+         inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\tiles\trash.png"
+         transform="matrix(0.91969341,0.39263728,-0.39263728,0.91969341,0,0)"
+         y="-999.18896"
+         x="1678.6528"
+         height="191.99998"
+         width="192.00002"
+         id="rect4136-06-6-1-8"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:15.00000286;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    </g>
+  </g>
+</svg>
