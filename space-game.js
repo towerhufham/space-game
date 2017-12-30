@@ -439,7 +439,7 @@ function toggleFullscreen() {
 	}
 }
 
-function flashSprite(sprite, time) {
+function flashSprite(sprite, time, tint = 0x000000) {
 	var timer = game.time.create(false);
 	var tinted = false;
 	timer.loop(75, function(){
@@ -447,7 +447,7 @@ function flashSprite(sprite, time) {
 			sprite.tint = 0xFFFFFF;
 			tinted = false;
 		} else {
-			sprite.tint = 0xFF0000;
+			sprite.tint = tint;
 			tinted = true;
 		}
 	}, this);
