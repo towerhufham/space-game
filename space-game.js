@@ -280,7 +280,7 @@ function drawMap() {
 	map.drawRect(drawx, drawy, 3, 3);
 	
 	//draw polyps
-	map.lineStyle(1, 0xFF00FF, 1);
+	map.lineStyle(1, 0x00FFFF, 1);
 	polyps.forEachAlive(function(polyp){
 		rx = polyp.x / game.world.width;
 		ry = polyp.y / game.world.height;
@@ -290,7 +290,7 @@ function drawMap() {
 	}, this);
 	
 	//draw energies
-	map.lineStyle(1, 0xFFFF00, 1);
+	map.lineStyle(1, 0x00FFFF, 1);
 	energies.forEachAlive(function(e){
 		rx = e.x / game.world.width;
 		ry = e.y / game.world.height;
@@ -300,7 +300,7 @@ function drawMap() {
 	}, this);
 	
 	//draw enemies
-	map.lineStyle(1, 0xFF0000, 1);
+	map.lineStyle(1, 0xFF00FF, 1);
 	for (var i = 0; i < enemyGroups.length; i++) {
 		enemyGroups[i].forEachAlive(function(e){
 			if (!e.outOfBounds) {
@@ -318,7 +318,7 @@ function drawMap() {
 	var ry = gate.y / game.world.height;
 	var drawx = Math.round(rx * MAPSIZE) + MAPX - 1;
 	var drawy = Math.round(ry * MAPSIZE) + MAPY - 1;
-	map.lineStyle(1, 0x0094FF, 1);
+	map.lineStyle(1, 0xFFFFFF, 1);
 	map.drawRect(drawx, drawy, 3, 3);
 	
 }
@@ -353,8 +353,6 @@ function playerFire() {
 		laser.reset(player.x, player.y);
 		laser.angle = player.angle;
 		game.physics.arcade.moveToPointer(laser, playerLaserSpeed);
-		//too annoying
-		//shootsfx.play();
     }
 }
 
