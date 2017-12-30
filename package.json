@@ -1,5 +1,7 @@
 {
-	"name": "The Space Ocean",
+	"name": "Space Game",
+	"description": "Some kind of space game lol",
+	"version": "0.1.0",
 	"main": "index.html",
 	"nodejs": false,
 	"window": {
