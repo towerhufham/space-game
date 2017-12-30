@@ -27,7 +27,6 @@ function explodeExploder(ex) {
 	if (ex.inCamera) {
 		ex.isExploding = true;
 		explosion(ex.x, ex.y);
-		//finish
 		ex.isExploding = false;
 		ex.kill();
 	}
