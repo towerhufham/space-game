@@ -217,6 +217,8 @@ function foundry(steps, tileLevel=0.1) {
 				return "#FFFFFF";
 			} else if (this.isFire) {
 				return "#FF0000";
+			} else if (this.isEntrance) {
+				return "#888888";
 			} else {
 				return "#000000";
 			}
@@ -224,8 +226,8 @@ function foundry(steps, tileLevel=0.1) {
 		process: function (neighbors) {
 			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
 			this.alive = (surrounding === 3 || surrounding === 4) || surrounding === 2 && this.alive;
-			// if (this.alive && surrounding === 2 && Math.random > 0.1) {this.alive = false;}
 			if (!this.alive && surrounding === 7) {this.alive = true; this.isFire = true;}
+			// if (this.alive && !this.isFire && Math.random() > 0.99) {this.isEntrance = true;}
 		},
 		reset: function () {
 			this.wasAlive = this.alive;
