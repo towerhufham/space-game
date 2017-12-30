@@ -29,7 +29,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-436.44849"
+     inkscape:cx="-273.14701"
      inkscape:cy="905.38156"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -42,7 +42,8 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:snap-smooth-nodes="true">
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-nodes="false">
     <inkscape:grid
        type="xygrid"
        id="grid4136"
@@ -70,8 +71,8 @@
     <g
        id="g4156"
        inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo.png"
-       inkscape:export-xdpi="4.0041137"
-       inkscape:export-ydpi="4.0041137">
+       inkscape:export-xdpi="4.2151909"
+       inkscape:export-ydpi="4.2151909">
       <path
          inkscape:export-ydpi="4.1602464"
          inkscape:export-xdpi="4.1602464"
@@ -136,8 +137,9 @@
     <g
        id="g4165"
        inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\octo.png"
-       inkscape:export-xdpi="4.0041137"
-       inkscape:export-ydpi="4.0041137">
+       inkscape:export-xdpi="4.2151909"
+       inkscape:export-ydpi="4.2151909"
+       transform="matrix(0.93286363,0,0,0.99956066,-21.683489,0.04160464)">
       <path
          inkscape:export-ydpi="4.1602464"
          inkscape:export-xdpi="4.1602464"
