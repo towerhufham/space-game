@@ -1,12 +1,5 @@
 {
-    "build": {
-        "nwVersion": "0.27.3"
-    },
-    "scripts": {
-        "dist": "build --tasks win-x64 --mirror https://dl.nwjs.io/ .",
-        "start": "run --x86 --mirror https://dl.nwjs.io/ ."
-    },
-	"name": "Space-Game",
+	"name": "Space Game",
 	"description": "Some kind of space game lol",
 	"version": "0.1.0",
 	"main": "index.html",
@@ -18,9 +11,5 @@
 		"width": 1218,
 		"height": 818,
 		"icon": "img/energy2.png"
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"nwjs-builder-phoenix": "^1.14.6"
 	}
 }
