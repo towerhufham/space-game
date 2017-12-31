@@ -18,5 +18,9 @@
 		"width": 1218,
 		"height": 818,
 		"icon": "img/energy2.png"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"nwjs-builder-phoenix": "^1.14.6"
 	}
 }
