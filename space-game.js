@@ -39,6 +39,8 @@ function preload() {
 	game.load.image("EXPLODER", "img/exploder.png");
 	game.load.image("EXPLOSION", "img/explosion.png");
 	game.load.image("DEBRIS", "img/debris.png");
+	game.load.image("GRENADER", "img/grenader.png");
+	game.load.image("GRENADE", "img/grenade.png");
 	game.load.spritesheet("OCTO", "img/octo.png", 61, 64);
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
 	
@@ -252,6 +254,10 @@ function loadLevel() {
 	if (tileLayer.exploderMap) {
 		loadExploders(game);
 		spawnExploders(tileLayer.exploderMap);
+	}
+	if (tileLayer.grenaderMap) {
+		loadGrenaders(game);
+		spawnGrenaders(tileLayer.grenaderMap);
 	}
 }
 

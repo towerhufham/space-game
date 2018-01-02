@@ -117,6 +117,63 @@ function designScrapyard(game, tileLevel=0.12, bladeLevel=0.1, exploderLevel=0.1
 	return arr;
 }
 
+function designFoundry(game, tileLevel=0.1) {
+	//init
+	var arr = _makeLevelArray();
+	
+	var world = new CAWorld({
+		width: 60,
+		height: 60,
+	});
+
+	world.registerCellType('living', {
+		getBlock: function () {
+			//wall is black, open is white
+			if (!this.alive) {
+				return " ";
+			} else if (this.isGrenader) {
+				return "g";
+			} else if (this.isEntrance) {
+				return " ";
+			} else {
+				return "w";
+			}
+		},
+		process: function (neighbors) {
+			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
+			this.alive = (surrounding === 3 || surrounding === 4) || surrounding === 2 && this.alive;
+			if (!this.alive && surrounding === 7) {this.alive = true; this.isGrenader = true;}
+			// if (this.alive && !this.isGrenader && Math.random() > 0.99) {this.isEntrance = true;}
+		},
+		reset: function () {
+			this.wasAlive = this.alive;
+		}
+	}, function () {
+		//init
+		this.alive = Math.random() > 1-tileLevel;
+	});
+
+	world.initialize([
+		{ name: 'living', distribution: 100 }
+	]);
+	
+	//update world
+	for (var i = 0; i < 10; i++) {
+		world.step();
+	}
+	//convert world to tile array
+	for (var y=0; y<world.height; y++) {
+		for (var x=0; x<world.width; x++) {
+			var cell = world.grid[x][y];
+			arr[x][y] = cell.getBlock()
+		}
+	}
+	//place polyps
+	arr = _placePolyps(game, arr);
+	arr = _placeGate(game, arr);
+	return arr;
+}
+
 function makeLayer(game, arr, key) {
 	var data = "";
 	//required objects
@@ -126,6 +183,7 @@ function makeLayer(game, arr, key) {
 	var reflectorMap = [];
 	var bladeMap = [];
 	var exploderMap = [];
+	var grenaderMap = [];
 	//go!
 	var size = 60; // yaaay hardcoding
 	for (var y = 0; y < size; y++) {
@@ -171,6 +229,12 @@ function makeLayer(game, arr, key) {
 				reflectorMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
 			}
 			
+			// "g" is reflector
+			else if (arr[x][y] === "g") {
+				data += "-1";
+				grenaderMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
+			}
+			
 			//end of line
 			if (x < size-1) {
 				data += ",";
@@ -199,13 +263,14 @@ function makeLayer(game, arr, key) {
 	layer.reflectorMap = reflectorMap;
 	layer.bladeMap = bladeMap;
 	layer.exploderMap = exploderMap;
+	layer.grenaderMap = grenaderMap;
 	//return the layer for collision
-	return layer
+	return layer;
 }
 	
 function makeTiles(game, key) {
-	// var design = designStage(game);
-	var design = designScrapyard(game);
+	// var design = designScrapyard(game);
+	var design = designFoundry(game);
 	//quality insurance
 	design = _tileArrayQualityInsurance(design);
 	//make the layer
