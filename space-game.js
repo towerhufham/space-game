@@ -18,9 +18,6 @@ var playerLaserSpeed = 800;
 var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
-var MAPX = 1090;
-var MAPY = 10;
-var MAPSIZE = 100;
 var currentLevel = 1;
 var screenIsShaking = false;
 
@@ -264,10 +261,6 @@ function getLevelFeatures(level) {
 	}
 }
 
-function setMapPosition() {
-	MAPX = game.scale.width - 110;
-}
-
 function drawPlayerAim() {
 	aim.clear(); //clears this graphic object's stuff
 	if (player.alive) {
@@ -275,64 +268,6 @@ function drawPlayerAim() {
 		aim.moveTo(player.x, player.y);
 		aim.lineTo(game.input.mousePointer.worldX, game.input.mousePointer.worldY);
 	}
-}
-
-function drawMap() {
-	//draw bounds
-	map.clear();
-	map.lineStyle(1, 0xFFFFFF, 0.5);
-	map.drawRect(MAPX, MAPY, MAPSIZE, MAPSIZE);
-	
-	//draw player box
-	var rx = player.x / game.world.width;
-	var ry = player.y / game.world.height;
-	var drawx = Math.round(rx * MAPSIZE) + MAPX - 1;
-	var drawy = Math.round(ry * MAPSIZE) + MAPY - 1;
-	map.lineStyle(1, 0xFFFFFF, 1);
-	map.drawRect(drawx, drawy, 3, 3);
-	
-	//draw polyps
-	map.lineStyle(1, 0x00FFFF, 1);
-	polyps.forEachAlive(function(polyp){
-		rx = polyp.x / game.world.width;
-		ry = polyp.y / game.world.height;
-		drawx = Math.round(rx * MAPSIZE) + MAPX - 1;
-		drawy = Math.round(ry * MAPSIZE) + MAPY - 1;
-		map.drawRect(drawx, drawy, 3, 3);
-	}, this);
-	
-	//draw energies
-	map.lineStyle(1, 0x00FFFF, 1);
-	energies.forEachAlive(function(e){
-		rx = e.x / game.world.width;
-		ry = e.y / game.world.height;
-		drawx = Math.round(rx * MAPSIZE) + MAPX;
-		drawy = Math.round(ry * MAPSIZE) + MAPY;
-		map.drawRect(drawx, drawy, 1, 1);
-	}, this);
-	
-	//draw enemies
-	map.lineStyle(1, 0xFF00FF, 1);
-	for (var i = 0; i < enemyGroups.length; i++) {
-		enemyGroups[i].forEachAlive(function(e){
-			if (!e.outOfBounds) {
-				rx = e.x / game.world.width;
-				ry = e.y / game.world.height;
-				drawx = Math.round(rx * MAPSIZE) + MAPX;
-				drawy = Math.round(ry * MAPSIZE) + MAPY;
-				map.drawRect(drawx, drawy, 1, 1);
-			}
-		}, this);
-	}
-	
-	//draw gate
-	var rx = gate.x / game.world.width;
-	var ry = gate.y / game.world.height;
-	var drawx = Math.round(rx * MAPSIZE) + MAPX - 1;
-	var drawy = Math.round(ry * MAPSIZE) + MAPY - 1;
-	map.lineStyle(1, 0xFFFFFF, 1);
-	map.drawRect(drawx, drawy, 3, 3);
-	
 }
 
 function damagePlayer() {
@@ -402,7 +337,6 @@ function closeGate() {
 function resetGame() {
 	//reset global vars
 	health = 4;
-	updateHpBar();
 	killcount = 0;
 	currentEnergy = 0;
 	//kill all lasers
