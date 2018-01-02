@@ -21,7 +21,7 @@ function loadGrenaders(game) {
 	
 	//timer
 	var timer = game.time.create(false);
-	timer.loop(6000, function(){grenaders.forEachAlive(makeGrenades);}, this);
+	timer.loop(5000, function(){grenaders.forEachAlive(makeGrenades);}, this);
 	timer.start();
 }
 
@@ -51,7 +51,6 @@ function makeGrenades(grenader) {
 				g.angle = random.angle();
 				g.anchor.setTo(0.5, 0.5);
 				game.time.events.add(2000, function(){
-					//NOTE: this won't destroy tiles (and possibly crash) until i fix explosion.js
 					explosion(g.x, g.y);
 					g.kill();
 				}, this);

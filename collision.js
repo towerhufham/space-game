@@ -13,6 +13,7 @@ function doCollisions() {
 	// tile collisions
 	game.physics.arcade.collide(player, tileLayer);
 	game.physics.arcade.collide(energies, tileLayer);
+	game.physics.arcade.collide(grenades, tileLayer);
 	game.physics.arcade.collide(playerLasers, tileLayer, laserVStile);
 	game.physics.arcade.collide(enemyLasers, tileLayer, laserVStile);
 	// sprite collisions
