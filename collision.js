@@ -54,6 +54,7 @@ function laserVStile(laser, tile) {
 
 function playerVSgate() {
 	if (gate.open) {
+		currentLevel++;
 		resetGame();
 	}
 }

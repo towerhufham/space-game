@@ -14,7 +14,7 @@ var SPEED = 400;
 var DEACCEL = 10;
 var fireRate = 100;
 var nextFire = 0;
-var playerLaserSpeed = 650;
+var playerLaserSpeed = 800;
 var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
@@ -23,8 +23,7 @@ var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
 
-// var TESTLEVEL = ["turrets", "octopuses", "lobsters"];
-var TESTLEVEL = ["turrets", "octopuses"];
+var currentLevel = 1;
 
 function preload() {
 	//images
@@ -107,7 +106,7 @@ function create() {
 	loadPolyps(game);
 	
 	//load level enemies
-	loadLevel(TESTLEVEL);
+	loadLevel();
 	
 	//enemy particles
 	enemyParticles = game.add.emitter(0, 0, 50);
@@ -211,10 +210,11 @@ function update() {
 	}
 	
 	//debug text
-	debugText.text = "Energy: " + currentEnergy + "\nFPS: " + game.time.fps;
+	debugText.text = "Level: " + currentLevel + "\nFPS: " + game.time.fps;
 }
 
-function loadLevel(levelAttributes) {
+function loadLevel() {
+	var levelAttributes = getLevelFeatures(currentLevel);
 	if (levelAttributes.includes("turrets")) {
 		enemyGroups.push(loadTurrets(game, player));
 	} if (levelAttributes.includes("octopuses")) {
@@ -249,6 +249,16 @@ function loadLevel(levelAttributes) {
 	if (tileLayer.exploderMap) {
 		loadExploders(game);
 		spawnExploders(tileLayer.exploderMap);
+	}
+}
+
+function getLevelFeatures(level) {
+	if (level === 1) {
+		return ["turrets"];
+	} else if (level === 2) {
+		return ["turrets", "octopuses"];
+	} else if (level === 3) {
+		return ["turrets", "octopuses", "lobsters"];
 	}
 }
 
@@ -424,7 +434,7 @@ function resetGame() {
 	player.y = game.world.height / 2;
 	player.revive();
 	//reload level
-	loadLevel(TESTLEVEL);
+	loadLevel();
 	//reload ui
 	reloadUi();
 }
