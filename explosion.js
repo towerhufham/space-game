@@ -2,9 +2,8 @@ function explosion(x, y) {
 	explodersfx.play();
 	screenShake();
 	//these formulas are just the placement formulas in reverse
-	//TODO: fix this to work even if x and y aren't tile-perfect positions
-	var tilex = (x - 32) / 64
-	var tiley = (y - 32) / 64
+	var tilex = Math.round((x - 32) / 64);
+	var tiley = Math.round((y - 32) / 64);
 	//destroy tiles
 	//ortho
 	if (tilemap.getTile(tilex+1, tiley, 0, true)) {

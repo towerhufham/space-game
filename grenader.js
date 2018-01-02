@@ -6,7 +6,7 @@ function loadGrenaders(game) {
 	grenaders = game.add.group();
 	grenaders.enableBody = true;
 	grenaders.physicsBodyType = Phaser.Physics.ARCADE;
-	grenaders.createMultiple(25, "GRENADER");
+	grenaders.createMultiple(50, "GRENADER");
 	grenaders.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	grenaders.setAll("body.immovable", true);
 	
@@ -14,14 +14,14 @@ function loadGrenaders(game) {
 	grenades = game.add.group();
 	grenades.enableBody = true;
 	grenades.physicsBodyType = Phaser.Physics.ARCADE;
-	grenades.createMultiple(30, "GRENADE");
+	grenades.createMultiple(100, "GRENADE");
 	grenades.callAll("body.enableBody", true);
 	grenades.setAll("body.collideWorldBounds", true);
 	grenades.setAll("body.worldBounce", new Phaser.Point(1, 1));
 	
 	//timer
 	var timer = game.time.create(false);
-	timer.loop(1000, function(){grenaders.forEachAlive(makeGrenades);}, this);
+	timer.loop(6000, function(){grenaders.forEachAlive(makeGrenades);}, this);
 	timer.start();
 }
 
@@ -50,9 +50,9 @@ function makeGrenades(grenader) {
 				g.body.drag.y = 200;
 				g.angle = random.angle();
 				g.anchor.setTo(0.5, 0.5);
-				game.time.events.add(1000, function(){
+				game.time.events.add(2000, function(){
 					//NOTE: this won't destroy tiles (and possibly crash) until i fix explosion.js
-					// explosion(g.x, g.y);
+					explosion(g.x, g.y);
 					g.kill();
 				}, this);
 			}
