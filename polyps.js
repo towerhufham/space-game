@@ -61,7 +61,7 @@ function polypShockwave(p) {
 	game.add.tween(shockwave).to({alpha:0}, 500, Phaser.Easing.Linear.None, true);
 	
 	//if the player is near, bounce them back
-	if (Phaser.Math.distance(shockwave.x, shockwave.y, player.x, player.y) <= 140*2) {
+	if (Phaser.Math.distance(shockwave.x, shockwave.y, player.x, player.y) <= 140*1.5) {
 		var rad = game.physics.arcade.angleBetween(shockwave, player);
 		var x = Math.cos(rad) * 10000;
 		var y = Math.sin(rad) * 10000;
