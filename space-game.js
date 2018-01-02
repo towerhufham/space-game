@@ -18,11 +18,9 @@ var playerLaserSpeed = 800;
 var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
-
 var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
-
 var currentLevel = 1;
 
 function preload() {
@@ -97,6 +95,7 @@ function create() {
 	player.body.maxVelocity = {x: SPEED, y: SPEED};
 	game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 	player.body.collideWorldBounds = true;
+	player.canMagnet = true;
 	// makePhantom(player, "PLACEHOLDER");
 	
 	//load enemy lasers

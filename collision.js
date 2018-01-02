@@ -79,6 +79,7 @@ function polypVSlaser(polyp, laser) {
 	//do regular collision stuff
 	polypsfx.play();
 	polyp.kill();
+	polypShockwave(polyp);
 	killLaser(laser);
 }
 

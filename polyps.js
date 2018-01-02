@@ -52,6 +52,27 @@ function spawnPolyps(polypMap) {
 	}
 }
 
+function polypShockwave(p) {
+	var shockwave = game.add.sprite(p.x, p.y, "ENERGY PARTICLE");
+	shockwave.anchor.setTo(0.5, 0.5);
+	shockwave.scale.setTo(0.1, 0.1);
+	shockwave.alpha = 1;
+	game.add.tween(shockwave.scale).to({x:2, y:2}, 500, Phaser.Easing.Sinusoidal.Out, true);
+	game.add.tween(shockwave).to({alpha:0}, 500, Phaser.Easing.Linear.None, true);
+	
+	//if the player is near, bounce them back
+	if (Phaser.Math.distance(shockwave.x, shockwave.y, player.x, player.y) <= 140*2) {
+		var rad = game.physics.arcade.angleBetween(shockwave, player);
+		var x = Math.cos(rad) * 10000;
+		var y = Math.sin(rad) * 10000;
+		console.log(x, y);
+		player.body.velocity.x = x;
+		player.body.velocity.y = y;
+		player.canMagnet = false;
+		game.time.events.add(500, function(){player.canMagnet = true;}, this);
+	}
+}
+
 function spawnEnergies(polyp) {
 	for (var i = 0; i < 5; i++) {
 		var e = energies.getFirstDead();
@@ -80,13 +101,15 @@ function pingEnergies() {
 }
 
 function magnetEnergies(game, player) {
-	energies.forEachAlive(function(e){
-		var dist = Phaser.Math.distance(e.x, e.y, player.x, player.y);
-		if (dist < 125) {
-			var angle = game.physics.arcade.angleBetween(e, player);
-			angle *= Phaser.Math.RAD_TO_DEG;  //why tf does phaser use two different angle notations without converting automatically
-			var vel = game.physics.arcade.velocityFromAngle(angle, 450);
-			e.body.velocity = vel;
-		}
-	}, this);
+	if (player.canMagnet) {
+		energies.forEachAlive(function(e){
+			var dist = Phaser.Math.distance(e.x, e.y, player.x, player.y);
+			if (dist < 125) {
+				var angle = game.physics.arcade.angleBetween(e, player);
+				angle *= Phaser.Math.RAD_TO_DEG;  //why tf does phaser use two different angle notations without converting automatically
+				var vel = game.physics.arcade.velocityFromAngle(angle, 450);
+				e.body.velocity = vel;
+			}
+		}, this);
+	}
 }
