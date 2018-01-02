@@ -20,6 +20,7 @@ var enemyParticles;
 var enemyGroups = [];
 var currentLevel = 1;
 var screenIsShaking = false;
+var pad1;
 
 function preload() {
 	//images
@@ -137,6 +138,11 @@ function create() {
 	//godmode
 	var f9 = game.input.keyboard.addKey(Phaser.Keyboard.F9);
 	f9.onDown.add(function(){invincible = !invincible; energysfx.play(); console.log("godmode = " + invincible);}, this);
+	
+	//gamepad
+	game.input.gamepad.start();
+    // To listen to buttons from a specific pad listen directly on that pad game.input.gamepad.padX, where X = pad 1-4
+    pad1 = game.input.gamepad.pad1;
 }
 
 function update() {
@@ -151,9 +157,9 @@ function update() {
 	// player.phantom.y = player.y;
 	
 	//horizontal velocity
-	if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT) || game.input.keyboard.isDown(Phaser.Keyboard.A)) {
+	if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT) || game.input.keyboard.isDown(Phaser.Keyboard.A) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_LEFT)) {
 		player.body.velocity.x -= ACCEL;
-	} else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT) || game.input.keyboard.isDown(Phaser.Keyboard.D)) {
+	} else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT) || game.input.keyboard.isDown(Phaser.Keyboard.D) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_RIGHT)) {
 		player.body.velocity.x += ACCEL;
 	} else {
 		player.body.velocity.x += Math.sign(player.body.velocity.x) * -DEACCEL;
@@ -164,9 +170,9 @@ function update() {
 	}
 	
 	//vertical velocity
-	if (game.input.keyboard.isDown(Phaser.Keyboard.UP) || game.input.keyboard.isDown(Phaser.Keyboard.W)) {
+	if (game.input.keyboard.isDown(Phaser.Keyboard.UP) || game.input.keyboard.isDown(Phaser.Keyboard.W) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_UP)) {
 		player.body.velocity.y -= ACCEL;
-	} else if (game.input.keyboard.isDown(Phaser.Keyboard.DOWN) || game.input.keyboard.isDown(Phaser.Keyboard.S)) {
+	} else if (game.input.keyboard.isDown(Phaser.Keyboard.DOWN) || game.input.keyboard.isDown(Phaser.Keyboard.S) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_DOWN)) {
 		player.body.velocity.y += ACCEL;
 	} else {
 		player.body.velocity.y += Math.sign(player.body.velocity.y) * -DEACCEL;
