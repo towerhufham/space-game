@@ -22,6 +22,7 @@ var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
 var currentLevel = 1;
+var screenIsShaking = false;
 
 function preload() {
 	//images
@@ -258,6 +259,8 @@ function getLevelFeatures(level) {
 		return ["turrets", "octopuses"];
 	} else if (level === 3) {
 		return ["turrets", "octopuses", "lobsters"];
+	} else {
+		return [];
 	}
 }
 
@@ -377,13 +380,10 @@ function playerFireAtAngle(game, source, angle, speed = _defaultSpeed) {
 }
 
 function screenShake() {
-	//shakes the screen based on how damaged the player is
-	if (health >= 2) {
+	if (!screenIsShaking) {
+		screenIsShaking = true;
 		game.camera.shake(0.0075, 250);
-	} else if (health === 1) {
-		game.camera.shake(0.05, 300);
-	} else {
-		game.camera.shake(0.07, 350);
+		game.time.events.add(250, function(){screenIsShaking = false;}, this);
 	}
 }
 
