@@ -117,7 +117,7 @@ function designScrapyard(game, tileLevel=0.12, bladeLevel=0.1, exploderLevel=0.1
 	return arr;
 }
 
-function designFoundry(game, tileLevel=0.1) {
+function designFoundry(game, tileLevel=0.001) {
 	//init
 	var arr = _makeLevelArray();
 	
@@ -132,7 +132,8 @@ function designFoundry(game, tileLevel=0.1) {
 			if (!this.alive) {
 				return " ";
 			} else if (this.isGrenader) {
-				return "g";
+				// return "g";
+				return "e";
 			} else if (this.isEntrance) {
 				return " ";
 			} else {
@@ -141,9 +142,8 @@ function designFoundry(game, tileLevel=0.1) {
 		},
 		process: function (neighbors) {
 			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
-			this.alive = (surrounding === 3 || surrounding === 4) || surrounding === 2 && this.alive;
-			if (!this.alive && surrounding === 7) {this.alive = true; this.isGrenader = true;}
-			// if (this.alive && !this.isGrenader && Math.random() > 0.99) {this.isEntrance = true;}
+			this.alive = (surrounding === 1 || surrounding === 5 && !this.alive) || (surrounding < 3 && this.alive);
+			if ((this.alive && surrounding === 5) || (this.alive && surrounding < 2 &&  Math.random() > 0.95)) {this.isGrenader = true;}
 		},
 		reset: function () {
 			this.wasAlive = this.alive;
@@ -158,7 +158,7 @@ function designFoundry(game, tileLevel=0.1) {
 	]);
 	
 	//update world
-	for (var i = 0; i < 10; i++) {
+	for (var i = 0; i < 15; i++) {
 		world.step();
 	}
 	//convert world to tile array

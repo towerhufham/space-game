@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="1024"
+   viewBox="0 0 1024 1024"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="furnace.svg"
+   inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\placeholder.png"
+   inkscape:export-xdpi="2.630832"
+   inkscape:export-ydpi="2.630832">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#101918"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="835.28904"
+     inkscape:cy="451.00879"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:object-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4136"
+       spacingx="64"
+       spacingy="64"
+       empspacing="4" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-28.362161)">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff00ff;stroke-width:40;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 256,28.362161 c 192,64 320,64 512,0 l -192,255.999999 64,384 -256,0 64,-384 z"
+       id="path4144"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\furnace.png"
+       inkscape:export-xdpi="5.224772"
+       inkscape:export-ydpi="5.224772" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path4144"
+       id="use4146"
+       transform="matrix(0,1,-1,0,1052.3622,28.362161)"
+       width="100%"
+       height="100%"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\furnace.png"
+       inkscape:export-xdpi="5.224772"
+       inkscape:export-ydpi="5.224772" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path4144"
+       id="use4148"
+       transform="matrix(0,-1,1,0,-28.36216,1052.3622)"
+       width="100%"
+       height="100%"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\furnace.png"
+       inkscape:export-xdpi="5.224772"
+       inkscape:export-ydpi="5.224772" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#path4144"
+       id="use4150"
+       transform="matrix(-1,0,0,-1,1024,1080.7243)"
+       width="100%"
+       height="100%"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\furnace.png"
+       inkscape:export-xdpi="5.224772"
+       inkscape:export-ydpi="5.224772" />
+    <g
+       transform="translate(-1472,-1024)"
+       id="g4152-5">
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path4144-1"
+         d="m 256,28.362161 256,64 256,-64 -192,255.999999 0,320 -128,0 0,-320 z"
+         style="fill:none;fill-rule:evenodd;stroke:#ff00ff;stroke-width:40;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <use
+         height="100%"
+         width="100%"
+         transform="matrix(0,1,-1,0,1052.3622,28.362161)"
+         id="use4146-7"
+         xlink:href="#path4144-1"
+         y="0"
+         x="0" />
+      <use
+         height="100%"
+         width="100%"
+         transform="matrix(0,-1,1,0,-28.36216,1052.3622)"
+         id="use4148-9"
+         xlink:href="#path4144-1"
+         y="0"
+         x="0" />
+      <use
+         height="100%"
+         width="100%"
+         transform="matrix(-1,0,0,-1,1024,1080.7243)"
+         id="use4150-4"
+         xlink:href="#path4144-1"
+         y="0"
+         x="0" />
+    </g>
+  </g>
+</svg>

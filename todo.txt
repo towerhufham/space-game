@@ -17,3 +17,9 @@ Current known issues:
 DOPE IDEAS:
 
 * enemy that bursts out of tiles
+
+FOR FOUNDRY:
+
+* big enemy that can't fit in the 1x1 crevices, but chases you/shoots spread in the open
+* spelunky temple-cross-trap style enemy
+* bomberman-bomb style trap

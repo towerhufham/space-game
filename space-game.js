@@ -50,8 +50,8 @@ function preload() {
 	game.load.spritesheet("ROUND-CELL", "img/ui/round_cells.png", 25, 25);
 	
 	//tilesets
-	// game.load.image("TILES", "img/tiles/tiles_debug.png");
-	game.load.image("TILES", "img/tiles/tiles.png");
+	game.load.image("TILES", "img/tiles/tiles_debug.png");
+	// game.load.image("TILES", "img/tiles/tiles.png");
 	
 	//audio
 	preloadAudio(game);
