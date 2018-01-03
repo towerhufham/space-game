@@ -203,7 +203,7 @@ function scrapyard2(steps, tileLevel=0.12, bladeLevel=0.1, exploderLevel=0.15, r
 	return world;
 }
 
-function foundry(steps, tileLevel=0.1) {
+function foundry_old(steps=10, tileLevel=0.1) {
 	//create the CA sim (ripped directly from https://sanojian.github.io/cellauto/)
 	var world = new CAWorld({
 		width: 60,
@@ -249,6 +249,138 @@ function foundry(steps, tileLevel=0.1) {
 	return world;
 }
 
+function biolab(steps=11, tileLevel=0.015) {
+	//create the CA sim (ripped directly from https://sanojian.github.io/cellauto/)
+	var world = new CAWorld({
+		width: 60,
+		height: 60,
+	});
+
+	world.registerCellType('living', {
+		getBlock: function () {
+			//wall is black, open is white
+			if (!this.alive) {
+				return "#FFFFFF";
+			} else if (this.isBio) {
+				return "#008800";
+			} else if (this.isThing) {
+				return "#888888";
+			} else {
+				return "#000000";
+			}
+		},
+		process: function (neighbors) {
+			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
+			this.alive = (surrounding === 2 || surrounding === 4) || (surrounding < 2 || surrounding === 4 ) && this.alive;
+			if (!this.alive && surrounding > 1) {this.isBio = true;}
+			// if (!this.alive && surrounding === 0) {this.isThing = true;}
+		},
+		reset: function () {
+			this.wasAlive = this.alive;
+		}
+	}, function () {
+		//init
+		this.alive = Math.random() > 1-tileLevel;
+	});
+
+	world.initialize([
+		{ name: 'living', distribution: 100 }
+	]);
+	
+	//update world
+	for (var i = 0; i < steps; i++) {
+		world.step();
+	}
+	
+	return world;
+}
+
+function mygoodblocks(steps=15, tileLevel=0.0005) {
+	//create the CA sim (ripped directly from https://sanojian.github.io/cellauto/)
+	var world = new CAWorld({
+		width: 60,
+		height: 60,
+	});
+
+	world.registerCellType('living', {
+		getBlock: function () {
+			//wall is black, open is white
+			if (!this.alive) {
+				return "#FFFFFF";
+			} else if (this.isBio) {
+				return "#008800";
+			} else {
+				return "#000000";
+			}
+		},
+		process: function (neighbors) {
+			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
+			this.alive = (surrounding === 1 || surrounding === 5 && !this.alive) || (surrounding < 3 && this.alive);
+			// if (!this.alive && surrounding > 1) {this.isBio = true;}
+		},
+		reset: function () {
+			this.wasAlive = this.alive;
+		}
+	}, function () {
+		//init
+		this.alive = Math.random() > 1-tileLevel;
+	});
+
+	world.initialize([
+		{ name: 'living', distribution: 100 }
+	]);
+	
+	//update world
+	for (var i = 0; i < steps; i++) {
+		world.step();
+	}
+	
+	return world;
+}
+
+function foundry(steps=15, tileLevel=0.001) {
+	var world = new CAWorld({
+		width: 60,
+		height: 60,
+	});
+
+	world.registerCellType('living', {
+		getBlock: function () {
+			//wall is black, open is white
+			if (!this.alive) {
+				return "#FFFFFF";
+			} else if (this.isFire) {
+				return "#CC0000";
+			} else {
+				return "#000000";
+			}
+		},
+		process: function (neighbors) {
+			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
+			this.alive = (surrounding === 1 || surrounding === 5 && !this.alive) || (surrounding < 3 && this.alive);
+			if ((this.alive && surrounding === 5) || (this.alive && surrounding < 2 &&  Math.random() > 0.95)) {this.isFire = true;}
+		},
+		reset: function () {
+			this.wasAlive = this.alive;
+		}
+	}, function () {
+		//init
+		this.alive = Math.random() > 1-tileLevel;
+	});
+
+	world.initialize([
+		{ name: 'living', distribution: 100 }
+	]);
+	
+	//update world
+	for (var i = 0; i < steps; i++) {
+		world.step();
+	}
+	
+	return world;
+}
+
+
 /////////////////////////////////////////
 
 var canvas = document.getElementById("main");
@@ -270,4 +402,4 @@ function render(world) {
 
 ////////////////////////////////////////
 
-render(foundry(10));
+render(foundry());
