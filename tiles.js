@@ -131,11 +131,9 @@ function designFoundry(game, tileLevel=0.001) {
 			//wall is black, open is white
 			if (!this.alive) {
 				return " ";
-			} else if (this.isGrenader) {
+			} else if (this.isFurnace) {
 				// return "g";
-				return "e";
-			} else if (this.isEntrance) {
-				return " ";
+				return "f";
 			} else {
 				return "w";
 			}
@@ -143,7 +141,7 @@ function designFoundry(game, tileLevel=0.001) {
 		process: function (neighbors) {
 			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
 			this.alive = (surrounding === 1 || surrounding === 5 && !this.alive) || (surrounding < 3 && this.alive);
-			if ((this.alive && surrounding === 5) || (this.alive && surrounding < 2 &&  Math.random() > 0.95)) {this.isGrenader = true;}
+			if ((this.alive && surrounding === 5) || (this.alive && surrounding < 2 &&  Math.random() > 0.95)) {this.isFurnace = true;}
 		},
 		reset: function () {
 			this.wasAlive = this.alive;
@@ -184,6 +182,7 @@ function makeLayer(game, arr, key) {
 	var bladeMap = [];
 	var exploderMap = [];
 	var grenaderMap = [];
+	var furnaceMap = [];
 	//go!
 	var size = 60; // yaaay hardcoding
 	for (var y = 0; y < size; y++) {
@@ -234,6 +233,11 @@ function makeLayer(game, arr, key) {
 				data += "-1";
 				grenaderMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
 			}
+			// "f" is reflector
+			else if (arr[x][y] === "f") {
+				data += "-1";
+				furnaceMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
+			}
 			
 			//end of line
 			if (x < size-1) {
@@ -264,6 +268,7 @@ function makeLayer(game, arr, key) {
 	layer.bladeMap = bladeMap;
 	layer.exploderMap = exploderMap;
 	layer.grenaderMap = grenaderMap;
+	layer.furnaceMap = furnaceMap;
 	//return the layer for collision
 	return layer;
 }
