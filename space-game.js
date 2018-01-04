@@ -221,11 +221,12 @@ function update() {
 
 function loadLevel() {
 	var levelAttributes = getLevelFeatures(currentLevel);
-	if (levelAttributes.includes("turrets")) {
+	var eList = levelAttributes.enemies;
+	if (eList.includes("turrets")) {
 		enemyGroups.push(loadTurrets(game, player));
-	} if (levelAttributes.includes("octopuses")) {
+	} if (eList.includes("octopuses")) {
 		enemyGroups.push(loadOctopuses(game, player));
-	} if (levelAttributes.includes("lobsters")) {
+	} if (eList.includes("lobsters")) {
 		enemyGroups.push(loadLobsters(game, player));
 	}
 	// console.log("current enemy groups:");
@@ -268,13 +269,13 @@ function loadLevel() {
 
 function getLevelFeatures(level) {
 	if (level === 1) {
-		return ["turrets"];
+		return {enemies:["turrets"]};
 	} else if (level === 2) {
-		return ["turrets", "octopuses"];
+		return {enemies:["turrets", "octopuses"]};
 	} else if (level === 3) {
-		return ["turrets", "octopuses", "lobsters"];
+		return {enemies:["turrets", "octopuses", "lobsters"]};
 	} else {
-		return [];
+		return {enemies:[]};
 	}
 }
 
