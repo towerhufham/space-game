@@ -51,8 +51,8 @@ function preload() {
 	game.load.spritesheet("ROUND-CELL", "img/ui/round_cells.png", 25, 25);
 	
 	//tilesets
-	game.load.image("TILES", "img/tiles/tiles_debug.png");
-	// game.load.image("TILES", "img/tiles/tiles.png");
+	// game.load.image("TILES", "img/tiles/tiles_debug.png");
+	game.load.image("TILES", "img/tiles/tiles.png");
 	
 	//audio
 	preloadAudio(game);
@@ -222,6 +222,7 @@ function update() {
 function loadLevel() {
 	var levelAttributes = getLevelFeatures(currentLevel);
 	var eList = levelAttributes.enemies;
+	
 	if (eList.includes("turrets")) {
 		enemyGroups.push(loadTurrets(game, player));
 	} if (eList.includes("octopuses")) {
@@ -229,8 +230,6 @@ function loadLevel() {
 	} if (eList.includes("lobsters")) {
 		enemyGroups.push(loadLobsters(game, player));
 	}
-	// console.log("current enemy groups:");
-	// console.log(enemyGroups);
 	
 	//if tiles currently exist, destroy them
 	if (tileLayer != null) {
@@ -239,7 +238,7 @@ function loadLevel() {
 	//close gate
 	closeGate();
 	//add tiles
-	tileLayer = makeTiles(game, "TILES");
+	tileLayer = makeTiles(game, "foundry");
 	console.log(tileLayer.polypMap);
 	spawnPolyps(tileLayer.polypMap);
 	gate.x = tileLayer.gatePosition.x;

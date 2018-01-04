@@ -273,9 +273,19 @@ function makeLayer(game, arr, key) {
 	return layer;
 }
 	
-function makeTiles(game, key) {
+function makeTiles(game, generationName) {
+	//lookup generationName
+	var key;
+	var designFunc;
+	if (generationName === "scrapyard") {
+		key = "TILES";
+		designFunc = designScrapyard;
+	} else if (generationName === "foundry") {
+		key = "TILES";
+		designFunc = designFoundry;
+	}
 	// var design = designScrapyard(game);
-	var design = designFoundry(game);
+	var design = designFunc(game);
 	//quality insurance
 	design = _tileArrayQualityInsurance(design);
 	//make the layer
