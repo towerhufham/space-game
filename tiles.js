@@ -278,10 +278,10 @@ function makeTiles(game, generationName) {
 	var key;
 	var designFunc;
 	if (generationName === "scrapyard") {
-		key = "TILES";
+		key = "TILES-SCRAPYARD";
 		designFunc = designScrapyard;
 	} else if (generationName === "foundry") {
-		key = "TILES";
+		key = "TILES-FOUNDRY";
 		designFunc = designFoundry;
 	}
 	// var design = designScrapyard(game);
