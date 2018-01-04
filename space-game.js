@@ -274,7 +274,7 @@ function getLevelFeatures(level) {
 	} else if (level === 2) {
 		return {enemies:["turrets", "octopuses"], map:"scrapyard"};
 	} else if (level === 3) {
-		return {enemies:["octopuses"], map:"scrapyard"};
+		return {enemies:["octopuses"], map:"foundry"};
 	} else {
 		return {enemies:[], map:"scrapyard"};
 	}
