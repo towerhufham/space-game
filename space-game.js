@@ -243,6 +243,8 @@ function loadLevel() {
 	spawnPolyps(tileLayer.polypMap);
 	gate.x = tileLayer.gatePosition.x;
 	gate.y = tileLayer.gatePosition.y;
+	//clear out stuff that needs clearing out
+	
 	//optional features
 	if (tileLayer.reflectorMap) {
 		loadReflectors(game);
@@ -270,11 +272,11 @@ function getLevelFeatures(level) {
 	if (level === 1) {
 		return {enemies:["turrets"], map:"scrapyard"};
 	} else if (level === 2) {
-		return {enemies:["turrets", "octopuses"], map:"foundry"};
+		return {enemies:["turrets", "octopuses"], map:"scrapyard"};
 	} else if (level === 3) {
-		return {enemies:["turrets", "octopuses", "lobsters"], map:"scrapyard"};
+		return {enemies:["octopuses"], map:"scrapyard"};
 	} else {
-		return {enemies:[]};
+		return {enemies:[], map:"scrapyard"};
 	}
 }
 
@@ -377,6 +379,12 @@ function resetGame() {
 	}
 	if (exploders) {
 		exploders.callAll("kill");
+	}
+	if (grenaders) {
+		grenades.callAll("kill");
+	}
+	if (furnaces) {
+		furnaces.callAll("kill");
 	}
 	//reset player
 	player.body.stop();
