@@ -282,7 +282,7 @@ function loadLevel() {
 function getLevelFeatures(level) {
 	if (level === 1) {
 		// return {enemies:["turrets"], map:"scrapyard"};
-		return {enemies:["octopuses"], map:"foundry"};
+		return {enemies:["turrets"], map:"scrapyard"};
 	} else if (level === 2) {
 		return {enemies:["turrets", "octopuses"], map:"scrapyard"};
 	} else if (level === 3) {
@@ -335,7 +335,7 @@ function playerFire() {
 }
 
 //this as of right now is only used by reflectors to "reflect" a player's laser
-function playerFireAtAngle(game, source, angle, speed = _defaultSpeed) {
+function playerFireAtAngle(game, source, angle, speed = playerLaserSpeed) {
 	//in radians
 	var laser = playerLasers.getFirstDead();
 	if (laser) {

@@ -101,7 +101,7 @@ function designScrapyard(game, steps=1, tileLevel=0.12, bladeLevel=0.1, exploder
 	]);
 	
 	//update world
-	for (var i = 0; i < step; i++) {
+	for (var i = 0; i < steps; i++) {
 		world.step();
 	}
 	//convert world to tile array

@@ -23,6 +23,7 @@ function doCollisions() {
 	game.physics.arcade.collide(sliders, tileLayer, sliderCollision);
 	game.physics.arcade.collide(sliders, sliders, sliderCollision);
 	game.physics.arcade.collide(sliders, furnaces, sliderVSfurnace);
+	game.physics.arcade.collide(energies, exploders);
 	// sprite overlaps
 	game.physics.arcade.overlap(turrets, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(octopuses, playerLasers, enemyVSlaser, null, this);
