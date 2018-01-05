@@ -56,7 +56,7 @@ function _tileArrayQualityInsurance(arr) {
 	return arr;
 }
 
-function designScrapyard(game, tileLevel=0.12, bladeLevel=0.1, exploderLevel=0.15, reflectorLevel=0.01) {
+function designScrapyard(game, steps=1, tileLevel=0.12, bladeLevel=0.1, exploderLevel=0.15, reflectorLevel=0.01) {
 	//init
 	var arr = _makeLevelArray();
 	
@@ -101,7 +101,7 @@ function designScrapyard(game, tileLevel=0.12, bladeLevel=0.1, exploderLevel=0.1
 	]);
 	
 	//update world
-	for (var i = 0; i < 1; i++) {
+	for (var i = 0; i < step; i++) {
 		world.step();
 	}
 	//convert world to tile array
@@ -117,7 +117,7 @@ function designScrapyard(game, tileLevel=0.12, bladeLevel=0.1, exploderLevel=0.1
 	return arr;
 }
 
-function designFoundry(game, tileLevel=0.001) {
+function designFoundry(game, steps=15, tileLevel=0.001) {
 	//init
 	var arr = _makeLevelArray();
 	
@@ -134,6 +134,8 @@ function designFoundry(game, tileLevel=0.001) {
 			} else if (this.isFurnace) {
 				// return "g";
 				return "f";
+			} else if (this.isSlider) {
+				return "s";
 			} else {
 				return "w";
 			}
@@ -142,6 +144,10 @@ function designFoundry(game, tileLevel=0.001) {
 			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
 			this.alive = (surrounding === 1 || surrounding === 5 && !this.alive) || (surrounding < 3 && this.alive);
 			if ((this.alive && surrounding === 5) || (this.alive && surrounding < 2 &&  Math.random() > 0.95)) {this.isFurnace = true;}
+			//finalize
+			if (world.ticks === steps-1) {
+				if (!this.alive && surrounding === 0 && Math.random() > 0.95) {this.alive = false; this.isSlider = true}
+			}
 		},
 		reset: function () {
 			this.wasAlive = this.alive;
@@ -156,7 +162,7 @@ function designFoundry(game, tileLevel=0.001) {
 	]);
 	
 	//update world
-	for (var i = 0; i < 15; i++) {
+	for (var i = 0; i < steps; i++) {
 		world.step();
 	}
 	//convert world to tile array
@@ -183,6 +189,7 @@ function makeLayer(game, arr, key) {
 	var exploderMap = [];
 	var grenaderMap = [];
 	var furnaceMap = [];
+	var sliderMap = [];
 	//go!
 	var size = 60; // yaaay hardcoding
 	for (var y = 0; y < size; y++) {
@@ -233,10 +240,17 @@ function makeLayer(game, arr, key) {
 				data += "-1";
 				grenaderMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
 			}
+			
 			// "f" is reflector
 			else if (arr[x][y] === "f") {
 				data += "-1";
 				furnaceMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
+			}
+			
+			// "s" is reflector
+			else if (arr[x][y] === "s") {
+				data += "-1";
+				sliderMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
 			}
 			
 			//end of line
@@ -269,6 +283,7 @@ function makeLayer(game, arr, key) {
 	layer.exploderMap = exploderMap;
 	layer.grenaderMap = grenaderMap;
 	layer.furnaceMap = furnaceMap;
+	layer.sliderMap = sliderMap;
 	//return the layer for collision
 	return layer;
 }

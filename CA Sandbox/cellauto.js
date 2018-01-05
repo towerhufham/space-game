@@ -50,6 +50,7 @@ function CAWorld(options) {
 	this.BOTTOMLEFT     = { index: 5, x: -1, y:  1 };
 	this.BOTTOM         = { index: 6, x:  0, y:  1 };
 	this.BOTTOMRIGHT    = { index: 7, x:  1, y:  1 };
+	this.ticks = 0;
 	
 	this.randomGenerator = Math.random;
 
@@ -61,6 +62,7 @@ function CAWorld(options) {
 		neighborhood = [null, null, null, null, null, null];
 	}
 	this.step = function() {
+		this.ticks++;
 		var y, x;
 		for (y=0; y<this.height; y++) {
 			for (x=0; x<this.width; x++) {

@@ -338,7 +338,7 @@ function mygoodblocks(steps=15, tileLevel=0.0005) {
 	return world;
 }
 
-function foundry(steps=15, tileLevel=0.001) {
+function foundry(steps=15, tileLevel=0.001, sliderLevel=0.3) {
 	var world = new CAWorld({
 		width: 60,
 		height: 60,
@@ -351,6 +351,8 @@ function foundry(steps=15, tileLevel=0.001) {
 				return "#FFFFFF";
 			} else if (this.isFire) {
 				return "#CC0000";
+			} else if (this.isSlider) {
+				return "#FF00FF";
 			} else {
 				return "#000000";
 			}
@@ -359,6 +361,10 @@ function foundry(steps=15, tileLevel=0.001) {
 			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
 			this.alive = (surrounding === 1 || surrounding === 5 && !this.alive) || (surrounding < 3 && this.alive);
 			if ((this.alive && surrounding === 5) || (this.alive && surrounding < 2 &&  Math.random() > 0.95)) {this.isFire = true;}
+			//finalize
+			if (world.ticks === steps-1) {
+				if (!this.alive && surrounding === 0 && Math.random() > 0.95) {this.alive = false; this.isSlider = true}
+			}
 		},
 		reset: function () {
 			this.wasAlive = this.alive;
@@ -376,7 +382,7 @@ function foundry(steps=15, tileLevel=0.001) {
 	for (var i = 0; i < steps; i++) {
 		world.step();
 	}
-	
+	console.log(world);
 	return world;
 }
 

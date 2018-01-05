@@ -42,6 +42,7 @@ function preload() {
 	game.load.image("GRENADER", "img/grenader.png");
 	game.load.image("GRENADE", "img/grenade.png");
 	game.load.image("FURNACE", "img/furnace.png");
+	game.load.image("SLIDER", "img/slider.png");
 	game.load.spritesheet("OCTO", "img/octo.png", 61, 64);
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
 	
@@ -267,6 +268,10 @@ function loadLevel() {
 		loadFurnaces(game);
 		spawnFurnaces(tileLayer.furnaceMap);
 	}
+	if (tileLayer.sliderMap) {
+		loadSliders(game);
+		spawnSliders(tileLayer.sliderMap);
+	}
 }
 
 function getLevelFeatures(level) {
@@ -393,6 +398,9 @@ function resetGame() {
 	}
 	if (blobs) {
 		blobs.callAll("kill");
+	}
+	if (sliders) {
+		sliders.callAll("kill");
 	}
 	//reset player
 	player.body.stop();
