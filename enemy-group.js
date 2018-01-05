@@ -1,5 +1,5 @@
 //we take in a player as an argument because some functions use the player's pos
-function makeEnemyGroup(game, player, key, speed, fireFunction, newUpdate = "default") {
+function makeEnemyGroup(game, player, key, spawntime, speed, fireFunction, newUpdate = "default") {
 	//create enemy group
 	var newEnemies = game.add.group();
 	newEnemies.enableBody = true;
@@ -25,7 +25,7 @@ function makeEnemyGroup(game, player, key, speed, fireFunction, newUpdate = "def
 	
 	//timer
 	var timer = game.time.create(false);
-	timer.loop(1000, function(){basicSpawn(newEnemies, speed, game, player);}, this);
+	timer.loop(spawntime, function(){basicSpawn(newEnemies, speed, game, player);}, this);
 	timer.loop(1000, function(){newEnemies.forEachAlive(newEnemies.fire, this, game, player);});
 	timer.start();
 	
