@@ -120,6 +120,6 @@ function drawMap() {
 	var ry = gate.y / game.world.height;
 	var drawx = Math.round(rx * MAPSIZE) + MAPX - 1;
 	var drawy = Math.round(ry * MAPSIZE) + MAPY - 1;
-	map.lineStyle(1, 0xFFFFFF, 1);
+	map.lineStyle(1, 0x00FF00, 1);
 	map.drawRect(drawx, drawy, 3, 3);
 }
