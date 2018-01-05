@@ -22,6 +22,7 @@ function doCollisions() {
 	game.physics.arcade.collide(blobs, tileLayer);
 	game.physics.arcade.collide(sliders, tileLayer);
 	game.physics.arcade.collide(sliders, sliders);
+	game.physics.arcade.collide(sliders, furnaces, sliderVSfurnace);
 	// sprite overlaps
 	game.physics.arcade.overlap(turrets, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(octopuses, playerLasers, enemyVSlaser, null, this);
@@ -141,4 +142,8 @@ function laserVSexploder(laser, exploder) {
 function laserVSfurnace(laser, furnace) {
 	laser.kill();
 	explodeFurnace(furnace, 0);
+}
+
+function sliderVSfurnace(slider, furn) {
+	explodeFurnace(furn, 0);
 }

@@ -217,6 +217,11 @@ function update() {
 		}
 	}
 	
+	//FOR NOW
+	if (sliders) {
+		sliders.forEachAlive(updateSlider, this);
+	}
+	
 	//debug text
 	debugText.text = "Level: " + currentLevel + "\nFPS: " + game.time.fps;
 }
