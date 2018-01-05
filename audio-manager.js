@@ -6,7 +6,8 @@ var polypsfx;
 var energysfx;
 var reflectorsfx;
 var gatesfx;
-var explodersfx
+var explodersfx;
+var furnacesfx;
 
 function preloadAudio(game) {
 	game.load.audio("SHOOT", "audio/shooty_low.wav");
@@ -18,6 +19,7 @@ function preloadAudio(game) {
 	game.load.audio("REFLECTOR", "audio/reflector2.wav");
 	game.load.audio("GATE", "audio/smallsplode.wav");
 	game.load.audio("EXPLODER", "audio/bigsplode.wav");
+	game.load.audio("FURNACE", "audio/furnace.wav");
 }
 
 function loadAudio(game) {
@@ -30,4 +32,5 @@ function loadAudio(game) {
 	reflectorsfx = game.add.audio("REFLECTOR", 0.25);
 	gatesfx = game.add.audio("GATE", 0.25);
 	explodersfx = game.add.audio("EXPLODER", 0.25);
+	furnacesfx = game.add.audio("FURNACE", 0.25);
 }

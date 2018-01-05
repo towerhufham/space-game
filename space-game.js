@@ -425,7 +425,7 @@ function flashSprite(sprite, time, tint = 0x000000) {
 			tinted = true;
 		}
 	}, this);
-	game.time.events.add(1000, function(){timer.stop(); sprite.tint = 0xFFFFFF;}, this);
+	game.time.events.add(time, function(){timer.stop(); sprite.tint = 0xFFFFFF;}, this);
 	timer.start();
 }
 

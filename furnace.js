@@ -8,7 +8,7 @@ function loadFurnaces(game) {
 	furnaces = game.add.group();
 	furnaces.enableBody = true;
 	furnaces.physicsBodyType = Phaser.Physics.ARCADE;
-	furnaces.createMultiple(ALLOWED_FURNACES, "PLACEHOLDER");
+	furnaces.createMultiple(ALLOWED_FURNACES, "FURNACE");
 	furnaces.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	furnaces.setAll("body.immovable", true);
 	
@@ -24,24 +24,38 @@ function loadFurnaces(game) {
 }
 
 function setFurnaceToExplode(furn) {
-	var t = game.rnd.between(6000, 8000);
+	// var t = game.rnd.between(6000, 8000);
+	var t = game.rnd.between(6000, 45000);
 	game.time.events.add(t, function(){
-		flashSprite(furn, 3000);
-		for (var i = 0; i < BLOBS_PER_FURNACE; i++) {
-			var b = blobs.getFirstDead();
-			if (b) {
-				b.revive();
-				b.x = furn.x;
-				b.y = furn.y;
-				b.body.velocity.x = random.between(10, 200) * random.sign();
-				b.body.velocity.y = random.between(10, 200) * random.sign();
-				b.body.drag.x = 200;
-				b.body.drag.y = 200;
-				b.angle = random.angle();
-			}
-		}
-		furn.kill();
+		explodeFurnace(furn);
 	}, this);
+}
+
+function explodeFurnace(furn, flashtime=1500) {
+	if (furn) {
+		flashSprite(furn, flashtime);
+		game.time.events.add(flashtime, function(){
+			if (furn) {
+				for (var i = 0; i < BLOBS_PER_FURNACE; i++) {
+					var b = blobs.getFirstDead();
+					if (b) {
+						b.revive();
+						b.x = furn.x;
+						b.y = furn.y;
+						b.body.velocity.x = random.between(0, 200) * random.sign();
+						b.body.velocity.y = random.between(0, 200) * random.sign();
+						b.body.drag.x = 200;
+						b.body.drag.y = 200;
+						b.angle = random.angle();
+					}
+				}
+				if (furn.inCamera) {
+					furnacesfx.play();
+				}
+				furn.kill();
+			}
+		}, this);
+	}
 }
 
 function spawnFurnaces(m) {
