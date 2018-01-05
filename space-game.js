@@ -271,7 +271,8 @@ function loadLevel() {
 
 function getLevelFeatures(level) {
 	if (level === 1) {
-		return {enemies:["turrets"], map:"scrapyard"};
+		// return {enemies:["turrets"], map:"scrapyard"};
+		return {enemies:["turrets"], map:"foundry"};
 	} else if (level === 2) {
 		return {enemies:["turrets", "octopuses"], map:"scrapyard"};
 	} else if (level === 3) {
@@ -382,10 +383,16 @@ function resetGame() {
 		exploders.callAll("kill");
 	}
 	if (grenaders) {
+		grenaders.callAll("kill");
+	}
+	if (grenades) {
 		grenades.callAll("kill");
 	}
 	if (furnaces) {
 		furnaces.callAll("kill");
+	}
+	if (blobs) {
+		blobs.callAll("kill");
 	}
 	//reset player
 	player.body.stop();

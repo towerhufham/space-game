@@ -10,21 +10,23 @@ function doCollisions() {
 	if (checkOverlap(player, gate)) {
 		playerVSgate();
 	}
-	// tile collisions
+	// collisions
 	game.physics.arcade.collide(player, tileLayer);
 	game.physics.arcade.collide(energies, tileLayer);
 	game.physics.arcade.collide(grenades, tileLayer);
 	game.physics.arcade.collide(playerLasers, tileLayer, laserVStile);
 	game.physics.arcade.collide(enemyLasers, tileLayer, laserVStile);
-	// sprite collisions
+	game.physics.arcade.collide(player, exploders);
+	game.physics.arcade.collide(player, polyps);
+	game.physics.arcade.collide(player, furnaces);
+	game.physics.arcade.collide(blobs, tileLayer);
+	// sprite overlaps
 	game.physics.arcade.overlap(turrets, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(octopuses, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(polyps, playerLasers, polypVSlaser, null, this);
 	game.physics.arcade.overlap(player, enemyLasers, playerVSbadlaser, null, this);
 	game.physics.arcade.overlap(player, energies, playerVSenergy, null, this);
-	game.physics.arcade.collide(player, exploders);
-	game.physics.arcade.collide(player, polyps);
-	//extra collisions
+	game.physics.arcade.overlap(player, blobs, damagePlayer);
 	game.physics.arcade.overlap(enemyLasers, reflectors, enemylaserVSreflector, null, this);
 	game.physics.arcade.overlap(playerLasers, reflectors, playerlaserVSreflector, null, this);
 	game.physics.arcade.overlap(player, blades, playerVSblade, null, this);
