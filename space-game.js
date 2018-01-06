@@ -1,5 +1,5 @@
-var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update});
-// var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update, render: render});
+// var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update});
+var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update, render: render});
 
 var gate;
 var player;
@@ -243,8 +243,9 @@ function render() {
 	//enemy lasers
 	enemyLasers.forEachAlive(game.debug.body, game.debug);
 	//enemies
-	// for (var i = 0; i < enemyGroups.length; i++) {
-		// enemyGroups[i].clearFunc();
+	for (var i = 0; i < enemyGroups.length; i++) {
+		enemyGroups[i].forEachAlive(game.debug.body, game.debug);
+	}
 }
 
 function resetGame() {
