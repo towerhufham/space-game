@@ -9,6 +9,7 @@ function loadEnemyLasers(game) {
     enemyLasers.createMultiple(100, "RED BEAM");
     enemyLasers.setAll("checkWorldBounds", true);
     enemyLasers.setAll("outOfBoundsKill", true);
+	enemyLasers.callAll("body.setSize", "body", 5, 5, 0, 0);
 }
 
 function fireAtSprite(game, source, sprite, speed = _defaultSpeed) {

@@ -273,7 +273,7 @@ function makeLayer(game, arr, key) {
 	// 0 is the layer index
     layer = tilemap.createLayer(0);
 	//this makes the layer render on every portion of the window (needed because the game.width/height is different depending on fullscreen)
-	//i doubt this is how this method is suppose to be used, but it works so
+	//i doubt this is how this method is supposed to be used, but it works so
 	layer.resize(3840, 3840);
 	//give the layer a map of the polyps and position of gate
 	layer.polypMap = polypMap;

@@ -1,4 +1,5 @@
-var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "phaser-example", { preload: preload, create: create, update: update });
+// var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update});
+var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update, render: render});
 
 var gate;
 var player;
@@ -92,10 +93,10 @@ function create() {
 	playerLasers = game.add.group();
     playerLasers.enableBody = true;
     playerLasers.physicsBodyType = Phaser.Physics.ARCADE;
-
     playerLasers.createMultiple(50, "BLUE BEAM");
     playerLasers.setAll("checkWorldBounds", true);
     playerLasers.setAll("outOfBoundsKill", true);
+    playerLasers.callAll("body.setSize", "body", 5, 5, 0, 0);
 	
 	//add player
 	player = game.add.sprite(game.world.width/2, game.world.height/2, "TRIANGLE");
@@ -105,6 +106,7 @@ function create() {
 	game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 	player.body.collideWorldBounds = true;
 	player.canMagnet = true;
+	player.body.setSize(15, 15, 10, 10);
 	// makePhantom(player, "PLACEHOLDER");
 	
 	//load enemy lasers
@@ -229,6 +231,19 @@ function update() {
 	
 	//debug text
 	debugText.text = "Level: " + currentLevel + "\nFPS: " + game.time.fps;
+}
+
+function render() {
+	//debug hitboxes
+	//player
+	game.debug.body(player);
+	//player lasers
+	playerLasers.forEachAlive(game.debug.body, game.debug);
+	//enemy lasers
+	enemyLasers.forEachAlive(game.debug.body, game.debug);
+	//enemies
+	// for (var i = 0; i < enemyGroups.length; i++) {
+		// enemyGroups[i].clearFunc();
 }
 
 function resetGame() {
