@@ -1,6 +1,29 @@
 Stuff for build v0.2.0
 
-* figure out why furnaces start exploded on spawn for first foundry gen
+* make furnace blobs actually resemble fire
+* make level generation params alterable by level features
+* have all 6 levels ready
+
+Planned for build v0.3.0
+
+* biolab finished
+* music implemented
+* pilot menu
+
+Planned for build v0.4.0
+
+* thunderzone finished
+* all menus implemented
+* use a string file for easy translation
+* final polish
+
+Todo around build v1.0.0
+
+* video and screenshots
+* pay Johnny and Kelvin to translate into Spanish and Chinese
+* description and other promo stuff
+* controller support
+
 
 Stuff to do eventually:
 
