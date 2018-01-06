@@ -107,7 +107,8 @@ function enemylaserVSreflector(laser, reflector) {
 	if (!laser.beenReflected) {
 		killLaser(laser);
 		var angle = game.rnd.angle() * (Math.PI / 180);
-		reflector.rotation = angle;
+		// reflector.rotation = angle;
+		game.add.tween(reflector).to({rotation: angle}, 750, Phaser.Easing.Linear.None, true);
 		fireAtAngle(game, reflector, angle);
 		laser.beenReflected = true;
 		game.time.events.add(800, function(){laser.beenReflected = false;}, this);
@@ -121,7 +122,8 @@ function playerlaserVSreflector(laser, reflector) {
 	if (!laser.beenReflected) {
 		killLaser(laser);
 		var angle = game.rnd.angle() * (Math.PI / 180);
-		reflector.rotation = angle;
+		// reflector.rotation = angle;
+		game.add.tween(reflector).to({rotation: angle}, 750, Phaser.Easing.Exponential.Out, true);
 		playerFireAtAngle(game, reflector, angle);
 		laser.beenReflected = true;
 		game.time.events.add(1500, function(){laser.beenReflected = false;}, this);
