@@ -1,9 +1,9 @@
 var octopuses;
 
 //we take in a player as an argument because some functions use the player's pos
-function loadOctopuses(game, player, enemyGroups) {
+function loadOctopuses(game, player, rate) {
 	//create octopus group
-	octopuses = makeEnemyGroup(game, player, "OCTO", 800, 200, octopusFire);
+	octopuses = makeEnemyGroup(game, player, "OCTO", rate, 200, octopusFire);
 	return octopuses;
 }
 

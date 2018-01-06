@@ -1,5 +1,5 @@
-// var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update});
-var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update, render: render});
+var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update});
+// var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update, render: render});
 
 var gate;
 var player;
@@ -311,12 +311,14 @@ function loadLevel() {
 	var eList = levelAttributes.enemies;
 	
 	if (eList.includes("turrets")) {
-		enemyGroups.push(loadTurrets(game, player));
-	} if (eList.includes("octopuses")) {
-		enemyGroups.push(loadOctopuses(game, player));
-	} if (eList.includes("lobsters")) {
-		enemyGroups.push(loadLobsters(game, player));
+		enemyGroups.push(loadTurrets(game, player, levelAttributes.turretRate));
+	} 
+	if (eList.includes("octopuses")) {
+		enemyGroups.push(loadOctopuses(game, player, levelAttributes.octopusRate));
 	}
+	// if (eList.includes("lobsters")) {
+	//	enemyGroups.push(loadLobsters(game, player));
+	// }
 	
 	//if tiles currently exist, destroy them
 	if (tileLayer != null) {
@@ -362,11 +364,13 @@ function loadLevel() {
 function getLevelFeatures(level) {
 	if (level === 1) {
 		// return {enemies:["octopuses"], map:"foundry"};
-		return {enemies:["turrets"], map:"scrapyard"};
+		return {enemies:["turrets"], turretRate:1000, map:"scrapyard"};
 	} else if (level === 2) {
-		return {enemies:["turrets", "octopuses"], map:"scrapyard"};
+		return {enemies:["turrets", "octopuses"], turretRate:2000, octopusRate:2000, map:"scrapyard"};
 	} else if (level === 3) {
-		return {enemies:["octopuses"], map:"foundry"};
+		return {enemies:["octopuses"], octopusRate:800, map:"foundry"};
+	} else if (level === 4) {
+		return {enemies:["octopuses"], octopusRate:700, map:"foundry"};
 	} else {
 		return {enemies:[], map:"scrapyard"};
 	}

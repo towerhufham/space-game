@@ -1,18 +1,18 @@
-Stuff to do soon:
+Stuff for build v0.2.0
 
-* finish lobster enemies
+* background for map
+* adjust player hitbox
+* figure out why furnaces start exploded on spawn for first foundry gen
+
+Stuff to do eventually:
+
+* decide what to do with lobster enemies
 * destroy blocks with lasers OR ensure that levels generate with path from start to all important things
 * figure out the final(?) name (___ superheavy industries)
-* make system for new levels
-* adjust palette?
-* tame explosions
-* rework enemy spawning/timers
 
 Current known issues:
 
-* stuff (maybe just polyps) spawns incorrectly after reset
-* ui goes underneath other stuff after reset
-
+* none not listed elsewhere in this file
 
 DOPE IDEAS:
 

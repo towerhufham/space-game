@@ -2,23 +2,24 @@ Major features to be implemented before release:
 
 [✓✓✓] Super-awesome hand-made codebase
 [✓] Native app package
-[] Aesthetic
+[✓] Aesthetic
 [] Levels
 	[✓] First world
-	[] Second world
+	[✓] Second world
 	[] Third world
 	[] Fourth world
 	[] Boss / final level
 [] Music
 	[] First world track
 	[] Second world track
-	[] Third world track
+	[✓] Third world track
 	[] Fourth world track
 	[] Boss / final level track
-	[] Menu track
+	[✓] Menu track
 [] Menus
 	[] Start menu
 	[] Pause menu
+	[] Pilot menu
 	[] Options menu
 	[] Lose menu
 	[] Win menu

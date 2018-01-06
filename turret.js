@@ -1,9 +1,10 @@
 var turrets;
 
 //we take in a player as an argument because some functions use the player's pos
-function loadTurrets(game, player, enemyGroups) {	
+function loadTurrets(game, player, rate) {	
 	//create turret group
-	turrets = makeEnemyGroup(game, player, "TURRET", 800, 200, turretFire);
+	turrets = makeEnemyGroup(game, player, "TURRET", rate, 200, turretFire);
+	console.log("rate = " + rate);
 	return turrets;
 }
 
