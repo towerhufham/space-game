@@ -49,6 +49,9 @@ function preload() {
 	//ui
 	game.load.image("PORTRAIT-BG", "img/portraits/bg.png");
 	game.load.image("PORTRAIT1", "img/portraits/R-Wave.png");
+	game.load.image("PORTRAIT2", "img/portraits/L-Type.png");
+	game.load.image("PORTRAIT3", "img/portraits/A-Star.png");
+	game.load.image("PORTRAIT4", "img/portraits/C-Like.png");
 	game.load.spritesheet("HEARTS", "img/ui/hearts.png", 80, 74);
 	game.load.spritesheet("ENERGY-CELL", "img/ui/energy_cells.png", 25, 25);
 	game.load.spritesheet("ROUND-CELL", "img/ui/round_cells.png", 25, 25);

@@ -5,12 +5,15 @@ var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
 
+//for now
+var portraitKey = "PORTRAIT" + (Math.floor(Math.random() * (4 - 1 + 1)) + 1);
+
 function loadUi() {
 	//portrait background
 	portraitbg = game.add.sprite(0, 0, "PORTRAIT-BG");
 	portraitbg.fixedToCamera = true;
 	//portrait
-	portrait = game.add.sprite(0, 0, "PORTRAIT1");
+	portrait = game.add.sprite(0, 0, portraitKey);
 	portrait.fixedToCamera = true;
 	var offset = 170;
 	
