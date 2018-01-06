@@ -10,7 +10,7 @@ function loadOctopuses(game, player, enemyGroups) {
 function octopusFire(octopus, game, player) {
 	//checking to make sure the octopus & laser exists prevents a strange bug
 	//only fire if the player is close
-	if (octopus && Phaser.Math.distance(octopus.x, octopus.y, player.x, player.y) < 500) {
+	if (octopus.alive && Phaser.Math.distance(octopus.x, octopus.y, player.x, player.y) < 500) {
 		octopus.animations.frame = 1;
 		game.time.events.add(500, function(){octopus.animations.frame = 0;}, this);
 		for (var i = -2; i < 3; i++) {

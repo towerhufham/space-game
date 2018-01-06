@@ -37,23 +37,25 @@ function spawnGrenaders(grenaderMap) {
 }
 
 function makeGrenades(grenader) {
-	if (grenader.inCamera) {
-		for (var i = 0; i < 1; i++) {
-			var g = grenades.getFirstDead();
-			if (g) {
-				g.revive();
-				g.x = grenader.x;
-				g.y = grenader.y;
-				g.body.velocity.x = random.between(100, 200) * random.sign();
-				g.body.velocity.y = random.between(100, 200) * random.sign();
-				g.body.drag.x = 200;
-				g.body.drag.y = 200;
-				g.angle = random.angle();
-				g.anchor.setTo(0.5, 0.5);
-				game.time.events.add(2000, function(){
-					explosion(g.x, g.y);
-					g.kill();
-				}, this);
+	if (grenader.alive) {
+		if (grenader.inCamera) {
+			for (var i = 0; i < 1; i++) {
+				var g = grenades.getFirstDead();
+				if (g) {
+					g.revive();
+					g.x = grenader.x;
+					g.y = grenader.y;
+					g.body.velocity.x = random.between(100, 200) * random.sign();
+					g.body.velocity.y = random.between(100, 200) * random.sign();
+					g.body.drag.x = 200;
+					g.body.drag.y = 200;
+					g.angle = random.angle();
+					g.anchor.setTo(0.5, 0.5);
+					game.time.events.add(2000, function(){
+						explosion(g.x, g.y);
+						g.kill();
+					}, this);
+				}
 			}
 		}
 	}
