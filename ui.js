@@ -1,3 +1,4 @@
+var portrait;
 var hpBar = {};
 var energyBar = {};
 var MAPX = 1090;
@@ -5,22 +6,30 @@ var MAPY = 10;
 var MAPSIZE = 100;
 
 function loadUi() {
+	//portrait background
+	portraitbg = game.add.sprite(0, 0, "PORTRAIT-BG");
+	portraitbg.fixedToCamera = true;
+	//portrait
+	portrait = game.add.sprite(0, 0, "PORTRAIT1");
+	portrait.fixedToCamera = true;
+	var offset = 170;
+	
 	//hp
-	hpBar[1] = game.add.sprite(0, 0, "HEARTS", 0);
+	hpBar[1] = game.add.sprite(0+offset, 0, "HEARTS", 0);
 	hpBar[1].fixedToCamera = true;
-	hpBar[2] = game.add.sprite(90, 0, "HEARTS", 0);
+	hpBar[2] = game.add.sprite(90+offset, 0, "HEARTS", 0);
 	hpBar[2].fixedToCamera = true;
-	hpBar[3] = game.add.sprite(90*2, 0, "HEARTS", 0);
+	hpBar[3] = game.add.sprite(90*2+offset, 0, "HEARTS", 0);
 	hpBar[3].fixedToCamera = true;
-	hpBar[4] = game.add.sprite(90*3, 0, "HEARTS", 0);
+	hpBar[4] = game.add.sprite(90*3+offset, 0, "HEARTS", 0);
 	hpBar[4].fixedToCamera = true;
 	
 	//energy
 	for (var i = 0; i < 19; i++) {
-		energyBar[i+1] = game.add.sprite(i*20, 75, "ENERGY-CELL", 0);
+		energyBar[i+1] = game.add.sprite(i*20+offset, 75, "ENERGY-CELL", 0);
 		energyBar[i+1].fixedToCamera = true;
 	}
-	energyBar[20] = game.add.sprite(385, 75, "ROUND-CELL", 0);
+	energyBar[20] = game.add.sprite(385+offset, 75, "ROUND-CELL", 0);
 	energyBar[20].fixedToCamera = true;
 	
 	//make sure they show correct values

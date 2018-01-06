@@ -47,6 +47,8 @@ function preload() {
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
 	
 	//ui
+	game.load.image("PORTRAIT-BG", "img/portraits/bg.png");
+	game.load.image("PORTRAIT1", "img/portraits/R-Wave.png");
 	game.load.spritesheet("HEARTS", "img/ui/hearts.png", 80, 74);
 	game.load.spritesheet("ENERGY-CELL", "img/ui/energy_cells.png", 25, 25);
 	game.load.spritesheet("ROUND-CELL", "img/ui/round_cells.png", 25, 25);
@@ -125,7 +127,7 @@ function create() {
 	
 	//add debug text
 	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
-	debugText = game.add.text(0, 130, "( - )", style);
+	debugText = game.add.text(0, 175, "( - )", style);
 	debugText.fixedToCamera = true;
 	
 	//fullscreen stuff
