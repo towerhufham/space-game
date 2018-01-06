@@ -44,6 +44,7 @@ function preload() {
 	game.load.image("GRENADE", "img/grenade.png");
 	game.load.image("FURNACE", "img/furnace.png");
 	game.load.image("SLIDER", "img/slider.png");
+	game.load.image("BLOB", "img/blob.png");
 	game.load.spritesheet("OCTO", "img/octo.png", 61, 64);
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
 	

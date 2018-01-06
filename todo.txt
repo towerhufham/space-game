@@ -1,6 +1,5 @@
 Stuff for build v0.2.0
 
-* make furnace blobs actually resemble fire
 * make level generation params alterable by level features
 * have all 6 levels ready
 

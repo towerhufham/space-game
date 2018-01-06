@@ -16,7 +16,7 @@ function loadFurnaces(game) {
 	blobs = game.add.group();
 	blobs.enableBody = true;
 	blobs.physicsBodyType = Phaser.Physics.ARCADE;
-	blobs.createMultiple(ALLOWED_FURNACES * BLOBS_PER_FURNACE, "GRENADE");
+	blobs.createMultiple(ALLOWED_FURNACES * BLOBS_PER_FURNACE, "BLOB");
 	blobs.callAll("body.enableBody", true);
 	blobs.setAll("body.collideWorldBounds", true);
 	blobs.setAll("body.worldBounce", new Phaser.Point(1, 1));
