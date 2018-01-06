@@ -23,11 +23,13 @@ function spawnExploders(exploderMap) {
 }
 
 function explodeExploder(ex) {
-	//only explode if in camera
-	if (ex.inCamera) {
-		ex.isExploding = true;
-		explosion(ex.x, ex.y);
-		ex.isExploding = false;
-		ex.kill();
+	//only explode if alive & in camera
+	if (ex.alive) {
+		if (ex.inCamera) {
+			ex.isExploding = true;
+			explosion(ex.x, ex.y);
+			ex.isExploding = false;
+			ex.kill();
+		}
 	}
 }
