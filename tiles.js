@@ -117,7 +117,7 @@ function designScrapyard(game, steps=1, tileLevel=0.12, bladeLevel=0.1, exploder
 	return arr;
 }
 
-function designFoundry(game, steps=15, tileLevel=0.001) {
+function designFoundry(game, steps=15, tileLevel=0.001, furnaceLevel=0.05, sliderLevel=0.05) {
 	//init
 	var arr = _makeLevelArray();
 	
@@ -143,10 +143,10 @@ function designFoundry(game, steps=15, tileLevel=0.001) {
 		process: function (neighbors) {
 			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
 			this.alive = (surrounding === 1 || surrounding === 5 && !this.alive) || (surrounding < 3 && this.alive);
-			if ((this.alive && surrounding === 5) || (this.alive && surrounding < 2 &&  Math.random() > 0.95)) {this.isFurnace = true;}
+			if ((this.alive && surrounding === 5) || (this.alive && surrounding < 2 &&  Math.random() > 1-furnaceLevel)) {this.isFurnace = true;}
 			//finalize
 			if (world.ticks === steps-1) {
-				if (!this.alive && surrounding === 0 && Math.random() > 0.95) {this.alive = false; this.isSlider = true}
+				if (!this.alive && surrounding === 0 && Math.random() > 1-sliderLevel) {this.alive = false; this.isSlider = true}
 			}
 		},
 		reset: function () {
@@ -304,8 +304,8 @@ function makeTiles(game, generationName, genParams) {
 	} else if (generationName === "foundry") {
 		key = "TILES-FOUNDRY";
 		if (genParams) {
-			//game, steps=15, tileLevel=0.001
-			designFunc = function() {return designFoundry(game, genParams[0], genParams[1]);};
+			//game, steps=15, tileLevel=0.001, furnaceLevel=0.05, sliderLevel=0.05
+			designFunc = function() {return designFoundry(game, genParams[0], genParams[1], genParams[2], genParams[3]);};
 		} else {
 			designFunc = designFoundry;
 		}
