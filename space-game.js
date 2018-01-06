@@ -251,7 +251,6 @@ function render() {
 
 function resetGame() {
 	//reset global vars
-	console.log("Resetting game");
 	health = 4;
 	killcount = 0;
 	currentEnergy = 0;
@@ -305,7 +304,6 @@ function resetGame() {
 }
 
 function loadLevel() {
-	console.log("Loading level");
 	var levelAttributes = getLevelFeatures(currentLevel);
 	var eList = levelAttributes.enemies;
 	

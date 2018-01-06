@@ -290,7 +290,6 @@ function makeLayer(game, arr, key) {
 	
 function makeTiles(game, generationName, genParams) {
 	//lookup generationName
-	console.log(genParams);
 	var key;
 	var designFunc;
 	if (generationName === "scrapyard") {

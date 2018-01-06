@@ -4,7 +4,6 @@ var turrets;
 function loadTurrets(game, player, rate) {	
 	//create turret group
 	turrets = makeEnemyGroup(game, player, "TURRET", rate, 200, turretFire);
-	console.log("rate = " + rate);
 	return turrets;
 }
 
