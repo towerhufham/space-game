@@ -32,10 +32,10 @@ function setFurnaceToExplode(furn) {
 }
 
 function explodeFurnace(furn, flashtime=1500) {
-	if (furn) {
+	if (furn.alive) {
 		flashSprite(furn, flashtime);
 		game.time.events.add(flashtime, function(){
-			if (furn) {
+			if (furn.alive) {
 				for (var i = 0; i < BLOBS_PER_FURNACE; i++) {
 					var b = blobs.getFirstDead();
 					if (b) {
@@ -49,8 +49,11 @@ function explodeFurnace(furn, flashtime=1500) {
 						b.angle = random.angle();
 					}
 				}
-				if (furn.inCamera) {
-					furnacesfx.play();
+				//checking if it's alive IS necessary
+				if (furn.alive) {
+					if (furn.inCamera) {
+						furnacesfx.play();
+					}
 				}
 				furn.kill();
 			}

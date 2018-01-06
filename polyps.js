@@ -65,7 +65,7 @@ function polypShockwave(p) {
 		var rad = game.physics.arcade.angleBetween(shockwave, player);
 		var x = Math.cos(rad) * 10000;
 		var y = Math.sin(rad) * 10000;
-		console.log(x, y);
+		// console.log(x, y);
 		player.body.velocity.x = x;
 		player.body.velocity.y = y;
 		player.canMagnet = false;

@@ -241,33 +241,34 @@ function resetGame() {
 	}
 	//clear enemy groups
 	enemyGroups = [];
-	//destroy polyps & energies
-	polyps.callAll("kill");
-	energies.callAll("kill");
+	//destroy polyps & energies, then reloads
+	polyps.destroy();
+	energies.destroy();
+	loadPolyps(game);
 	//destroy all auxillary objects
 	if (reflectors) {
-		reflectors.callAll("kill");
+		reflectors.destroy();
 	}
 	if (blades) {
-		blades.callAll("kill");
+		blades.destroy();
 	}
 	if (exploders) {
-		exploders.callAll("kill");
+		exploders.destroy();
 	}
 	if (grenaders) {
-		grenaders.callAll("kill");
+		grenaders.destroy();
 	}
 	if (grenades) {
-		grenades.callAll("kill");
+		grenades.destroy();
 	}
 	if (furnaces) {
-		furnaces.callAll("kill");
+		furnaces.destroy();
 	}
 	if (blobs) {
-		blobs.callAll("kill");
+		blobs.destroy();
 	}
 	if (sliders) {
-		sliders.callAll("kill");
+		sliders.destroy();
 	}
 	//reset player
 	player.body.stop();
