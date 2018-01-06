@@ -1,5 +1,5 @@
-// var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update});
-var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update, render: render});
+var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update});
+// var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update, render: render});
 
 var gate;
 var player;
@@ -96,7 +96,8 @@ function create() {
     playerLasers.createMultiple(50, "BLUE BEAM");
     playerLasers.setAll("checkWorldBounds", true);
     playerLasers.setAll("outOfBoundsKill", true);
-    playerLasers.callAll("body.setSize", "body", 5, 5, 0, 0);
+	playerLasers.callAll("anchor.setTo", "anchor", 1, 0.5);
+    playerLasers.callAll("body.setSize", "body", 5, 5, 30, 0);
 	
 	//add player
 	player = game.add.sprite(game.world.width/2, game.world.height/2, "TRIANGLE");
