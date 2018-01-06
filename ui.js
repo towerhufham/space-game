@@ -41,8 +41,11 @@ function loadUi() {
 }
 
 function reloadUi() {
+	//null the stuff (not sure this works tbh)
+	portrait = null;
 	hpBar = {};
 	energyBar = {};
+	//reload
 	loadUi();
 }
 
@@ -80,10 +83,14 @@ function setMapPosition() {
 }
 
 function drawMap() {
-	//draw bounds
+	//init
 	map.clear();
+	
+	//draw bounds & background
+	map.beginFill(0x000000, 0.9);
 	map.lineStyle(1, 0xFFFFFF, 0.5);
 	map.drawRect(MAPX, MAPY, MAPSIZE, MAPSIZE);
+	map.endFill();
 	
 	//draw player box
 	var rx = player.x / game.world.width;
@@ -134,4 +141,7 @@ function drawMap() {
 	var drawy = Math.round(ry * MAPSIZE) + MAPY - 1;
 	map.lineStyle(1, 0x00FF00, 1);
 	map.drawRect(drawx, drawy, 3, 3);
+	
+	//render on top of other sprites
+	game.world.bringToTop(map);
 }

@@ -212,10 +212,6 @@ function update() {
 	//draw aim
 	drawPlayerAim();
 	
-	//draw map
-	setMapPosition(); //i don't like doing this every frame, but since the fullscreen calls are asynchronus it's the easiest way to do it
-	drawMap();
-	
 	//update enemies
 	for (var i = 0; i < enemyGroups.length; i++) {
 		if (typeof enemyGroups[i].extraUpdate === "function") {
@@ -232,6 +228,10 @@ function update() {
 	
 	//debug text
 	debugText.text = "Level: " + currentLevel + "\nFPS: " + game.time.fps;
+	
+	//draw map
+	setMapPosition(); //i don't like doing this every frame, but since the fullscreen calls are asynchronus it's the easiest way to do it
+	drawMap();
 }
 
 function render() {
@@ -301,8 +301,6 @@ function resetGame() {
 	player.revive();
 	//reload level
 	loadLevel();
-	//reload ui
-	reloadUi();
 }
 
 function loadLevel() {
@@ -359,6 +357,9 @@ function loadLevel() {
 		loadSliders(game);
 		spawnSliders(tileLayer.sliderMap);
 	}
+	
+	//load ui last so it's on top of other objects
+	reloadUi();
 }
 
 function getLevelFeatures(level) {
