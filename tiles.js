@@ -288,16 +288,27 @@ function makeLayer(game, arr, key) {
 	return layer;
 }
 	
-function makeTiles(game, generationName) {
+function makeTiles(game, generationName, genParams) {
 	//lookup generationName
+	console.log(genParams);
 	var key;
 	var designFunc;
 	if (generationName === "scrapyard") {
 		key = "TILES-SCRAPYARD";
-		designFunc = designScrapyard;
+		if (genParams) {
+			//game, steps=1, tileLevel=0.12, bladeLevel=0.1, exploderLevel=0.15, reflectorLevel=0.01
+			designFunc = function() {return designScrapyard(game, genParams[0], genParams[1], genParams[2], genParams[3], genParams[4]);};
+		} else {
+			designFunc = designScrapyard;
+		}
 	} else if (generationName === "foundry") {
 		key = "TILES-FOUNDRY";
-		designFunc = designFoundry;
+		if (genParams) {
+			//game, steps=15, tileLevel=0.001
+			designFunc = function() {return designFoundry(game, genParams[0], genParams[1]);};
+		} else {
+			designFunc = designFoundry;
+		}
 	}
 	// var design = designScrapyard(game);
 	var design = designFunc(game);

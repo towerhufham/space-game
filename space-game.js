@@ -326,7 +326,7 @@ function loadLevel() {
 	//close gate
 	closeGate();
 	//add tiles
-	tileLayer = makeTiles(game, levelAttributes.map);
+	tileLayer = makeTiles(game, levelAttributes.map, levelAttributes.params);
 	// console.log(tileLayer.polypMap);
 	spawnPolyps(tileLayer.polypMap);
 	gate.x = tileLayer.gatePosition.x;
@@ -365,12 +365,12 @@ function loadLevel() {
 
 function getLevelFeatures(level) {
 	if (level === 1) {
-		// return {enemies:["octopuses"], map:"foundry"};
+		// return {enemies:["turrets"], turretRate:1000, map:"scrapyard", params:[1, 0.12, 0.1, 0.15, 0.01]};
 		return {enemies:["turrets"], turretRate:1000, map:"scrapyard"};
-	// } else if (level === 2) {
-		// return {enemies:["turrets", "octopuses"], turretRate:2000, octopusRate:2000, map:"scrapyard"};
 	} else if (level === 2) {
-		return {enemies:["octopuses"], octopusRate:800, map:"foundry"};
+		return {enemies:["turrets", "octopuses"], turretRate:2000, octopusRate:2000, map:"scrapyard"};
+	} else if (level === 3) {
+		return {enemies:["octopuses"], octopusRate:800, map:"foundry", params:[15, 0.001]};
 	} else if (level === 4) {
 		return {enemies:["octopuses"], octopusRate:700, map:"foundry"};
 	} else {

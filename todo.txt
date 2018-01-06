@@ -1,6 +1,6 @@
 Stuff for build v0.2.0
 
-* make level generation params alterable by level features
+* make number of features loaded equal to amount needed
 * have all 6 levels ready
 
 Planned for build v0.3.0
