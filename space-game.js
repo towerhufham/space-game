@@ -366,9 +366,9 @@ function getLevelFeatures(level) {
 	if (level === 1) {
 		// return {enemies:["octopuses"], map:"foundry"};
 		return {enemies:["turrets"], turretRate:1000, map:"scrapyard"};
+	// } else if (level === 2) {
+		// return {enemies:["turrets", "octopuses"], turretRate:2000, octopusRate:2000, map:"scrapyard"};
 	} else if (level === 2) {
-		return {enemies:["turrets", "octopuses"], turretRate:2000, octopusRate:2000, map:"scrapyard"};
-	} else if (level === 3) {
 		return {enemies:["octopuses"], octopusRate:800, map:"foundry"};
 	} else if (level === 4) {
 		return {enemies:["octopuses"], octopusRate:700, map:"foundry"};

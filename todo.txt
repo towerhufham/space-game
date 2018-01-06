@@ -1,6 +1,5 @@
 Stuff for build v0.2.0
 
-* background for map
 * figure out why furnaces start exploded on spawn for first foundry gen
 
 Stuff to do eventually:
@@ -11,7 +10,7 @@ Stuff to do eventually:
 
 Current known issues:
 
-* none not listed elsewhere in this file
+* leaving the game on for too long causes fps drop
 
 DOPE IDEAS:
 

@@ -149,6 +149,8 @@ function laserVSfurnace(laser, furnace) {
 }
 
 function sliderVSfurnace(slider, furn) {
-	explodeFurnace(furn, 0);
+	// if (slider.canExplodeFurnace) {
+		// explodeFurnace(furn, 0);
+	// }
 	sliderCollision(slider);
 }
