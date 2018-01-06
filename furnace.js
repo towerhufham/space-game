@@ -1,14 +1,13 @@
 var furnaces;
 var blobs;
-var ALLOWED_FURNACES = 50;
 var BLOBS_PER_FURNACE = 7;
 
-function loadFurnaces(game) {
+function loadFurnaces(game, amount) {
 	//load furnaces
 	furnaces = game.add.group();
 	furnaces.enableBody = true;
 	furnaces.physicsBodyType = Phaser.Physics.ARCADE;
-	furnaces.createMultiple(ALLOWED_FURNACES, "FURNACE");
+	furnaces.createMultiple(amount, "FURNACE");
 	furnaces.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	furnaces.setAll("body.immovable", true);
 	
@@ -16,7 +15,7 @@ function loadFurnaces(game) {
 	blobs = game.add.group();
 	blobs.enableBody = true;
 	blobs.physicsBodyType = Phaser.Physics.ARCADE;
-	blobs.createMultiple(ALLOWED_FURNACES * BLOBS_PER_FURNACE, "BLOB");
+	blobs.createMultiple(amount * BLOBS_PER_FURNACE, "BLOB");
 	blobs.callAll("body.enableBody", true);
 	blobs.setAll("body.collideWorldBounds", true);
 	blobs.setAll("body.worldBounce", new Phaser.Point(1, 1));

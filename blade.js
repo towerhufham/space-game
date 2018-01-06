@@ -1,11 +1,11 @@
 var blades;
 
-function loadBlades(game) {
+function loadBlades(game, amount) {
 	//load blades
 	blades = game.add.group();
 	blades.enableBody = true;
 	blades.physicsBodyType = Phaser.Physics.ARCADE;
-	blades.createMultiple(25, "BLADE");
+	blades.createMultiple(amount, "BLADE");
 	blades.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	blades.setAll("body.angularVelocity", 360);
 }

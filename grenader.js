@@ -1,12 +1,13 @@
 var grenaders;
 var grenades;
+var GRENADES_PER_GRENADER = 1;
 
-function loadGrenaders(game) {
+function loadGrenaders(game, amount) {
 	//load grenaders
 	grenaders = game.add.group();
 	grenaders.enableBody = true;
 	grenaders.physicsBodyType = Phaser.Physics.ARCADE;
-	grenaders.createMultiple(50, "GRENADER");
+	grenaders.createMultiple(amount, "GRENADER");
 	grenaders.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	grenaders.setAll("body.immovable", true);
 	
@@ -14,7 +15,7 @@ function loadGrenaders(game) {
 	grenades = game.add.group();
 	grenades.enableBody = true;
 	grenades.physicsBodyType = Phaser.Physics.ARCADE;
-	grenades.createMultiple(100, "GRENADE");
+	grenades.createMultiple(amount, "GRENADE");
 	grenades.callAll("body.enableBody", true);
 	grenades.setAll("body.collideWorldBounds", true);
 	grenades.setAll("body.worldBounce", new Phaser.Point(1, 1));
@@ -39,7 +40,7 @@ function spawnGrenaders(grenaderMap) {
 function makeGrenades(grenader) {
 	if (grenader.alive) {
 		if (grenader.inCamera) {
-			for (var i = 0; i < 1; i++) {
+			for (var i = 0; i < GRENADES_PER_GRENADER; i++) {
 				var g = grenades.getFirstDead();
 				if (g) {
 					g.revive();

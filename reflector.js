@@ -1,11 +1,11 @@
 var reflectors;
 
-function loadReflectors(game) {
+function loadReflectors(game, amount) {
 	//load reflectors
 	reflectors = game.add.group();
 	reflectors.enableBody = true;
 	reflectors.physicsBodyType = Phaser.Physics.ARCADE;
-	reflectors.createMultiple(25, "REFLECTOR");
+	reflectors.createMultiple(amount, "REFLECTOR");
 	reflectors.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 }
 

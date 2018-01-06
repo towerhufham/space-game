@@ -3,12 +3,12 @@ var SLIDER_SPEED = 80;
 var SLIDER_ACCEL = 1.08;
 var SLIDER_MAX_SPEED = 1000;
 
-function loadSliders(game) {
+function loadSliders(game, amount) {
 	//load sliders
 	sliders = game.add.group();
 	sliders.enableBody = true;
 	sliders.physicsBodyType = Phaser.Physics.ARCADE;
-	sliders.createMultiple(25, "SLIDER");
+	sliders.createMultiple(amount, "SLIDER");
 	sliders.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	sliders.setAll("checkWorldBounds", true);
     sliders.setAll("outOfBoundsKill", true);

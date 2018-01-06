@@ -335,27 +335,27 @@ function loadLevel() {
 	
 	//optional features
 	if (tileLayer.reflectorMap) {
-		loadReflectors(game);
+		loadReflectors(game, tileLayer.reflectorMap.length);
 		spawnReflectors(tileLayer.reflectorMap);
 	}
 	if (tileLayer.bladeMap) {
-		loadBlades(game);
+		loadBlades(game, tileLayer.bladeMap.length);
 		spawnBlades(tileLayer.bladeMap);
 	}
 	if (tileLayer.exploderMap) {
-		loadExploders(game);
+		loadExploders(game, tileLayer.exploderMap.length);
 		spawnExploders(tileLayer.exploderMap);
 	}
 	if (tileLayer.grenaderMap) {
-		loadGrenaders(game);
+		loadGrenaders(game, tileLayer.grenaderMap.length);
 		spawnGrenaders(tileLayer.grenaderMap);
 	}
 	if (tileLayer.furnaceMap) {
-		loadFurnaces(game);
+		loadFurnaces(game, tileLayer.furnaceMap.length);
 		spawnFurnaces(tileLayer.furnaceMap);
 	}
 	if (tileLayer.sliderMap) {
-		loadSliders(game);
+		loadSliders(game, tileLayer.sliderMap.length);
 		spawnSliders(tileLayer.sliderMap);
 	}
 	
@@ -365,7 +365,7 @@ function loadLevel() {
 
 function getLevelFeatures(level) {
 	if (level === 1) {
-		// return {enemies:["turrets"], turretRate:1000, map:"scrapyard", params:[1, 0.12, 0.1, 0.15, 0.01]};
+		// return {enemies:["turrets"], turretRate:1000, map:"scrapyard", params:[1, 0.12, 0.9, 0.15, 0.01]};
 		return {enemies:["turrets"], turretRate:1000, map:"scrapyard"};
 	} else if (level === 2) {
 		return {enemies:["turrets", "octopuses"], turretRate:2000, octopusRate:2000, map:"scrapyard"};
