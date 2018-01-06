@@ -107,7 +107,7 @@ function create() {
 	game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 	player.body.collideWorldBounds = true;
 	player.canMagnet = true;
-	player.body.setSize(15, 15, 10, 10);
+	player.body.setSize(20, 20, 6, 6);
 	// makePhantom(player, "PLACEHOLDER");
 	
 	//load enemy lasers
