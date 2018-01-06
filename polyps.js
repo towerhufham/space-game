@@ -1,6 +1,7 @@
 var polyps;
 var energies;
 var energyParticles;
+var energyPingTimer;
 
 function loadPolyps(game) {
 	//load polyps
@@ -32,15 +33,19 @@ function loadPolyps(game) {
 	energies.setAll("body.worldBounce", new Phaser.Point(1, 1));
 	
 	//energy ping timer
-	timer = game.time.create(false);
-	timer.loop(2000, pingEnergies, this);
-	timer.start();
+	energyPingTimer = game.time.create(false);
+	energyPingTimer.loop(2000, pingEnergies, this);
+	energyPingTimer.start();
 }
 
 // function spawnPolyps() {
 	// polyps.reviveAll();
 	// polyps.scatter(new Phaser.Rectangle(32, 32, 3840-32, 3840-32), true); //these numbers are the world bounds with margin of 32
 // }
+
+function stopEnergyPing() {
+	energyPingTimer.destroy();
+}
 
 function spawnPolyps(polypMap) {
 	for (var i = 0; i < polypMap.length; i++) {

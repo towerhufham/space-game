@@ -10,7 +10,8 @@ function loadSliders(game) {
 	sliders.physicsBodyType = Phaser.Physics.ARCADE;
 	sliders.createMultiple(25, "SLIDER");
 	sliders.callAll("anchor.setTo", "anchor", 0.5, 0.5);
-	sliders.setAll("body.collideWorldBounds", true);
+	sliders.setAll("checkWorldBounds", true);
+    sliders.setAll("outOfBoundsKill", true);
 	sliders.setAll("body.maxVelocity.x", SLIDER_MAX_SPEED);
 	sliders.setAll("body.maxVelocity.y", SLIDER_MAX_SPEED);
 	sliders.forEach(function(sli){sli.isSliding=false;},this);

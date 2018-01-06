@@ -244,6 +244,8 @@ function resetGame() {
 	//destroy polyps & energies, then reloads
 	polyps.destroy();
 	energies.destroy();
+	energyParticles.destroy();
+	stopEnergyPing();
 	loadPolyps(game);
 	//destroy all auxillary objects
 	if (reflectors) {
@@ -337,8 +339,8 @@ function loadLevel() {
 
 function getLevelFeatures(level) {
 	if (level === 1) {
-		return {enemies:["octopuses"], map:"foundry"};
-		// return {enemies:["turrets"], map:"scrapyard"};
+		// return {enemies:["octopuses"], map:"foundry"};
+		return {enemies:["turrets"], map:"scrapyard"};
 	} else if (level === 2) {
 		return {enemies:["turrets", "octopuses"], map:"scrapyard"};
 	} else if (level === 3) {
