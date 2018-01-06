@@ -226,7 +226,62 @@ function update() {
 	debugText.text = "Level: " + currentLevel + "\nFPS: " + game.time.fps;
 }
 
+function resetGame() {
+	//reset global vars
+	console.log("Resetting game");
+	health = 4;
+	killcount = 0;
+	currentEnergy = 0;
+	//kill all lasers
+	playerLasers.callAll("kill");
+	enemyLasers.callAll("kill");
+	//kill all enemies
+	for (var i = 0; i < enemyGroups.length; i++) {
+		enemyGroups[i].clearFunc();
+	}
+	//clear enemy groups
+	enemyGroups = [];
+	//destroy polyps & energies
+	polyps.callAll("kill");
+	energies.callAll("kill");
+	//destroy all auxillary objects
+	if (reflectors) {
+		reflectors.callAll("kill");
+	}
+	if (blades) {
+		blades.callAll("kill");
+	}
+	if (exploders) {
+		exploders.callAll("kill");
+	}
+	if (grenaders) {
+		grenaders.callAll("kill");
+	}
+	if (grenades) {
+		grenades.callAll("kill");
+	}
+	if (furnaces) {
+		furnaces.callAll("kill");
+	}
+	if (blobs) {
+		blobs.callAll("kill");
+	}
+	if (sliders) {
+		sliders.callAll("kill");
+	}
+	//reset player
+	player.body.stop();
+	player.x = game.world.width / 2;
+	player.y = game.world.height / 2;
+	player.revive();
+	//reload level
+	loadLevel();
+	//reload ui
+	reloadUi();
+}
+
 function loadLevel() {
+	console.log("Loading level");
 	var levelAttributes = getLevelFeatures(currentLevel);
 	var eList = levelAttributes.enemies;
 	
@@ -246,7 +301,7 @@ function loadLevel() {
 	closeGate();
 	//add tiles
 	tileLayer = makeTiles(game, levelAttributes.map);
-	console.log(tileLayer.polypMap);
+	// console.log(tileLayer.polypMap);
 	spawnPolyps(tileLayer.polypMap);
 	gate.x = tileLayer.gatePosition.x;
 	gate.y = tileLayer.gatePosition.y;
@@ -281,8 +336,8 @@ function loadLevel() {
 
 function getLevelFeatures(level) {
 	if (level === 1) {
+		return {enemies:["octopuses"], map:"foundry"};
 		// return {enemies:["turrets"], map:"scrapyard"};
-		return {enemies:["turrets"], map:"scrapyard"};
 	} else if (level === 2) {
 		return {enemies:["turrets", "octopuses"], map:"scrapyard"};
 	} else if (level === 3) {
@@ -365,59 +420,6 @@ function closeGate() {
 	gate.animations.frame = 0;
 }
 
-function resetGame() {
-	//reset global vars
-	health = 4;
-	killcount = 0;
-	currentEnergy = 0;
-	//kill all lasers
-	playerLasers.callAll("kill");
-	enemyLasers.callAll("kill");
-	//kill all enemies
-	for (var i = 0; i < enemyGroups.length; i++) {
-		enemyGroups[i].clearFunc();
-	}
-	//clear enemy groups
-	enemyGroups = [];
-	//destroy polyps & energies
-	polyps.callAll("kill");
-	energies.callAll("kill");
-	//destroy all auxillary objects
-	if (reflectors) {
-		reflectors.callAll("kill");
-	}
-	if (blades) {
-		blades.callAll("kill");
-	}
-	if (exploders) {
-		exploders.callAll("kill");
-	}
-	if (grenaders) {
-		grenaders.callAll("kill");
-	}
-	if (grenades) {
-		grenades.callAll("kill");
-	}
-	if (furnaces) {
-		furnaces.callAll("kill");
-	}
-	if (blobs) {
-		blobs.callAll("kill");
-	}
-	if (sliders) {
-		sliders.callAll("kill");
-	}
-	//reset player
-	player.body.stop();
-	player.x = game.world.width / 2;
-	player.y = game.world.height / 2;
-	player.revive();
-	//reload level
-	loadLevel();
-	//reload ui
-	reloadUi();
-}
-
 function toggleFullscreen() {
 	if (game.scale.isFullScreen) {
 		game.scale.stopFullScreen();
@@ -443,7 +445,8 @@ function flashSprite(sprite, time, tint = 0x000000) {
 }
 
 function debugFunc() {
-	polyps.forEachAlive(function(polyp){
-		console.log("polyp at (" + polyp.x + "," + polyp.y + ")");
-	}, this);
+	// polyps.forEachAlive(function(polyp){
+		// console.log("polyp at (" + polyp.x + "," + polyp.y + ")");
+	// }, this);
+	openGate();
 }
