@@ -17,7 +17,7 @@
 		"resizeable": false,
 		"width": 1218,
 		"height": 818,
-		"icon": "img/energy2.png"
+		"icon": "img/energy_big.png"
 	},
 	"dependencies": {},
 	"devDependencies": {
