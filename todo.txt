@@ -1,8 +1,4 @@
-Stuff for build v0.2.0
-
-* have all 6 levels ready
-
-Planned for build v0.3.0
+Stuff for build v0.3.0
 
 * biolab finished
 * music implemented

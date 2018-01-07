@@ -22,6 +22,7 @@ function loadFurnaces(game, amount) {
 	blobs.setAll("body.collideWorldBounds", true);
 	blobs.setAll("body.worldBounce", new Phaser.Point(1, 1));
 	blobs.callAll("anchor.setTo", "anchor", 0.5, 0.5);
+	currentBlobs = 0;
 }
 
 function setFurnaceToExplode(furn) {

@@ -60,8 +60,8 @@ function _tileArrayQualityInsurance(arr, checkSliders=false) {
 			if (arr[x][30] == "s") {arr[x][30] = " ";}
 		}
 		for (var y = 0; y < 60; y++) {
-			if (arr[y][29] == "s") {arr[y][29] = " ";}
-			if (arr[y][30] == "s") {arr[y][30] = " ";}
+			if (arr[29][y] == "s") {arr[29][y] = " ";}
+			if (arr[30][y] == "s") {arr[30][y] = " ";}
 		}
 	}
 	return arr;
