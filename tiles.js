@@ -47,12 +47,23 @@ function _placeGate(game, arr) {
 	return arr;
 }
 
-function _tileArrayQualityInsurance(arr) {
+function _tileArrayQualityInsurance(arr, checkSliders=false) {
 	//ensure the spawn area is empty
 	arr[29][29] = " ";
 	arr[29][30] = " ";
 	arr[30][29] = " ";
 	arr[30][30] = " ";
+	//ensure there are no sliders that could spawnkill the player
+	if (checkSliders) {
+		for (var x = 0; x < 60; x++) {
+			if (arr[x][29] == "s") {arr[x][29] = " ";}
+			if (arr[x][30] == "s") {arr[x][30] = " ";}
+		}
+		for (var y = 0; y < 60; y++) {
+			if (arr[y][29] == "s") {arr[y][29] = " ";}
+			if (arr[y][30] == "s") {arr[y][30] = " ";}
+		}
+	}
 	return arr;
 }
 
@@ -113,7 +124,10 @@ function designScrapyard(game, steps=1, tileLevel=0.12, bladeLevel=0.1, exploder
 	}
 	//place polyps
 	arr = _placePolyps(game, arr);
+	//place gate
 	arr = _placeGate(game, arr);
+	//quality insurance
+	arr = _tileArrayQualityInsurance(arr);
 	return arr;
 }
 
@@ -174,7 +188,10 @@ function designFoundry(game, steps=15, tileLevel=0.001, furnaceLevel=0.025, slid
 	}
 	//place polyps
 	arr = _placePolyps(game, arr);
+	//place gate
 	arr = _placeGate(game, arr);
+	//quality insurance
+	arr = _tileArrayQualityInsurance(arr, true);
 	return arr;
 }
 
@@ -311,8 +328,6 @@ function makeTiles(game, generationName, genParams) {
 	}
 	// var design = designScrapyard(game);
 	var design = designFunc(game);
-	//quality insurance
-	design = _tileArrayQualityInsurance(design);
 	//make the layer
 	var layer = makeLayer(game, design, key);
 	return layer;
