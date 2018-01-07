@@ -25,9 +25,11 @@ function doCollisions() {
 	game.physics.arcade.collide(sliders, furnaces, sliderVSfurnace);
 	game.physics.arcade.collide(energies, exploders);
 	game.physics.arcade.collide(energies, furnaces);
+	game.physics.arcade.collide(crabs, tileLayer);
 	// sprite overlaps
 	game.physics.arcade.overlap(turrets, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(octopuses, playerLasers, enemyVSlaser, null, this);
+	game.physics.arcade.overlap(crabs, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(polyps, playerLasers, polypVSlaser, null, this);
 	game.physics.arcade.overlap(player, enemyLasers, playerVSbadlaser, null, this);
 	game.physics.arcade.overlap(player, energies, playerVSenergy, null, this);

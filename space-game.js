@@ -20,6 +20,7 @@ var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
 var currentLevel = 1;
+// var currentLevel = 4;
 var screenIsShaking = false;
 var pad1;
 
@@ -45,6 +46,7 @@ function preload() {
 	game.load.image("FURNACE", "img/furnace.png");
 	game.load.image("SLIDER", "img/slider.png");
 	game.load.image("BLOB", "img/blob.png");
+	game.load.image("CRAB", "img/crab.png");
 	game.load.spritesheet("OCTO", "img/octo.png", 61, 64);
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
 	
@@ -307,15 +309,20 @@ function loadLevel() {
 	var levelAttributes = getLevelFeatures(currentLevel);
 	var eList = levelAttributes.enemies;
 	
-	if (eList.includes("turrets")) {
-		enemyGroups.push(loadTurrets(game, player, levelAttributes.turretRate));
-	} 
-	if (eList.includes("octopuses")) {
-		enemyGroups.push(loadOctopuses(game, player, levelAttributes.octopusRate));
+	if (eList) {
+		if (eList.includes("turrets")) {
+			enemyGroups.push(loadTurrets(game, player, levelAttributes.turretRate));
+		} 
+		if (eList.includes("octopuses")) {
+			enemyGroups.push(loadOctopuses(game, player, levelAttributes.octopusRate));
+		}
+		if (eList.includes("crabs")) {
+			enemyGroups.push(loadCrabs(game, player, levelAttributes.crabRate));
+		}
+		// if (eList.includes("lobsters")) {
+		//	enemyGroups.push(loadLobsters(game, player));
+		// }
 	}
-	// if (eList.includes("lobsters")) {
-	//	enemyGroups.push(loadLobsters(game, player));
-	// }
 	
 	//if tiles currently exist, destroy them
 	if (tileLayer != null) {
@@ -372,14 +379,14 @@ function getLevelFeatures(level) {
 		//blade-y third level
 		return {enemies:["turrets", "octopuses"], turretRate:2100, octopusRate:2100, map:"scrapyard", params:[1, 0.12, 0.9, 0.15, 0.01]};
 	} else if (level === 4) {
-		//basic first level
-		return {enemies:["octopuses"], octopusRate:1200, map:"foundry"};
+		//first level has no enemies, so the player can understand how to move around the foundry
+		return {map:"foundry"};
 	} else if (level === 5) {
-		//slightly harder second level
-		return {enemies:["octopuses"], octopusRate:1000, map:"foundry"};
+		//second level the player is ambushed by the CRABZ
+		return {enemies:["crabs"], crabRate:2500, map:"foundry"};
 	} else if (level === 6) {
-		//wonky third level
-		return {enemies:["octopuses"], octopusRate:800, map:"foundry"};
+		//harder third level
+		return {enemies:["crabs"], crabRate:2000, map:"foundry"};
 	} else {
 		return {enemies:[], map:"scrapyard"};
 	}
