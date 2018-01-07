@@ -1,6 +1,7 @@
 Stuff for build v0.2.0
 
-* finish big crabby guy
+* fix furnace lag
+* ensure that you aren't spawnkilled by sliders
 * have all 6 levels ready
 
 Planned for build v0.3.0
