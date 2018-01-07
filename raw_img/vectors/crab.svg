@@ -67,20 +67,24 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-28.362161)">
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#ff00ff;stroke-width:15;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 832,540.36216 -128,-192 192,0 -256,-64 192,-191.999999 -320,191.999999 128,128 -192,128"
-       id="path4144"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccc" />
-    <use
-       x="0"
-       y="0"
-       xlink:href="#path4144"
-       id="use4146"
-       transform="matrix(1,0,0,-1,0,1080.7243)"
-       width="100%"
-       height="100%"
-       style="stroke:#ff00ff;stroke-linecap:square;stroke-opacity:1" />
+    <g
+       id="g4150"
+       transform="matrix(-1,0,0,-1,1024,824.72432)">
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path4144"
+         d="m 512,284.36216 -64,64 0,-128 L 365.7143,412.3622 320,156.36216 l 0,384 L 438.85715,412.3622 512,668.36216"
+         style="fill:none;fill-rule:evenodd;stroke:#ff00ff;stroke-width:11.33893394;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <use
+         style="stroke:#ff00ff;stroke-linecap:square;stroke-opacity:1"
+         height="100%"
+         width="100%"
+         transform="matrix(-1,0,0,1,1024,0)"
+         id="use4146"
+         xlink:href="#path4144"
+         y="0"
+         x="0" />
+    </g>
   </g>
 </svg>
