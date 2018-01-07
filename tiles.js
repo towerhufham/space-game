@@ -117,7 +117,7 @@ function designScrapyard(game, steps=1, tileLevel=0.12, bladeLevel=0.1, exploder
 	return arr;
 }
 
-function designFoundry(game, steps=15, tileLevel=0.001, furnaceLevel=0.05, sliderLevel=0.05) {
+function designFoundry(game, steps=15, tileLevel=0.001, furnaceLevel=0.025, sliderLevel=0.05) {
 	//init
 	var arr = _makeLevelArray();
 	

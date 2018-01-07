@@ -363,14 +363,23 @@ function loadLevel() {
 
 function getLevelFeatures(level) {
 	if (level === 1) {
-		// return {enemies:["turrets"], turretRate:1000, map:"scrapyard", params:[1, 0.12, 0.9, 0.15, 0.01]};
-		return {enemies:["turrets"], turretRate:1000, map:"scrapyard"};
+		//basic first level
+		return {enemies:["turrets"], turretRate:1500, map:"scrapyard"};
 	} else if (level === 2) {
-		return {enemies:["turrets", "octopuses"], turretRate:2000, octopusRate:2000, map:"scrapyard"};
+		//slightly harder second level
+		return {enemies:["turrets", "octopuses"], turretRate:1200, octopusRate:1200, map:"scrapyard"};
 	} else if (level === 3) {
-		return {enemies:["octopuses"], octopusRate:800, map:"foundry", params:[15, 0.001, 0.05, 0.05]};
+		//blade-y third level
+		return {enemies:["turrets", "octopuses"], turretRate:2100, octopusRate:2100, map:"scrapyard", params:[1, 0.12, 0.9, 0.15, 0.01]};
 	} else if (level === 4) {
-		return {enemies:["octopuses"], octopusRate:700, map:"foundry"};
+		//basic first level
+		return {enemies:["octopuses"], octopusRate:1200, map:"foundry"};
+	} else if (level === 5) {
+		//slightly harder second level
+		return {enemies:["octopuses"], octopusRate:1000, map:"foundry"};
+	} else if (level === 6) {
+		//wonky third level
+		return {enemies:["octopuses"], octopusRate:800, map:"foundry"};
 	} else {
 		return {enemies:[], map:"scrapyard"};
 	}
