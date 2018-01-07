@@ -1,6 +1,8 @@
 var furnaces;
 var blobs;
-var BLOBS_PER_FURNACE = 7;
+var BLOBS_PER_FURNACE = 5;
+var MAX_BLOBS = 130;
+var currentBlobs = 0;
 
 function loadFurnaces(game, amount) {
 	//load furnaces
@@ -38,6 +40,7 @@ function explodeFurnace(furn, flashtime=1500) {
 				for (var i = 0; i < BLOBS_PER_FURNACE; i++) {
 					var b = blobs.getFirstDead();
 					if (b) {
+						//spawn blob
 						b.revive();
 						b.x = furn.x;
 						b.y = furn.y;
@@ -46,6 +49,12 @@ function explodeFurnace(furn, flashtime=1500) {
 						b.body.drag.x = 200;
 						b.body.drag.y = 200;
 						b.angle = random.angle();
+						//update blob count
+						currentBlobs++;
+						//if there are too many blobs, kill some so the player doesn't lag out
+						if (currentBlobs > MAX_BLOBS) {
+							blobs.getRandomExists().kill();
+						}
 					}
 				}
 				//checking if it's alive IS necessary

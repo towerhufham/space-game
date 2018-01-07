@@ -19,8 +19,8 @@ var playerLaserSpeed = 800;
 var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
-var currentLevel = 1;
-// var currentLevel = 4;
+// var currentLevel = 1;
+var currentLevel = 4;
 var screenIsShaking = false;
 var pad1;
 
