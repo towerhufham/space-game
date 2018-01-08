@@ -1,5 +1,8 @@
 var grass;
 var grassParticles;
+var MAX_GRASS = 300;
+var currentGrass = 0;
+var cutgrass = 0;
 
 function loadGrass(game, amount) {
 	//load grass
@@ -14,6 +17,7 @@ function loadGrass(game, amount) {
 	grassParticles.makeParticles("BLADE-OF-GRASS");
 	grassParticles.setAlpha(0.75, 0, 1500);
 	grassParticles.gravity = 0;
+	currentGrass = 0;
 }
 
 function spawnGrass(m) {
@@ -23,8 +27,14 @@ function spawnGrass(m) {
 			e.revive();
 			e.x = m[i].x;
 			e.y = m[i].y;
+			currentGrass++;
+			if (currentGrass > MAX_GRASS) {
+				grass.getRandomExists().kill();
+				cutgrass++;
+			}
 		}
 	}
+	console.log("Spawned " + (currentGrass + cutgrass) + " grass, cut " + cutgrass + " of them.");
 }
 
 function explodeGrass(gr) {
