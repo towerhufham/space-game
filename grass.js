@@ -15,7 +15,7 @@ function loadGrass(game, amount) {
 	
 	grassParticles = game.add.emitter(0, 0, 100);
 	grassParticles.makeParticles("BLADE-OF-GRASS");
-	grassParticles.setAlpha(0.75, 0, 1500);
+	grassParticles.setAlpha(0.75, 0, 1000);
 	grassParticles.gravity = 0;
 	currentGrass = 0;
 }
@@ -44,5 +44,6 @@ function explodeGrass(gr) {
 		grassParticles.y = gr.y;
 		grassParticles.start(true, 1000, null, 25);
 		gr.kill();
+		grasssfx.play();
 	}
 }
