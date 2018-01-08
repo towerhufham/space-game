@@ -19,8 +19,8 @@ var playerLaserSpeed = 800;
 var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
-var currentLevel = 1;
-// var currentLevel = 4;
+// var currentLevel = 1;
+var currentLevel = 7;
 var screenIsShaking = false;
 var pad1;
 
@@ -47,6 +47,8 @@ function preload() {
 	game.load.image("SLIDER", "img/slider.png");
 	game.load.image("BLOB", "img/blob.png");
 	game.load.image("CRAB", "img/crab.png");
+	game.load.image("GRASS", "img/grass.png");
+	game.load.image("BLADE-OF-GRASS", "img/bladeofgrass.png");
 	game.load.spritesheet("OCTO", "img/octo.png", 61, 64);
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
 	
@@ -64,6 +66,7 @@ function preload() {
 	// game.load.image("TILES-SCRAPYARD", "img/tiles/tiles_debug.png");
 	game.load.image("TILES-SCRAPYARD", "img/tiles/tiles_scrapyard.png");
 	game.load.image("TILES-FOUNDRY", "img/tiles/tiles_foundry.png");
+	game.load.image("TILES-BIOLAB", "img/tiles/tiles_biolab.png");
 	
 	//audio
 	preloadAudio(game);
@@ -296,6 +299,10 @@ function resetGame() {
 	if (sliders) {
 		sliders.destroy();
 	}
+	if (grass) {
+		grass.destroy();
+		grassParticles.destroy();
+	}
 	//reset player
 	player.body.stop();
 	player.x = game.world.width / 2;
@@ -363,7 +370,10 @@ function loadLevel() {
 		loadSliders(game, tileLayer.sliderMap.length);
 		spawnSliders(tileLayer.sliderMap);
 	}
-	
+	if (tileLayer.grassMap) {
+		loadGrass(game, tileLayer.grassMap.length);
+		spawnGrass(tileLayer.grassMap);
+	}
 	//load ui last so it's on top of other objects
 	reloadUi();
 }
@@ -387,6 +397,9 @@ function getLevelFeatures(level) {
 	} else if (level === 6) {
 		//harder third level
 		return {enemies:["crabs"], crabRate:1500, map:"foundry"};
+	} else if (level === 7) {
+		//harder third level
+		return {enemies:["octopuses"], octopusRate:1500, map:"biolab"};
 	} else {
 		currentLevel = "You made it bro";
 		return {enemies:[], map:"scrapyard"};

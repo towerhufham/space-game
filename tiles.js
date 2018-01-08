@@ -195,6 +195,63 @@ function designFoundry(game, steps=15, tileLevel=0.001, furnaceLevel=0.025, slid
 	return arr;
 }
 
+function designBiolab(game, steps=15, tileLevel=0.015) {
+	//init
+	var arr = _makeLevelArray();
+	
+	var world = new CAWorld({
+		width: 60,
+		height: 60,
+	});
+
+	world.registerCellType('living', {
+		getBlock: function () {
+			//wall is black, open is white
+			if (!this.alive) {
+				return " ";
+			} else if (this.isBio) {
+				return "grass"; //for now
+			} else {
+				return "w";
+			}
+		},
+		process: function (neighbors) {
+			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
+			this.alive = (surrounding === 2 || surrounding === 4) || (surrounding < 2 || surrounding === 4 ) && this.alive;
+			if (!this.alive && surrounding > 1) {this.isBio = true;}
+		},
+		reset: function () {
+			this.wasAlive = this.alive;
+		}
+	}, function () {
+		//init
+		this.alive = Math.random() > 1-tileLevel;
+	});
+
+	world.initialize([
+		{ name: 'living', distribution: 100 }
+	]);
+	
+	//update world
+	for (var i = 0; i < steps; i++) {
+		world.step();
+	}
+	//convert world to tile array
+	for (var y=0; y<world.height; y++) {
+		for (var x=0; x<world.width; x++) {
+			var cell = world.grid[x][y];
+			arr[x][y] = cell.getBlock()
+		}
+	}
+	//place polyps
+	arr = _placePolyps(game, arr);
+	//place gate
+	arr = _placeGate(game, arr);
+	//quality insurance
+	arr = _tileArrayQualityInsurance(arr);
+	return arr;
+}
+
 function makeLayer(game, arr, key) {
 	var data = "";
 	//required objects
@@ -207,6 +264,7 @@ function makeLayer(game, arr, key) {
 	var grenaderMap = [];
 	var furnaceMap = [];
 	var sliderMap = [];
+	var grassMap = [];
 	//go!
 	var size = 60; // yaaay hardcoding
 	for (var y = 0; y < size; y++) {
@@ -252,22 +310,28 @@ function makeLayer(game, arr, key) {
 				reflectorMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
 			}
 			
-			// "g" is reflector
+			// "g" is grenader
 			else if (arr[x][y] === "g") {
 				data += "-1";
 				grenaderMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
 			}
 			
-			// "f" is reflector
+			// "f" is furnace
 			else if (arr[x][y] === "f") {
 				data += "-1";
 				furnaceMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
 			}
 			
-			// "s" is reflector
+			// "s" is slider
 			else if (arr[x][y] === "s") {
 				data += "-1";
 				sliderMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
+			}
+			
+			// "grass" is grass
+			else if (arr[x][y] === "grass") {
+				data += "-1";
+				grassMap.push({x:(x * 64 + 32), y:(y * 64 + 32)});
 			}
 			
 			//end of line
@@ -301,6 +365,7 @@ function makeLayer(game, arr, key) {
 	layer.grenaderMap = grenaderMap;
 	layer.furnaceMap = furnaceMap;
 	layer.sliderMap = sliderMap;
+	layer.grassMap = grassMap;
 	//return the layer for collision
 	return layer;
 }
@@ -324,6 +389,14 @@ function makeTiles(game, generationName, genParams) {
 			designFunc = function() {return designFoundry(game, genParams[0], genParams[1], genParams[2], genParams[3]);};
 		} else {
 			designFunc = designFoundry;
+		}
+	} else if (generationName === "biolab") {
+		key = "TILES-BIOLAB";
+		if (genParams) {
+			//game, steps=15, bioLab=0.015
+			designFunc = function() {return designBiolab(game, genParams[0], genParams[1]);};
+		} else {
+			designFunc = designBiolab;
 		}
 	}
 	// var design = designScrapyard(game);

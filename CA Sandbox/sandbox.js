@@ -263,8 +263,6 @@ function biolab(steps=11, tileLevel=0.015) {
 				return "#FFFFFF";
 			} else if (this.isBio) {
 				return "#008800";
-			} else if (this.isThing) {
-				return "#888888";
 			} else {
 				return "#000000";
 			}
@@ -273,7 +271,6 @@ function biolab(steps=11, tileLevel=0.015) {
 			var surrounding = this.countSurroundingCellsWithValue(neighbors, 'wasAlive');
 			this.alive = (surrounding === 2 || surrounding === 4) || (surrounding < 2 || surrounding === 4 ) && this.alive;
 			if (!this.alive && surrounding > 1) {this.isBio = true;}
-			// if (!this.alive && surrounding === 0) {this.isThing = true;}
 		},
 		reset: function () {
 			this.wasAlive = this.alive;
@@ -408,4 +405,4 @@ function render(world) {
 
 ////////////////////////////////////////
 
-render(foundry());
+render(biolab());
