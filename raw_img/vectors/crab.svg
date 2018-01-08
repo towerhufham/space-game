@@ -30,8 +30,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="609.45839"
-     inkscape:cy="502.66677"
+     inkscape:cx="451.78321"
+     inkscape:cy="505.52391"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -68,22 +68,21 @@
      id="layer1"
      transform="translate(0,-28.362161)">
     <g
-       id="g4150"
-       transform="matrix(0,1,-1,0,924.36216,-99.63784)"
+       id="g4139"
        inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\crab.png"
-       inkscape:export-xdpi="29.161049"
-       inkscape:export-ydpi="29.161049">
+       inkscape:export-xdpi="29.139551"
+       inkscape:export-ydpi="29.139551">
       <path
          sodipodi:nodetypes="cccccccc"
          inkscape:connector-curvature="0"
          id="path4144"
-         d="m 512,284.36216 -64,64 0,-128 L 365.7143,412.3622 320,156.36216 l 0,384 L 438.85715,412.3622 512,668.36216"
-         style="fill:none;fill-rule:evenodd;stroke:#ff00ff;stroke-width:11.33893394;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         d="m 640,412.36216 -64,-64 128,0 L 511.99996,266.07646 768,220.36216 l -384,0 L 511.99996,339.21931 256,412.36216"
+         style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:11.33893394;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <use
          style="stroke:#ff00ff;stroke-linecap:square;stroke-opacity:1"
          height="100%"
          width="100%"
-         transform="matrix(-1,0,0,1,1024,0)"
+         transform="matrix(1,0,0,-1,0,824.72432)"
          id="use4146"
          xlink:href="#path4144"
          y="0"

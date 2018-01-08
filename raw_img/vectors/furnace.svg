@@ -29,9 +29,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="835.28904"
-     inkscape:cy="451.00879"
+     inkscape:zoom="0.35"
+     inkscape:cx="713.42304"
+     inkscape:cy="343.55847"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -68,12 +68,12 @@
      id="layer1"
      transform="translate(0,-28.362161)">
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#ff00ff;stroke-width:40;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:40;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 256,28.362161 c 192,64 320,64 512,0 l -192,255.999999 64,384 -256,0 64,-384 z"
        id="path4144"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc"
-       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\furnace.png"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\slider.png"
        inkscape:export-xdpi="5.224772"
        inkscape:export-ydpi="5.224772" />
     <use
@@ -84,7 +84,7 @@
        transform="matrix(0,1,-1,0,1052.3622,28.362161)"
        width="100%"
        height="100%"
-       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\furnace.png"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\slider.png"
        inkscape:export-xdpi="5.224772"
        inkscape:export-ydpi="5.224772" />
     <use
@@ -95,7 +95,7 @@
        transform="matrix(0,-1,1,0,-28.36216,1052.3622)"
        width="100%"
        height="100%"
-       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\furnace.png"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\slider.png"
        inkscape:export-xdpi="5.224772"
        inkscape:export-ydpi="5.224772" />
     <use
@@ -106,7 +106,7 @@
        transform="matrix(-1,0,0,-1,1024,1080.7243)"
        width="100%"
        height="100%"
-       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\furnace.png"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\slider.png"
        inkscape:export-xdpi="5.224772"
        inkscape:export-ydpi="5.224772" />
     <g
