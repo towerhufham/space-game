@@ -6,7 +6,7 @@
         "dist": "build --tasks win-x64 --mirror https://dl.nwjs.io/ .",
         "start": "run --x86 --mirror https://dl.nwjs.io/ ."
     },
-	"name": "Space-Game",
+	"name": "Bullheck",
 	"description": "Some kind of space game lol",
 	"version": "0.2.0",
 	"main": "index.html",
