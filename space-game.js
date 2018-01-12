@@ -20,7 +20,7 @@ var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
 // var currentLevel = 1;
-var currentLevel = 5;
+var currentLevel = 7;
 var screenIsShaking = false;
 var pad1;
 
@@ -31,7 +31,9 @@ function preload() {
 	game.load.image("POLYP", "img/polyp_thing.png");
 	game.load.image("TURRET", "img/turret.png");
 	game.load.image("CYAN BEAM", "img/beam.png");
-	game.load.image("MAGENTA BEAM", "img/beam_red.png");
+	game.load.image("MAGENTA BEAM", "img/beam_mag.png");
+	game.load.image("RED BEAM", "img/beam_red.png");
+	game.load.image("GREEN BEAM", "img/beam_green.png");
 	game.load.image("PARTICLE", "img/particle.png");
 	game.load.image("ENERGY", "img/energy2.png");
 	game.load.image("ENERGY PARTICLE", "img/energy_ring2.png");
@@ -390,6 +392,7 @@ function getLevelFeatures(level) {
 		return {enemies:["turrets", "octopuses"], turretRate:2400, octopusRate:2100, map:"scrapyard", params:[1, 0.12, 0.9, 0.15, 0.01]};
 	} else if (level === 4) {
 		//first level has no enemies, so the player can understand how to move around the foundry
+		setLaserColor("RED BEAM");
 		return {map:"foundry"};
 	} else if (level === 5) {
 		//second level the player is ambushed by the CRABZ
@@ -398,7 +401,8 @@ function getLevelFeatures(level) {
 		//harder third level
 		return {enemies:["crabs"], crabRate:2000, map:"foundry"};
 	} else if (level === 7) {
-		//harder third level
+		//biolab
+		setLaserColor("GREEN BEAM");
 		return {enemies:["octopuses"], octopusRate:1500, map:"biolab"};
 	} else {
 		currentLevel = "You made it bro";

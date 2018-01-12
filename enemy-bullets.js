@@ -13,6 +13,10 @@ function loadEnemyLasers(game) {
     enemyLasers.callAll("body.setSize", "body", 5, 5, 30, 0);
 }
 
+function setLaserColor(key) {
+	enemyLasers.callAll("loadTexture", null, key);
+}
+
 function fireAtSprite(game, source, sprite, speed = _defaultSpeed) {
 	var laser = enemyLasers.getFirstDead();
 	if (laser) {
