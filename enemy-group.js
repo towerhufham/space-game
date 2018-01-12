@@ -38,35 +38,38 @@ function makeEnemyGroup(game, player, key, spawntime, accel, fireFunction, fireR
 
 function basicSpawn(enemyGroup, game, player) {
 	//this is the basic spawn code
-	var en = enemyGroup.getFirstDead();
-	if (en) {
-		var side = game.rnd.between(0,3);
-		var x;
-		var y;
-		if (side === 0) {
-			//left
-			x = -50;
-			y = game.rnd.between(0, game.world.height);
-		} else if (side === 1) {
-			//top
-			x = game.rnd.between(0, game.world.width);
-			y = -50
-		} else if (side === 2) {
-			//right
-			x = game.world.width + 50;
-			y = game.rnd.between(0, game.world.height);
-		} else if (side === 3) {
-			//bottom
-			x = game.rnd.between(0, game.world.width);
-			y = game.world.height + 50;
+	if (currentEnemies < MAX_ENEMIES) {
+		var en = enemyGroup.getFirstDead();
+		if (en) {
+			var side = game.rnd.between(0,3);
+			var x;
+			var y;
+			if (side === 0) {
+				//left
+				x = -50;
+				y = game.rnd.between(0, game.world.height);
+			} else if (side === 1) {
+				//top
+				x = game.rnd.between(0, game.world.width);
+				y = -50
+			} else if (side === 2) {
+				//right
+				x = game.world.width + 50;
+				y = game.rnd.between(0, game.world.height);
+			} else if (side === 3) {
+				//bottom
+				x = game.rnd.between(0, game.world.width);
+				y = game.world.height + 50;
+			}
+			en.reset(x, y);
+			en.rotation = game.physics.arcade.angleToXY(en, player.x, player.y);
+			enemyGroup.fire(en, game, player);
+			//used by the map
+			en.outOfBounds = true;
+			en.boundsKill = false;
+			game.time.events.add(2000, function(){en.boundsKill = true;}, this);
+			currentEnemies++;
 		}
-		en.reset(x, y);
-		en.rotation = game.physics.arcade.angleToXY(en, player.x, player.y);
-		enemyGroup.fire(en, game, player);
-		//used by the map
-		en.outOfBounds = true;
-		//kill enemy after an amount of time (this might (should probably) change)
-		en.lifespan = 25000;
 	}
 }
 
@@ -75,6 +78,11 @@ function defaultUpdate(en, game, player, accel) {
 	en.outOfBounds = false;
 	if (en.x < 0 || en.y < 0 || en.x > 3840 || en.y > 3840) {
 		en.outOfBounds = true;
+	}
+	if (en.outOfBounds && en.boundsKill) {
+		en.kill();
+		en.boundsKill = false;
+		currentEnemies--;
 	}
 	en.rotation = game.physics.arcade.angleToXY(en, player.x, player.y);
 	//move towards player

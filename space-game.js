@@ -19,10 +19,12 @@ var playerLaserSpeed = 800;
 var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
-// var currentLevel = 1;
-var currentLevel = 7;
+var currentLevel = 1;
+// var currentLevel = 2;
 var screenIsShaking = false;
 var pad1;
+var currentEnemies = 0;
+var MAX_ENEMIES = 20;
 
 function preload() {
 	//images
@@ -235,7 +237,7 @@ function update() {
 	}
 	
 	//debug text
-	debugText.text = "Level: " + currentLevel + "\nFPS: " + game.time.fps;
+	debugText.text = "Level: " + currentLevel + "\nFPS: " + game.time.fps + "\nCurrent Enemies: " + currentEnemies;
 	
 	//draw map
 	setMapPosition(); //i don't like doing this every frame, but since the fullscreen calls are asynchronus it's the easiest way to do it

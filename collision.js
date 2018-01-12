@@ -86,7 +86,9 @@ function enemyVSlaser(enemy, laser) {
 	enemyParticles.x = enemy.x;
 	enemyParticles.y = enemy.y;
 	enemyParticles.start(true, 1000, null, 10);
+	enemy.boundsKill = false;
 	enemy.kill();
+	currentEnemies--;
 }
 
 function polypVSlaser(polyp, laser) {
