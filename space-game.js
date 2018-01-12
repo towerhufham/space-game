@@ -263,6 +263,7 @@ function resetGame() {
 	health = 4;
 	killcount = 0;
 	currentEnergy = 0;
+	currentEnemies = 0;
 	//kill all lasers
 	playerLasers.callAll("kill");
 	enemyLasers.callAll("kill");
