@@ -20,7 +20,7 @@ var playerLasers;
 var enemyParticles;
 var enemyGroups = [];
 // var currentLevel = 1;
-var currentLevel = 7;
+var currentLevel = 5;
 var screenIsShaking = false;
 var pad1;
 
@@ -30,8 +30,8 @@ function preload() {
 	game.load.image("TRIANGLE", "img/triangle.png");
 	game.load.image("POLYP", "img/polyp_thing.png");
 	game.load.image("TURRET", "img/turret.png");
-	game.load.image("BLUE BEAM", "img/beam.png");
-	game.load.image("RED BEAM", "img/beam_red.png");
+	game.load.image("CYAN BEAM", "img/beam.png");
+	game.load.image("MAGENTA BEAM", "img/beam_red.png");
 	game.load.image("PARTICLE", "img/particle.png");
 	game.load.image("ENERGY", "img/energy2.png");
 	game.load.image("ENERGY PARTICLE", "img/energy_ring2.png");
@@ -99,7 +99,7 @@ function create() {
 	playerLasers = game.add.group();
     playerLasers.enableBody = true;
     playerLasers.physicsBodyType = Phaser.Physics.ARCADE;
-    playerLasers.createMultiple(50, "BLUE BEAM");
+    playerLasers.createMultiple(50, "CYAN BEAM");
     playerLasers.setAll("checkWorldBounds", true);
     playerLasers.setAll("outOfBoundsKill", true);
 	playerLasers.callAll("anchor.setTo", "anchor", 1, 0.5);
@@ -381,22 +381,22 @@ function loadLevel() {
 function getLevelFeatures(level) {
 	if (level === 1) {
 		//basic first level
-		return {enemies:["turrets"], turretRate:1500, map:"scrapyard"};
+		return {enemies:["turrets"], turretRate:3000, map:"scrapyard"};
 	} else if (level === 2) {
 		//slightly harder second level
-		return {enemies:["turrets", "octopuses"], turretRate:1200, octopusRate:1200, map:"scrapyard"};
+		return {enemies:["turrets", "octopuses"], turretRate:2400, octopusRate:1200, map:"scrapyard"};
 	} else if (level === 3) {
 		//blade-y third level
-		return {enemies:["turrets", "octopuses"], turretRate:2100, octopusRate:2100, map:"scrapyard", params:[1, 0.12, 0.9, 0.15, 0.01]};
+		return {enemies:["turrets", "octopuses"], turretRate:2400, octopusRate:2100, map:"scrapyard", params:[1, 0.12, 0.9, 0.15, 0.01]};
 	} else if (level === 4) {
 		//first level has no enemies, so the player can understand how to move around the foundry
 		return {map:"foundry"};
 	} else if (level === 5) {
 		//second level the player is ambushed by the CRABZ
-		return {enemies:["crabs"], crabRate:2000, map:"foundry"};
+		return {enemies:["crabs"], crabRate:2500, map:"foundry"};
 	} else if (level === 6) {
 		//harder third level
-		return {enemies:["crabs"], crabRate:1500, map:"foundry"};
+		return {enemies:["crabs"], crabRate:2000, map:"foundry"};
 	} else if (level === 7) {
 		//harder third level
 		return {enemies:["octopuses"], octopusRate:1500, map:"biolab"};

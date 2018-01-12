@@ -1,11 +1,12 @@
 var crabs;
 var CRAB_ACCEL = 2;
-var CRAB_SHOT = 4; //this number is doubled and then ++'d
+var CRAB_SHOT = 5; //this number is doubled and then ++'d
 
 //we take in a player as an argument because some functions use the player's pos
 function loadCrabs(game, player, rate) {
 	//create crab group (note: speed is irrelevant for the crabs' behavior)
-	crabs = makeEnemyGroup(game, player, "CRAB", rate, 0, crabFire, crabUpdate);
+	// crabs = makeEnemyGroup(game, player, "CRAB", rate, 0, crabFire, crabUpdate);
+	crabs = makeEnemyGroup(game, player, "CRAB", rate, 2, crabFire, 1000);
 	return crabs;
 }
 
@@ -18,21 +19,21 @@ function crabFire(crab, game, player) {
 		for (var i = -CRAB_SHOT; i < CRAB_SHOT+1; i++) {
 			var angle = game.physics.arcade.angleBetween(crab, player);
 			angle += (i * 0.1);
-			fireAtAngle(game, crab, angle);
+			fireAtAngle(game, crab, angle, 300);
 		}
 		shootsfx.play();
 	}
 }
 
-function crabUpdate(en, game, player) {
-	//just check for bounds
+/* function crabUpdate(en, game, player) {
+	// just check for bounds
 	en.outOfBounds = false;
 	if (en.x < 0 || en.y < 0 || en.x > 3840 || en.y > 3840) {
 		en.outOfBounds = true;
 	}
-	//rotate towards player
+	// rotate towards player
 	en.rotation = game.physics.arcade.angleToXY(en, player.x, player.y);
-	//move towards player
+	// move towards player
 	en.body.velocity.x += (CRAB_ACCEL * Math.sign(player.x - en.x)); 
 	en.body.velocity.y += (CRAB_ACCEL * Math.sign(player.y - en.y)); 
-}
+} */

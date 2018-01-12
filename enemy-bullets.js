@@ -6,7 +6,7 @@ function loadEnemyLasers(game) {
 	enemyLasers = game.add.group();
     enemyLasers.enableBody = true;
     enemyLasers.physicsBodyType = Phaser.Physics.ARCADE;
-    enemyLasers.createMultiple(100, "RED BEAM");
+    enemyLasers.createMultiple(100, "MAGENTA BEAM");
     enemyLasers.setAll("checkWorldBounds", true);
     enemyLasers.setAll("outOfBoundsKill", true);
 	enemyLasers.callAll("anchor.setTo", "anchor", 1, 0.5);
