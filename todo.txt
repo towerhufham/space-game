@@ -1,6 +1,6 @@
 Stuff for build v0.3.0
 
-* made different color enemy-laser
+* make different color enemy-laser
 * biolab finished
 * music implemented
 * pilot menu
@@ -16,6 +16,8 @@ Planned for build v0.4.0
 
 Todo around build v1.0.0
 
+* cinematics
+* source protection
 * video and screenshots
 * pay Johnny and Kelvin to translate into Spanish and Chinese
 * description and other promo stuff
@@ -25,7 +27,6 @@ Stuff to do eventually:
 
 * decide what to do with lobster enemies
 * destroy blocks with lasers OR ensure that levels generate with path from start to all important things
-* figure out the final(?) name (___ superheavy industries)
 
 Current known issues:
 
