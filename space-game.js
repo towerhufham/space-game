@@ -1,5 +1,5 @@
-var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update});
-// var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update, render: render});
+// var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update});
+var game = new Phaser.Game(1200, 800, Phaser.CANVAS, "", {preload: preload, create: create, update: update, render: render});
 
 var gate;
 var player;
@@ -30,6 +30,7 @@ function preload() {
 	//images
 	game.load.image("BACKGROUND", "img/tempbg.jpg");
 	game.load.image("TRIANGLE", "img/triangle.png");
+	game.load.image("BULLSHIP", "img/bullship.png");
 	game.load.image("POLYP", "img/polyp_thing.png");
 	game.load.image("TURRET", "img/turret.png");
 	game.load.image("CYAN BEAM", "img/beam.png");
@@ -110,14 +111,15 @@ function create() {
     playerLasers.callAll("body.setSize", "body", 5, 5, 30, 0);
 	
 	//add player
-	player = game.add.sprite(game.world.width/2, game.world.height/2, "TRIANGLE");
+	player = game.add.sprite(game.world.width/2, game.world.height/2, "BULLSHIP");
+	// player = game.add.sprite(game.world.width/2, game.world.height/2, "TRIANGLE");
 	player.anchor.setTo(0.5, 0.5);
 	game.physics.enable(player);
 	player.body.maxVelocity = {x: SPEED, y: SPEED};
 	game.camera.follow(player, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 	player.body.collideWorldBounds = true;
 	player.canMagnet = true;
-	player.body.setSize(20, 20, 6, 6);
+	player.body.setSize(20, 20, 14, 6);
 	// makePhantom(player, "PLACEHOLDER");
 	
 	//load enemy lasers
