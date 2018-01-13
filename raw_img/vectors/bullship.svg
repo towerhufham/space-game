@@ -31,7 +31,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748738"
      inkscape:cx="616.87489"
-     inkscape:cy="1047.5684"
+     inkscape:cy="1006.0999"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -72,7 +72,10 @@
        d="m 736.00004,508.36218 0,-192 -64,-64 0,-128 192,-64 128,64 191.99996,0 -191.99996,-64 -128,-63.9999995 -256,0 -192,127.9999995 0,128 -128,64 -192,64 -64,-64 -128.00004,64 -64,64 0,64"
        id="path4740"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccccccccccccc" />
+       sodipodi:nodetypes="cccccccccccccccccc"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\bullship.png"
+       inkscape:export-xdpi="3.1896551"
+       inkscape:export-ydpi="3.1896551" />
     <use
        x="0"
        y="0"
@@ -80,6 +83,9 @@
        id="use4744"
        transform="matrix(1,0,0,-1,-9.9999988e-7,1016.7244)"
        width="100%"
-       height="100%" />
+       height="100%"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\bullship.png"
+       inkscape:export-xdpi="3.1896551"
+       inkscape:export-ydpi="3.1896551" />
   </g>
 </svg>
