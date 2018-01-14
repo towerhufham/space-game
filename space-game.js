@@ -183,6 +183,16 @@ function update() {
 	// player.phantom.x = player.x;
 	// player.phantom.y = player.y;
 	
+	//aries makes the player faster while they aren't firing
+	if (ARIES && !game.input.activePointer.leftButton.isDown) {
+		SPEED = 550;
+		player.body.maxVelocity = {x: SPEED, y: SPEED};
+	} else if (SPEED == 550) {
+		//change back to default when the above params are no longer true
+		SPEED = 400;
+		player.body.maxVelocity = {x: SPEED, y: SPEED};
+	}
+	
 	//horizontal velocity
 	if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT) || game.input.keyboard.isDown(Phaser.Keyboard.A) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_LEFT)) {
 		player.body.velocity.x -= ACCEL;

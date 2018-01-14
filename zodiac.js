@@ -1,4 +1,4 @@
-var ARIES = false;
+var ARIES = true;
 var TAURUS = false;
 var GEMINI = false;
 var CANCER = false;
