@@ -461,15 +461,22 @@ function damagePlayer() {
 
 function playerFire() {
 	if (game.time.now > nextFire && playerLasers.countDead() > 0 && player.alive === true) {
-		nextFire = game.time.now + fireRate;
-		var laser = playerLasers.getFirstDead();
-		laser.reset(player.x, player.y);
-		laser.angle = player.angle;
-		game.physics.arcade.moveToPointer(laser, playerLaserSpeed);
+		//gemini gives double fire
+		if (GEMINI) {
+			nextFire = game.time.now + fireRate;
+			playerFireAtAngle(game, player, player.rotation - 0.05);
+			playerFireAtAngle(game, player, player.rotation + 0.05);
+		} else {
+			nextFire = game.time.now + fireRate;
+			var laser = playerLasers.getFirstDead();
+			laser.reset(player.x, player.y);
+			laser.angle = player.angle;
+			game.physics.arcade.moveToPointer(laser, playerLaserSpeed);
+		}
     }
 }
 
-//this as of right now is only used by reflectors to "reflect" a player's laser
+//this as of right now is only used by reflectors to "reflect" a player's laser and gemini to have double lasers
 function playerFireAtAngle(game, source, angle, speed = playerLaserSpeed) {
 	//in radians
 	var laser = playerLasers.getFirstDead();
