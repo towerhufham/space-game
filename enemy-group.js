@@ -73,6 +73,10 @@ function basicSpawn(enemyGroup, game, player) {
 	}
 }
 
+function _dist(x1, y1, x2, y2) {
+	return Math.sqrt((x2-x1)**2 + (y2-y1)**2);
+}
+
 function defaultUpdate(en, game, player, accel) {
 	//default aim-at-player behavior
 	en.outOfBounds = false;
@@ -88,4 +92,9 @@ function defaultUpdate(en, game, player, accel) {
 	//move towards player
 	en.body.velocity.x += (accel * Math.sign(player.x - en.x)); 
 	en.body.velocity.y += (accel * Math.sign(player.y - en.y)); 
+	//don't overshoot too much
+	if (_dist(en.x, en.y, player.x, player.y) < 350) {
+		en.body.velocity.x /= 1.01;
+		en.body.velocity.y /= 1.01;
+	}
 }

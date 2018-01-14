@@ -24,7 +24,7 @@ var currentLevel = 1;
 var screenIsShaking = false;
 var pad1;
 var currentEnemies = 0;
-var MAX_ENEMIES = 20;
+var MAX_ENEMIES = 12;
 
 function preload() {
 	//images
