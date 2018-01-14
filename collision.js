@@ -21,7 +21,7 @@ function doCollisions() {
 	game.physics.arcade.collide(player, furnaces);
 	game.physics.arcade.collide(blobs, tileLayer);
 	game.physics.arcade.collide(sliders, tileLayer, sliderCollision);
-	game.physics.arcade.collide(sliders, sliders, sliderCollision);
+	game.physics.arcade.collide(sliders, sliders, sliderVSslider);
 	game.physics.arcade.collide(sliders, furnaces, sliderVSfurnace);
 	game.physics.arcade.collide(energies, exploders);
 	game.physics.arcade.collide(energies, furnaces);
@@ -160,6 +160,13 @@ function sliderVSfurnace(slider, furn) {
 		// explodeFurnace(furn, 0);
 	// }
 	sliderCollision(slider);
+}
+
+function sliderVSslider(s1, s2) {
+	explosion(s1.x, s1.y, "EXPLOSION-RED");
+	explosion(s2.x, s2.y, "EXPLOSION-RED");
+	s1.kill();
+	s2.kill();
 }
 
 function laserVSgrass(laser, grass) {

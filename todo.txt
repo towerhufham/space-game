@@ -1,6 +1,5 @@
 Stuff for build v0.3.0
 
-* make different color enemy-laser
 * biolab finished
 * music implemented
 * pilot menu
