@@ -438,23 +438,31 @@ function drawPlayerAim() {
 
 function damagePlayer() {
 	if (!invincible) {
-		health--;
-		screenShake();
-		damagesfx.play();
-		updateHpBar();
-		if (health === 0) {
-			//change this to playerParticles when the player sprite is changed
-			enemyParticles.x = player.x;
-			enemyParticles.y = player.y;
-			enemyParticles.start(true, 1000, null, 25);
-			player.kill();
-			gameoversfx.play();
-			game.time.events.add(1500, resetGame, this);
-		} else {
-			//i-frames
+		//virgo sometimes blocks damage
+		if (VIRGO && Math.random() > 0.75) {
+			virgosfx.play();
 			flashSprite(player, 1000);
 			invincible = true;
 			game.time.events.add(1000, function(){invincible = false;}, this);
+		} else {
+			health--;
+			screenShake();
+			damagesfx.play();
+			updateHpBar();
+			if (health === 0) {
+				//change this to playerParticles when the player sprite is changed
+				enemyParticles.x = player.x;
+				enemyParticles.y = player.y;
+				enemyParticles.start(true, 1000, null, 25);
+				player.kill();
+				gameoversfx.play();
+				game.time.events.add(1500, resetGame, this);
+			} else {
+				//i-frames
+				flashSprite(player, 1000);
+				invincible = true;
+				game.time.events.add(1000, function(){invincible = false;}, this);
+			}
 		}
 	}
 }

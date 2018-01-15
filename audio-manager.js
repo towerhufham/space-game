@@ -10,6 +10,7 @@ var explodersfx;
 var furnacesfx;
 var slidersfx;
 var grasssfx;
+var virgosfx;
 
 function preloadAudio(game) {
 	game.load.audio("SHOOT", "audio/shooty_low.wav");
@@ -24,6 +25,7 @@ function preloadAudio(game) {
 	game.load.audio("FURNACE", "audio/furnace.wav");
 	game.load.audio("SLIDER", "audio/slider.wav");
 	game.load.audio("GRASS", "audio/grass.wav");
+	game.load.audio("VIRGO", "audio/squishy.wav");
 }
 
 function loadAudio(game) {
@@ -39,4 +41,5 @@ function loadAudio(game) {
 	furnacesfx = game.add.audio("FURNACE", 0.25);
 	slidersfx = game.add.audio("SLIDER", 0.25);
 	grasssfx = game.add.audio("GRASS", 0.15);
+	virgosfx = game.add.audio("VIRGO", 0.5);
 }
