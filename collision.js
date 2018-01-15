@@ -14,7 +14,7 @@ function doCollisions() {
 	game.physics.arcade.collide(player, tileLayer);
 	game.physics.arcade.collide(energies, tileLayer);
 	game.physics.arcade.collide(grenades, tileLayer);
-	game.physics.arcade.collide(playerLasers, tileLayer, laserVStile);
+	game.physics.arcade.collide(playerLasers, tileLayer, playerlaserVStile);
 	game.physics.arcade.collide(enemyLasers, tileLayer, laserVStile);
 	game.physics.arcade.collide(player, exploders);
 	game.physics.arcade.collide(player, polyps);
@@ -50,6 +50,14 @@ function doCollisions() {
 function killLaser(laser) {
 	laser.beenReflected = null;
 	laser.kill();
+}
+
+function playerlaserVStile(laser, tile) {
+	//leo makes lasers sometimes explode
+	if (LEO && Math.random() > 0.9) {
+		explosion(laser.x, laser.y);
+	}
+	laserVStile(laser, tile);
 }
 
 function laserVStile(laser, tile) {
