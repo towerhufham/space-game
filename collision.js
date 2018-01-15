@@ -77,7 +77,16 @@ function playerVSgate() {
 
 function playerVSbadlaser(player, laser) {
 	killLaser(laser);
-	damagePlayer();
+	//cancer makes bullets reflect as player bullets while invincible
+	if (CANCER && invincible) {
+		for (var i = 0; i < 20; i++) {
+			var angle = game.rnd.angle() * (Math.PI / 180);
+			playerFireAtAngle(game, player, angle);
+		}
+		reflectorsfx.play();
+	} else {
+		damagePlayer();
+	}
 }
 
 function enemyVSlaser(enemy, laser) {
