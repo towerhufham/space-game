@@ -485,6 +485,10 @@ function playerFire() {
 			laser.angle = player.angle;
 			game.physics.arcade.moveToPointer(laser, playerLaserSpeed);
 		}
+		//scorpio gives backwards-shots
+		if (SCORPIO) {
+			playerFireAtAngle(game, player, player.rotation + Math.PI);
+		}
     }
 }
 
