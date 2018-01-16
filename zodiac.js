@@ -8,8 +8,8 @@ var LIBRA = false;
 var SCORPIO = false;
 var SAGITTARIUS = false;
 var CAPRICORN = false;
-var AQUARIUS = true;
-var PISCES = false;
+var AQUARIUS = false;
+var PISCES = true;
 
 function loadZodiac() {
 	//load

@@ -199,7 +199,8 @@ function update() {
 	} else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT) || game.input.keyboard.isDown(Phaser.Keyboard.D) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_RIGHT)) {
 		player.body.velocity.x += ACCEL;
 	} else {
-		player.body.velocity.x += Math.sign(player.body.velocity.x) * -DEACCEL;
+		//pisces makes the player stop easier
+		player.body.velocity.x += Math.sign(player.body.velocity.x) * -DEACCEL * (PISCES ? 2 : 1);
 	}
 	//stop sliding
 	if (player.body.velocity.x < 5 && player.body.velocity.x > -5) {
@@ -212,7 +213,8 @@ function update() {
 	} else if (game.input.keyboard.isDown(Phaser.Keyboard.DOWN) || game.input.keyboard.isDown(Phaser.Keyboard.S) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_DOWN)) {
 		player.body.velocity.y += ACCEL;
 	} else {
-		player.body.velocity.y += Math.sign(player.body.velocity.y) * -DEACCEL;
+		//pisces makes the player stop easier
+		player.body.velocity.y += Math.sign(player.body.velocity.y) * -DEACCEL * (PISCES ? 2 : 1);
 	}
 	//stop sliding
 	if (player.body.velocity.y < 5 && player.body.velocity.y > -5) {
