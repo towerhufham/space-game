@@ -483,7 +483,12 @@ function playerFire() {
 			var laser = playerLasers.getFirstDead();
 			laser.reset(player.x, player.y);
 			laser.angle = player.angle;
-			game.physics.arcade.moveToPointer(laser, playerLaserSpeed);
+			//Sagittarius gives faster bullet speed
+			if (SAGITTARIUS) {
+				game.physics.arcade.moveToPointer(laser, 1400);
+			} else {
+				game.physics.arcade.moveToPointer(laser, playerLaserSpeed);
+			}
 		}
 		//scorpio gives backwards-shots
 		if (SCORPIO) {
@@ -492,14 +497,19 @@ function playerFire() {
     }
 }
 
-//this as of right now is only used by reflectors to "reflect" a player's laser and gemini to have double lasers
+//this as of right now is only used by weird stuff
 function playerFireAtAngle(game, source, angle, speed = playerLaserSpeed) {
 	//in radians
 	var laser = playerLasers.getFirstDead();
 	if (laser) {
 		laser.reset(source.x, source.y);
 		laser.rotation = angle
-		laser.body.velocity.setToPolar(angle, speed);
+		//Sagittarius gives faster bullet speed
+		if (SAGITTARIUS) {
+			laser.body.velocity.setToPolar(angle, 1400);
+		} else {
+			laser.body.velocity.setToPolar(angle, speed);
+		}
 	}
 }
 
