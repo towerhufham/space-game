@@ -277,6 +277,10 @@ function resetGame() {
 	health = 4;
 	killcount = 0;
 	currentEnergy = 0;
+	//libra starts the player with 5 energy
+	if (LIBRA) {
+		currentEnergy = 5;
+	}
 	currentEnemies = 0;
 	//kill all lasers
 	playerLasers.callAll("kill");
