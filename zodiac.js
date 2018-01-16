@@ -6,8 +6,8 @@ var LEO = false;
 var VIRGO = false;
 var LIBRA = false;
 var SCORPIO = false;
-var SAGITTARIUS = true;
-var CAPRICORN = false;
+var SAGITTARIUS = false;
+var CAPRICORN = true;
 var AQUARIUS = false;
 var PISCES = false;
 

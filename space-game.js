@@ -445,9 +445,13 @@ function damagePlayer() {
 		//virgo sometimes blocks damage
 		if (VIRGO && Math.random() > 0.75) {
 			virgosfx.play();
-			flashSprite(player, 1000);
+			var itime = 1000;
+			if (CAPRICORN) {
+				itime = 2500;
+			}
+			flashSprite(player, itime);
 			invincible = true;
-			game.time.events.add(1000, function(){invincible = false;}, this);
+			game.time.events.add(itime, function(){invincible = false;}, this);
 		} else {
 			health--;
 			screenShake();
@@ -463,9 +467,13 @@ function damagePlayer() {
 				game.time.events.add(1500, resetGame, this);
 			} else {
 				//i-frames
-				flashSprite(player, 1000);
+				var itime = 1000;
+				if (CAPRICORN) {
+					itime = 2500;
+				}
+				flashSprite(player, itime);
 				invincible = true;
-				game.time.events.add(1000, function(){invincible = false;}, this);
+				game.time.events.add(itime, function(){invincible = false;}, this);
 			}
 		}
 	}
