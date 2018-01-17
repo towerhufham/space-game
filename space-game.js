@@ -69,6 +69,9 @@ function preload() {
 	game.load.spritesheet("ENERGY-CELL", "img/ui/energy_cells.png", 25, 25);
 	game.load.spritesheet("ROUND-CELL", "img/ui/round_cells.png", 25, 25);
 	
+	//zodiac
+	preloadZodiac();
+	
 	//tilesets
 	// game.load.image("TILES-SCRAPYARD", "img/tiles/tiles_debug.png");
 	game.load.image("TILES-SCRAPYARD", "img/tiles/tiles_scrapyard.png");
@@ -101,6 +104,9 @@ function create() {
 	aim = game.add.graphics();
 	map = game.add.graphics();
 	map.fixedToCamera = true;
+	
+	//load zodiac powerups
+	loadZodiac();
 	
 	//add player lasers
 	playerLasers = game.add.group();
