@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="418.25335"
-     inkscape:cy="600.30427"
+     inkscape:zoom="0.175"
+     inkscape:cx="-79.683647"
+     inkscape:cy="2009.7623"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -41,7 +41,9 @@
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid4136"
@@ -57,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -198,5 +200,437 @@
          id="tspan4146-84"
          x="790.73108"
          y="1121.7023">♓</tspan></text>
+    <g
+       id="g4524"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\zodiac\aries.png"
+       inkscape:export-xdpi="5.7422762"
+       inkscape:export-ydpi="5.7422762">
+      <g
+         transform="matrix(1.1380712,0,0,1.1380712,-785.67309,-829.22357)"
+         id="g4201">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166"
+           width="384"
+           height="384"
+           x="-448"
+           y="-675.63782" />
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-4"
+           width="384"
+           height="384"
+           x="-715.00293"
+           y="-352.96423"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4144-31"
+         y="-1254.7159"
+         x="-1231.863"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:320px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-1254.7159"
+           x="-1231.863"
+           id="tspan4146-47"
+           sodipodi:role="line">♈</tspan></text>
+    </g>
+    <g
+       id="g4531"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\zodiac\taurus.png"
+       inkscape:export-xdpi="5.7422762"
+       inkscape:export-ydpi="5.7422762">
+      <g
+         transform="matrix(1.1380712,0,0,1.1380712,24.365585,-829.22357)"
+         id="g4201-7">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-46"
+           width="384"
+           height="384"
+           x="-448"
+           y="-675.63782" />
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-4-4"
+           width="384"
+           height="384"
+           x="-715.00293"
+           y="-352.96423"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4144-0-4"
+         y="-1237.7628"
+         x="-567.68378"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:320px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-1237.7628"
+           x="-567.68378"
+           id="tspan4146-9-3"
+           sodipodi:role="line">	♉</tspan></text>
+    </g>
+    <g
+       id="g4538"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\zodiac\gemini.png"
+       inkscape:export-xdpi="5.7422762"
+       inkscape:export-ydpi="5.7422762">
+      <g
+         transform="matrix(1.1380712,0,0,1.1380712,739.34625,-818.24291)"
+         id="g4201-0">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-3"
+           width="384"
+           height="384"
+           x="-448"
+           y="-675.63782" />
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-4-9"
+           width="384"
+           height="384"
+           x="-715.00293"
+           y="-352.96423"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4144-3-1"
+         y="-1253.7354"
+         x="310.57813"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:320px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-1253.7354"
+           x="310.57813"
+           id="tspan4146-6-3"
+           sodipodi:role="line">♊</tspan></text>
+    </g>
+    <g
+       id="g4545"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\zodiac\cancer.png"
+       inkscape:export-xdpi="5.7422762"
+       inkscape:export-ydpi="5.7422762">
+      <g
+         transform="matrix(1.1380712,0,0,1.1380712,1405.8559,-855.73324)"
+         id="g4201-1">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-0"
+           width="384"
+           height="384"
+           x="-448"
+           y="-675.63782" />
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-4-2"
+           width="384"
+           height="384"
+           x="-715.00293"
+           y="-352.96423"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4144-5-0"
+         y="-1292.8662"
+         x="958.80652"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:320px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-1292.8662"
+           x="958.80652"
+           id="tspan4146-8-4"
+           sodipodi:role="line">♋</tspan></text>
+    </g>
+    <g
+       id="g4552"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\zodiac\leo.png"
+       inkscape:export-xdpi="5.7422762"
+       inkscape:export-ydpi="5.7422762">
+      <g
+         transform="matrix(1.1380712,0,0,1.1380712,2147.3462,-840.20423)"
+         id="g4201-8">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-6"
+           width="384"
+           height="384"
+           x="-448"
+           y="-675.63782" />
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-4-96"
+           width="384"
+           height="384"
+           x="-715.00293"
+           y="-352.96423"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4144-52-0"
+         y="-1301.7904"
+         x="1716.0313"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:320px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-1301.7904"
+           x="1716.0313"
+           id="tspan4146-87-6"
+           sodipodi:role="line">♌</tspan></text>
+    </g>
+    <g
+       id="g4559"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\zodiac\virgo.png"
+       inkscape:export-xdpi="5.7422762"
+       inkscape:export-ydpi="5.7422762">
+      <g
+         transform="matrix(1.1380712,0,0,1.1380712,2979.3462,-840.20423)"
+         id="g4201-6">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-8"
+           width="384"
+           height="384"
+           x="-448"
+           y="-675.63782" />
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-4-5"
+           width="384"
+           height="384"
+           x="-715.00293"
+           y="-352.96423"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4144-8-8"
+         y="-1290.3842"
+         x="2533.0781"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:320px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-1290.3842"
+           x="2533.0781"
+           id="tspan4146-4-1"
+           sodipodi:role="line">♍</tspan></text>
+    </g>
+    <g
+       id="g4566"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\zodiac\libra.png"
+       inkscape:export-xdpi="5.7422762"
+       inkscape:export-ydpi="5.7422762">
+      <g
+         transform="matrix(1.1380712,0,0,1.1380712,-732.65377,-8.2041813)"
+         id="g4201-13">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-1"
+           width="384"
+           height="384"
+           x="-448"
+           y="-675.63782" />
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-4-57"
+           width="384"
+           height="384"
+           x="-715.00293"
+           y="-352.96423"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4144-2-1"
+         y="-449.93094"
+         x="-1168.7656"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:320px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-449.93094"
+           x="-1168.7656"
+           id="tspan4146-65-5"
+           sodipodi:role="line">♎</tspan></text>
+    </g>
+    <g
+       id="g4573"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\zodiac\scorpio.png"
+       inkscape:export-xdpi="5.7422762"
+       inkscape:export-ydpi="5.7422762">
+      <g
+         transform="matrix(1.1380712,0,0,1.1380712,35.346232,-8.2041813)"
+         id="g4201-2">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-04"
+           width="384"
+           height="384"
+           x="-448"
+           y="-675.63782" />
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-4-6"
+           width="384"
+           height="384"
+           x="-715.00293"
+           y="-352.96423"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4144-33-3"
+         y="-455.94656"
+         x="-409.35938"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:320px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-455.94656"
+           x="-409.35938"
+           id="tspan4146-61-1"
+           sodipodi:role="line">♏</tspan></text>
+    </g>
+    <g
+       id="g4580"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\zodiac\sagittarius.png"
+       inkscape:export-xdpi="5.7422762"
+       inkscape:export-ydpi="5.7422762">
+      <g
+         transform="matrix(1.1380712,0,0,1.1380712,739.34625,-8.2042279)"
+         id="g4201-87">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-5"
+           width="384"
+           height="384"
+           x="-448"
+           y="-675.63782" />
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-4-51"
+           width="384"
+           height="384"
+           x="-715.00293"
+           y="-352.96423"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4144-87-9"
+         y="-438.46225"
+         x="315.03125"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:320px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-438.46225"
+           x="315.03125"
+           id="tspan4146-3-2"
+           sodipodi:role="line">♐</tspan></text>
+    </g>
+    <g
+       id="g4587"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\zodiac\capricorn.png"
+       inkscape:export-xdpi="5.7422762"
+       inkscape:export-ydpi="5.7422762">
+      <g
+         transform="matrix(1.1380712,0,0,1.1380712,1443.3462,-8.2041813)"
+         id="g4201-62">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-11"
+           width="384"
+           height="384"
+           x="-448"
+           y="-675.63782" />
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-4-7"
+           width="384"
+           height="384"
+           x="-715.00293"
+           y="-352.96423"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4144-9-3"
+         y="-482.02469"
+         x="830.20306"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:320px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-482.02469"
+           x="830.20306"
+           id="tspan4146-81-0"
+           sodipodi:role="line">	♑</tspan></text>
+    </g>
+    <g
+       id="g4594"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\zodiac\aquarius.png"
+       inkscape:export-xdpi="5.7422762"
+       inkscape:export-ydpi="5.7422762">
+      <g
+         transform="matrix(1.1380712,0,0,1.1380712,2147.3462,-8.2041813)"
+         id="g4201-9">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-63"
+           width="384"
+           height="384"
+           x="-448"
+           y="-675.63782" />
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-4-90"
+           width="384"
+           height="384"
+           x="-715.00293"
+           y="-352.96423"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4144-26-4"
+         y="-451.58719"
+         x="1680.6875"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:320px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-451.58719"
+           x="1680.6875"
+           id="tspan4146-0-6"
+           sodipodi:role="line">♒</tspan></text>
+    </g>
+    <g
+       id="g4601"
+       inkscape:export-filename="C:\Users\Tower\Documents\Code\GitHub Clones\space-game\img\zodiac\pisces.png"
+       inkscape:export-xdpi="5.7422762"
+       inkscape:export-ydpi="5.7422762">
+      <g
+         transform="matrix(1.1380712,0,0,1.1380712,2915.3462,-8.2041813)"
+         id="g4201-4">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-30"
+           width="384"
+           height="384"
+           x="-448"
+           y="-675.63782" />
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect4166-4-8"
+           width="384"
+           height="384"
+           x="-715.00293"
+           y="-352.96423"
+           transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4144-334-5"
+         y="-432.36844"
+         x="2510.4844"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:320px;line-height:125%;font-family:'Trebuchet MS';-inkscape-font-specification:'Trebuchet MS Bold';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-432.36844"
+           x="2510.4844"
+           id="tspan4146-84-7"
+           sodipodi:role="line">♓</tspan></text>
+    </g>
   </g>
 </svg>
