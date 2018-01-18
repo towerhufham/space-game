@@ -241,6 +241,9 @@ function update() {
 	//magnet energies
 	magnetEnergies(game, player);
 	
+	//magnet zodiac
+	magnetZodiac();
+	
 	//draw aim
 	drawPlayerAim();
 	

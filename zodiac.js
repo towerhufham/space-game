@@ -14,7 +14,7 @@ var PISCES = true;
 //list of zodiac signs, minus taurus
 var zodiacs = ["aries", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
 //where we'll keep the powerups
-var powerups;
+var powerup;
 
 function preloadZodiac() {
 	//load images into cache
@@ -26,10 +26,28 @@ function preloadZodiac() {
 
 function loadZodiac() {
 	//make sure the powerups are empty (maybe we're reloading?)
-	powerups = [];
+	powerups = game.add.group();
+	powerups.enableBody = true;
+	powerups.physicsBodyType = Phaser.Physics.ARCADE;
 	for (var i = 0; i < zodiacs.length; i++) {
-		var z = game.add.sprite(100*i, 100, zodiacs[i]);
-		powerups.push(z);
+		var z = powerups.create(100*i, 100, zodiacs[i]);
 	}
+	powerups.callAll("anchor.setTo", "anchor", 0.5, 0.5);
+	powerups.callAll("body.enableBody", true);
+	powerups.setAll("body.collideWorldBounds", true);
+	powerups.setAll("body.worldBounce", new Phaser.Point(1, 1));
 }
 
+function magnetZodiac() {
+	if (player.canMagnet) {
+		powerups.forEachAlive(function(e){
+			var dist = Phaser.Math.distance(e.x, e.y, player.x, player.y);
+			if (dist < 125) {
+				var angle = game.physics.arcade.angleBetween(e, player);
+				angle *= Phaser.Math.RAD_TO_DEG;  //why tf does phaser use two different angle notations without converting automatically
+				var vel = game.physics.arcade.velocityFromAngle(angle, 450);
+				e.body.velocity = vel;
+			}
+		}, this);
+	}
+}
