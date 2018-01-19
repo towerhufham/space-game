@@ -45,6 +45,7 @@ function doCollisions() {
 	game.physics.arcade.overlap(player, sliders, damagePlayer);
 	game.physics.arcade.overlap(playerLasers, grass, laserVSgrass);
 	game.physics.arcade.overlap(enemyLasers, grass, laserVSgrass);
+	game.physics.arcade.overlap(player, powerups, playerVSpowerups);
 }
 
 function killLaser(laser) {
@@ -189,4 +190,8 @@ function sliderVSslider(s1, s2) {
 function laserVSgrass(laser, grass) {
 	killLaser(laser);
 	explodeGrass(grass);
+}
+
+function playerVSpowerups(player, pu) {
+	givePower(pu);
 }

@@ -14,7 +14,7 @@ var PISCES = true;
 //list of zodiac signs, minus taurus
 var zodiacs = ["aries", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
 //where we'll keep the powerups
-var powerup;
+var powerups;
 
 function preloadZodiac() {
 	//load images into cache
@@ -31,6 +31,7 @@ function loadZodiac() {
 	powerups.physicsBodyType = Phaser.Physics.ARCADE;
 	for (var i = 0; i < zodiacs.length; i++) {
 		var z = powerups.create(100*i, 100, zodiacs[i]);
+		z.sign = zodiacs[i];
 	}
 	powerups.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	powerups.callAll("body.enableBody", true);
@@ -50,4 +51,50 @@ function magnetZodiac() {
 			}
 		}, this);
 	}
+}
+
+function givePower(z) {
+	switch (z.sign) {
+		case "aries":
+			ARIES = true;
+			break;
+		case "taurus":
+			TAURUS = true;
+			break;
+		case "gemini":
+			GEMINI = true;
+			break;
+		case "cancer":
+			CANCER = true;
+			break;
+		case "leo":
+			LEO = true;
+			break;
+		case "virgo":
+			VIRGO = true;
+			break;
+		case "libra":
+			LIBRA = true;
+			break;
+		case "scorpio":
+			SCORPIO = true;
+			break;
+		case "sagittarius":
+			SAGITTARIUS = true;
+			break;
+		case "capricorn":
+			CAPRICORN = true;
+			break;
+		case "aquarius":
+			AQUARIUS = true;
+			break;
+		case "pisces":
+			PISCES = true;
+			break;
+		default:
+			console.log("z.sign isn't an expect value: " + z.sign);
+			break;
+	}
+	z.kill();
+	zodiacsfx.play();
 }
