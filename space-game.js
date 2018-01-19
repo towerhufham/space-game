@@ -485,6 +485,14 @@ function damagePlayer() {
 				flashSprite(player, itime);
 				invincible = true;
 				game.time.events.add(itime, function(){invincible = false;}, this);
+				//cancer gives bullet explosion when player is damaged
+				if (CANCER) {
+					for (var i = 0; i < 20; i++) {
+						var angle = game.rnd.angle() * (Math.PI / 180);
+						playerFireAtAngle(game, player, angle);
+					}
+					reflectorsfx.play();
+				}
 			}
 		}
 	}
