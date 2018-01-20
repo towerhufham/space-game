@@ -46,6 +46,7 @@ function preload() {
 	game.load.image("EXPLODER", "img/exploder.png");
 	game.load.image("EXPLOSION-MAGENTA", "img/explosion.png");
 	game.load.image("EXPLOSION-RED", "img/explosion_red.png");
+	game.load.image("EXPLOSION-GREEN", "img/explosion_green.png");
 	game.load.image("EXPLOSION", "img/explosion.png");
 	game.load.image("DEBRIS", "img/debris.png");
 	game.load.image("GRENADER", "img/grenader.png");
@@ -425,6 +426,7 @@ function getLevelFeatures(level) {
 	} else if (level === 4) {
 		//first level has no enemies, so the player can understand how to move around the foundry
 		setLaserColor("RED BEAM");
+		explosionColor = "EXPLOSION-RED";
 		return {map:"foundry"};
 	} else if (level === 5) {
 		//second level the player is ambushed by the CRABZ
@@ -435,6 +437,7 @@ function getLevelFeatures(level) {
 	} else if (level === 7) {
 		//biolab
 		setLaserColor("GREEN BEAM");
+		explosionColor = "EXPLOSION-GREEN";
 		return {enemies:["octopuses"], octopusRate:1500, map:"biolab"};
 	} else {
 		currentLevel = "You made it bro";

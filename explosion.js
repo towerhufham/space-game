@@ -1,4 +1,6 @@
-function explosion(x, y, key="EXPLOSION-MAGENTA") {
+var explosionColor = "EXPLOSION-MAGENTA";
+
+function explosion(x, y) {
 	explodersfx.play();
 	screenShake();
 	//these formulas are just the placement formulas in reverse
@@ -41,7 +43,7 @@ function explosion(x, y, key="EXPLOSION-MAGENTA") {
 	}
 	//create blast effects
 	for (var i = 0; i < 10; i++) {
-		var blast = game.add.sprite(x - game.rnd.between(-75, 75), y - game.rnd.between(-75, 75), key);
+		var blast = game.add.sprite(x - game.rnd.between(-75, 75), y - game.rnd.between(-75, 75), explosionColor);
 		blast.anchor.setTo(0.5, 0.5);
 		blast.lifespan = game.rnd.between(250, 750);
 		// blast.angle = game.rnd.between(0, 360);

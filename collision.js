@@ -172,8 +172,8 @@ function sliderVSfurnace(slider, furn) {
 }
 
 function sliderVSslider(s1, s2) {
-	explosion(s1.x, s1.y, "EXPLOSION-RED");
-	explosion(s2.x, s2.y, "EXPLOSION-RED");
+	explosion(s1.x, s1.y);
+	explosion(s2.x, s2.y);
 	s1.kill();
 	s2.kill();
 }
