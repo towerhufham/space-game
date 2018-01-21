@@ -33,6 +33,9 @@ function makeEnemyGroup(game, player, key, spawntime, accel, fireFunction, fireR
 	timer.loop(fireRate, function(){newEnemies.forEachAlive(newEnemies.fire, this, game, player);});
 	timer.start();
 	
+	//phantom
+	// newEnemies.forEach(makePhantom, this, false, key);
+	
 	return newEnemies;
 }
 
