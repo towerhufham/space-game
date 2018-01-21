@@ -467,6 +467,8 @@ function damagePlayer() {
 			invincible = true;
 			game.time.events.add(itime, function(){invincible = false;}, this);
 		} else {
+			//test dropAlert
+			dropAlert("Owchie!", "oof ow oof my horns");
 			health--;
 			screenShake();
 			damagesfx.play();

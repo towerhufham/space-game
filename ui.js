@@ -145,3 +145,23 @@ function drawMap() {
 	//render on top of other sprites
 	game.world.bringToTop(map);
 }
+
+function dropAlert(main, sub) {
+	//make text
+	mainText = game.add.text(game.scale.width / 2, -200, main, {font: "64px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
+	mainText.fixedToCamera = true;
+	subText = game.add.text(game.scale.width / 2, -100, sub, {font: "32px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
+	subText.fixedToCamera = true;
+	//move it
+	game.add.tween(mainText.cameraOffset).to({y: 100}, 1000, Phaser.Easing.Exponential.Out, true);
+	game.add.tween(subText.cameraOffset).to({y: 200}, 1000, Phaser.Easing.Exponential.Out, true);
+	//finish
+	game.time.events.add(3000, function(){
+		game.add.tween(mainText.cameraOffset).to({y: -200}, 1000, Phaser.Easing.Exponential.Out, true);
+		game.add.tween(subText.cameraOffset).to({y: -100}, 1000, Phaser.Easing.Exponential.Out, true);
+		game.time.events.add(5000, function(){
+			mainText.destroy();
+			subText.destroy();
+		}, this);
+	}, this);
+}

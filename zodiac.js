@@ -19,7 +19,6 @@ var powerups;
 function preloadZodiac() {
 	//load images into cache
 	for (var i = 0; i < zodiacs.length; i++) {
-		console.log("loading " + ("img/zodiac/" + zodiacs[i] + ".png"));
 		game.load.image(zodiacs[i], "img/zodiac/" + zodiacs[i] + ".png");
 	}
 }
