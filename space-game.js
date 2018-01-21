@@ -25,6 +25,7 @@ var screenIsShaking = false;
 var pad1;
 var currentEnemies = 0;
 var MAX_ENEMIES = 10;
+var zodiacLevel = false;
 
 function preload() {
 	//images
@@ -411,6 +412,13 @@ function loadLevel() {
 	}
 	//load ui last so it's on top of other objects
 	reloadUi();
+	
+	if (levelAttributes.zodiacDrop) {
+		game.time.events.add(500, function(){dropAlert("Defeat 8 enemies to get a zodiac power!");}, this);
+		zodiacLevel = true;
+	} else {
+		zodiacLevel = false;
+	}
 }
 
 function getLevelFeatures(level) {
@@ -419,7 +427,7 @@ function getLevelFeatures(level) {
 		return {enemies:["turrets"], turretRate:3000, map:"scrapyard"};
 	} else if (level === 2) {
 		//slightly harder second level
-		return {enemies:["turrets", "octopuses"], turretRate:4000, octopusRate:4000, map:"scrapyard"};
+		return {enemies:["turrets", "octopuses"], turretRate:4000, octopusRate:4000, map:"scrapyard", zodiacDrop:true};
 	} else if (level === 3) {
 		//blade-y third level
 		return {enemies:["turrets", "octopuses"], turretRate:4000, octopusRate:4000, map:"scrapyard", params:[1, 0.12, 0.9, 0.15, 0.01]};
@@ -430,7 +438,7 @@ function getLevelFeatures(level) {
 		return {map:"foundry"};
 	} else if (level === 5) {
 		//second level the player is ambushed by the CRABZ
-		return {enemies:["crabs"], crabRate:2200, map:"foundry"};
+		return {enemies:["crabs"], crabRate:2200, map:"foundry", zodiacDrop:true};
 	} else if (level === 6) {
 		//harder third level
 		return {enemies:["crabs"], crabRate:2200, map:"foundry"};

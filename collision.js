@@ -97,7 +97,9 @@ function enemyVSlaser(enemy, laser) {
 	killcount++;
 	enemyParticles.x = enemy.x;
 	enemyParticles.y = enemy.y;
-	dropZodiac(enemy.x, enemy.y, enemy.body.velocity);
+	if (zodiacLevel && killcount === 8) {
+		dropZodiac(enemy.x, enemy.y, enemy.body.velocity);
+	}
 	enemyParticles.start(true, 1000, null, 10);
 	enemy.boundsKill = false;
 	enemy.kill();
