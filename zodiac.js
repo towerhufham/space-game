@@ -10,7 +10,7 @@ var SCORPIO = false;
 var SAGITTARIUS = false;
 var CAPRICORN = false;
 var AQUARIUS = false;
-var PISCES = true;
+var PISCES = false;
 //list of zodiac signs, minus taurus
 var zodiacs = ["aries", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
 //where we'll keep the powerups
@@ -29,13 +29,14 @@ function loadZodiac() {
 	powerups.enableBody = true;
 	powerups.physicsBodyType = Phaser.Physics.ARCADE;
 	for (var i = 0; i < zodiacs.length; i++) {
-		var z = powerups.create(100*i, 100, zodiacs[i]);
+		var z = powerups.create(-1000, -1000, zodiacs[i]);
 		z.sign = zodiacs[i];
 	}
 	powerups.callAll("anchor.setTo", "anchor", 0.5, 0.5);
 	powerups.callAll("body.enableBody", true);
 	powerups.setAll("body.collideWorldBounds", true);
 	powerups.setAll("body.worldBounce", new Phaser.Point(1, 1));
+	powerups.setAll("body.drag", new Phaser.Point(200, 200));
 }
 
 function magnetZodiac() {
@@ -49,6 +50,17 @@ function magnetZodiac() {
 				e.body.velocity = vel;
 			}
 		}, this);
+	}
+}
+
+function dropZodiac(x, y, vel = null) {
+	var z = powerups.getRandom();
+	z.revive();
+	z.x = x;
+	z.y = y;
+	if (vel) {
+		z.body.velocity.x = vel.x;
+		z.body.velocity.y = vel.y;
 	}
 }
 

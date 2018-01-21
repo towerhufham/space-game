@@ -27,6 +27,9 @@ function doCollisions() {
 	game.physics.arcade.collide(energies, furnaces);
 	game.physics.arcade.collide(crabs, tileLayer);
 	game.physics.arcade.collide(player, grass);
+	game.physics.arcade.collide(powerups, tileLayer);
+	game.physics.arcade.collide(powerups, exploders);
+	game.physics.arcade.collide(powerups, furnaces);
 	// sprite overlaps
 	game.physics.arcade.overlap(turrets, playerLasers, enemyVSlaser, null, this);
 	game.physics.arcade.overlap(octopuses, playerLasers, enemyVSlaser, null, this);
@@ -94,6 +97,7 @@ function enemyVSlaser(enemy, laser) {
 	killcount++;
 	enemyParticles.x = enemy.x;
 	enemyParticles.y = enemy.y;
+	dropZodiac(enemy.x, enemy.y, enemy.body.velocity);
 	enemyParticles.start(true, 1000, null, 10);
 	enemy.boundsKill = false;
 	enemy.kill();
