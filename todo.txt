@@ -3,7 +3,6 @@ Stuff for build v0.3.0
 * biolab finished
 * music implemented
 * pilot menu
-* make sliders heckin' explode when they collide with each other
 * fix the double-energy-spawn issue (i think polyps are getting shot twice maybe)
 
 Planned for build v0.4.0
