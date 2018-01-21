@@ -57,7 +57,7 @@ function killLaser(laser) {
 }
 
 function playerlaserVStile(laser, tile) {
-	//leo makes lasers sometimes explode
+	//leo makes lasers sometimes explode, dumb
 	if (LEO && Math.random() > 0.9) {
 		explosion(laser.x, laser.y);
 	}
@@ -65,7 +65,6 @@ function playerlaserVStile(laser, tile) {
 }
 
 function laserVStile(laser, tile) {
-	//not sure what type tile is
 	for (var i = 0; i < 4; i++) {
 		var debris = game.add.sprite(laser.x + game.rnd.between(-5, 5), laser.y + game.rnd.between(-5, 5), "DEBRIS");
 		debris.anchor.setTo(0, 0.5);
@@ -76,6 +75,10 @@ function laserVStile(laser, tile) {
 		debris.body.velocity.setToPolar(debris.rotation - Math.PI, 150 + game.rnd.between(50, 150));
 		// debris.alpha = 1;
 		game.add.tween(debris).to({alpha: 0}, debris.lifespan, Phaser.Easing.Linear.None, true);
+	}
+	//maybe destroy tile
+	if (Math.random() > 0.9) {
+		tilemap.removeTile(tile.x, tile.y, 0);
 	}
 	killLaser(laser);
 }
