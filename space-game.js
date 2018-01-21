@@ -130,7 +130,7 @@ function create() {
 	player.body.collideWorldBounds = true;
 	player.canMagnet = true;
 	player.body.setSize(20, 20, 14, 6);
-	// makePhantom(player, "PLACEHOLDER");
+	makePhantom(player, "BULLSHIP");
 	
 	//load enemy lasers
 	loadEnemyLasers(game);

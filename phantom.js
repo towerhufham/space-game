@@ -1,22 +1,19 @@
-function makePhantom(parent, key) {
-	var phantom = game.add.emitter(0, 0, 50);
-	phantom.makeParticles(key);
-	// phantom.setAngle(0, 0);
-	// phantom.setRotation(0, 0);
-	phantom.setXSpeed(0, 0);
-	phantom.setYSpeed(0, 0);
-	phantom.setSize(15, 15);
-	phantom.setAlpha(0.2, 0, 1000)
-	phantom.gravity = new Phaser.Point(0, 0);
-	phantom.maxParticleSpeed = new Phaser.Point(0, 0);
-	phantom.particleAnchor = new Phaser.Point(0.5, 0.5);
-	phantom.maxSpeed = 0;
-	
-	phantom.flow(1000, 100);
-	parent.phantom = phantom;
-	phantom.x = parent.x;
-	phantom.y = parent.y;
-	console.log(phantom);
-}
+var PHANTOM_RATE = 0.5;
+var PHANTOM_TIME = 500;
 
-	
+function makePhantom(parent, key) {
+	var phantomTimer = game.time.create(false);
+	phantomTimer.loop(PHANTOM_RATE, function(){
+		var phantom = game.add.sprite(parent.x, parent.y, key);
+		phantom.anchor.setTo(0.5, 0.5);
+		phantom.angle = player.angle;
+		game.add.tween(phantom).to({alpha:0}, PHANTOM_TIME, Phaser.Easing.Exponential.Out, true);
+		game.time.events.add(PHANTOM_TIME, function(){phantom.destroy();}, this);
+	}, this);
+	phantomTimer.start();
+	parent.phantomTimer = phantomTimer;
+}	
+
+function clearPhantom(parent) {
+	parent.phantomTimer.destroy();
+}

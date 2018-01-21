@@ -23,16 +23,16 @@ Major features to be implemented before release:
 	[] Options menu
 	[] Lose menu
 	[] Win menu
-[] Powerups (?)
-	[] Aries
-	[] Taurus
-	[] Gemini
-	[] Cancer
-	[] Leo
-	[] Virgo
-	[] Libra
-	[] Scorpio
-	[] Sagittarius
-	[] Capricorn
-	[] Aquarius
-	[] Pisces
+[✓] Powerups
+	[✓] Aries
+	[] Taurus (?)
+	[✓] Gemini
+	[✓] Cancer
+	[✓] Leo
+	[✓] Virgo
+	[✓] Libra
+	[✓] Scorpio
+	[✓] Sagittarius
+	[✓] Capricorn
+	[✓] Aquarius
+	[✓] Pisces
