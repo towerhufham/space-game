@@ -430,7 +430,7 @@ function getLevelFeatures(level) {
 		return {enemies:["turrets", "octopuses"], turretRate:4000, octopusRate:4000, map:"scrapyard", zodiacDrop:true};
 	} else if (level === 3) {
 		//blade-y third level
-		return {enemies:["turrets", "octopuses"], turretRate:4000, octopusRate:4000, map:"scrapyard", params:[1, 0.12, 0.9, 0.15, 0.01]};
+		return {enemies:["turrets", "octopuses"], turretRate:4000, octopusRate:4000, map:"scrapyard", params:[1, 0.12, 0.9, 0.15, 0.01], zodiacDrop:true};
 	} else if (level === 4) {
 		//first level has no enemies, so the player can understand how to move around the foundry
 		setLaserColor("RED BEAM");
