@@ -148,10 +148,10 @@ function drawMap() {
 
 function dropAlert(main, sub) {
 	//make text
-	mainText = game.add.text(game.scale.width / 2, -200, main, {font: "64px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
+	var mainText = game.add.text(game.scale.width / 2, -200, main, {font: "64px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
 	mainText.x -= mainText.width / 2;
 	mainText.fixedToCamera = true;
-	subText = game.add.text(game.scale.width / 2, -100, sub, {font: "32px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
+	var subText = game.add.text(game.scale.width / 2, -100, sub, {font: "32px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
 	subText.x -= subText.width / 2;
 	subText.fixedToCamera = true;
 	//move it

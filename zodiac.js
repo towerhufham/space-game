@@ -56,39 +56,51 @@ function givePower(z) {
 	switch (z.sign) {
 		case "aries":
 			ARIES = true;
+			dropAlert("Aries ♈", "Move faster while not firing");
 			break;
 		case "taurus":
 			TAURUS = true;
+			dropAlert("Taurus ♉", "Wait, isn't that you?");
 			break;
 		case "gemini":
 			GEMINI = true;
+			dropAlert("Gemini ♊", "Double fire");
 			break;
 		case "cancer":
 			CANCER = true;
+			dropAlert("Cancer ♋", "Laser burst when damaged");
 			break;
 		case "leo":
 			LEO = true;
+			dropAlert("Leo ♌", "Lasers sometimes explode");
 			break;
 		case "virgo":
 			VIRGO = true;
+			dropAlert("Virgo ♍", "Sometimes blocks damage");
 			break;
 		case "libra":
 			LIBRA = true;
+			dropAlert("Libra ♎", "Start with 5 energy");
 			break;
 		case "scorpio":
 			SCORPIO = true;
+			dropAlert("Scorpio ♏", "Backwards fire");
 			break;
 		case "sagittarius":
 			SAGITTARIUS = true;
+			dropAlert("Sagittarius ♐", "Lasers fly faster");
 			break;
 		case "capricorn":
 			CAPRICORN = true;
+			dropAlert("Capricorn ♑", "Longer invincibility");
 			break;
 		case "aquarius":
 			AQUARIUS = true;
+			dropAlert("Aquarius ♒", "Lasers fire quicker");
 			break;
 		case "pisces":
 			PISCES = true;
+			dropAlert("Pisces ♓", "Less slidey");
 			break;
 		default:
 			console.log("z.sign isn't an expect value: " + z.sign);
