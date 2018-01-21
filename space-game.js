@@ -26,7 +26,6 @@ var pad1;
 var currentEnemies = 0;
 var MAX_ENEMIES = 10;
 var zodiacLevel = false;
-var PAUSED = false;
 
 function preload() {
 	//images
@@ -237,12 +236,8 @@ function update() {
 	
 	//close game
 	if (game.input.keyboard.isDown(Phaser.Keyboard.ESC)) {
-		if (!PAUSED) {
-			pauseMenu();
-		} else {
-			closePauseMenu();
-		}
-		// window.close();
+		//todo: make it open up menu
+		window.close();
 	}
 	
 	//magnet energies
