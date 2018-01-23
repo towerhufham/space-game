@@ -1,16 +1,14 @@
 Stuff for build v0.3.0
 
 * biolab finished
-* music implemented
-* pilot menu
-* make sliders heckin' explode when they collide with each other
+* more sound effects
+* pause menu
 * fix the double-energy-spawn issue (i think polyps are getting shot twice maybe)
 
 Planned for build v0.4.0
 
-* thunderzone finished
+* thunderzone (?) finished
 * all menus implemented
-* use a string file for easy translation
 * final polish
 
 Todo around build v1.0.0
