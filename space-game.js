@@ -414,7 +414,7 @@ function loadLevel() {
 	reloadUi();
 	
 	if (levelAttributes.zodiacDrop) {
-		game.time.events.add(500, function(){dropAlert("Defeat 8 enemies to get a zodiac power!");}, this);
+		game.time.events.add(500, function(){dropAlert(strings["zodiac-level"]);}, this);
 		zodiacLevel = true;
 	} else {
 		zodiacLevel = false;

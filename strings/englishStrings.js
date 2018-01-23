@@ -1,5 +1,5 @@
-function loadEnglish() {
-return {
+function loadEnglish() { return {
+	
 	"aries-m": "Aries ♈",
 	"aries-s": "Move faster while not firing",
 	"taurus-m": "Taurus ♉",
@@ -26,5 +26,5 @@ return {
 	"pisces-s": "Less slidey",
 	
 	"zodiac-level": "Defeat 8 enemies to get a zodiac power!"
-};
-}
+	
+};}

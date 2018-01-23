@@ -68,51 +68,51 @@ function givePower(z) {
 	switch (z.sign) {
 		case "aries":
 			ARIES = true;
-			dropAlert("Aries ♈", "Move faster while not firing");
+			dropAlert(strings["aries-m"], strings["aries-s"]);
 			break;
 		case "taurus":
 			TAURUS = true;
-			dropAlert("Taurus ♉", "Wait, isn't that you?");
+			dropAlert(strings["taurus-m"], strings["taurus-s"]);
 			break;
 		case "gemini":
 			GEMINI = true;
-			dropAlert("Gemini ♊", "Double fire");
+			dropAlert(strings["gemini-m"], strings["gemini-s"]);
 			break;
 		case "cancer":
 			CANCER = true;
-			dropAlert("Cancer ♋", "Laser burst when damaged");
+			dropAlert(strings["cancer-m"], strings["cancer-s"]);
 			break;
 		case "leo":
 			LEO = true;
-			dropAlert("Leo ♌", "Lasers sometimes explode");
+			dropAlert(strings["leo-m"], strings["leo-s"]);
 			break;
 		case "virgo":
 			VIRGO = true;
-			dropAlert("Virgo ♍", "Sometimes blocks damage");
+			dropAlert(strings["virgo-m"], strings["virgo-s"]);
 			break;
 		case "libra":
 			LIBRA = true;
-			dropAlert("Libra ♎", "Start with 5 energy");
+			dropAlert(strings["libra-m"], strings["libra-s"]);
 			break;
 		case "scorpio":
 			SCORPIO = true;
-			dropAlert("Scorpio ♏", "Backwards fire");
+			dropAlert(strings["scorpio-m"], strings["scorpio-s"]);
 			break;
 		case "sagittarius":
 			SAGITTARIUS = true;
-			dropAlert("Sagittarius ♐", "Lasers fly faster");
+			dropAlert(strings["sagittarius-m"], strings["sagittarius-s"]);
 			break;
 		case "capricorn":
 			CAPRICORN = true;
-			dropAlert("Capricorn ♑", "Longer invincibility");
+			dropAlert(strings["capricorn-m"], strings["capricorn-s"]);
 			break;
 		case "aquarius":
 			AQUARIUS = true;
-			dropAlert("Aquarius ♒", "Lasers fire quicker");
+			dropAlert(strings["aquarius-m"], strings["aquarius-s"]);
 			break;
 		case "pisces":
 			PISCES = true;
-			dropAlert("Pisces ♓", "Less slidey");
+			dropAlert(strings["pisces-m"], strings["pisces-s"]);
 			break;
 		default:
 			console.log("z.sign isn't an expect value: " + z.sign);

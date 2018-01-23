@@ -22,10 +22,6 @@ Todo around build v1.0.0
 * description and other promo stuff
 * controller support
 
-Stuff to do eventually:
-
-* decide what to do with lobster enemies
-* destroy blocks with lasers OR ensure that levels generate with path from start to all important things
 
 Current known issues:
 
