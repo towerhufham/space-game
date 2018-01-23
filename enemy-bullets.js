@@ -6,13 +6,11 @@ function loadEnemyLasers(game) {
 	enemyLasers = game.add.group();
     enemyLasers.enableBody = true;
     enemyLasers.physicsBodyType = Phaser.Physics.ARCADE;
-    // enemyLasers.createMultiple(100, "MAGENTA BEAM");
-    enemyLasers.createMultiple(100, "PITCHFORK-MAGENTA");
+    enemyLasers.createMultiple(100, "MAGENTA BEAM");
     enemyLasers.setAll("checkWorldBounds", true);
     enemyLasers.setAll("outOfBoundsKill", true);
 	enemyLasers.callAll("anchor.setTo", "anchor", 1, 0.5);
-    // enemyLasers.callAll("body.setSize", "body", 10, 10, 40, 0);
-    enemyLasers.callAll("body.setSize", "body", 10, 10, 40, 5);
+    enemyLasers.callAll("body.setSize", "body", 5, 5, 30, 0);
 }
 
 function setLaserColor(key) {

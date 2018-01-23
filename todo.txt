@@ -1,6 +1,5 @@
 Stuff for build v0.3.0
 
-* new enemies
 * biolab finished
 * more sound effects
 * pause menu

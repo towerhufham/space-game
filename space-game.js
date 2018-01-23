@@ -58,9 +58,6 @@ function preload() {
 	game.load.image("CRAB", "img/crab.png");
 	game.load.image("GRASS", "img/grass.png");
 	game.load.image("BLADE-OF-GRASS", "img/bladeofgrass.png");
-	game.load.image("PITCHFORK-MAGENTA", "img/pitch_mag.png");
-	
-	//spritesheets
 	game.load.spritesheet("OCTO", "img/octo.png", 61, 64);
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
 	
