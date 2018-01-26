@@ -26,6 +26,8 @@ var pad1;
 var currentEnemies = 0;
 var MAX_ENEMIES = 10;
 var zodiacLevel = false;
+var EXIT_FRAMES = 0;
+var exitText;
 
 function preload() {
 	//images
@@ -158,6 +160,11 @@ function create() {
 	debugText = game.add.text(0, 175, "( - )", style);
 	debugText.fixedToCamera = true;
 	
+	//add exit text
+	exitText = game.add.text(600, 400, "Exiting...", {font: "64px Arial", fill:"#FFFFFF"});
+	exitText.alpha = 0;
+	exitText.fixedToCamera = true;
+	
 	//fullscreen stuff
 	game.scale.fullScreenScaleMode = Phaser.ScaleManager.RESIZE;
 	var f11 = game.input.keyboard.addKey(Phaser.Keyboard.F11);
@@ -181,6 +188,17 @@ function create() {
 }
 
 function update() {
+	//check for player trying to exit
+	if (game.input.keyboard.isDown(Phaser.Keyboard.ESC)) {
+		EXIT_FRAMES++;
+		if (EXIT_FRAMES >= 100) {
+			window.close();
+		}
+	} else {
+		EXIT_FRAMES = 0;
+	}
+	exitText.alpha = EXIT_FRAMES / 100;
+	
 	// collision detection
 	doCollisions();
 	
@@ -232,12 +250,6 @@ function update() {
 	//fire
 	if (game.input.activePointer.leftButton.isDown) {
 		playerFire();
-	}
-	
-	//close game
-	if (game.input.keyboard.isDown(Phaser.Keyboard.ESC)) {
-		//todo: make it open up menu
-		window.close();
 	}
 	
 	//magnet energies

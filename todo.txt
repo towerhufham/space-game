@@ -4,6 +4,7 @@ Stuff for build v0.3.0
 * more sound effects
 * pause menu
 * fix the double-energy-spawn issue (i think polyps are getting shot twice maybe)
+* better enemies
 
 Planned for build v0.4.0
 

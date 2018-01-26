@@ -79,6 +79,7 @@ function laserVStile(laser, tile) {
 	//maybe destroy tile
 	if (Math.random() > 0.9) {
 		tilemap.removeTile(tile.x, tile.y, 0);
+		//
 	}
 	killLaser(laser);
 }
