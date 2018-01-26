@@ -29,8 +29,6 @@ var zodiacLevel = false;
 var EXIT_FRAMES = 0;
 var exitText;
 var AT_MENU = true;
-var background;
-var logo;
 
 function preload() {
 	//images
@@ -179,12 +177,6 @@ function create() {
 	//load level
 	loadLevel();
 	
-	//create menu stuff
-	//bg
-	background = game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
-	logo = game.add.sprite(player.x, player.y - 250, "LOGO");
-	logo.anchor.setTo(0.5, 0.5);
-	
 	//add debug text
 	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
 	debugText = game.add.text(0, 175, "( - )", style);
@@ -194,6 +186,9 @@ function create() {
 	exitText = game.add.text(600, 400, "Exiting...", {font: "64px Arial", fill:"#FFFFFF"});
 	exitText.alpha = 0;
 	exitText.fixedToCamera = true;
+	
+	//startup menu
+	startupMenu();
 }
 
 function update() {
@@ -370,10 +365,10 @@ function resetGame() {
 	}
 	//reset player
 	player.body.stop();
+	player.revive();
 	player.x = game.world.width / 2;
 	player.y = game.world.height / 2;
-	player.revive();
-	//reload level
+	//load level
 	loadLevel();
 }
 
@@ -453,6 +448,8 @@ function loadLevel() {
 function getLevelFeatures(level) {
 	if (level === 1) {
 		//basic first level
+		setLaserColor("MAGENTA BEAM");
+		explosionColor = "EXPLOSION-MAGENTA";
 		return {enemies:["turrets"], turretRate:3000, map:"scrapyard"};
 	} else if (level === 2) {
 		//slightly harder second level
@@ -515,7 +512,12 @@ function damagePlayer() {
 				enemyParticles.start(true, 1000, null, 25);
 				player.kill();
 				gameoversfx.play();
-				game.time.events.add(1500, resetGame, this);
+				game.time.events.add(1500, function(){//reload level
+					currentLevel = 1;
+					resetGame();
+					//re-startup
+					startupMenu();
+				}, this);
 			} else {
 				//i-frames
 				var itime = 1000;

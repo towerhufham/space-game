@@ -4,6 +4,8 @@ var energyBar = {};
 var MAPX = 1090;
 var MAPY = 10;
 var MAPSIZE = 100;
+var background;
+var logo;
 
 //for now
 var portraitKey = "PORTRAIT" + (Math.floor(Math.random() * (4 - 1 + 1)) + 1);
@@ -166,4 +168,11 @@ function dropAlert(main, sub) {
 			subText.destroy();
 		}, this);
 	}, this);
+}
+
+function startupMenu() {
+	AT_MENU = true;
+	background = game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
+	logo = game.add.sprite(player.x, player.y - 250, "LOGO");
+	logo.anchor.setTo(0.5, 0.5);
 }
