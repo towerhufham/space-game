@@ -204,7 +204,11 @@ function update() {
 	exitText.alpha = EXIT_FRAMES / 100;
 	
 	if (AT_MENU) {
-		if (game.input.keyboard.isDown(Phaser.Keyboard.ENTER)) {
+		if (atOptions) {
+			optionMenuUpdate();
+		} else if (game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)) {
+			loadOptionsMenu();
+		} else if (game.input.keyboard.isDown(Phaser.Keyboard.ENTER)) {
 			AT_MENU = false;
 			game.add.tween(background).to({alpha: 0}, 1000, Phaser.Easing.Linear.None, true);
 			game.add.tween(logo).to({alpha: 0}, 1000, Phaser.Easing.Exponential.Out, true);
