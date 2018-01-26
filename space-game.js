@@ -30,6 +30,7 @@ var EXIT_FRAMES = 0;
 var exitText;
 var AT_MENU = true;
 var background;
+var logo;
 
 function preload() {
 	//images
@@ -62,6 +63,9 @@ function preload() {
 	game.load.image("CRAB", "img/crab.png");
 	game.load.image("GRASS", "img/grass.png");
 	game.load.image("BLADE-OF-GRASS", "img/bladeofgrass.png");
+	game.load.image("LOGO", "img/templogo.png");
+	
+	//spritesheets
 	game.load.spritesheet("OCTO", "img/octo.png", 61, 64);
 	game.load.spritesheet("GATE", "img/gate.png", 64, 49);
 	
@@ -178,6 +182,8 @@ function create() {
 	//create menu stuff
 	//bg
 	background = game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
+	logo = game.add.sprite(player.x, player.y - 250, "LOGO");
+	logo.anchor.setTo(0.5, 0.5);
 	
 	//add debug text
 	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
@@ -206,6 +212,7 @@ function update() {
 		if (game.input.keyboard.isDown(Phaser.Keyboard.ENTER)) {
 			AT_MENU = false;
 			game.add.tween(background).to({alpha: 0}, 1000, Phaser.Easing.Linear.None, true);
+			game.add.tween(logo).to({alpha: 0}, 1000, Phaser.Easing.Exponential.Out, true);
 		}
 	} else {
 		// collision detection
