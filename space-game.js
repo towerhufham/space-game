@@ -28,6 +28,8 @@ var MAX_ENEMIES = 10;
 var zodiacLevel = false;
 var EXIT_FRAMES = 0;
 var exitText;
+var AT_MENU = true;
+var background;
 
 function preload() {
 	//images
@@ -96,9 +98,6 @@ function create() {
 	//size the world
 	game.world.setBounds(0, 0, 3840, 3840);
 	
-	//add background
-	// game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
-	
 	//add gate
 	gate = game.add.sprite(0, 0, "GATE", 0);
 	gate.anchor.setTo(0.5, 0.5);
@@ -140,9 +139,6 @@ function create() {
 	//add polyps
 	loadPolyps(game);
 	
-	//load level enemies
-	loadLevel();
-	
 	//enemy particles
 	enemyParticles = game.add.emitter(0, 0, 50);
 	enemyParticles.makeParticles("PARTICLE");
@@ -154,16 +150,6 @@ function create() {
 	
 	//ui
 	loadUi();
-	
-	//add debug text
-	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
-	debugText = game.add.text(0, 175, "( - )", style);
-	debugText.fixedToCamera = true;
-	
-	//add exit text
-	exitText = game.add.text(600, 400, "Exiting...", {font: "64px Arial", fill:"#FFFFFF"});
-	exitText.alpha = 0;
-	exitText.fixedToCamera = true;
 	
 	//fullscreen stuff
 	game.scale.fullScreenScaleMode = Phaser.ScaleManager.RESIZE;
@@ -185,6 +171,23 @@ function create() {
 	game.input.gamepad.start();
     // To listen to buttons from a specific pad listen directly on that pad game.input.gamepad.padX, where X = pad 1-4
     pad1 = game.input.gamepad.pad1;
+	
+	//load level
+	loadLevel();
+	
+	//create menu stuff
+	//bg
+	background = game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
+	
+	//add debug text
+	var style = {font: "32px Arial", fill:"#FFFFFF", align:"left"};
+	debugText = game.add.text(0, 175, "( - )", style);
+	debugText.fixedToCamera = true;
+	
+	//add exit text
+	exitText = game.add.text(600, 400, "Exiting...", {font: "64px Arial", fill:"#FFFFFF"});
+	exitText.alpha = 0;
+	exitText.fixedToCamera = true;
 }
 
 function update() {
@@ -199,88 +202,95 @@ function update() {
 	}
 	exitText.alpha = EXIT_FRAMES / 100;
 	
-	// collision detection
-	doCollisions();
-	
-	//angle
-	player.rotation = game.physics.arcade.angleToPointer(player);
-	
-	//player phantom
-	// player.phantom.x = player.x;
-	// player.phantom.y = player.y;
-	
-	//aries makes the player faster while they aren't firing
-	if (ARIES && !game.input.activePointer.leftButton.isDown) {
-		SPEED = 550;
-		player.body.maxVelocity = {x: SPEED, y: SPEED};
-	} else if (SPEED == 550) {
-		//change back to default when the above params are no longer true
-		SPEED = 400;
-		player.body.maxVelocity = {x: SPEED, y: SPEED};
-	}
-	
-	//horizontal velocity
-	if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT) || game.input.keyboard.isDown(Phaser.Keyboard.A) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_LEFT)) {
-		player.body.velocity.x -= ACCEL;
-	} else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT) || game.input.keyboard.isDown(Phaser.Keyboard.D) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_RIGHT)) {
-		player.body.velocity.x += ACCEL;
-	} else {
-		//pisces makes the player stop easier
-		player.body.velocity.x += Math.sign(player.body.velocity.x) * -DEACCEL * (PISCES ? 2 : 1);
-	}
-	//stop sliding
-	if (player.body.velocity.x < 5 && player.body.velocity.x > -5) {
-		player.body.velocity.x = 0;
-	}
-	
-	//vertical velocity
-	if (game.input.keyboard.isDown(Phaser.Keyboard.UP) || game.input.keyboard.isDown(Phaser.Keyboard.W) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_UP)) {
-		player.body.velocity.y -= ACCEL;
-	} else if (game.input.keyboard.isDown(Phaser.Keyboard.DOWN) || game.input.keyboard.isDown(Phaser.Keyboard.S) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_DOWN)) {
-		player.body.velocity.y += ACCEL;
-	} else {
-		//pisces makes the player stop easier
-		player.body.velocity.y += Math.sign(player.body.velocity.y) * -DEACCEL * (PISCES ? 2 : 1);
-	}
-	//stop sliding
-	if (player.body.velocity.y < 5 && player.body.velocity.y > -5) {
-		player.body.velocity.y = 0;
-	}
-	
-	//fire
-	if (game.input.activePointer.leftButton.isDown) {
-		playerFire();
-	}
-	
-	//magnet energies
-	magnetEnergies(game, player);
-	
-	//magnet zodiac
-	magnetZodiac();
-	
-	//draw aim
-	drawPlayerAim();
-	
-	//update enemies
-	for (var i = 0; i < enemyGroups.length; i++) {
-		if (typeof enemyGroups[i].extraUpdate === "function") {
-			enemyGroups[i].extraUpdate();
-		} else {
-			console.log("WARNING: an extraUpdate was found to not be callable");
+	if (AT_MENU) {
+		if (game.input.keyboard.isDown(Phaser.Keyboard.ENTER)) {
+			AT_MENU = false;
+			game.add.tween(background).to({alpha: 0}, 1000, Phaser.Easing.Linear.None, true);
 		}
+	} else {
+		// collision detection
+		doCollisions();
+		
+		//angle
+		player.rotation = game.physics.arcade.angleToPointer(player);
+		
+		//player phantom
+		// player.phantom.x = player.x;
+		// player.phantom.y = player.y;
+		
+		//aries makes the player faster while they aren't firing
+		if (ARIES && !game.input.activePointer.leftButton.isDown) {
+			SPEED = 550;
+			player.body.maxVelocity = {x: SPEED, y: SPEED};
+		} else if (SPEED == 550) {
+			//change back to default when the above params are no longer true
+			SPEED = 400;
+			player.body.maxVelocity = {x: SPEED, y: SPEED};
+		}
+		
+		//horizontal velocity
+		if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT) || game.input.keyboard.isDown(Phaser.Keyboard.A) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_LEFT)) {
+			player.body.velocity.x -= ACCEL;
+		} else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT) || game.input.keyboard.isDown(Phaser.Keyboard.D) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_RIGHT)) {
+			player.body.velocity.x += ACCEL;
+		} else {
+			//pisces makes the player stop easier
+			player.body.velocity.x += Math.sign(player.body.velocity.x) * -DEACCEL * (PISCES ? 2 : 1);
+		}
+		//stop sliding
+		if (player.body.velocity.x < 5 && player.body.velocity.x > -5) {
+			player.body.velocity.x = 0;
+		}
+		
+		//vertical velocity
+		if (game.input.keyboard.isDown(Phaser.Keyboard.UP) || game.input.keyboard.isDown(Phaser.Keyboard.W) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_UP)) {
+			player.body.velocity.y -= ACCEL;
+		} else if (game.input.keyboard.isDown(Phaser.Keyboard.DOWN) || game.input.keyboard.isDown(Phaser.Keyboard.S) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_DOWN)) {
+			player.body.velocity.y += ACCEL;
+		} else {
+			//pisces makes the player stop easier
+			player.body.velocity.y += Math.sign(player.body.velocity.y) * -DEACCEL * (PISCES ? 2 : 1);
+		}
+		//stop sliding
+		if (player.body.velocity.y < 5 && player.body.velocity.y > -5) {
+			player.body.velocity.y = 0;
+		}
+		
+		//fire
+		if (game.input.activePointer.leftButton.isDown) {
+			playerFire();
+		}
+		
+		//magnet energies
+		magnetEnergies(game, player);
+		
+		//magnet zodiac
+		magnetZodiac();
+		
+		//draw aim
+		drawPlayerAim();
+		
+		//update enemies
+		for (var i = 0; i < enemyGroups.length; i++) {
+			if (typeof enemyGroups[i].extraUpdate === "function") {
+				enemyGroups[i].extraUpdate();
+			} else {
+				console.log("WARNING: an extraUpdate was found to not be callable");
+			}
+		}
+		
+		//FOR NOW
+		if (sliders) {
+			sliders.forEachAlive(updateSlider, this);
+		}
+		
+		//debug text
+		debugText.text = "Level: " + currentLevel + "\nFPS: " + game.time.fps + "\nCurrent Enemies: " + currentEnemies;
+		
+		//draw map
+		setMapPosition(); //i don't like doing this every frame, but since the fullscreen calls are asynchronus it's the easiest way to do it
+		drawMap();
 	}
-	
-	//FOR NOW
-	if (sliders) {
-		sliders.forEachAlive(updateSlider, this);
-	}
-	
-	//debug text
-	debugText.text = "Level: " + currentLevel + "\nFPS: " + game.time.fps + "\nCurrent Enemies: " + currentEnemies;
-	
-	//draw map
-	setMapPosition(); //i don't like doing this every frame, but since the fullscreen calls are asynchronus it's the easiest way to do it
-	drawMap();
 }
 
 function render() {
