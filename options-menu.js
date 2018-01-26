@@ -5,7 +5,7 @@ var totalOptions = 2;
 
 function changeOption(change) {
 	if (!recentlyPressed) {
-		optionSelector = (optionSelector + change) % totalOptions;
+		optionSelector = Math.abs((optionSelector + change) % totalOptions);
 		recentlyPressed = true;
 		console.log("selected option is " + optionSelector);
 	}
@@ -17,6 +17,7 @@ function loadOptionsMenu() {
 }
 
 function optionMenuUpdate() {
+	
 	//handle input
 	if (game.input.keyboard.isDown(Phaser.Keyboard.DOWN) || game.input.keyboard.isDown(Phaser.Keyboard.S)) {
 		changeOption(1);
@@ -25,10 +26,15 @@ function optionMenuUpdate() {
 	} else {
 		recentlyPressed = false;
 	}
+	
 	//register selection
-	if (game.input.keyboard.isDown(Phaser.Keyboard.ENTER)) {
-		if (optionSelector === 0) {
-			atOptions = false;
+	if (game.input.keyboard.isDown(Phaser.Keyboard.ENTER) || game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)) {
+		if (!recentlyPressed) {
+			// 0 is back
+			if (optionSelector === 0) {
+				atOptions = false;
+			}
 		}
 	}
+	
 }
