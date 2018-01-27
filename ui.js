@@ -9,7 +9,8 @@ var background;
 var logo;
 
 //for now
-var portraitKey = "PORTRAIT" + (Math.floor(Math.random() * (4 - 1 + 1)) + 1);
+var portraitId = (Math.floor(Math.random() * (4 - 1 + 1)) + 1);
+console.log("portrait id set to " + portraitId);
 
 function loadUi() {
 	drawPortrait();
@@ -43,7 +44,8 @@ function drawPortrait() {
 	portraitbg = game.add.sprite(0, 0, "PORTRAIT-BG");
 	portraitbg.fixedToCamera = true;
 	//portrait
-	portrait = game.add.sprite(0, 0, portraitKey);
+	portrait = game.add.sprite(0, 0, "PORTRAIT" + portraitId);
+	console.log("drawing PORTRAIT" + portraitId);
 	portrait.fixedToCamera = true;
 }
 

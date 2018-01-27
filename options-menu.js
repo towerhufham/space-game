@@ -20,10 +20,10 @@ function loadOptionsMenu() {
 	menuObjects.push(backText);
 	options[0] = backText;
 	
-	var lolText = game.add.text(600, 500, "Lol", {font: "64px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
-	lolText.fixedToCamera = true;
-	menuObjects.push(lolText);
-	options[1] = lolText;
+	var portraitText = game.add.text(600, 500, "Change Portrait", {font: "64px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
+	portraitText.fixedToCamera = true;
+	menuObjects.push(portraitText);
+	options[1] = portraitText;
 	
 	drawPortrait();
 	
@@ -66,8 +66,19 @@ function optionMenuUpdate() {
 			if (optionSelector === 0) {
 				unloadOptionsMenu();
 				atOptions = false;
+				recentlyClosed = true;
+			} else if (optionSelector === 1) {
+				if (portraitId < 4) {
+					portraitId++;
+				} else {
+					portraitId = 1;
+				}
+				console.log("portrait id changed to " + portraitId);
+				portrait.destroy();
+				portraitbg.destroy();
+				drawPortrait();
 			}
-			recentlyClosed = true;
+			recentlyPressed = true;
 		}
 	} else {
 		recentlyPressed = false;
