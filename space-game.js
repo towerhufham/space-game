@@ -183,7 +183,7 @@ function create() {
 	debugText.fixedToCamera = true;
 	
 	//add exit text
-	exitText = game.add.text(600, 400, "Exiting...", {font: "64px Arial", fill:"#FFFFFF"});
+	exitText = game.add.text(600, 400, "Exiting...", {font: "64px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
 	exitText.alpha = 0;
 	exitText.fixedToCamera = true;
 	
