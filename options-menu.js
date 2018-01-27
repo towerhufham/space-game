@@ -2,6 +2,7 @@ var atOptions = false;
 var recentlyPressed = false;
 var optionSelector = 0;
 var totalOptions = 2;
+var recentlyClosed = false;
 
 var menuObjects = [];
 var options = {};
@@ -23,6 +24,9 @@ function loadOptionsMenu() {
 	lolText.fixedToCamera = true;
 	menuObjects.push(lolText);
 	options[1] = lolText;
+	
+	optionSelector = 0;
+	options[optionSelector].fill = "#00FFFF";
 }
 
 function unloadOptionsMenu() {
@@ -52,19 +56,16 @@ function optionMenuUpdate() {
 		changeOption(1);
 	} else if (game.input.keyboard.isDown(Phaser.Keyboard.UP) || game.input.keyboard.isDown(Phaser.Keyboard.W)) {
 		changeOption(-1);
-	} else {
-		recentlyPressed = false;
-	}
-	
-	//register selection
-	if (game.input.keyboard.isDown(Phaser.Keyboard.ENTER) || game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)) {
+	} else if (game.input.keyboard.isDown(Phaser.Keyboard.ENTER) || game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR)) {
 		if (!recentlyPressed) {
 			// 0 is back
 			if (optionSelector === 0) {
 				unloadOptionsMenu();
 				atOptions = false;
 			}
+			recentlyClosed = true;
 		}
+	} else {
+		recentlyPressed = false;
 	}
-	
 }
