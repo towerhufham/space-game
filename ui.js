@@ -11,12 +11,7 @@ var logo;
 var portraitKey = "PORTRAIT" + (Math.floor(Math.random() * (4 - 1 + 1)) + 1);
 
 function loadUi() {
-	//portrait background
-	portraitbg = game.add.sprite(0, 0, "PORTRAIT-BG");
-	portraitbg.fixedToCamera = true;
-	//portrait
-	portrait = game.add.sprite(0, 0, portraitKey);
-	portrait.fixedToCamera = true;
+	drawPortrait(0, 0);
 	var offset = 170;
 	
 	//hp
@@ -40,6 +35,15 @@ function loadUi() {
 	//make sure they show correct values
 	updateHpBar();
 	updateEnergyBar();
+}
+
+function drawPortrait(x, y) {
+	//portrait background
+	portraitbg = game.add.sprite(0, 0, "PORTRAIT-BG");
+	portraitbg.fixedToCamera = true;
+	//portrait
+	portrait = game.add.sprite(0, 0, portraitKey);
+	portrait.fixedToCamera = true;
 }
 
 function reloadUi() {
