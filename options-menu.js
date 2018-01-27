@@ -25,6 +25,8 @@ function loadOptionsMenu() {
 	menuObjects.push(lolText);
 	options[1] = lolText;
 	
+	drawPortrait();
+	
 	optionSelector = 0;
 	options[optionSelector].fill = "#00FFFF";
 }
@@ -34,6 +36,8 @@ function unloadOptionsMenu() {
 		menuObjects[i].destroy();
 	}
 	options = {};
+	portrait.destroy();
+	portraitbg.destroy();
 }
 
 function changeOption(change) {

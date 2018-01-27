@@ -1,4 +1,5 @@
 var portrait;
+var portraitbg;
 var hpBar = {};
 var energyBar = {};
 var MAPX = 1090;
@@ -11,7 +12,7 @@ var logo;
 var portraitKey = "PORTRAIT" + (Math.floor(Math.random() * (4 - 1 + 1)) + 1);
 
 function loadUi() {
-	drawPortrait(0, 0);
+	drawPortrait();
 	var offset = 170;
 	
 	//hp
@@ -37,7 +38,7 @@ function loadUi() {
 	updateEnergyBar();
 }
 
-function drawPortrait(x, y) {
+function drawPortrait() {
 	//portrait background
 	portraitbg = game.add.sprite(0, 0, "PORTRAIT-BG");
 	portraitbg.fixedToCamera = true;
@@ -48,7 +49,14 @@ function drawPortrait(x, y) {
 
 function reloadUi() {
 	//null the stuff (not sure this works tbh)
-	portrait = null;
+	portrait.destroy();
+	portraitbg.destroy();
+	for (var i = 1; i < 5; i++) {
+		hpBar[i].destroy();
+	}
+	for (var i = 1; i < 21; i++) {
+		energyBar[i].destroy();
+	}
 	hpBar = {};
 	energyBar = {};
 	//reload
