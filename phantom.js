@@ -14,7 +14,7 @@ function makePhantom(parent, key) {
 	}, this);
 	phantomTimer.start();
 	parent.phantomTimer = phantomTimer;
-}	
+}
 
 function clearPhantom(parent) {
 	parent.phantomTimer.destroy();

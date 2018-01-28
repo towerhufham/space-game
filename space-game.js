@@ -227,64 +227,67 @@ function update() {
 		// collision detection
 		doCollisions();
 		
-		//angle
-		player.rotation = game.physics.arcade.angleToPointer(player);
-		
-		//player phantom
-		// player.phantom.x = player.x;
-		// player.phantom.y = player.y;
-		
-		//aries makes the player faster while they aren't firing
-		if (ARIES && !game.input.activePointer.leftButton.isDown) {
-			SPEED = 550;
-			player.body.maxVelocity = {x: SPEED, y: SPEED};
-		} else if (SPEED == 550) {
-			//change back to default when the above params are no longer true
-			SPEED = 400;
-			player.body.maxVelocity = {x: SPEED, y: SPEED};
+		if (player.alive) {
+			
+			//angle
+			player.rotation = game.physics.arcade.angleToPointer(player);
+			
+			//player phantom
+			// player.phantom.x = player.x;
+			// player.phantom.y = player.y;
+			
+			//aries makes the player faster while they aren't firing
+			if (ARIES && !game.input.activePointer.leftButton.isDown) {
+				SPEED = 550;
+				player.body.maxVelocity = {x: SPEED, y: SPEED};
+			} else if (SPEED == 550) {
+				//change back to default when the above params are no longer true
+				SPEED = 400;
+				player.body.maxVelocity = {x: SPEED, y: SPEED};
+			}
+			
+			//horizontal velocity
+			if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT) || game.input.keyboard.isDown(Phaser.Keyboard.A) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_LEFT)) {
+				player.body.velocity.x -= ACCEL;
+			} else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT) || game.input.keyboard.isDown(Phaser.Keyboard.D) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_RIGHT)) {
+				player.body.velocity.x += ACCEL;
+			} else {
+				//pisces makes the player stop easier
+				player.body.velocity.x += Math.sign(player.body.velocity.x) * -DEACCEL * (PISCES ? 2 : 1);
+			}
+			//stop sliding
+			if (player.body.velocity.x < 5 && player.body.velocity.x > -5) {
+				player.body.velocity.x = 0;
+			}
+			
+			//vertical velocity
+			if (game.input.keyboard.isDown(Phaser.Keyboard.UP) || game.input.keyboard.isDown(Phaser.Keyboard.W) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_UP)) {
+				player.body.velocity.y -= ACCEL;
+			} else if (game.input.keyboard.isDown(Phaser.Keyboard.DOWN) || game.input.keyboard.isDown(Phaser.Keyboard.S) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_DOWN)) {
+				player.body.velocity.y += ACCEL;
+			} else {
+				//pisces makes the player stop easier
+				player.body.velocity.y += Math.sign(player.body.velocity.y) * -DEACCEL * (PISCES ? 2 : 1);
+			}
+			//stop sliding
+			if (player.body.velocity.y < 5 && player.body.velocity.y > -5) {
+				player.body.velocity.y = 0;
+			}
+			
+			//fire
+			if (game.input.activePointer.leftButton.isDown) {
+				playerFire();
+			}
+			
+			//magnet energies
+			magnetEnergies(game, player);
+			
+			//magnet zodiac
+			magnetZodiac();
+			
+			//draw aim
+			drawPlayerAim();
 		}
-		
-		//horizontal velocity
-		if (game.input.keyboard.isDown(Phaser.Keyboard.LEFT) || game.input.keyboard.isDown(Phaser.Keyboard.A) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_LEFT)) {
-			player.body.velocity.x -= ACCEL;
-		} else if (game.input.keyboard.isDown(Phaser.Keyboard.RIGHT) || game.input.keyboard.isDown(Phaser.Keyboard.D) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_RIGHT)) {
-			player.body.velocity.x += ACCEL;
-		} else {
-			//pisces makes the player stop easier
-			player.body.velocity.x += Math.sign(player.body.velocity.x) * -DEACCEL * (PISCES ? 2 : 1);
-		}
-		//stop sliding
-		if (player.body.velocity.x < 5 && player.body.velocity.x > -5) {
-			player.body.velocity.x = 0;
-		}
-		
-		//vertical velocity
-		if (game.input.keyboard.isDown(Phaser.Keyboard.UP) || game.input.keyboard.isDown(Phaser.Keyboard.W) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_UP)) {
-			player.body.velocity.y -= ACCEL;
-		} else if (game.input.keyboard.isDown(Phaser.Keyboard.DOWN) || game.input.keyboard.isDown(Phaser.Keyboard.S) || pad1.isDown(Phaser.Gamepad.XBOX360_DPAD_DOWN)) {
-			player.body.velocity.y += ACCEL;
-		} else {
-			//pisces makes the player stop easier
-			player.body.velocity.y += Math.sign(player.body.velocity.y) * -DEACCEL * (PISCES ? 2 : 1);
-		}
-		//stop sliding
-		if (player.body.velocity.y < 5 && player.body.velocity.y > -5) {
-			player.body.velocity.y = 0;
-		}
-		
-		//fire
-		if (game.input.activePointer.leftButton.isDown) {
-			playerFire();
-		}
-		
-		//magnet energies
-		magnetEnergies(game, player);
-		
-		//magnet zodiac
-		magnetZodiac();
-		
-		//draw aim
-		drawPlayerAim();
 		
 		//update enemies
 		for (var i = 0; i < enemyGroups.length; i++) {
@@ -378,8 +381,10 @@ function resetGame() {
 		grassParticles.destroy();
 	}
 	//reset player
-	player.body.stop();
 	player.revive();
+	player.body.stop();
+	player.body.velocity.x = 0;
+	player.body.velocity.y = 0;
 	player.x = game.world.width / 2;
 	player.y = game.world.height / 2;
 	//load level
@@ -524,7 +529,9 @@ function damagePlayer() {
 				enemyParticles.x = player.x;
 				enemyParticles.y = player.y;
 				enemyParticles.start(true, 1000, null, 25);
-				player.kill();
+				// player.kill();
+				player.alpha = 0;
+				player.alive = false;
 				gameoversfx.play();
 				game.time.events.add(1500, function(){//reload level
 					currentLevel = 1;
