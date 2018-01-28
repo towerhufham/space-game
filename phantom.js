@@ -4,7 +4,7 @@ var PHANTOM_TIME = 500;
 function makePhantom(parent, key) {
 	var phantomTimer = game.time.create(false);
 	phantomTimer.loop(PHANTOM_RATE, function(){
-		if (parent.alive) {
+		if (parent.alive && parent.alpha > 0) {
 			var phantom = game.add.sprite(parent.x, parent.y, key);
 			phantom.anchor.setTo(0.5, 0.5);
 			phantom.angle = player.angle;

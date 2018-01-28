@@ -6,6 +6,7 @@ Stuff for build v0.3.0
 
 Planned for build v0.4.0
 
+* make enemies explode into their respective colors
 * more sound effects
 * biolab finished
 * thunderzone (?) finished

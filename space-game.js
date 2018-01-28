@@ -134,6 +134,8 @@ function create() {
 	player.canMagnet = true;
 	player.body.setSize(20, 20, 14, 6);
 	makePhantom(player, "BULLSHIP");
+	//make player start invisible (because we're in a menu)
+	player.alpha = 0;
 	
 	//load enemy lasers
 	loadEnemyLasers(game);
@@ -214,6 +216,7 @@ function update() {
 			AT_MENU = false;
 			game.add.tween(background).to({alpha: 0}, 1000, Phaser.Easing.Linear.None, true);
 			game.add.tween(logo).to({alpha: 0}, 1000, Phaser.Easing.Exponential.Out, true);
+			player.alpha = 1;
 			reloadUi();
 		} else {
 			//this is to stop debouncing, the variable is in options-menu.js

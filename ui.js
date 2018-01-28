@@ -198,6 +198,7 @@ function dropAlert(main, sub) {
 
 function startupMenu() {
 	AT_MENU = true;
+	player.alpha = 0;
 	background = game.add.tileSprite(0, 0, 3840, 3840, "BACKGROUND");
 	logo = game.add.sprite(player.x, player.y - 250, "LOGO");
 	logo.anchor.setTo(0.5, 0.5);
