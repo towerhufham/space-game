@@ -29,11 +29,17 @@ function loadOptionsMenu() {
 	sfxText.fixedToCamera = true;
 	menuObjects.push(sfxText);
 	options[2] = sfxText;
+	//check persistant state
+	if (getCookie("sfx-muted") === "true") {
+		sfxText.text = "Sound effects: Off";
+	}
 	
 	var musicText = game.add.text(600, 700, "Music: On", {font: "64px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
 	musicText.fixedToCamera = true;
 	menuObjects.push(musicText);
 	options[3] = musicText;
+	//todo: check persistant state
+	//
 	
 	drawPortrait();
 	
@@ -93,9 +99,11 @@ function optionMenuUpdate() {
 			else if (optionSelector === 2) {
 				if (game.sound.mute) {
 					game.sound.mute = false;
+					setCookie("sfx-muted", false);
 					options[2].text = "Sound effects: On";
 				} else {
 					game.sound.mute = true;
+					setCookie("sfx-muted", true);
 					options[2].text = "Sound effects: Off";
 				}
 			}

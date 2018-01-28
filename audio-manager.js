@@ -45,4 +45,12 @@ function loadAudio(game) {
 	grasssfx = game.sound.add("GRASS", 0.15);
 	virgosfx = game.sound.add("VIRGO", 0.5);
 	zodiacsfx = game.sound.add("ZODIAC", 0.5);
+	
+	//check if sound is muted
+	if (getCookie("sfx-muted") === "true") {
+		game.sound.mute = true;
+	} else if (getCookie("sfx-muted") === undefined) {
+		setCookie("sfx-muted", false);
+	}
+	console.log(document.cookie);
 }
