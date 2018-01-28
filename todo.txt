@@ -1,11 +1,11 @@
 Stuff for build v0.3.0
 
 * cinematics
-* all menus implemented
 * at least a few bugfixes
 
 Planned for build v0.4.0
 
+* figure out what to do with the map
 * make enemies explode into their respective colors
 * more sound effects
 * biolab finished
