@@ -74,6 +74,7 @@ function optionMenuUpdate() {
 					portraitId = 1;
 				}
 				console.log("portrait id changed to " + portraitId);
+				setCookie("portraitId", portraitId);
 				drawPortrait();
 			}
 			recentlyPressed = true;

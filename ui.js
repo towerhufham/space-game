@@ -7,10 +7,17 @@ var MAPY = 10;
 var MAPSIZE = 100;
 var background;
 var logo;
+var portraitId;
 
-//for now
-var portraitId = (Math.floor(Math.random() * (4 - 1 + 1)) + 1);
-console.log("portrait id set to " + portraitId);
+//load portrait
+//this if statement works because portraits start at 1, not 0
+if (getCookie("portraitId")) {
+	portraitId = getCookie("portraitId");
+} else {
+	portraitId = (Math.floor(Math.random() * (4 - 1 + 1)) + 1);
+	setCookie("portraitId", portraitId);
+	console.log("portrait id set to " + portraitId);
+}
 
 function loadUi() {
 	drawPortrait();

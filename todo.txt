@@ -2,24 +2,23 @@ Stuff for build v0.3.0
 
 * biolab finished
 * more sound effects
-* pause menu
 * fix the double-energy-spawn issue (i think polyps are getting shot twice maybe)
-* better enemies
+* better enemies?
 
 Planned for build v0.4.0
 
 * thunderzone (?) finished
+* cinematics
 * all menus implemented
 * final polish
 
 Todo around build v1.0.0
 
-* cinematics
+* controller support
 * source protection
 * video and screenshots
 * pay Johnny and Kelvin to translate into Spanish and Chinese
 * description and other promo stuff
-* controller support
 
 
 Current known issues:
