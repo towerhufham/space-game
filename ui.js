@@ -40,6 +40,12 @@ function loadUi() {
 }
 
 function drawPortrait() {
+	//delete old portrait
+	if (portrait && portraitbg) {
+		portrait.destroy();
+		portraitbg.destroy();
+		console.log("destroying portrait");
+	}
 	//portrait background
 	portraitbg = game.add.sprite(0, 0, "PORTRAIT-BG");
 	portraitbg.fixedToCamera = true;
@@ -51,8 +57,7 @@ function drawPortrait() {
 
 function reloadUi() {
 	//null the stuff (not sure this works tbh)
-	portrait.destroy();
-	portraitbg.destroy();
+	console.log("reloading ui");
 	for (var i = 1; i < 5; i++) {
 		hpBar[i].destroy();
 	}

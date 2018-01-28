@@ -74,8 +74,6 @@ function optionMenuUpdate() {
 					portraitId = 1;
 				}
 				console.log("portrait id changed to " + portraitId);
-				portrait.destroy();
-				portraitbg.destroy();
 				drawPortrait();
 			}
 			recentlyPressed = true;

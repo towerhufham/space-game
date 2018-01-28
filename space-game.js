@@ -214,6 +214,7 @@ function update() {
 			AT_MENU = false;
 			game.add.tween(background).to({alpha: 0}, 1000, Phaser.Easing.Linear.None, true);
 			game.add.tween(logo).to({alpha: 0}, 1000, Phaser.Easing.Exponential.Out, true);
+			reloadUi();
 		} else {
 			//this is to stop debouncing, the variable is in options-menu.js
 			//i am sinning so much to get this options menu working
