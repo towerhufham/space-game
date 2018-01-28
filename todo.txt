@@ -1,15 +1,15 @@
 Stuff for build v0.3.0
 
-* biolab finished
-* more sound effects
-* fix the double-energy-spawn issue (i think polyps are getting shot twice maybe)
-* better enemies?
+* cinematics
+* all menus implemented
+* at least a few bugfixes
 
 Planned for build v0.4.0
 
+* more sound effects
+* biolab finished
 * thunderzone (?) finished
-* cinematics
-* all menus implemented
+* better enemies?
 * final polish
 
 Todo around build v1.0.0
@@ -23,7 +23,12 @@ Todo around build v1.0.0
 
 Current known issues:
 
-* leaving the game on for too long causes fps drop
+* exit text is gross
+* start menu is a little gross (makes me nostalgic for engine001...)
+* options menu gross as hail: (bad positioning for windowed, renders the player, doesn't render exit text)
+* major fps issues
+* hitting enter on options menu while selector is over "back" will start the game immediately
+* double-energy-spawn issue (i think polyps are getting shot twice maybe)
 
 DOPE IDEAS:
 
