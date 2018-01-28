@@ -28,7 +28,6 @@ Current known issues:
 * start menu is a little gross (makes me nostalgic for engine001...)
 * options menu gross as hail: (bad positioning for windowed, renders the player, doesn't render exit text)
 * major fps issues
-* hitting enter on options menu while selector is over "back" will start the game immediately
 * double-energy-spawn issue (i think polyps are getting shot twice maybe)
 
 DOPE IDEAS:

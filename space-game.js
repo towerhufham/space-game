@@ -213,11 +213,13 @@ function update() {
 				loadOptionsMenu();
 			}
 		} else if (game.input.keyboard.isDown(Phaser.Keyboard.ENTER)) {
-			AT_MENU = false;
-			game.add.tween(background).to({alpha: 0}, 1000, Phaser.Easing.Linear.None, true);
-			game.add.tween(logo).to({alpha: 0}, 1000, Phaser.Easing.Exponential.Out, true);
-			player.alpha = 1;
-			reloadUi();
+			if (!recentlyClosed) {
+				AT_MENU = false;
+				game.add.tween(background).to({alpha: 0}, 1000, Phaser.Easing.Linear.None, true);
+				game.add.tween(logo).to({alpha: 0}, 1000, Phaser.Easing.Exponential.Out, true);
+				player.alpha = 1;
+				reloadUi();
+			}
 		} else {
 			//this is to stop debouncing, the variable is in options-menu.js
 			//i am sinning so much to get this options menu working
