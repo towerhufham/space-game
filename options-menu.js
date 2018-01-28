@@ -25,12 +25,12 @@ function loadOptionsMenu() {
 	menuObjects.push(portraitText);
 	options[1] = portraitText;
 	
-	var sfxText = game.add.text(600, 500, "Sound effects: on", {font: "64px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
+	var sfxText = game.add.text(600, 500, "Sound effects: On", {font: "64px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
 	sfxText.fixedToCamera = true;
 	menuObjects.push(sfxText);
 	options[2] = sfxText;
 	
-	var musicText = game.add.text(600, 700, "Music: on", {font: "64px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
+	var musicText = game.add.text(600, 700, "Music: On", {font: "64px Arial", fill:"#FFFFFF", stroke:"#000000", strokeThickness:"10", align:"center"});
 	musicText.fixedToCamera = true;
 	menuObjects.push(musicText);
 	options[3] = musicText;
@@ -91,7 +91,13 @@ function optionMenuUpdate() {
 			}
 			// 2 is mute sfx
 			else if (optionSelector === 2) {
-				//mute sfx
+				if (game.sound.mute) {
+					game.sound.mute = false;
+					options[2].text = "Sound effects: On";
+				} else {
+					game.sound.mute = true;
+					options[2].text = "Sound effects: Off";
+				}
 			}
 			// 3 is mute music
 			else if (optionSelector === 3) {

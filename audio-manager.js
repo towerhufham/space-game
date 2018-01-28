@@ -31,18 +31,18 @@ function preloadAudio(game) {
 }
 
 function loadAudio(game) {
-	shootsfx = game.add.audio("SHOOT", 0.25);
-	shotdownsfx = game.add.audio("SHOT DOWN", 0.25);
-	damagesfx = game.add.audio("DAMAGED", 0.25);
-	gameoversfx = game.add.audio("GAME OVER", 0.25);
-	polypsfx = game.add.audio("POLYP", 0.25);
-	energysfx = game.add.audio("HOLLOW", 0.25);
-	reflectorsfx = game.add.audio("REFLECTOR", 0.25);
-	gatesfx = game.add.audio("GATE", 0.25);
-	explodersfx = game.add.audio("EXPLODER", 0.25);
-	furnacesfx = game.add.audio("FURNACE", 0.25);
-	slidersfx = game.add.audio("SLIDER", 0.25);
-	grasssfx = game.add.audio("GRASS", 0.15);
-	virgosfx = game.add.audio("VIRGO", 0.5);
-	zodiacsfx = game.add.audio("ZODIAC", 0.5);
+	shootsfx = game.sound.add("SHOOT", 0.25);
+	shotdownsfx = game.sound.add("SHOT DOWN", 0.25);
+	damagesfx = game.sound.add("DAMAGED", 0.25);
+	gameoversfx = game.sound.add("GAME OVER", 0.25);
+	polypsfx = game.sound.add("POLYP", 0.25);
+	energysfx = game.sound.add("HOLLOW", 0.25);
+	reflectorsfx = game.sound.add("REFLECTOR", 0.25);
+	gatesfx = game.sound.add("GATE", 0.25);
+	explodersfx = game.sound.add("EXPLODER", 0.25);
+	furnacesfx = game.sound.add("FURNACE", 0.25);
+	slidersfx = game.sound.add("SLIDER", 0.25);
+	grasssfx = game.sound.add("GRASS", 0.15);
+	virgosfx = game.sound.add("VIRGO", 0.5);
+	zodiacsfx = game.sound.add("ZODIAC", 0.5);
 }
